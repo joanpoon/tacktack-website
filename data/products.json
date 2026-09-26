@@ -1,0 +1,782 @@
+{
+ "updated": "2026-09-26",
+ "stories": {
+  "isamu-noguchi": {
+   "title": {
+    "en": "Isamu Noguchi & AKARI",
+    "zh": "野口勇與 AKARI"
+   },
+   "body": {
+    "en": "Isamu Noguchi (1904–1988) was a Japanese-American sculptor who treated light as another material to shape. In 1951 he visited Gifu, a town known for its paper lanterns, and began the AKARI series: washi paper over bamboo ribbing, named with the Japanese word for light, brightness and lightness. More than seventy years on, each shade is still made by hand by Ozeki & Co. in Gifu, stretched over wooden forms Noguchi designed.",
+    "zh": "野口勇（Isamu Noguchi，1904–1988）是日裔美籍雕塑家，把「光」當成可以塑造的材料。1951 年他到訪以紙燈籠聞名的岐阜，開始創作 AKARI 系列：以和紙貼在竹骨上，取名自日文「明かり」，意思是光、明亮，也有輕盈之意。七十多年後的今天，每一盞仍由岐阜的尾関（Ozeki）工房，在野口勇設計的木模上人手製作。"
+   }
+  },
+  "anna-dawson": {
+   "title": {
+    "en": "Anna Dawson for Heller",
+    "zh": "Anna Dawson × Heller"
+   },
+   "body": {
+    "en": "Anna Dawson is a RISD-trained designer and California surfer. Heller spotted her Swell prototype at WantedDesign during NYCxDesign in 2022, and a year later launched it at ICFF, in collaboration with MoMA. Its wave-shaped curves have since picked up a Domino decor award (2023) and an Apartment Therapy Small/Cool award (2024). Swell Mini followed in 2025.",
+    "zh": "Anna Dawson 畢業於 RISD（羅德島設計學院），也是一位加州滑浪愛好者。2022 年 NYCxDesign 期間，Heller 在 WantedDesign 展覽看中她的 Swell 原型，翌年在 ICFF 正式推出，並與 MoMA 合作發佈。這個波浪造型其後獲得 Domino 2023 家居擺設獎及 Apartment Therapy 2024 Small/Cool 獎；2025 年再推出 Swell Mini。"
+   }
+  },
+  "dulton": {
+   "title": {
+    "en": "About DULTON",
+    "zh": "關於 DULTON"
+   },
+   "body": {
+    "en": "DULTON is a Japanese homeware brand known for taking everyday, utilitarian objects and making them more fun to live with. The Double Face Clock borrows from the two-sided clocks hung in train stations and public buildings, redrawn as a low rectangle for homes with lower ceilings.",
+    "zh": "DULTON 是日本家品品牌，擅長把日常實用的工具變得更有趣、更好用。雙面掛鐘參考了火車站及公共建築常見的雙面鐘，改成矮身長方形，樓底較矮的家居都啱用。"
+   }
+  }
+ },
+ "brands": {
+  "AKARI": {
+   "slug": "isamu-noguchi-akari"
+  },
+  "Heller": {
+   "slug": "heller"
+  },
+  "DULTON": {
+   "slug": "dulton"
+  }
+ },
+ "products": [
+  {
+   "sku": "TT-DUL-0001",
+   "slug": "dulton-double-face-clock-grey",
+   "featured": false,
+   "dropDate": "2026-09-17",
+   "brand": "DULTON",
+   "name": {
+    "en": "Double Face Clock, Rectangle · Grey",
+    "zh": "雙面掛鐘（長方形）· 灰色"
+   },
+   "model": "Double Face Clock Rectangle",
+   "colour": {
+    "en": "Grey",
+    "zh": "灰色"
+   },
+   "material": {
+    "en": "ABS resin body and frame, glass cover",
+    "zh": "ABS 樹脂機身及外框、玻璃面"
+   },
+   "description": {
+    "en": "The kind of two-sided clock you'd check on a station platform, reworked for home. DULTON drew it as a long, low rectangle so it sits comfortably under HK ceiling heights, with embossed resin details and a glass cover. In grey it leans industrial, closest to the station clocks it borrows from, and suits concrete, steel or black-and-white rooms.",
+    "zh": "靈感來自火車站月台那種雙面鐘，DULTON 把它改成適合家居的長方形，矮身設計，香港樓底都掛得落。樹脂機身帶浮雕細節，配玻璃面。灰色偏向工業風，最接近它參考的車站鐘，配水泥、金屬或黑白灰色調的空間都好夾。"
+   },
+   "details": {
+    "en": [
+     "Two dials, readable from both sides",
+     "Sweep movement, so no ticking",
+     "Dial held by magnets for easy time-setting and battery changes",
+     "Runs on 2 × AA batteries"
+    ],
+    "zh": [
+     "雙面鐘面，兩邊都睇到時間",
+     "掃秒機芯，冇滴答聲",
+     "鐘面以磁石固定，調時間及換電池都方便",
+     "使用 2 粒 AA 電池"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 44.2,
+    "d": 9.8,
+    "h": 18.7,
+    "unit": "cm",
+    "weightKg": 2
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "",
+     "zh": ""
+    }
+   },
+   "price": 1328,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/TT-DUL-0001/1.jpg",
+    "/assets/products/TT-DUL-0001/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "DULTON Double Face Clock Rectangle in grey: two-sided, station-style wall clock with a white dial",
+    "zh": "DULTON 雙面掛鐘（長方形）灰色：車站風格雙面鐘，白色鐘面"
+   },
+   "storyKey": "dulton"
+  },
+  {
+   "sku": "TT-DUL-0002",
+   "slug": "dulton-double-face-clock-green",
+   "featured": false,
+   "dropDate": "2026-09-17",
+   "brand": "DULTON",
+   "name": {
+    "en": "Double Face Clock, Rectangle · Green",
+    "zh": "雙面掛鐘（長方形）· 綠色"
+   },
+   "model": "Double Face Clock Rectangle",
+   "colour": {
+    "en": "Green",
+    "zh": "綠色"
+   },
+   "material": {
+    "en": "ABS resin body and frame, glass cover",
+    "zh": "ABS 樹脂機身及外框、玻璃面"
+   },
+   "description": {
+    "en": "The kind of two-sided clock you'd check on a station platform, reworked for home. DULTON drew it as a long, low rectangle so it sits comfortably under HK ceiling heights, with embossed resin details and a glass cover. In green it feels more vintage and playful, and looks good against wood, rattan or cream walls.",
+    "zh": "靈感來自火車站月台那種雙面鐘，DULTON 把它改成適合家居的長方形，矮身設計，香港樓底都掛得落。樹脂機身帶浮雕細節，配玻璃面。綠色多一份復古玩味，襯木色、藤編傢俬或米白色牆身都好好睇。"
+   },
+   "details": {
+    "en": [
+     "Two dials, readable from both sides",
+     "Sweep movement, so no ticking",
+     "Dial held by magnets for easy time-setting and battery changes",
+     "Runs on 2 × AA batteries"
+    ],
+    "zh": [
+     "雙面鐘面，兩邊都睇到時間",
+     "掃秒機芯，冇滴答聲",
+     "鐘面以磁石固定，調時間及換電池都方便",
+     "使用 2 粒 AA 電池"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 44.2,
+    "d": 9.8,
+    "h": 18.7,
+    "unit": "cm",
+    "weightKg": 2
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "",
+     "zh": ""
+    }
+   },
+   "price": 1328,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/TT-DUL-0002/1.jpg",
+    "/assets/products/TT-DUL-0002/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "DULTON Double Face Clock Rectangle in dark green: two-sided, station-style wall clock with a white dial",
+    "zh": "DULTON 雙面掛鐘（長方形）深綠色：車站風格雙面鐘，白色鐘面"
+   },
+   "storyKey": "dulton"
+  },
+  {
+   "sku": "TT-NOG-0001",
+   "slug": "akari-55d",
+   "featured": true,
+   "dropDate": "2026-09-24",
+   "brand": "AKARI",
+   "designer": "Isamu Noguchi",
+   "name": {
+    "en": "AKARI 55D Pendant",
+    "zh": "AKARI 55D 吊燈"
+   },
+   "model": "55D",
+   "year": {
+    "en": "1951 (AKARI series)",
+    "zh": "1951 年（AKARI 系列）"
+   },
+   "colour": {
+    "en": "Natural white washi",
+    "zh": "原色白和紙"
+   },
+   "material": {
+    "en": "Washi paper, bamboo ribbing, steel wire",
+    "zh": "和紙、竹骨、鋼線"
+   },
+   "description": {
+    "en": "Noguchi called his AKARI light sculptures rather than lamps, and the 55D shows why. Its bamboo ribbing is set in a loose, organic rhythm under hand-laid washi, so the light comes through soft and a little uneven, like paper held up to the sun. At 55 cm across it's generous enough to anchor a dining table or warm up a bare corner.",
+    "zh": "野口勇稱 AKARI 為「光的雕塑」，而不只是燈，55D 就是最好的例子。竹骨以隨意、有機的節奏排列，再貼上人手和紙，光線透出來柔和得來帶點層次，好似將紙張舉向太陽。直徑 55 cm，吊喺餐枱上或者放喺空蕩蕩的角落，都即刻令空間暖起來。"
+   },
+   "details": {
+    "en": [
+     "Handmade in Gifu, Japan",
+     "Folds flat for moving",
+     "Cord set, fitting and bulb: please WhatsApp us to confirm what's included and whether it suits HK sockets"
+    ],
+    "zh": [
+     "日本岐阜人手製作",
+     "可摺平，搬運方便",
+     "電線、燈座及燈泡配置：請 WhatsApp 我們確認包括甚麼，以及是否適用於香港電壓及插座"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "w": 55,
+    "d": 55,
+    "h": 53,
+    "unit": "cm"
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "",
+     "zh": ""
+    }
+   },
+   "price": 2080,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/TT-NOG-0001/1.jpg",
+    "/assets/products/TT-NOG-0001/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "Isamu Noguchi AKARI 55D pendant lamp: round natural white washi paper shade on bamboo ribbing, 55 cm across",
+    "zh": "野口勇 AKARI 55D 和紙吊燈：原色白和紙配竹骨圓形燈罩，直徑 55 cm"
+   },
+   "storyKey": "isamu-noguchi"
+  },
+  {
+   "sku": "TT-NOG-0002",
+   "slug": "akari-33a",
+   "featured": false,
+   "dropDate": "2026-09-24",
+   "brand": "AKARI",
+   "designer": "Isamu Noguchi",
+   "name": {
+    "en": "AKARI 33A Pendant",
+    "zh": "AKARI 33A 吊燈"
+   },
+   "model": "33A",
+   "year": {
+    "en": "1951 (AKARI series)",
+    "zh": "1951 年（AKARI 系列）"
+   },
+   "colour": {
+    "en": "Natural white washi",
+    "zh": "原色白和紙"
+   },
+   "material": {
+    "en": "Washi paper, bamboo ribbing, steel wire",
+    "zh": "和紙、竹骨、鋼線"
+   },
+   "description": {
+    "en": "A smaller AKARI for bedrooms, reading corners and hallways. Like every piece in the series, it's washi paper over bamboo ribbing, made by hand in Gifu, where Noguchi first saw the town's lantern makers at work in 1951. Soft, diffused, quietly sculptural.",
+    "zh": "適合睡房、閱讀角和走廊的 AKARI。與系列其他款式一樣，以和紙配竹骨在岐阜人手製作；1951 年野口勇正是在岐阜遇上當地的燈籠工匠，AKARI 由此誕生。光線柔和，低調得來好有雕塑感。"
+   },
+   "details": {
+    "en": [
+     "Handmade in Gifu, Japan",
+     "Folds flat for moving",
+     "Cord set, fitting and bulb: please WhatsApp us to confirm what's included and whether it suits HK sockets"
+    ],
+    "zh": [
+     "日本岐阜人手製作",
+     "可摺平，搬運方便",
+     "電線、燈座及燈泡配置：請 WhatsApp 我們確認包括甚麼，以及是否適用於香港電壓及插座"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "dia": 33,
+    "unit": "cm"
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "",
+     "zh": ""
+    }
+   },
+   "price": 1680,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/TT-NOG-0002/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "Isamu Noguchi AKARI 33A pendant lamp, lit: round natural white washi paper shade on bamboo ribbing, 33 cm across",
+    "zh": "野口勇 AKARI 33A 和紙吊燈（亮燈）：原色白和紙配竹骨圓形燈罩，直徑 33 cm"
+   },
+   "storyKey": "isamu-noguchi"
+  },
+  {
+   "sku": "TT-NOG-0003",
+   "slug": "akari-45d",
+   "featured": true,
+   "dropDate": "2026-09-24",
+   "brand": "AKARI",
+   "designer": "Isamu Noguchi",
+   "name": {
+    "en": "AKARI 45D Pendant",
+    "zh": "AKARI 45D 吊燈"
+   },
+   "model": "45D",
+   "year": {
+    "en": "1951 (AKARI series)",
+    "zh": "1951 年（AKARI 系列）"
+   },
+   "colour": {
+    "en": "Natural white washi",
+    "zh": "原色白和紙"
+   },
+   "material": {
+    "en": "Washi paper, bamboo ribbing, steel wire",
+    "zh": "和紙、竹骨、鋼線"
+   },
+   "description": {
+    "en": "The 45D has the same organic, irregular ribbing as its bigger sibling in a more versatile 45 cm size. It works over a small dining table, in a bedroom, or grouped with other AKARI at different heights. Washi paper, bamboo and a light steel frame, handmade in Gifu, Japan.",
+    "zh": "45D 保留了 55D 那種有機、不規則的竹骨線條，換成更百搭的 45 cm 尺寸。吊喺細餐枱上、放喺睡房，或者同其他 AKARI 高低錯落咁一齊掛都好靚。和紙、竹骨配輕巧鋼架，日本岐阜人手製作。"
+   },
+   "details": {
+    "en": [
+     "Handmade in Gifu, Japan",
+     "Folds flat for moving",
+     "Cord set, fitting and bulb: please WhatsApp us to confirm what's included and whether it suits HK sockets"
+    ],
+    "zh": [
+     "日本岐阜人手製作",
+     "可摺平，搬運方便",
+     "電線、燈座及燈泡配置：請 WhatsApp 我們確認包括甚麼，以及是否適用於香港電壓及插座"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "w": 45,
+    "d": 45,
+    "h": 44,
+    "unit": "cm"
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "",
+     "zh": ""
+    }
+   },
+   "price": 1780,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/TT-NOG-0003/1.jpg",
+    "/assets/products/TT-NOG-0003/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "Isamu Noguchi AKARI 45D pendant lamp: round natural white washi paper shade on bamboo ribbing, 45 cm across",
+    "zh": "野口勇 AKARI 45D 和紙吊燈：原色白和紙配竹骨圓形燈罩，直徑 45 cm"
+   },
+   "storyKey": "isamu-noguchi"
+  },
+  {
+   "sku": "TT-HEL-0001",
+   "slug": "heller-swell-white",
+   "featured": true,
+   "dropDate": "2026-09-24",
+   "brand": "Heller",
+   "designer": "Anna Dawson",
+   "name": {
+    "en": "Swell Wall Catchall · White",
+    "zh": "Swell 波浪掛牆收納 · 白色"
+   },
+   "model": "Swell",
+   "year": {
+    "en": "2022 design, launched by Heller 2023",
+    "zh": "2022 年設計，Heller 於 2023 年推出"
+   },
+   "colour": {
+    "en": "White",
+    "zh": "白色"
+   },
+   "material": {
+    "en": "Recycled ABS plastic",
+    "zh": "再生 ABS 塑膠"
+   },
+   "description": {
+    "en": "Anna Dawson, a California surfer, shaped Swell after the rhythm of ocean waves. The crests catch coats, bags and caps; the troughs cradle keys and sunglasses. It's the entryway fix for a small flat that also happens to look like a sculpture. In white it almost disappears into a pale wall, leaving just the curves and their shadows: the most minimal of the three.",
+    "zh": "設計師 Anna Dawson 是加州的滑浪愛好者，Swell 的線條就是海浪的起伏。浪尖可以掛外套、袋和帽，浪谷可以放鎖匙和太陽眼鏡。細單位玄關的收納救星，掛上牆又似一件雕塑。白色幾乎融入淺色牆身，只留下波浪的弧線和光影，是三款之中最簡約的。"
+   },
+   "details": {
+    "en": [
+     "Holds up to 34 kg (75 lb), per Heller",
+     "Wall-mounted, with Heller fixings",
+     "Apartment Therapy Small/Cool Design Award 2024"
+    ],
+    "zh": [
+     "根據 Heller，承重可達 34 kg（75 lb）",
+     "掛牆安裝，配 Heller 配件",
+     "2024 年 Apartment Therapy Small/Cool 設計獎"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 73,
+    "d": 7.6,
+    "h": 35.6,
+    "unit": "cm",
+    "weightKg": 2.3
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "",
+     "zh": ""
+    }
+   },
+   "price": 980,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/TT-HEL-0001/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "Heller Swell wall catchall in white by Anna Dawson: wave-shaped wall hook and tray",
+    "zh": "Heller Swell 波浪掛牆收納（白色），Anna Dawson 設計：波浪形掛鈎連收納槽"
+   },
+   "storyKey": "anna-dawson"
+  },
+  {
+   "sku": "TT-HEL-0002",
+   "slug": "heller-swell-mini-red-orange",
+   "featured": false,
+   "dropDate": "2026-09-24",
+   "brand": "Heller",
+   "designer": "Anna Dawson",
+   "name": {
+    "en": "Swell Mini · Red Orange",
+    "zh": "Swell Mini 迷你波浪掛牆收納 · 橙紅色"
+   },
+   "model": "Swell Mini",
+   "year": {
+    "en": "2025",
+    "zh": "2025 年"
+   },
+   "colour": {
+    "en": "Red Orange",
+    "zh": "橙紅色"
+   },
+   "material": {
+    "en": "Recyclable ABS plastic",
+    "zh": "可回收 ABS 塑膠"
+   },
+   "description": {
+    "en": "One wave instead of three. Swell Mini is part hook, part catchall bowl: hang a tote, drop your glasses by the bed, or line a few up in different colours for a little wall composition. Small enough for any flat, and a very easy gift. Red Orange is the boldest of the three Swell Mini colours we have: a bright pop by the front door or on a pale wall.",
+    "zh": "由三個浪變成一個浪。Swell Mini 一半是掛鈎、一半是小碟：可以掛袋，睡房床邊放眼鏡，或者幾個唔同顏色排埋一齊，砌成一幅小小的牆身構圖。咩尺寸的家都放得落，送禮都好啱。橙紅色是我們三個 Swell Mini 顏色之中最搶眼的一款，掛喺門口或者淺色牆上，即刻多一點色彩。"
+   },
+   "details": {
+    "en": [
+     "Holds up to 8.6 kg (19 lb), per Heller",
+     "Indoor/outdoor use",
+     "Wall-mounted, with Heller bracket and screws"
+    ],
+    "zh": [
+     "根據 Heller，承重可達 8.6 kg（19 lb）",
+     "室內及戶外均可使用",
+     "掛牆安裝，配 Heller 掛牆支架及螺絲"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 19.7,
+    "d": 7.6,
+    "h": 16.5,
+    "unit": "cm",
+    "weightKg": 0.45
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "",
+     "zh": ""
+    }
+   },
+   "price": 280,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/TT-HEL-0002/1.jpg",
+    "/assets/products/TT-HEL-0002/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "Heller Swell Mini wall hook and catchall in Red Orange by Anna Dawson: a single wave-shaped hook and bowl",
+    "zh": "Heller Swell Mini 波浪掛牆掛鈎收納（橙紅色），Anna Dawson 設計：單個波浪形掛鈎連收納碗"
+   },
+   "storyKey": "anna-dawson"
+  },
+  {
+   "sku": "TT-HEL-0003",
+   "slug": "heller-swell-mini-cream",
+   "oldSlugs": [
+    "heller-swell-mini-white"
+   ],
+   "featured": false,
+   "dropDate": "2026-09-24",
+   "brand": "Heller",
+   "designer": "Anna Dawson",
+   "name": {
+    "en": "Swell Mini · Cream",
+    "zh": "Swell Mini 迷你波浪掛牆收納 · 奶油色"
+   },
+   "model": "Swell Mini",
+   "year": {
+    "en": "2025",
+    "zh": "2025 年"
+   },
+   "colour": {
+    "en": "Cream",
+    "zh": "奶油色"
+   },
+   "material": {
+    "en": "Recyclable ABS plastic",
+    "zh": "可回收 ABS 塑膠"
+   },
+   "description": {
+    "en": "One wave instead of three. Swell Mini is part hook, part catchall bowl: hang a tote, drop your glasses by the bed, or line a few up in different colours for a little wall composition. Small enough for any flat, and a very easy gift. Cream is the quietest of the three: it sits softly against white and off-white walls, so the wave shape does the talking.",
+    "zh": "由三個浪變成一個浪。Swell Mini 一半是掛鈎、一半是小碟：可以掛袋，睡房床邊放眼鏡，或者幾個唔同顏色排埋一齊，砌成一幅小小的牆身構圖。咩尺寸的家都放得落，送禮都好啱。奶油色是三款之中最低調柔和的，配白色或米白色牆身，讓波浪線條自己說話。"
+   },
+   "details": {
+    "en": [
+     "Holds up to 8.6 kg (19 lb), per Heller",
+     "Indoor/outdoor use",
+     "Wall-mounted, with Heller bracket and screws"
+    ],
+    "zh": [
+     "根據 Heller，承重可達 8.6 kg（19 lb）",
+     "室內及戶外均可使用",
+     "掛牆安裝，配 Heller 掛牆支架及螺絲"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 19.7,
+    "d": 7.6,
+    "h": 16.5,
+    "unit": "cm",
+    "weightKg": 0.45
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "",
+     "zh": ""
+    }
+   },
+   "price": 280,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/TT-HEL-0003/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "Heller Swell Mini wall hook and catchall in Cream by Anna Dawson: a single wave-shaped hook and bowl",
+    "zh": "Heller Swell Mini 波浪掛牆掛鈎收納（奶油色），Anna Dawson 設計：單個波浪形掛鈎連收納碗"
+   },
+   "storyKey": "anna-dawson"
+  },
+  {
+   "sku": "TT-HEL-0004",
+   "slug": "heller-swell-mini-blue",
+   "featured": false,
+   "dropDate": "2026-09-24",
+   "brand": "Heller",
+   "designer": "Anna Dawson",
+   "name": {
+    "en": "Swell Mini · Blue",
+    "zh": "Swell Mini 迷你波浪掛牆收納 · 藍色"
+   },
+   "model": "Swell Mini",
+   "year": {
+    "en": "2025",
+    "zh": "2025 年"
+   },
+   "colour": {
+    "en": "Blue",
+    "zh": "藍色"
+   },
+   "material": {
+    "en": "Recyclable ABS plastic",
+    "zh": "可回收 ABS 塑膠"
+   },
+   "description": {
+    "en": "One wave instead of three. Swell Mini is part hook, part catchall bowl: hang a tote, drop your glasses by the bed, or line a few up in different colours for a little wall composition. Small enough for any flat, and a very easy gift. Blue brings a cool, calm note, and pairs nicely with the blue Swell if you'd like a matching big-and-small set.",
+    "zh": "由三個浪變成一個浪。Swell Mini 一半是掛鈎、一半是小碟：可以掛袋，睡房床邊放眼鏡，或者幾個唔同顏色排埋一齊，砌成一幅小小的牆身構圖。咩尺寸的家都放得落，送禮都好啱。藍色帶點清新冷靜，同藍色 Swell 一大一細掛埋一齊，就成為一套。"
+   },
+   "details": {
+    "en": [
+     "Holds up to 8.6 kg (19 lb), per Heller",
+     "Indoor/outdoor use",
+     "Wall-mounted, with Heller bracket and screws"
+    ],
+    "zh": [
+     "根據 Heller，承重可達 8.6 kg（19 lb）",
+     "室內及戶外均可使用",
+     "掛牆安裝，配 Heller 掛牆支架及螺絲"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 19.7,
+    "d": 7.6,
+    "h": 16.5,
+    "unit": "cm",
+    "weightKg": 0.45
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "",
+     "zh": ""
+    }
+   },
+   "price": 280,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/TT-HEL-0004/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "Heller Swell Mini wall hook and catchall in Blue by Anna Dawson: a single wave-shaped hook and bowl",
+    "zh": "Heller Swell Mini 波浪掛牆掛鈎收納（藍色），Anna Dawson 設計：單個波浪形掛鈎連收納碗"
+   },
+   "storyKey": "anna-dawson"
+  },
+  {
+   "sku": "TT-HEL-0005",
+   "slug": "heller-swell-red-orange",
+   "featured": false,
+   "dropDate": "2026-09-24",
+   "brand": "Heller",
+   "designer": "Anna Dawson",
+   "name": {
+    "en": "Swell Wall Catchall · Red Orange",
+    "zh": "Swell 波浪掛牆收納 · 橙紅色"
+   },
+   "model": "Swell",
+   "year": {
+    "en": "2022 design, launched by Heller 2023",
+    "zh": "2022 年設計，Heller 於 2023 年推出"
+   },
+   "colour": {
+    "en": "Red Orange",
+    "zh": "橙紅色"
+   },
+   "material": {
+    "en": "Recycled ABS plastic",
+    "zh": "再生 ABS 塑膠"
+   },
+   "description": {
+    "en": "Anna Dawson, a California surfer, shaped Swell after the rhythm of ocean waves. The crests catch coats, bags and caps; the troughs cradle keys and sunglasses. It's the entryway fix for a small flat that also happens to look like a sculpture. Red Orange turns it into a statement: a warm, bright wave that lifts a plain hallway.",
+    "zh": "設計師 Anna Dawson 是加州的滑浪愛好者，Swell 的線條就是海浪的起伏。浪尖可以掛外套、袋和帽，浪谷可以放鎖匙和太陽眼鏡。細單位玄關的收納救星，掛上牆又似一件雕塑。橙紅色令它變成焦點：溫暖鮮明的一道浪，即刻令平淡的走廊生動起來。"
+   },
+   "details": {
+    "en": [
+     "Holds up to 34 kg (75 lb), per Heller",
+     "Wall-mounted, with Heller fixings",
+     "Apartment Therapy Small/Cool Design Award 2024"
+    ],
+    "zh": [
+     "根據 Heller，承重可達 34 kg（75 lb）",
+     "掛牆安裝，配 Heller 配件",
+     "2024 年 Apartment Therapy Small/Cool 設計獎"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 73,
+    "d": 7.6,
+    "h": 35.6,
+    "unit": "cm",
+    "weightKg": 2.3
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "",
+     "zh": ""
+    }
+   },
+   "price": 980,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/TT-HEL-0005/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "Heller Swell wall catchall in Red Orange by Anna Dawson: wave-shaped wall hook and tray",
+    "zh": "Heller Swell 波浪掛牆收納（橙紅色），Anna Dawson 設計：波浪形掛鈎連收納槽"
+   },
+   "storyKey": "anna-dawson"
+  },
+  {
+   "sku": "TT-HEL-0006",
+   "slug": "heller-swell-blue",
+   "featured": false,
+   "dropDate": "2026-09-24",
+   "brand": "Heller",
+   "designer": "Anna Dawson",
+   "name": {
+    "en": "Swell Wall Catchall · Blue",
+    "zh": "Swell 波浪掛牆收納 · 藍色"
+   },
+   "model": "Swell",
+   "year": {
+    "en": "2022 design, launched by Heller 2023",
+    "zh": "2022 年設計，Heller 於 2023 年推出"
+   },
+   "colour": {
+    "en": "Blue",
+    "zh": "藍色"
+   },
+   "material": {
+    "en": "Recycled ABS plastic",
+    "zh": "再生 ABS 塑膠"
+   },
+   "description": {
+    "en": "Anna Dawson, a California surfer, shaped Swell after the rhythm of ocean waves. The crests catch coats, bags and caps; the troughs cradle keys and sunglasses. It's the entryway fix for a small flat that also happens to look like a sculpture. Blue is calm and a little beachy, a nod to the ocean that inspired it, and pairs with the blue Swell Mini.",
+    "zh": "設計師 Anna Dawson 是加州的滑浪愛好者，Swell 的線條就是海浪的起伏。浪尖可以掛外套、袋和帽，浪谷可以放鎖匙和太陽眼鏡。細單位玄關的收納救星，掛上牆又似一件雕塑。藍色清爽帶點海灘感，呼應啟發它的海浪，亦可以配藍色 Swell Mini。"
+   },
+   "details": {
+    "en": [
+     "Holds up to 34 kg (75 lb), per Heller",
+     "Wall-mounted, with Heller fixings",
+     "Apartment Therapy Small/Cool Design Award 2024"
+    ],
+    "zh": [
+     "根據 Heller，承重可達 34 kg（75 lb）",
+     "掛牆安裝，配 Heller 配件",
+     "2024 年 Apartment Therapy Small/Cool 設計獎"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 73,
+    "d": 7.6,
+    "h": 35.6,
+    "unit": "cm",
+    "weightKg": 2.3
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "",
+     "zh": ""
+    }
+   },
+   "price": 980,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/TT-HEL-0006/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "Heller Swell wall catchall in Blue by Anna Dawson: wave-shaped wall hook and tray",
+    "zh": "Heller Swell 波浪掛牆收納（藍色），Anna Dawson 設計：波浪形掛鈎連收納槽"
+   },
+   "storyKey": "anna-dawson"
+  }
+ ]
+}
