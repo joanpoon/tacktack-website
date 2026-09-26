@@ -59,7 +59,6 @@ window.TT_STRINGS = {
     soldEmpty: "Nothing in the archive yet: every piece is still looking for its home.",
     photoNote: "Illustration only. Real photos are coming soon; WhatsApp us and we'll send some today.",
     notFound: "We couldn't find that piece. It may have been renamed or removed.",
-    dropTitle: d => "Fresh Thursday · " + d,
     by: "by", for_: "for"
   },
   zh: {
@@ -120,7 +119,6 @@ window.TT_STRINGS = {
     soldEmpty: "已售出區暫時未有貨品，每件都仲等緊新主人。",
     photoNote: "此為示意插圖，實物相片即將上載；WhatsApp 我們即可索取相片。",
     notFound: "搵唔到這件貨品，可能已改名或下架。",
-    dropTitle: d => "Fresh Thursday 新貨 · " + d,
     by: "設計：", for_: "品牌："
   }
 };

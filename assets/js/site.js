@@ -21,11 +21,6 @@
   function todayHK() { try { return new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Hong_Kong" }).format(new Date()); } catch (e) { return new Date().toISOString().slice(0, 10); } }
   var TODAY = todayHK();
   function daysBetween(a, b) { return Math.round((Date.parse(b) - Date.parse(a)) / 86400000); }
-  function fmtDate(iso) {
-    var d = new Date(iso + "T12:00:00+08:00");
-    if (lang === "zh") return (d.getMonth() + 1) + "月" + d.getDate() + "日（" + "日一二三四五六"[d.getDay()] + "）";
-    return "SunMonTueWedThuFriSat".substr(d.getDay() * 3, 3) + " " + d.getDate() + " " + "JanFebMarAprMayJunJulAugSepOctNovDec".substr(d.getMonth() * 3, 3);
-  }
   function slugify(s) { return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, ""); }
   function hash(s) { var h = 5381; for (var i = 0; i < s.length; i++) h = (h * 33 + s.charCodeAt(i)) >>> 0; return String(h); }
 
@@ -122,9 +117,7 @@
     var drop = active.filter(isNew).sort(function (a, b) { return (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || byNewest(a, b); });
     if (!drop.length) drop = active.slice().sort(byNewest);
     grid($("#drop-grid"), drop.slice(0, 8), true);
-    var latest = drop[0] && drop[0].dropDate;
-    var dt = $("#drop-date"), dtx = latest && T().dropTitle(fmtDate(latest));
-    if (dt && dtx && dt.textContent !== dtx) dt.textContent = dtx;
+    // #drop-date is fixed text ("New pieces every Thursday"), pre-rendered per language: nothing to update here
 
     $$("[data-cat-count]").forEach(function (el) {
       var k = el.getAttribute("data-cat-count"), n = active.filter(function (p) { return p.category === k; }).length;
