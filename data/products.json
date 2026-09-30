@@ -265,19 +265,22 @@
    ],
    "photos": [
     "/assets/products/TT-NOG-0001/1.jpg",
-    "/assets/products/TT-NOG-0001/2.jpg"
+    "/assets/products/TT-NOG-0001/2.jpg",
+    "/assets/products/TT-NOG-0001/3.jpg"
    ],
    "photoAlt": {
-    "en": "Isamu Noguchi AKARI 55D pendant lamp: round natural white washi paper shade on bamboo ribbing, 55 cm across",
-    "zh": "野口勇 AKARI 55D 和紙吊燈：原色白和紙配竹骨圓形燈罩，直徑 55 cm"
+    "en": "Isamu Noguchi AKARI 55D pendant lamp, lit, hanging over a room lined with wooden shelves: round natural white washi shade on bamboo ribbing, 55 cm across",
+    "zh": "野口勇 AKARI 55D 和紙吊燈亮燈，掛在木書架環繞的房間：原色白和紙配竹骨圓形燈罩，直徑 55 cm"
    },
    "photoAlts": {
     "en": [
-     "Isamu Noguchi AKARI 55D pendant lamp: round natural white washi paper shade on bamboo ribbing, 55 cm across",
+     "Isamu Noguchi AKARI 55D pendant lamp, lit, hanging over a room lined with wooden shelves: round natural white washi shade on bamboo ribbing, 55 cm across",
+     "The AKARI 55D glowing in a warm living room with an armchair and bookshelves",
      "The AKARI 55D pendant lit against a dark background, glowing warm through the washi paper"
     ],
     "zh": [
-     "野口勇 AKARI 55D 和紙吊燈：原色白和紙配竹骨圓形燈罩，直徑 55 cm",
+     "野口勇 AKARI 55D 和紙吊燈亮燈，掛在木書架環繞的房間：原色白和紙配竹骨圓形燈罩，直徑 55 cm",
+     "AKARI 55D 在溫暖的客廳亮燈，旁邊有扶手椅及書架",
      "AKARI 55D 吊燈亮燈，暖光透過和紙，深色背景"
     ]
    },
@@ -285,16 +288,19 @@
   },
   {
    "sku": "TT-NOG-0002",
-   "slug": "akari-33a",
+   "slug": "akari-30a",
+   "oldSlugs": [
+    "akari-33a"
+   ],
    "featured": false,
    "dropDate": "2026-09-24",
    "brand": "AKARI",
    "designer": "Isamu Noguchi",
    "name": {
-    "en": "AKARI 33A Pendant",
-    "zh": "AKARI 33A 吊燈"
+    "en": "AKARI 30A Pendant",
+    "zh": "AKARI 30A 吊燈"
    },
-   "model": "33A",
+   "model": "30A",
    "year": {
     "en": "1951 (AKARI series)",
     "zh": "1951 年（AKARI 系列）"
@@ -325,7 +331,7 @@
    },
    "category": "lighting",
    "dimensions": {
-    "dia": 33,
+    "dia": 30,
     "unit": "cm"
    },
    "condition": {
@@ -342,11 +348,28 @@
     "cordNotIncluded"
    ],
    "photos": [
-    "/assets/products/TT-NOG-0002/1.jpg"
+    "/assets/products/TT-NOG-0002/1.jpg",
+    "/assets/products/TT-NOG-0002/2.jpg",
+    "/assets/products/TT-NOG-0002/3.jpg",
+    "/assets/products/TT-NOG-0002/4.jpg"
    ],
    "photoAlt": {
-    "en": "Isamu Noguchi AKARI 33A pendant lamp, lit: round natural white washi paper shade on bamboo ribbing, 33 cm across",
-    "zh": "野口勇 AKARI 33A 和紙吊燈（亮燈）：原色白和紙配竹骨圓形燈罩，直徑 33 cm"
+    "en": "Isamu Noguchi AKARI 30A pendant lamp, lit, under timber beams beside a dark chalkboard wall: round natural white washi shade on bamboo ribbing, 30 cm across",
+    "zh": "野口勇 AKARI 30A 和紙吊燈亮燈，掛在木樑下、深色黑板牆旁：原色白和紙配竹骨圓形燈罩，直徑 30 cm"
+   },
+   "photoAlts": {
+    "en": [
+     "Isamu Noguchi AKARI 30A pendant lamp, lit, under timber beams beside a dark chalkboard wall: round natural white washi shade on bamboo ribbing, 30 cm across",
+     "Close view of the AKARI 30A shade hanging in front of a sunlit curtained window",
+     "The AKARI 30A glowing in a dark, high-ceilinged loft",
+     "The AKARI 30A pendant lit against a grey wall, showing the bamboo ribbing through the washi"
+    ],
+    "zh": [
+     "野口勇 AKARI 30A 和紙吊燈亮燈，掛在木樑下、深色黑板牆旁：原色白和紙配竹骨圓形燈罩，直徑 30 cm",
+     "AKARI 30A 燈罩近照，後面是陽光透入的窗簾",
+     "AKARI 30A 在樓底高的昏暗閣樓亮燈",
+     "AKARI 30A 吊燈亮燈，灰色牆前，可見和紙下的竹骨"
+    ]
    },
    "storyKey": "isamu-noguchi"
   },
@@ -413,20 +436,29 @@
    "photos": [
     "/assets/products/TT-NOG-0003/1.jpg",
     "/assets/products/TT-NOG-0003/2.jpg",
-    "/assets/products/TT-NOG-0003/3.jpg"
+    "/assets/products/TT-NOG-0003/3.jpg",
+    "/assets/products/TT-NOG-0003/4.jpg",
+    "/assets/products/TT-NOG-0003/5.jpg",
+    "/assets/products/TT-NOG-0003/6.jpg"
    ],
    "photoAlt": {
-    "en": "Isamu Noguchi AKARI 45D pendant lamp: round natural white washi paper shade on bamboo ribbing, 45 cm across",
-    "zh": "野口勇 AKARI 45D 和紙吊燈：原色白和紙配竹骨圓形燈罩，直徑 45 cm"
+    "en": "Isamu Noguchi AKARI 45D pendant lamp, lit, in a living room with a sofa, plant and bookcase: round natural white washi shade on bamboo ribbing, 45 cm across",
+    "zh": "野口勇 AKARI 45D 和紙吊燈亮燈，掛在有梳化、植物及書櫃的客廳：原色白和紙配竹骨圓形燈罩，直徑 45 cm"
    },
    "photoAlts": {
     "en": [
-     "Isamu Noguchi AKARI 45D pendant lamp: round natural white washi paper shade on bamboo ribbing, 45 cm across",
+     "Isamu Noguchi AKARI 45D pendant lamp, lit, in a living room with a sofa, plant and bookcase: round natural white washi shade on bamboo ribbing, 45 cm across",
+     "The AKARI 45D glowing above a black dining table in a pale, curved room",
+     "The AKARI 45D hanging in an attic bedroom under skylights",
+     "The AKARI 45D pendant against a dark brown background, unlit",
      "The AKARI 45D pendant lit against a dark background, glowing warm through the washi paper",
      "The AKARI 45D paper shade lit under dark timber ceiling beams"
     ],
     "zh": [
-     "野口勇 AKARI 45D 和紙吊燈：原色白和紙配竹骨圓形燈罩，直徑 45 cm",
+     "野口勇 AKARI 45D 和紙吊燈亮燈，掛在有梳化、植物及書櫃的客廳：原色白和紙配竹骨圓形燈罩，直徑 45 cm",
+     "AKARI 45D 在淺色弧形房間的黑色餐桌上方亮燈",
+     "AKARI 45D 和紙吊燈掛在有天窗的斜頂閣樓睡房",
+     "AKARI 45D 吊燈（未亮燈），深啡色背景",
      "AKARI 45D 吊燈亮燈，暖光透過和紙，深色背景",
      "AKARI 45D 和紙燈罩亮燈，掛在深色木樑下"
     ]
