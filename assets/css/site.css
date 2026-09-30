@@ -275,6 +275,9 @@ html[data-lang="zh"] .badge { letter-spacing: .06em; font-size: .72rem; }
 .thumbs button[aria-current="true"] { border-color: var(--walnut); }
 .thumbs img { width: 100%; height: 100%; object-fit: cover; }
 .install-note { margin-top: 8px; }
+.notices { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 8px; }
+.notices li { padding: 10px 14px; border-radius: 10px; background: var(--paper); border: 1px solid var(--line); font-size: .92rem; line-height: 1.5; }
+.page-head .notices { max-width: 60ch; }
 .photo-note { font-size: .8rem; color: var(--muted); margin-top: 10px; }
 .pdp-info h1 { font-size: clamp(1.9rem, 3.6vw, 2.8rem); margin: .25em 0 .35em; }
 .pdp-price { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; font-size: 1.6rem; font-weight: 600; margin: 14px 0 6px; }

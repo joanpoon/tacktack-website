@@ -31,7 +31,7 @@ window.TT_STRINGS = {
       full: p => "Under HK$1,500: reserve by paying in full (" + p + "). Pick up or arrange delivery within 7 days.",
       dep30: (d, p) => "30% deposit (" + d + ") holds it for up to 7 days. Balance before pickup or delivery.",
       dep20: (d, p) => "20% deposit (" + d + ") holds it for up to 14 days. Balance before pickup or delivery.",
-      pay: "FPS · PayMe · Bank transfer · Cash. Messages and likes don't hold items: first paid, first served.",
+      pay: "FPS · PayMe · Bank transfer · Cash · PayPal (for overseas buyers). Messages and likes don't hold items: first paid, first served.",
       more: "Full holds & deposits policy"
     },
     wa: {
@@ -49,6 +49,7 @@ window.TT_STRINGS = {
     alsoLike: "You might also like",
     shopAll: "Shop all",
     home: "Home", shop: "Shop", crumbs: "Breadcrumb", fulfilMore: "Delivery & pickup details",
+    notices: { cordNotIncluded: "Cord not included. Cord add-on or installation service available. WhatsApp us for a quote.", moreColours: "More colourways available to order. Coming soon." },
     install: "Installation service available. Ask us for details.", gallery: "Product photos", photoN: function (i, n) { return "Photo " + i + " of " + n; }, photoMore: function (i) { return " (photo " + i + ")"; },
     filters: { category: "Category", brand: "Brand / designer", status: "Availability", price: "Price", sort: "Sort", reset: "Clear filters" },
     status: { active: "Available & on hold", available: "Available now", "on-hold": "On hold", sold: "Sold", all: "Everything" },
@@ -92,7 +93,7 @@ window.TT_STRINGS = {
       full: p => "HK$1,500 以下貨品須全數付款（" + p + "）方可確認，並於 7 天內自取或安排送貨。",
       dep30: (d, p) => "付 30% 訂金（" + d + "）可留貨最多 7 天，餘款須於自取或送貨前付清。",
       dep20: (d, p) => "付 20% 訂金（" + d + "）可留貨最多 14 天，餘款須於自取或送貨前付清。",
-      pay: "接受 FPS 轉數快、PayMe、銀行轉帳及現金。私訊及讚好不代表留貨，先付先得。",
+      pay: "接受 FPS 轉數快、PayMe、銀行轉帳、現金及 PayPal（海外買家）。私訊及讚好不代表留貨，先付先得。",
       more: "查看完整留貨及訂金安排"
     },
     wa: {
@@ -110,6 +111,7 @@ window.TT_STRINGS = {
     alsoLike: "你可能也喜歡",
     shopAll: "查看全部",
     home: "主頁", shop: "選購", crumbs: "導覽路徑", fulfilMore: "送貨及自取詳情",
+    notices: { cordNotIncluded: "不包電線。可加購電線或安排安裝服務，歡迎WhatsApp查詢報價。", moreColours: "更多顏色可訂購，即將推出。" },
     install: "提供安裝服務，歡迎查詢詳情。", gallery: "產品相片", photoN: function (i, n) { return "第 " + i + " 張相片（共 " + n + " 張）"; }, photoMore: function (i) { return "（相片 " + i + "）"; },
     filters: { category: "類別", brand: "品牌／設計師", status: "供應狀況", price: "價錢", sort: "排序", reset: "清除篩選" },
     status: { active: "有貨及已留貨", available: "現貨", "on-hold": "已留貨", sold: "已售出", all: "全部" },

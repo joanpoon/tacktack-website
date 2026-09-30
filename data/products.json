@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-27",
+ "updated": "2026-09-30",
  "stories": {
   "isamu-noguchi": {
    "title": {
@@ -260,6 +260,9 @@
    "price": 2080,
    "status": "available",
    "fulfilment": "both",
+   "notices": [
+    "cordNotIncluded"
+   ],
    "photos": [
     "/assets/products/TT-NOG-0001/1.jpg",
     "/assets/products/TT-NOG-0001/2.jpg"
@@ -335,6 +338,9 @@
    "price": 1680,
    "status": "available",
    "fulfilment": "both",
+   "notices": [
+    "cordNotIncluded"
+   ],
    "photos": [
     "/assets/products/TT-NOG-0002/1.jpg"
    ],
@@ -401,6 +407,9 @@
    "price": 1780,
    "status": "available",
    "fulfilment": "both",
+   "notices": [
+    "cordNotIncluded"
+   ],
    "photos": [
     "/assets/products/TT-NOG-0003/1.jpg",
     "/assets/products/TT-NOG-0003/2.jpg",
@@ -482,6 +491,9 @@
    "price": 980,
    "status": "available",
    "fulfilment": "both",
+   "notices": [
+    "moreColours"
+   ],
    "photos": [
     "/assets/products/TT-HEL-0001/1.jpg",
     "/assets/products/TT-HEL-0001/2.jpg",
@@ -563,6 +575,9 @@
    "price": 280,
    "status": "available",
    "fulfilment": "both",
+   "notices": [
+    "moreColours"
+   ],
    "photos": [
     "/assets/products/TT-HEL-0002/1.jpg",
     "/assets/products/TT-HEL-0002/2.jpg",
@@ -647,6 +662,9 @@
    "price": 280,
    "status": "available",
    "fulfilment": "both",
+   "notices": [
+    "moreColours"
+   ],
    "photos": [
     "/assets/products/TT-HEL-0003/1.jpg",
     "/assets/products/TT-HEL-0003/2.jpg"
@@ -725,6 +743,9 @@
    "price": 280,
    "status": "available",
    "fulfilment": "both",
+   "notices": [
+    "moreColours"
+   ],
    "photos": [
     "/assets/products/TT-HEL-0004/1.jpg",
     "/assets/products/TT-HEL-0004/2.jpg"
@@ -803,6 +824,9 @@
    "price": 980,
    "status": "available",
    "fulfilment": "both",
+   "notices": [
+    "moreColours"
+   ],
    "photos": [
     "/assets/products/TT-HEL-0005/1.jpg",
     "/assets/products/TT-HEL-0005/2.jpg",
@@ -884,6 +908,9 @@
    "price": 980,
    "status": "available",
    "fulfilment": "both",
+   "notices": [
+    "moreColours"
+   ],
    "photos": [
     "/assets/products/TT-HEL-0006/1.jpg",
     "/assets/products/TT-HEL-0006/2.jpg",
