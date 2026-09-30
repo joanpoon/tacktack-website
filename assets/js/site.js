@@ -77,6 +77,29 @@
   function url(p) { return lp("/item/" + p.slug + "/"); }
   function alt(p) { return isPlaceholder(photo(p)) ? L(p.name) + (lang === "zh" ? "（示意插圖）" : " (illustration)") : (L(p.photoAlt) || L(p.name)); }
   function isPlaceholder(src) { return /placeholder-\d/.test(src); }
+  var CARD_SIZES = "(min-width: 1100px) 300px, (min-width: 760px) 31vw, 48vw", GALLERY_SIZES = "(min-width: 900px) 52vw, 100vw";
+  function srcset(src, sizes) {   // same as srcset() in build-pages.py
+    var m = /^(\/assets\/products\/[^\/]+\/)([^\/]+\.jpg)$/.exec(src || "");
+    return m ? ' srcset="' + m[1] + "m/" + m[2] + " 600w, " + src + ' 1200w" sizes="' + sizes + '"' : "";
+  }
+  function heroPhoto(p) { var ph = p.photos || [], n = p.heroPhoto || 1; return n > 0 && n <= ph.length ? ph[n - 1] : photo(p); }   // same as hero_photo()
+  function sizeCm(p) { var d = p.dimensions || {}; return p.category === "lighting" ? (d.dia || d.w || 0) : 0; }   // round shades only, same as size_cm()
+  function sizeRow(p, current) {   // same as size_row() in build-pages.py
+    var same = PRODUCTS.filter(function (x) { return x.brand === p.brand && x.model && sizeCm(x) && state(x).st !== "sold"; })
+      .sort(function (a, b) { return sizeCm(a) - sizeCm(b) || (a.sku < b.sku ? -1 : a.sku > b.sku ? 1 : 0); });
+    var uniq = same.map(sizeCm).filter(function (v, i, arr) { return arr.indexOf(v) === i; });
+    if (uniq.length < 2) return "";
+    var big = Math.max.apply(null, uniq);
+    return '<div class="sg-row">' + same.map(function (x) {
+      return '<a class="sg-item" href="' + url(x) + '"' + (current && x.sku === current.sku ? ' aria-current="page"' : "") + '><span class="sg-shade" style="width:' + Math.round(100 * sizeCm(x) / big) + '%" aria-hidden="true"></span>' +
+        "<strong>" + esc(x.model) + "</strong><span>Ø" + sizeCm(x) + ' cm</span><span class="sg-price">' + money(x.price) + "</span></a>";
+    }).join("") + "</div>";
+  }
+  function pdpTrust(p) {   // same as pdp_trust() in build-pages.py
+    var tr = T().trust, g = (p.condition || {}).grade; if (g === "open-box") g = "brand-new";
+    var items = (g === "brand-new" ? [tr.neu] : []).concat([tr.genuine, tr.pickup, tr.photos]);
+    return '<ul class="pdp-trust">' + items.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>";
+  }
   function altN(p, i) {   // same as alt_n() in build-pages.py: alt text for photo i
     if (!i) return alt(p);
     var lst = (p.photoAlts && p.photoAlts[lang]) || [];
@@ -89,9 +112,9 @@
   }
   function gallery(p, photos) {   // same markup as gallery() in build-pages.py
     var t = T(), n = photos.length;
-    if (n === 1) return '<div class="gallery-main"><img id="main-photo" src="' + esc(photos[0]) + '" alt="' + esc(alt(p)) + '" width="800" height="1000" fetchpriority="high"></div>';
+    if (n === 1) return '<div class="gallery-main"><img id="main-photo" src="' + esc(photos[0]) + '"' + srcset(photos[0], GALLERY_SIZES) + ' alt="' + esc(alt(p)) + '" width="800" height="1000" fetchpriority="high"></div>';
     var slides = photos.map(function (ph, i) {
-      return "<img" + (i === 0 ? ' id="main-photo"' : "") + ' src="' + esc(ph) + '" alt="' + esc(altN(p, i)) + '" width="800" height="1000"' + (i === 0 ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"') + ">";
+      return "<img" + (i === 0 ? ' id="main-photo"' : "") + ' src="' + esc(ph) + '"' + srcset(ph, GALLERY_SIZES) + ' alt="' + esc(altN(p, i)) + '" width="800" height="1000"' + (i === 0 ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"') + ">";
     }).join("");
     return '<div class="gallery"><div class="gallery-main gallery-track" id="gallery" tabindex="0" role="region" aria-label="' + esc(t.gallery) + '">' + slides +
       '</div><span class="gallery-count" aria-hidden="true">1 / ' + n + "</span></div>" +
@@ -103,8 +126,8 @@
   function card(p, eager) {
     var s = state(p);
     return '<article class="card' + (s.st === "sold" ? " is-sold" : "") + '"><a href="' + url(p) + '">' +
-      '<div class="card-media"><img src="' + esc(photo(p)) + '" alt="' + esc(alt(p)) + '" width="800" height="1000"' + (eager ? "" : ' loading="lazy"') + ' decoding="async">' + badges(p) + "</div>" +
-      '<div class="card-body"><p class="card-kicker">' + esc(kicker(p)) + '</p><h3 class="card-title">' + esc(L(p.name)) + "</h3>" +
+      '<div class="card-media"><img src="' + esc(photo(p)) + '"' + srcset(photo(p), CARD_SIZES) + ' alt="' + esc(alt(p)) + '" width="800" height="1000"' + (eager ? "" : ' loading="lazy"') + ' decoding="async">' + badges(p) + "</div>" +
+      '<div class="card-body"><p class="card-kicker">' + esc(kicker(p)) + '</p><h3 class="card-title">' + esc(L(p.name)) + "</h3>" + (dims(p) ? '<p class="card-meta">' + esc(dims(p)) + "</p>" : "") +
       '<p class="card-price"><span>' + money(p.price) + "</span>" + (p.retailPrice ? '<span class="retail">' + esc(T().retail(money(p.retailPrice))) + "</span>" : "") + "</p></div></a></article>";
   }
   /* sig(): a fingerprint of what a grid shows. The build writes the same value into data-sig, so a pre-rendered grid is
@@ -163,8 +186,9 @@
     [["#shot-a", a], ["#shot-b", b]].forEach(function (x) {
       var el = $(x[0]), p = x[1]; if (!el || !p) return;
       var link = $("a", el), img = $("img", el);
-      if (link && img && link.getAttribute("href") === url(p) && img.getAttribute("src") === photo(p)) return;   // pre-rendered and still right
-      el.innerHTML = '<a href="' + url(p) + '"><img src="' + esc(photo(p)) + '" alt="' + esc(alt(p)) + '" width="800" height="1000" fetchpriority="high"></a>';
+      var hp = heroPhoto(p), hi = (p.photos || []).indexOf(hp);
+      if (link && img && link.getAttribute("href") === url(p) && img.getAttribute("src") === hp) return;   // pre-rendered and still right
+      el.innerHTML = '<a href="' + url(p) + '"><img src="' + esc(hp) + '"' + srcset(hp, "(min-width: 900px) 30vw, 62vw") + ' alt="' + esc(altN(p, hi > 0 ? hi : 0)) + '" width="800" height="1000" fetchpriority="high"></a>';
     });
     var tag = $("#hero-tag");
     if (tag && a) { if (tag.getAttribute("href") !== url(a)) tag.setAttribute("href", url(a)); setHTML(tag, '<span class="dot"></span>' + esc(T().badge.neu) + " · " + esc(L(a.name))); }
@@ -311,6 +335,7 @@
           '<p class="pdp-lede">' + esc(L(p.description)) + "</p>" +
           notices(p.notices) +
           '<div class="cta-row" id="main-cta"><a class="btn" href="' + cta.href + '" target="_blank" rel="noopener">' + WA_ICON + esc(cta.label) + '</a><button type="button" class="btn btn-ghost share-btn" id="share" aria-label="' + esc(t.share) + '">' + SHARE_ICON + "</button></div>" +
+          pdpTrust(p) +
           '<p class="fine">' + esc(t.policy.pay) + "</p>" +
           '<section class="block"><h2>' + esc(t.labels.condition) + '</h2><div class="grade-row"><span>' + esc(gi >= 0 ? G[grade][0] : t.gradeTbc) + '</span><span class="tip"><button type="button" class="tip-btn" aria-expanded="false" aria-controls="grade-pop" aria-label="' + esc(t.gradeHelp) + '">?</button>' +
             '<span class="tip-pop" id="grade-pop" role="tooltip" hidden><strong>' + esc(t.scaleTitle) + "</strong><ol>" + gkeys.map(function (k, i) { return '<li class="' + (i === gi ? "on" : "") + '"><b>' + esc(G[k][0]) + "</b>: " + esc(G[k][1]) + "</li>"; }).join("") + "</ol></span></span></div>" +
@@ -318,6 +343,7 @@
             '<p class="fine" style="margin-top:10px">' + esc(gi >= 0 ? (notes || G[grade][1]) : t.gradeTbcNote) + "</p></section>" +
           '<section class="block"><h2>' + esc(t.labels.specs) + '</h2><dl class="specs">' + specs.map(function (r) { return "<dt>" + esc(r[0]) + "</dt><dd>" + (r[2] ? '<a href="' + r[2] + '">' + esc(r[1]) + "</a>" : esc(r[1])) + "</dd>"; }).join("") + "</dl></section>" +
           (details.length ? '<section class="block"><h2>' + esc(t.labels.details) + '</h2><ul class="ticks">' + details.map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul></section>" : "") +
+          (sizeRow(p, p) ? '<section class="block size-block"><h2>' + esc(t.sizeTitle(p.brand || "")) + "</h2>" + sizeRow(p, p) + '<p class="fine">' + esc(t.sizeNote) + "</p></section>" : "") +
           '<section class="block"><h2>' + esc(t.labels.fulfilment) + "</h2><p>" + esc(t.fulfil[p.fulfilment] || t.fulfil.both) + ' <a href="' + lp("/delivery/") + '">' + esc(t.fulfilMore) + '</a></p><p class="install-note">' + esc(t.install) + "</p></section>" +
           '<section class="block"><h2>' + esc(t.labels.policy) + '</h2><p id="policy-text">' + esc(policyText(p)) + '</p><p><a class="text-link" href="' + lp("/how-to-buy/") + '">' + esc(t.policy.more) + " →</a></p></section>" +
         "</div>" +
