@@ -9,5 +9,6 @@ window.TT_CONFIG = {
   BRAND: "Tack, tack!",
   NEW_DAYS: 7,                           // NEW THIS WEEK shows from a drop until the next weekly drop (7 days)
   DROP_HOUR: 20,                         // drops go out at 8pm HKT on their dropDate; the badge starts then
-  MIN_CATEGORY_PIECES: 2                 // a category is hidden (footer, home, shop filters, sitemap) until it has this many live pieces
+  MIN_CATEGORY_PIECES: 2,                // a category is hidden (footer, home, shop filters, sitemap) until it has this many live pieces
+  INDEXNOW_KEY: "68b250cd11ee16e6fde79971e4be4949" // public IndexNow key (Bing, Yandex…): served as /<key>.txt; scripts/indexnow.py pings after a deploy
 };

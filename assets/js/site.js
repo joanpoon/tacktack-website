@@ -50,9 +50,9 @@
   function pageUrl(p) { return C.SITE_URL + lp("/item/" + p.slug + "/"); }
   function waFor(p) {
     var st = state(p).st, w = T().wa, name = L(p.name);
-    if (st === "sold") return { href: wa(w.msgSold(name, p.sku, pageUrl(p))), label: w.askSold };
-    if (st === "on-hold") return { href: wa(w.msgHold(name, p.sku, pageUrl(p))), label: w.askHold };
-    return { href: wa(w.msg(name, p.sku, pageUrl(p))), label: w.ask };
+    if (st === "sold") return { href: wa(w.msgSold(name, pageUrl(p))), label: w.askSold };
+    if (st === "on-hold") return { href: wa(w.msgHold(name, pageUrl(p))), label: w.askHold };
+    return { href: wa(w.msg(name, pageUrl(p))), label: w.ask };
   }
   var WA_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>';
   var SHARE_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>';
@@ -103,12 +103,12 @@
   function sizeCm(p) { var d = p.dimensions || {}; return p.category === "lighting" ? (d.dia || d.w || 0) : 0; }   // round shades only, same as size_cm()
   function sizeRow(p, current) {   // same as size_row() in build-pages.py
     var same = PRODUCTS.filter(function (x) { return x.brand === p.brand && x.model && sizeCm(x) && state(x).st !== "sold"; })
-      .sort(function (a, b) { return sizeCm(a) - sizeCm(b) || (a.sku < b.sku ? -1 : a.sku > b.sku ? 1 : 0); });
+      .sort(function (a, b) { return sizeCm(a) - sizeCm(b) || (a.slug < b.slug ? -1 : a.slug > b.slug ? 1 : 0); });
     var uniq = same.map(sizeCm).filter(function (v, i, arr) { return arr.indexOf(v) === i; });
     if (uniq.length < 2) return "";
     var big = Math.max.apply(null, uniq);
     return '<div class="sg-row">' + same.map(function (x) {
-      return '<a class="sg-item" href="' + url(x) + '"' + (current && x.sku === current.sku ? ' aria-current="page"' : "") + '><span class="sg-shade" style="width:' + Math.round(100 * sizeCm(x) / big) + '%" aria-hidden="true"></span>' +
+      return '<a class="sg-item" href="' + url(x) + '"' + (current && x.slug === current.slug ? ' aria-current="page"' : "") + '><span class="sg-shade" style="width:' + Math.round(100 * sizeCm(x) / big) + '%" aria-hidden="true"></span>' +
         "<strong>" + esc(x.model) + "</strong><span>Ø" + sizeCm(x) + ' cm</span><span class="sg-price">' + money(x.price) + "</span></a>";
     }).join("") + "</div>";
   }
@@ -150,7 +150,7 @@
   /* sig(): a fingerprint of what a grid shows. The build writes the same value into data-sig, so a pre-rendered grid is
      only re-drawn when products.json (or the date, for NEW THIS WEEK) has changed since the last build. */
   function sig(list) {
-    return hash(list.map(function (p) { var s = state(p); return [p.sku, s.st, isNew(p) ? 1 : 0, p.price || 0, p.retailPrice ? p.retailPrice : "", L(p.name), photo(p)].join(":"); }).join("|"));
+    return hash(list.map(function (p) { var s = state(p); return [p.slug, s.st, isNew(p) ? 1 : 0, p.price || 0, p.retailPrice ? p.retailPrice : "", L(p.name), photo(p)].join(":"); }).join("|"));
   }
   function grid(el, list, eager) {
     if (!el) return;
@@ -308,8 +308,8 @@
 
   /* ---------------- product ---------------- */
   function findProduct() {
-    var q = new URLSearchParams(location.search), slug = document.body.getAttribute("data-slug") || q.get("slug"), sku = q.get("sku");
-    return ALL.filter(function (p) { return (slug && p.slug === slug) || (sku && p.sku === sku); })[0] ||
+    var q = new URLSearchParams(location.search), slug = document.body.getAttribute("data-slug") || q.get("slug");
+    return ALL.filter(function (p) { return slug && p.slug === slug; })[0] ||
       ALL.filter(function (p) { return slug && (p.oldSlugs || []).indexOf(slug) >= 0; })[0];   // renamed items: old links still work
   }
   function dims(p) {
@@ -325,8 +325,8 @@
     return t.dep20(money(Math.max(3000, Math.ceil(price * 0.2))), money(price));
   }
   function related(p) {
-    var same = PRODUCTS.filter(function (x) { return x.sku !== p.sku && (x.brand === p.brand || x.designer === p.designer) && state(x).st !== "sold"; });
-    var more = same.concat(PRODUCTS.filter(function (x) { return x.sku !== p.sku && same.indexOf(x) < 0 && state(x).st !== "sold"; })).slice(0, 4);
+    var same = PRODUCTS.filter(function (x) { return x.slug !== p.slug && (x.brand === p.brand || x.designer === p.designer) && state(x).st !== "sold"; });
+    var more = same.concat(PRODUCTS.filter(function (x) { return x.slug !== p.slug && same.indexOf(x) < 0 && state(x).st !== "sold"; })).slice(0, 4);
     return { same: same, more: more };
   }
   function productMarkup(p) {   // same markup as product_markup() in scripts/build-pages.py
@@ -337,7 +337,7 @@
     var specs = [
       [t.labels.designer, p.designer], [t.labels.brand, p.brand, p.brand ? brandUrl(p.brand) : ""], [t.labels.model, p.model], [t.labels.year, L(p.year)],
       [t.labels.colour, L(p.colour)], [t.labels.material, L(p.material)], [t.labels.dims, dims(p) || t.dimsTbc],
-      [t.labels.weight, p.dimensions && p.dimensions.weightKg ? "≈ " + p.dimensions.weightKg + " kg" : ""], [t.labels.sku, p.sku]
+      [t.labels.weight, p.dimensions && p.dimensions.weightKg ? "≈ " + p.dimensions.weightKg + " kg" : ""]
     ].filter(function (r) { return r[1]; });
     var photos = (p.photos && p.photos.length ? p.photos : [photo(p)]);
     var story = DATA.stories && DATA.stories[p.storyKey || ""];
