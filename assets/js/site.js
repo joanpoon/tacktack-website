@@ -83,6 +83,10 @@
     return lst[i] || (alt(p) + T().photoMore(i + 1));
   }
   function thumb(src) { return String(src).replace(/^(\/assets\/products\/[^\/]+\/)([^\/]+\.jpg)$/, "$1t/$2"); }   // same as thumb() in build-pages.py
+  function notices(keys) {   // same as notices() in build-pages.py
+    var N = T().notices; keys = (keys || []).filter(function (k) { return N[k]; });
+    return keys.length ? '<ul class="notices">' + keys.map(function (k) { return '<li data-notice="' + esc(k) + '">' + esc(N[k]) + "</li>"; }).join("") + "</ul>" : "";
+  }
   function gallery(p, photos) {   // same markup as gallery() in build-pages.py
     var t = T(), n = photos.length;
     if (n === 1) return '<div class="gallery-main"><img id="main-photo" src="' + esc(photos[0]) + '" alt="' + esc(alt(p)) + '" width="800" height="1000" fetchpriority="high"></div>';
@@ -305,6 +309,7 @@
           '<div class="pdp-price"><span>' + money(p.price) + "</span>" + (p.retailPrice ? '<span class="retail">' + esc(t.retail(money(p.retailPrice))) + "</span>" : "") + "</div>" +
           '<p class="pdp-stock">' + esc(stockLine) + "</p>" +
           '<p class="pdp-lede">' + esc(L(p.description)) + "</p>" +
+          notices(p.notices) +
           '<div class="cta-row" id="main-cta"><a class="btn" href="' + cta.href + '" target="_blank" rel="noopener">' + WA_ICON + esc(cta.label) + '</a><button type="button" class="btn btn-ghost share-btn" id="share" aria-label="' + esc(t.share) + '">' + SHARE_ICON + "</button></div>" +
           '<p class="fine">' + esc(t.policy.pay) + "</p>" +
           '<section class="block"><h2>' + esc(t.labels.condition) + '</h2><div class="grade-row"><span>' + esc(gi >= 0 ? G[grade][0] : t.gradeTbc) + '</span><span class="tip"><button type="button" class="tip-btn" aria-expanded="false" aria-controls="grade-pop" aria-label="' + esc(t.gradeHelp) + '">?</button>' +
