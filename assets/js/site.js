@@ -21,11 +21,6 @@
   function todayHK() { try { return new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Hong_Kong" }).format(new Date()); } catch (e) { return new Date().toISOString().slice(0, 10); } }
   var TODAY = todayHK();
   function daysBetween(a, b) { return Math.round((Date.parse(b) - Date.parse(a)) / 86400000); }
-  function fmtDate(iso) {
-    var d = new Date(iso + "T12:00:00+08:00");
-    if (lang === "zh") return (d.getMonth() + 1) + "月" + d.getDate() + "日（" + "日一二三四五六"[d.getDay()] + "）";
-    return "SunMonTueWedThuFriSat".substr(d.getDay() * 3, 3) + " " + d.getDate() + " " + "JanFebMarAprMayJunJulAugSepOctNovDec".substr(d.getMonth() * 3, 3);
-  }
   function slugify(s) { return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, ""); }
   function hash(s) { var h = 5381; for (var i = 0; i < s.length; i++) h = (h * 33 + s.charCodeAt(i)) >>> 0; return String(h); }
 
@@ -82,6 +77,24 @@
   function url(p) { return lp("/item/" + p.slug + "/"); }
   function alt(p) { return isPlaceholder(photo(p)) ? L(p.name) + (lang === "zh" ? "（示意插圖）" : " (illustration)") : (L(p.photoAlt) || L(p.name)); }
   function isPlaceholder(src) { return /placeholder-\d/.test(src); }
+  function altN(p, i) {   // same as alt_n() in build-pages.py: alt text for photo i
+    if (!i) return alt(p);
+    var lst = (p.photoAlts && p.photoAlts[lang]) || [];
+    return lst[i] || (alt(p) + T().photoMore(i + 1));
+  }
+  function thumb(src) { return String(src).replace(/^(\/assets\/products\/[^\/]+\/)([^\/]+\.jpg)$/, "$1t/$2"); }   // same as thumb() in build-pages.py
+  function gallery(p, photos) {   // same markup as gallery() in build-pages.py
+    var t = T(), n = photos.length;
+    if (n === 1) return '<div class="gallery-main"><img id="main-photo" src="' + esc(photos[0]) + '" alt="' + esc(alt(p)) + '" width="800" height="1000" fetchpriority="high"></div>';
+    var slides = photos.map(function (ph, i) {
+      return "<img" + (i === 0 ? ' id="main-photo"' : "") + ' src="' + esc(ph) + '" alt="' + esc(altN(p, i)) + '" width="800" height="1000"' + (i === 0 ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"') + ">";
+    }).join("");
+    return '<div class="gallery"><div class="gallery-main gallery-track" id="gallery" tabindex="0" role="region" aria-label="' + esc(t.gallery) + '">' + slides +
+      '</div><span class="gallery-count" aria-hidden="true">1 / ' + n + "</span></div>" +
+      '<div class="thumbs">' + photos.map(function (ph, i) {
+        return '<button type="button" data-slide="' + i + '" aria-current="' + (i === 0) + '" aria-label="' + esc(t.photoN(i + 1, n)) + '"><img src="' + esc(thumb(ph)) + '" alt="" width="80" height="100" decoding="async"></button>';
+      }).join("") + "</div>";
+  }
   function brandUrl(b) { var info = DATA && DATA.brands && DATA.brands[b]; return lp("/brand/" + ((info && info.slug) || slugify(b)) + "/"); }
   function card(p, eager) {
     var s = state(p);
@@ -122,9 +135,7 @@
     var drop = active.filter(isNew).sort(function (a, b) { return (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || byNewest(a, b); });
     if (!drop.length) drop = active.slice().sort(byNewest);
     grid($("#drop-grid"), drop.slice(0, 8), true);
-    var latest = drop[0] && drop[0].dropDate;
-    var dt = $("#drop-date"), dtx = latest && T().dropTitle(fmtDate(latest));
-    if (dt && dtx && dt.textContent !== dtx) dt.textContent = dtx;
+    // #drop-date is fixed text ("New pieces every Thursday"), pre-rendered per language: nothing to update here
 
     $$("[data-cat-count]").forEach(function (el) {
       var k = el.getAttribute("data-cat-count"), n = active.filter(function (p) { return p.category === k; }).length;
@@ -285,8 +296,7 @@
       '<a href="' + lp("/shop/") + '">' + esc(t.shop) + "</a>" + sep + '<a href="' + lp("/category/" + cat + "/") + '">' + esc(t.cat[cat] || "") + "</a>" + sep +
       '<span aria-current="page">' + esc(name) + "</span></nav>" +
       '<div class="pdp">' +
-        '<div class="pdp-gallery"><div class="gallery-main"><img id="main-photo" src="' + esc(photos[0]) + '" alt="' + esc(alt(p)) + '" width="800" height="1000" fetchpriority="high"></div>' +
-          (photos.length > 1 ? '<div class="thumbs">' + photos.map(function (ph, i) { return '<button type="button" data-photo="' + esc(ph) + '" aria-current="' + (i === 0) + '" aria-label="Photo ' + (i + 1) + '"><img src="' + esc(ph) + '" alt="" width="80" height="100"></button>'; }).join("") + "</div>" : "") +
+        '<div class="pdp-gallery">' + gallery(p, photos) +
           (photos.some(isPlaceholder) ? '<p class="photo-note">' + esc(t.photoNote) + "</p>" : "") +
         "</div>" +
         '<div class="pdp-info">' +
@@ -303,7 +313,7 @@
             '<p class="fine" style="margin-top:10px">' + esc(gi >= 0 ? (notes || G[grade][1]) : t.gradeTbcNote) + "</p></section>" +
           '<section class="block"><h2>' + esc(t.labels.specs) + '</h2><dl class="specs">' + specs.map(function (r) { return "<dt>" + esc(r[0]) + "</dt><dd>" + (r[2] ? '<a href="' + r[2] + '">' + esc(r[1]) + "</a>" : esc(r[1])) + "</dd>"; }).join("") + "</dl></section>" +
           (details.length ? '<section class="block"><h2>' + esc(t.labels.details) + '</h2><ul class="ticks">' + details.map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul></section>" : "") +
-          '<section class="block"><h2>' + esc(t.labels.fulfilment) + "</h2><p>" + esc(t.fulfil[p.fulfilment] || t.fulfil.both) + ' <a href="' + lp("/delivery/") + '">' + esc(t.fulfilMore) + "</a></p></section>" +
+          '<section class="block"><h2>' + esc(t.labels.fulfilment) + "</h2><p>" + esc(t.fulfil[p.fulfilment] || t.fulfil.both) + ' <a href="' + lp("/delivery/") + '">' + esc(t.fulfilMore) + '</a></p><p class="install-note">' + esc(t.install) + "</p></section>" +
           '<section class="block"><h2>' + esc(t.labels.policy) + '</h2><p id="policy-text">' + esc(policyText(p)) + '</p><p><a class="text-link" href="' + lp("/how-to-buy/") + '">' + esc(t.policy.more) + " →</a></p></section>" +
         "</div>" +
       "</div>" +
@@ -337,10 +347,25 @@
     var sticky = $("#sticky-cta"), main = $("#main-cta");
     if (sticky && main) sticky.classList.toggle("show", main.getBoundingClientRect().bottom < 0);
   }
+  function gallerySync(i) {   // highlight thumbnail i and update the "2 / 3" counter
+    $$("[data-slide]").forEach(function (b) { b.setAttribute("aria-current", String(Number(b.getAttribute("data-slide")) === i)); });
+    var c = $(".gallery-count"); if (c) c.textContent = (i + 1) + " / " + $$("[data-slide]").length;
+  }
   function bindProduct() {
+    var galleryTimer;
+    document.addEventListener("scroll", function (e) {   // swipe on the photo track (scroll events don't bubble, so listen in the capture phase)
+      var track = e.target; if (!track || track.id !== "gallery") return;
+      clearTimeout(galleryTimer);
+      galleryTimer = setTimeout(function () { gallerySync(Math.round(track.scrollLeft / Math.max(1, track.clientWidth))); }, 60);
+    }, true);
+
     document.addEventListener("click", function (e) {
-      var th = e.target.closest("[data-photo]");
-      if (th) { $("#main-photo").src = th.getAttribute("data-photo"); $$("[data-photo]").forEach(function (b) { b.setAttribute("aria-current", b === th); }); }
+      var th = e.target.closest("[data-slide]"), track = $("#gallery");
+      if (th && track) {
+        var still = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+        track.scrollTo({ left: Number(th.getAttribute("data-slide")) * track.clientWidth, behavior: still ? "auto" : "smooth" });
+        gallerySync(Number(th.getAttribute("data-slide")));
+      }
       var tip = e.target.closest(".tip-btn"), pop = $("#grade-pop");
       if (tip && pop) { var open = pop.hidden; pop.hidden = !open; tip.setAttribute("aria-expanded", open); }
       else if (pop && !e.target.closest(".tip-pop")) { pop.hidden = true; var b = $(".tip-btn"); if (b) b.setAttribute("aria-expanded", "false"); }

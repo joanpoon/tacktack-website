@@ -263,10 +263,18 @@ html[data-lang="zh"] .badge { letter-spacing: .06em; font-size: .72rem; }
 @media (min-width: 900px) { .pdp { grid-template-columns: 1.1fr 1fr; align-items: start; } .pdp-info { position: sticky; top: 100px; } }
 .gallery-main { aspect-ratio: 4 / 5; border-radius: var(--radius); overflow: hidden; background: var(--sand); position: relative; }
 .gallery-main img { width: 100%; height: 100%; object-fit: cover; }
-.thumbs { display: flex; gap: 10px; margin-top: 12px; }
-.thumbs button { width: 76px; aspect-ratio: 4/5; border-radius: 10px; overflow: hidden; border: 2px solid transparent; padding: 0; cursor: pointer; background: var(--sand); }
+.gallery { position: relative; }
+.gallery-track { display: flex; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; }
+.gallery-track::-webkit-scrollbar { display: none; }
+.gallery-track img { flex: 0 0 100%; scroll-snap-align: start; scroll-snap-stop: always; }
+.gallery-track:focus-visible { outline: 2px solid var(--walnut); outline-offset: 3px; }
+.gallery-count { position: absolute; right: 12px; bottom: 12px; padding: 3px 10px; border-radius: 99px; background: rgba(43,33,24,.62); color: #fff; font-size: .75rem; font-weight: 500; letter-spacing: .04em; pointer-events: none; }
+.thumbs { display: flex; gap: 10px; margin-top: 12px; overflow-x: auto; scrollbar-width: none; }
+.thumbs::-webkit-scrollbar { display: none; }
+.thumbs button { flex: none; width: 76px; aspect-ratio: 4/5; border-radius: 10px; overflow: hidden; border: 2px solid transparent; padding: 0; cursor: pointer; background: var(--sand); }
 .thumbs button[aria-current="true"] { border-color: var(--walnut); }
 .thumbs img { width: 100%; height: 100%; object-fit: cover; }
+.install-note { margin-top: 8px; }
 .photo-note { font-size: .8rem; color: var(--muted); margin-top: 10px; }
 .pdp-info h1 { font-size: clamp(1.9rem, 3.6vw, 2.8rem); margin: .25em 0 .35em; }
 .pdp-price { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; font-size: 1.6rem; font-weight: 600; margin: 14px 0 6px; }
@@ -333,7 +341,9 @@ body.has-sticky { padding-bottom: 76px; }
 .faq details[open] summary::after { transform: rotate(45deg); }
 .faq details > div { padding: 0 0 18px; color: var(--muted); }
 .contact-grid { display: grid; gap: 16px; }
-@media (min-width: 800px) { .contact-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 600px) { .contact-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .contact-grid { grid-template-columns: repeat(4, 1fr); } }
+.contact-card { min-width: 0; overflow-wrap: anywhere; }
 .contact-card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; text-decoration: none; display: flex; flex-direction: column; gap: 6px; transition: transform .2s; }
 .contact-card:hover { transform: translateY(-2px); background: #fff; }
 .contact-card svg { width: 34px; height: 34px; margin-bottom: 14px; }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-26",
+ "updated": "2026-09-27",
  "stories": {
   "isamu-noguchi": {
    "title": {
@@ -101,11 +101,24 @@
    "fulfilment": "both",
    "photos": [
     "/assets/products/TT-DUL-0001/1.jpg",
-    "/assets/products/TT-DUL-0001/2.jpg"
+    "/assets/products/TT-DUL-0001/2.jpg",
+    "/assets/products/TT-DUL-0001/3.jpg"
    ],
    "photoAlt": {
     "en": "DULTON Double Face Clock Rectangle in grey: two-sided, station-style wall clock with a white dial",
     "zh": "DULTON 雙面掛鐘（長方形）灰色：車站風格雙面鐘，白色鐘面"
+   },
+   "photoAlts": {
+    "en": [
+     "DULTON Double Face Clock Rectangle in grey: two-sided, station-style wall clock with a white dial",
+     "Close-up of the grey DULTON Double Face Clock: bold black numerals and the embossed DULTON logo on the side case",
+     "The grey DULTON Double Face Clock mounted on a wall bracket, seen side-on in a shop doorway"
+    ],
+    "zh": [
+     "DULTON 雙面掛鐘（長方形）灰色：車站風格雙面鐘，白色鐘面",
+     "DULTON 灰色雙面掛鐘近照：粗黑數字，側盒印有 DULTON 浮雕標誌",
+     "DULTON 灰色雙面掛鐘裝在牆身支架上，於店舖門口側面所見"
+    ]
    },
    "storyKey": "dulton"
   },
@@ -166,11 +179,27 @@
    "fulfilment": "both",
    "photos": [
     "/assets/products/TT-DUL-0002/1.jpg",
-    "/assets/products/TT-DUL-0002/2.jpg"
+    "/assets/products/TT-DUL-0002/2.jpg",
+    "/assets/products/TT-DUL-0002/3.jpg",
+    "/assets/products/TT-DUL-0002/4.jpg"
    ],
    "photoAlt": {
     "en": "DULTON Double Face Clock Rectangle in dark green: two-sided, station-style wall clock with a white dial",
     "zh": "DULTON 雙面掛鐘（長方形）深綠色：車站風格雙面鐘，白色鐘面"
+   },
+   "photoAlts": {
+    "en": [
+     "DULTON Double Face Clock Rectangle in dark green: two-sided, station-style wall clock with a white dial",
+     "Close-up of the dark green DULTON Double Face Clock: bold black numerals and the embossed DULTON logo on the side case",
+     "The dark green DULTON Double Face Clock mounted on a wall bracket, seen side-on in a shop doorway",
+     "The dark green DULTON Double Face Clock projecting from a wall above a doorway into a dining room"
+    ],
+    "zh": [
+     "DULTON 雙面掛鐘（長方形）深綠色：車站風格雙面鐘，白色鐘面",
+     "DULTON 深綠色雙面掛鐘近照：粗黑數字，側盒印有 DULTON 浮雕標誌",
+     "DULTON 深綠色雙面掛鐘裝在牆身支架上，於店舖門口側面所見",
+     "DULTON 深綠色雙面掛鐘從牆身伸出，掛在通往飯廳的門口上方"
+    ]
    },
    "storyKey": "dulton"
   },
@@ -238,6 +267,16 @@
    "photoAlt": {
     "en": "Isamu Noguchi AKARI 55D pendant lamp: round natural white washi paper shade on bamboo ribbing, 55 cm across",
     "zh": "野口勇 AKARI 55D 和紙吊燈：原色白和紙配竹骨圓形燈罩，直徑 55 cm"
+   },
+   "photoAlts": {
+    "en": [
+     "Isamu Noguchi AKARI 55D pendant lamp: round natural white washi paper shade on bamboo ribbing, 55 cm across",
+     "The AKARI 55D pendant lit against a dark background, glowing warm through the washi paper"
+    ],
+    "zh": [
+     "野口勇 AKARI 55D 和紙吊燈：原色白和紙配竹骨圓形燈罩，直徑 55 cm",
+     "AKARI 55D 吊燈亮燈，暖光透過和紙，深色背景"
+    ]
    },
    "storyKey": "isamu-noguchi"
   },
@@ -364,11 +403,24 @@
    "fulfilment": "both",
    "photos": [
     "/assets/products/TT-NOG-0003/1.jpg",
-    "/assets/products/TT-NOG-0003/2.jpg"
+    "/assets/products/TT-NOG-0003/2.jpg",
+    "/assets/products/TT-NOG-0003/3.jpg"
    ],
    "photoAlt": {
     "en": "Isamu Noguchi AKARI 45D pendant lamp: round natural white washi paper shade on bamboo ribbing, 45 cm across",
     "zh": "野口勇 AKARI 45D 和紙吊燈：原色白和紙配竹骨圓形燈罩，直徑 45 cm"
+   },
+   "photoAlts": {
+    "en": [
+     "Isamu Noguchi AKARI 45D pendant lamp: round natural white washi paper shade on bamboo ribbing, 45 cm across",
+     "The AKARI 45D pendant lit against a dark background, glowing warm through the washi paper",
+     "The AKARI 45D paper shade lit under dark timber ceiling beams"
+    ],
+    "zh": [
+     "野口勇 AKARI 45D 和紙吊燈：原色白和紙配竹骨圓形燈罩，直徑 45 cm",
+     "AKARI 45D 吊燈亮燈，暖光透過和紙，深色背景",
+     "AKARI 45D 和紙燈罩亮燈，掛在深色木樑下"
+    ]
    },
    "storyKey": "isamu-noguchi"
   },
@@ -431,11 +483,25 @@
    "status": "available",
    "fulfilment": "both",
    "photos": [
-    "/assets/products/TT-HEL-0001/1.jpg"
+    "/assets/products/TT-HEL-0001/1.jpg",
+    "/assets/products/TT-HEL-0001/2.jpg",
+    "/assets/products/TT-HEL-0001/3.jpg"
    ],
    "photoAlt": {
     "en": "Heller Swell wall catchall in white by Anna Dawson: wave-shaped wall hook and tray",
     "zh": "Heller Swell 波浪掛牆收納（白色），Anna Dawson 設計：波浪形掛鈎連收納槽"
+   },
+   "photoAlts": {
+    "en": [
+     "Heller Swell wall catchall in white by Anna Dawson: wave-shaped wall hook and tray",
+     "Side view of the white Heller Swell on a white wall, showing the depth of the wave and its trays",
+     "The white Heller Swell on a white wall holding headphones, a lanyard and a printed tote bag"
+    ],
+    "zh": [
+     "Heller Swell 波浪掛牆收納（白色），Anna Dawson 設計：波浪形掛鈎連收納槽",
+     "白色 Heller Swell 側面，掛在白牆上，可見波浪深度及收納槽",
+     "白色 Heller Swell 掛在白牆上，掛着耳機、掛繩及印花布袋"
+    ]
    },
    "storyKey": "anna-dawson"
   },
@@ -499,11 +565,24 @@
    "fulfilment": "both",
    "photos": [
     "/assets/products/TT-HEL-0002/1.jpg",
-    "/assets/products/TT-HEL-0002/2.jpg"
+    "/assets/products/TT-HEL-0002/2.jpg",
+    "/assets/products/TT-HEL-0002/3.jpg"
    ],
    "photoAlt": {
     "en": "Heller Swell Mini wall hook and catchall in Red Orange by Anna Dawson: a single wave-shaped hook and bowl",
     "zh": "Heller Swell Mini 波浪掛牆掛鈎收納（橙紅色），Anna Dawson 設計：單個波浪形掛鈎連收納碗"
+   },
+   "photoAlts": {
+    "en": [
+     "Heller Swell Mini wall hook and catchall in Red Orange by Anna Dawson: a single wave-shaped hook and bowl",
+     "The Red Orange Swell Mini holding a camera, sunglasses, a pencil and cables in its bowl",
+     "A living room wall with the Red Orange Swell Mini holding headphones, next to the full-size Swell in the same colour"
+    ],
+    "zh": [
+     "Heller Swell Mini 波浪掛牆掛鈎收納（橙紅色），Anna Dawson 設計：單個波浪形掛鈎連收納碗",
+     "橙紅色 Swell Mini 掛着相機，收納碗放着太陽眼鏡、鉛筆及電線",
+     "客廳牆上的橙紅色 Swell Mini 掛着耳機，旁邊是同色的大尺寸 Swell"
+    ]
    },
    "storyKey": "anna-dawson"
   },
@@ -569,11 +648,22 @@
    "status": "available",
    "fulfilment": "both",
    "photos": [
-    "/assets/products/TT-HEL-0003/1.jpg"
+    "/assets/products/TT-HEL-0003/1.jpg",
+    "/assets/products/TT-HEL-0003/2.jpg"
    ],
    "photoAlt": {
     "en": "Heller Swell Mini wall hook and catchall in Cream by Anna Dawson: a single wave-shaped hook and bowl",
     "zh": "Heller Swell Mini 波浪掛牆掛鈎收納（奶油色），Anna Dawson 設計：單個波浪形掛鈎連收納碗"
+   },
+   "photoAlts": {
+    "en": [
+     "Heller Swell Mini wall hook and catchall in Cream by Anna Dawson: a single wave-shaped hook and bowl",
+     "The Cream Swell Mini beside a bed, holding headphones above a green bedside table"
+    ],
+    "zh": [
+     "Heller Swell Mini 波浪掛牆掛鈎收納（奶油色），Anna Dawson 設計：單個波浪形掛鈎連收納碗",
+     "奶油色 Swell Mini 掛在床邊，掛着耳機，下面是綠色床頭几"
+    ]
    },
    "storyKey": "anna-dawson"
   },
@@ -636,11 +726,22 @@
    "status": "available",
    "fulfilment": "both",
    "photos": [
-    "/assets/products/TT-HEL-0004/1.jpg"
+    "/assets/products/TT-HEL-0004/1.jpg",
+    "/assets/products/TT-HEL-0004/2.jpg"
    ],
    "photoAlt": {
     "en": "Heller Swell Mini wall hook and catchall in Blue by Anna Dawson: a single wave-shaped hook and bowl",
     "zh": "Heller Swell Mini 波浪掛牆掛鈎收納（藍色），Anna Dawson 設計：單個波浪形掛鈎連收納碗"
+   },
+   "photoAlts": {
+    "en": [
+     "Heller Swell Mini wall hook and catchall in Blue by Anna Dawson: a single wave-shaped hook and bowl",
+     "Two Blue Swell Minis in a bathroom, holding hair clips and a towel"
+    ],
+    "zh": [
+     "Heller Swell Mini 波浪掛牆掛鈎收納（藍色），Anna Dawson 設計：單個波浪形掛鈎連收納碗",
+     "浴室牆上兩個藍色 Swell Mini，放着髮夾及掛着毛巾"
+    ]
    },
    "storyKey": "anna-dawson"
   },
@@ -703,11 +804,25 @@
    "status": "available",
    "fulfilment": "both",
    "photos": [
-    "/assets/products/TT-HEL-0005/1.jpg"
+    "/assets/products/TT-HEL-0005/1.jpg",
+    "/assets/products/TT-HEL-0005/2.jpg",
+    "/assets/products/TT-HEL-0005/3.jpg"
    ],
    "photoAlt": {
     "en": "Heller Swell wall catchall in Red Orange by Anna Dawson: wave-shaped wall hook and tray",
     "zh": "Heller Swell 波浪掛牆收納（橙紅色），Anna Dawson 設計：波浪形掛鈎連收納槽"
+   },
+   "photoAlts": {
+    "en": [
+     "Heller Swell wall catchall in Red Orange by Anna Dawson: wave-shaped wall hook and tray",
+     "The Red Orange Heller Swell holding a brown handbag and small items on a white wall",
+     "A living room wall with the Red Orange Heller Swell holding a cap and a canvas tote, with the matching Swell Mini beside it"
+    ],
+    "zh": [
+     "Heller Swell 波浪掛牆收納（橙紅色），Anna Dawson 設計：波浪形掛鈎連收納槽",
+     "橙紅色 Heller Swell 掛在白牆上，掛着啡色手袋及小物",
+     "客廳牆上的橙紅色 Heller Swell 掛着帽及帆布袋，旁邊是同色 Swell Mini"
+    ]
    },
    "storyKey": "anna-dawson"
   },
@@ -770,11 +885,25 @@
    "status": "available",
    "fulfilment": "both",
    "photos": [
-    "/assets/products/TT-HEL-0006/1.jpg"
+    "/assets/products/TT-HEL-0006/1.jpg",
+    "/assets/products/TT-HEL-0006/2.jpg",
+    "/assets/products/TT-HEL-0006/3.jpg"
    ],
    "photoAlt": {
     "en": "Heller Swell wall catchall in Blue by Anna Dawson: wave-shaped wall hook and tray",
     "zh": "Heller Swell 波浪掛牆收納（藍色），Anna Dawson 設計：波浪形掛鈎連收納槽"
+   },
+   "photoAlts": {
+    "en": [
+     "Heller Swell wall catchall in Blue by Anna Dawson: wave-shaped wall hook and tray",
+     "The Blue Heller Swell on a white plank wall holding a yellow cap, a pink tote, a beaded lanyard and a passport",
+     "The Blue Heller Swell on a white wall with a black shoulder bag and small items tucked into its trays"
+    ],
+    "zh": [
+     "Heller Swell 波浪掛牆收納（藍色），Anna Dawson 設計：波浪形掛鈎連收納槽",
+     "藍色 Heller Swell 掛在白色木板牆上，掛着黃色帽、粉紅布袋、珠串掛繩及護照",
+     "藍色 Heller Swell 掛在白牆上，掛着黑色肩袋，收納槽放着小物"
+    ]
    },
    "storyKey": "anna-dawson"
   }
