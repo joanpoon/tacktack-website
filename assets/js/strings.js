@@ -31,7 +31,7 @@ window.TT_STRINGS = {
       full: p => "Under HK$1,500: reserve by paying in full (" + p + "). Pick up or arrange delivery within 7 days.",
       dep30: (d, p) => "30% deposit (" + d + ") holds it for up to 7 days. Balance before pickup or delivery.",
       dep20: (d, p) => "20% deposit (" + d + ") holds it for up to 14 days. Balance before pickup or delivery.",
-      pay: "FPS · PayMe · Bank transfer. Messages and likes don't hold items: first paid, first served.",
+      pay: "FPS · PayMe · Bank transfer · Cash. Messages and likes don't hold items: first paid, first served.",
       more: "Full holds & deposits policy"
     },
     wa: {
@@ -49,6 +49,7 @@ window.TT_STRINGS = {
     alsoLike: "You might also like",
     shopAll: "Shop all",
     home: "Home", shop: "Shop", crumbs: "Breadcrumb", fulfilMore: "Delivery & pickup details",
+    install: "Installation service available. Ask us for details.", gallery: "Product photos", photoN: function (i, n) { return "Photo " + i + " of " + n; }, photoMore: function (i) { return " (photo " + i + ")"; },
     filters: { category: "Category", brand: "Brand / designer", status: "Availability", price: "Price", sort: "Sort", reset: "Clear filters" },
     status: { active: "Available & on hold", available: "Available now", "on-hold": "On hold", sold: "Sold", all: "Everything" },
     price: { any: "Any price", u500: "Under HK$500", "500-1500": "HK$500–1,500", "1500-5000": "HK$1,500–5,000", o5000: "HK$5,000+" },
@@ -59,7 +60,6 @@ window.TT_STRINGS = {
     soldEmpty: "Nothing in the archive yet: every piece is still looking for its home.",
     photoNote: "Illustration only. Real photos are coming soon; WhatsApp us and we'll send some today.",
     notFound: "We couldn't find that piece. It may have been renamed or removed.",
-    dropTitle: d => "Fresh Thursday · " + d,
     by: "by", for_: "for"
   },
   zh: {
@@ -92,7 +92,7 @@ window.TT_STRINGS = {
       full: p => "HK$1,500 以下貨品須全數付款（" + p + "）方可確認，並於 7 天內自取或安排送貨。",
       dep30: (d, p) => "付 30% 訂金（" + d + "）可留貨最多 7 天，餘款須於自取或送貨前付清。",
       dep20: (d, p) => "付 20% 訂金（" + d + "）可留貨最多 14 天，餘款須於自取或送貨前付清。",
-      pay: "接受 FPS 轉數快、PayMe 及銀行轉帳。私訊及讚好不代表留貨，先付先得。",
+      pay: "接受 FPS 轉數快、PayMe、銀行轉帳及現金。私訊及讚好不代表留貨，先付先得。",
       more: "查看完整留貨及訂金安排"
     },
     wa: {
@@ -110,6 +110,7 @@ window.TT_STRINGS = {
     alsoLike: "你可能也喜歡",
     shopAll: "查看全部",
     home: "主頁", shop: "選購", crumbs: "導覽路徑", fulfilMore: "送貨及自取詳情",
+    install: "提供安裝服務，歡迎查詢詳情。", gallery: "產品相片", photoN: function (i, n) { return "第 " + i + " 張相片（共 " + n + " 張）"; }, photoMore: function (i) { return "（相片 " + i + "）"; },
     filters: { category: "類別", brand: "品牌／設計師", status: "供應狀況", price: "價錢", sort: "排序", reset: "清除篩選" },
     status: { active: "有貨及已留貨", available: "現貨", "on-hold": "已留貨", sold: "已售出", all: "全部" },
     price: { any: "所有價錢", u500: "HK$500 以下", "500-1500": "HK$500–1,500", "1500-5000": "HK$1,500–5,000", o5000: "HK$5,000 以上" },
@@ -120,7 +121,6 @@ window.TT_STRINGS = {
     soldEmpty: "已售出區暫時未有貨品，每件都仲等緊新主人。",
     photoNote: "此為示意插圖，實物相片即將上載；WhatsApp 我們即可索取相片。",
     notFound: "搵唔到這件貨品，可能已改名或下架。",
-    dropTitle: d => "Fresh Thursday 新貨 · " + d,
     by: "設計：", for_: "品牌："
   }
 };
