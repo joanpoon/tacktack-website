@@ -208,6 +208,7 @@
    "slug": "akari-55d",
    "featured": true,
    "dropDate": "2026-09-24",
+   "newFrom": "2026-10-08",
    "brand": "AKARI",
    "designer": "Isamu Noguchi",
    "name": {
@@ -294,6 +295,7 @@
    ],
    "featured": false,
    "dropDate": "2026-09-24",
+   "newFrom": "2026-10-08",
    "brand": "AKARI",
    "designer": "Isamu Noguchi",
    "name": {
@@ -378,6 +380,7 @@
    "slug": "akari-45d",
    "featured": true,
    "dropDate": "2026-09-24",
+   "newFrom": "2026-10-08",
    "brand": "AKARI",
    "designer": "Isamu Noguchi",
    "name": {
@@ -469,7 +472,7 @@
    "sku": "TT-HEL-0001",
    "slug": "heller-swell-white",
    "featured": true,
-   "dropDate": "2026-09-24",
+   "dropDate": "2026-10-01",
    "brand": "Heller",
    "designer": "Anna Dawson",
    "name": {
@@ -554,7 +557,7 @@
    "sku": "TT-HEL-0002",
    "slug": "heller-swell-mini-red-orange",
    "featured": false,
-   "dropDate": "2026-09-24",
+   "dropDate": "2026-10-01",
    "brand": "Heller",
    "designer": "Anna Dawson",
    "name": {
@@ -641,7 +644,7 @@
     "heller-swell-mini-white"
    ],
    "featured": false,
-   "dropDate": "2026-09-24",
+   "dropDate": "2026-10-01",
    "brand": "Heller",
    "designer": "Anna Dawson",
    "name": {
@@ -722,7 +725,7 @@
    "sku": "TT-HEL-0004",
    "slug": "heller-swell-mini-blue",
    "featured": false,
-   "dropDate": "2026-09-24",
+   "dropDate": "2026-10-01",
    "brand": "Heller",
    "designer": "Anna Dawson",
    "name": {
@@ -803,7 +806,7 @@
    "sku": "TT-HEL-0005",
    "slug": "heller-swell-red-orange",
    "featured": false,
-   "dropDate": "2026-09-24",
+   "dropDate": "2026-10-01",
    "brand": "Heller",
    "designer": "Anna Dawson",
    "name": {
@@ -887,7 +890,7 @@
    "sku": "TT-HEL-0006",
    "slug": "heller-swell-blue",
    "featured": false,
-   "dropDate": "2026-09-24",
+   "dropDate": "2026-10-01",
    "brand": "Heller",
    "designer": "Anna Dawson",
    "name": {

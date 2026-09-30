@@ -5,7 +5,7 @@ window.TT_STRINGS = {
     cat: { lighting: "Lighting", seating: "Seating", sofas: "Sofas & Lounge", storage: "Storage", tables: "Tables", decor: "Decor & Objects", other: "Other" },
     all: "All",
     pieces: n => n === 1 ? "1 piece" : n + " pieces",
-    comingSoon: "Coming soon",
+    comingSoon: "Coming soon", dropH: { neu: "This week's drop", latest: "Latest pieces" },
     badge: { hold: "On hold", sold: "Sold", neu: "New this week" },
     grades: {
       "brand-new": ["Brand new", "Unused and never installed."],
@@ -69,7 +69,7 @@ window.TT_STRINGS = {
     cat: { lighting: "燈飾", seating: "座椅", sofas: "梳化", storage: "收納", tables: "枱", decor: "擺設及家品", other: "其他" },
     all: "全部",
     pieces: n => n + " 件",
-    comingSoon: "即將上架",
+    comingSoon: "即將上架", dropH: { neu: "本週新貨", latest: "最新貨品" },
     badge: { hold: "已留貨", sold: "已售出", neu: "本週新貨" },
     grades: {
       "brand-new": ["全新", "未經使用，從未安裝。"],
