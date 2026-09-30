@@ -62,7 +62,24 @@
     // Availability is public only as a status: available, on-hold or sold.
     return { st: p.status === "sold" || p.status === "on-hold" ? p.status : "available" };
   }
-  function isNew(p) { if (!p.dropDate) return false; var d = daysBetween(p.dropDate, TODAY); return d >= 0 && d < (C.NEW_DAYS || 7); }
+  // New from the drop (dropDate at DROP_HOUR HKT) until the next weekly drop; no date, no badge. Same as is_new() in build-pages.py.
+  function dropStart(p) {
+    var day = p.newFrom || p.dropDate;   // newFrom: already live, but the NEW tag waits for a later drop
+    if (!day || !/^\d{4}-\d\d-\d\d$/.test(day)) return NaN;
+    var h = C.DROP_HOUR == null ? 20 : C.DROP_HOUR;
+    return Date.parse(day + "T" + (h < 10 ? "0" : "") + h + ":00:00+08:00");
+  }
+  function isNew(p, now) {
+    var t0 = dropStart(p); if (isNaN(t0)) return false;
+    var t = now == null ? Date.now() : now;
+    return t >= t0 && t < t0 + (C.NEW_DAYS || 7) * 86400000;
+  }
+  var MIN_CAT = C.MIN_CATEGORY_PIECES || 2;
+  function catLive(c) { return PRODUCTS.filter(function (p) { return (p.category || "other") === c && state(p).st !== "sold"; }).length; }   // same as cat_live()
+  function catShown(c) { return catLive(c) >= MIN_CAT; }
+  function renderCatLinks() {   // footer category links: hidden until a category has MIN_CATEGORY_PIECES live pieces
+    $$("[data-cat-link]").forEach(function (li) { var on = catShown(li.getAttribute("data-cat-link")); if (li.hidden === on) li.hidden = !on; });
+  }
   function badges(p) {
     var s = state(p), B = T().badge, out = [];
     if (s.st === "sold") out.push(["sold", B.sold]);
@@ -159,17 +176,24 @@
   /* ---------------- home ---------------- */
   function renderHome() {
     var active = PRODUCTS.filter(function (p) { return state(p).st !== "sold"; });
-    var drop = active.filter(isNew).sort(function (a, b) { return (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || byNewest(a, b); });
+    var drop = active.filter(function (p) { return isNew(p); }).sort(function (a, b) { return (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || byNewest(a, b); });
+    var dh = $("#drop-h"), dtx = T().dropH[drop.length ? "neu" : "latest"]; if (dh && dh.textContent !== dtx) dh.textContent = dtx;
     if (!drop.length) drop = active.slice().sort(byNewest);
     grid($("#drop-grid"), drop.slice(0, 8), true);
     // #drop-date is fixed text ("New pieces every Thursday"), pre-rendered per language: nothing to update here
 
     $$("[data-cat-count]").forEach(function (el) {
       var k = el.getAttribute("data-cat-count"), n = active.filter(function (p) { return p.category === k; }).length;
-      var txt = n ? T().pieces(n) : T().comingSoon;
+      var txt = T().pieces(n);
       if (el.textContent !== txt) el.textContent = txt;
-      var tile = el.closest(".cat"); if (tile) tile.classList.toggle("is-empty", !n);
+      var tile = el.closest(".cat"), on = n >= MIN_CAT; if (tile && tile.hidden === on) tile.hidden = !on;   // empty categories stay hidden until they fill up
     });
+    var cs = $("#cat-section"); if (cs) { var anyCat = $$("[data-cat-count]").some(function (el) { return !el.closest(".cat").hidden; }); if (cs.hidden === anyCat) cs.hidden = !anyCat; }
+    var sg = $("#size-section"), sp = active.filter(function (p) { return sizeRow(p); })[0];   // AKARI size guide: shows by itself once the lamps are live
+    if (sg) {
+      if (sp) { setHTML($("#size-guide"), sizeRow(sp)); var sh = $("#size-guide-h"), stx = T().sizeTitle(sp.brand || ""); if (sh && sh.textContent !== stx) sh.textContent = stx; }
+      if (sg.hidden === !!sp) sg.hidden = !sp;
+    }
 
     var brands = {};
     PRODUCTS.forEach(function (p) { var k = p.brand; if (!brands[k]) brands[k] = { brand: k, designers: [], n: 0 }; brands[k].n++; if (p.designer && brands[k].designers.indexOf(p.designer) < 0) brands[k].designers.push(p.designer); });
@@ -191,7 +215,7 @@
       el.innerHTML = '<a href="' + url(p) + '"><img src="' + esc(hp) + '"' + srcset(hp, "(min-width: 900px) 30vw, 62vw") + ' alt="' + esc(altN(p, hi > 0 ? hi : 0)) + '" width="800" height="1000" fetchpriority="high"></a>';
     });
     var tag = $("#hero-tag");
-    if (tag && a) { if (tag.getAttribute("href") !== url(a)) tag.setAttribute("href", url(a)); setHTML(tag, '<span class="dot"></span>' + esc(T().badge.neu) + " · " + esc(L(a.name))); }
+    if (tag && a) { if (tag.getAttribute("href") !== url(a)) tag.setAttribute("href", url(a)); setHTML(tag, '<span class="dot"></span>' + (isNew(a) ? esc(T().badge.neu) + " · " : "") + esc(L(a.name))); }
 
     var ig = $("#ig-grid");
     if (ig) {
@@ -237,7 +261,7 @@
     var f = readFilters(), t = T();
     var cats = ["lighting", "seating", "sofas", "storage", "tables", "decor"];
     var counts = {}; PRODUCTS.forEach(function (p) { if (state(p).st !== "sold") counts[p.category] = (counts[p.category] || 0) + 1; });
-    setHTML($("#cat-chips"), [["", t.all]].concat(cats.filter(function (c) { return counts[c] || c === f.category; }).map(function (c) { return [c, t.cat[c]]; })).map(function (c) {
+    setHTML($("#cat-chips"), [["", t.all]].concat(cats.filter(function (c) { return (counts[c] || 0) >= MIN_CAT || c === f.category; }).map(function (c) { return [c, t.cat[c]]; })).map(function (c) {
       var n = c[0] ? counts[c[0]] || 0 : PRODUCTS.filter(function (p) { return state(p).st !== "sold"; }).length;
       return '<button type="button" class="chip-btn" data-cat="' + c[0] + '" aria-pressed="' + (f.category === c[0]) + '">' + esc(c[1]) + '<span class="n">' + n + "</span></button>";
     }).join(""));
@@ -439,11 +463,12 @@
 
   chrome();
   var needs = { home: renderHome, shop: renderShop, sold: renderSold, product: renderProduct, list: renderList };
-  if (needs[page]) {
+  if (needs[page] || $("[data-cat-link]")) {
     if (page === "shop") bindShop();
     if (page === "product") bindProduct();
-    renderers.push(needs[page]);
+    if (needs[page]) renderers.push(needs[page]);
+    renderers.push(renderCatLinks);
     load().then(rerender).catch(function (e) { console.error("Could not load products", e); });
   }
-  window.TT = { wa: wa, lang: lang, sig: sig, hash: hash };
+  window.TT = { wa: wa, lang: lang, sig: sig, hash: hash, isNew: isNew };
 })();
