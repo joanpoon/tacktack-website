@@ -415,3 +415,13 @@ body.has-sticky { padding-bottom: 76px; }
 
 /* Hidden categories (too few live pieces) and other hidden bits must stay hidden even where display is set */
 .cat[hidden], [data-cat-link][hidden], #cat-section[hidden], #size-section[hidden] { display: none !important; }
+
+/* Quick facts (quotable who / how to buy / payment / pickup block) */
+.facts { border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(18px, 3vw, 30px); background: var(--paper); margin: 28px 0; }
+.facts h2 { margin: 0 0 12px; font-size: 1.25rem; }
+.facts dl { display: grid; gap: 10px 28px; margin: 0; grid-template-columns: 1fr; }
+@media (min-width: 760px) { .facts dl { grid-template-columns: 1fr 1fr; } }
+.facts dl > div { display: grid; gap: 2px; }
+.facts dt { font-weight: 600; font-size: .86rem; letter-spacing: .02em; }
+.facts dd { margin: 0; color: var(--muted); font-size: .92rem; line-height: 1.5; }
+.faq-block h2 { margin-bottom: 8px; }

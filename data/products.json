@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-30",
+ "updated": "2026-10-01",
  "stories": {
   "isamu-noguchi": {
    "title": {
@@ -45,7 +45,6 @@
  },
  "products": [
   {
-   "sku": "TT-DUL-0001",
    "slug": "dulton-double-face-clock-grey",
    "featured": false,
    "dropDate": "2026-09-17",
@@ -100,9 +99,9 @@
    "status": "available",
    "fulfilment": "both",
    "photos": [
-    "/assets/products/TT-DUL-0001/1.jpg",
-    "/assets/products/TT-DUL-0001/2.jpg",
-    "/assets/products/TT-DUL-0001/3.jpg"
+    "/assets/products/dulton-double-face-clock-grey/1.jpg",
+    "/assets/products/dulton-double-face-clock-grey/2.jpg",
+    "/assets/products/dulton-double-face-clock-grey/3.jpg"
    ],
    "photoAlt": {
     "en": "DULTON Double Face Clock Rectangle in grey: two-sided, station-style wall clock with a white dial",
@@ -123,7 +122,6 @@
    "storyKey": "dulton"
   },
   {
-   "sku": "TT-DUL-0002",
    "slug": "dulton-double-face-clock-green",
    "featured": false,
    "dropDate": "2026-09-17",
@@ -178,10 +176,10 @@
    "status": "available",
    "fulfilment": "both",
    "photos": [
-    "/assets/products/TT-DUL-0002/1.jpg",
-    "/assets/products/TT-DUL-0002/2.jpg",
-    "/assets/products/TT-DUL-0002/3.jpg",
-    "/assets/products/TT-DUL-0002/4.jpg"
+    "/assets/products/dulton-double-face-clock-green/1.jpg",
+    "/assets/products/dulton-double-face-clock-green/2.jpg",
+    "/assets/products/dulton-double-face-clock-green/3.jpg",
+    "/assets/products/dulton-double-face-clock-green/4.jpg"
    ],
    "photoAlt": {
     "en": "DULTON Double Face Clock Rectangle in dark green: two-sided, station-style wall clock with a white dial",
@@ -204,7 +202,6 @@
    "storyKey": "dulton"
   },
   {
-   "sku": "TT-NOG-0001",
    "slug": "akari-55d",
    "featured": true,
    "dropDate": "2026-09-24",
@@ -265,9 +262,9 @@
     "cordNotIncluded"
    ],
    "photos": [
-    "/assets/products/TT-NOG-0001/1.jpg",
-    "/assets/products/TT-NOG-0001/2.jpg",
-    "/assets/products/TT-NOG-0001/3.jpg"
+    "/assets/products/akari-55d/1.jpg",
+    "/assets/products/akari-55d/2.jpg",
+    "/assets/products/akari-55d/3.jpg"
    ],
    "photoAlt": {
     "en": "Isamu Noguchi AKARI 55D pendant lamp, lit, hanging over a room lined with wooden shelves: round natural white washi shade on bamboo ribbing, 55 cm across",
@@ -288,7 +285,6 @@
    "storyKey": "isamu-noguchi"
   },
   {
-   "sku": "TT-NOG-0002",
    "slug": "akari-30a",
    "oldSlugs": [
     "akari-33a"
@@ -350,10 +346,10 @@
     "cordNotIncluded"
    ],
    "photos": [
-    "/assets/products/TT-NOG-0002/1.jpg",
-    "/assets/products/TT-NOG-0002/2.jpg",
-    "/assets/products/TT-NOG-0002/3.jpg",
-    "/assets/products/TT-NOG-0002/4.jpg"
+    "/assets/products/akari-30a/1.jpg",
+    "/assets/products/akari-30a/2.jpg",
+    "/assets/products/akari-30a/3.jpg",
+    "/assets/products/akari-30a/4.jpg"
    ],
    "photoAlt": {
     "en": "Isamu Noguchi AKARI 30A pendant lamp, lit, under timber beams beside a dark chalkboard wall: round natural white washi shade on bamboo ribbing, 30 cm across",
@@ -376,7 +372,6 @@
    "storyKey": "isamu-noguchi"
   },
   {
-   "sku": "TT-NOG-0003",
    "slug": "akari-45d",
    "featured": true,
    "dropDate": "2026-09-24",
@@ -437,12 +432,12 @@
     "cordNotIncluded"
    ],
    "photos": [
-    "/assets/products/TT-NOG-0003/1.jpg",
-    "/assets/products/TT-NOG-0003/2.jpg",
-    "/assets/products/TT-NOG-0003/3.jpg",
-    "/assets/products/TT-NOG-0003/4.jpg",
-    "/assets/products/TT-NOG-0003/5.jpg",
-    "/assets/products/TT-NOG-0003/6.jpg"
+    "/assets/products/akari-45d/1.jpg",
+    "/assets/products/akari-45d/2.jpg",
+    "/assets/products/akari-45d/3.jpg",
+    "/assets/products/akari-45d/4.jpg",
+    "/assets/products/akari-45d/5.jpg",
+    "/assets/products/akari-45d/6.jpg"
    ],
    "photoAlt": {
     "en": "Isamu Noguchi AKARI 45D pendant lamp, lit, in a living room with a sofa, plant and bookcase: round natural white washi shade on bamboo ribbing, 45 cm across",
@@ -469,7 +464,6 @@
    "storyKey": "isamu-noguchi"
   },
   {
-   "sku": "TT-HEL-0001",
    "slug": "heller-swell-white",
    "featured": true,
    "dropDate": "2026-10-01",
@@ -530,9 +524,9 @@
     "moreColours"
    ],
    "photos": [
-    "/assets/products/TT-HEL-0001/1.jpg",
-    "/assets/products/TT-HEL-0001/2.jpg",
-    "/assets/products/TT-HEL-0001/3.jpg"
+    "/assets/products/heller-swell-white/1.jpg",
+    "/assets/products/heller-swell-white/2.jpg",
+    "/assets/products/heller-swell-white/3.jpg"
    ],
    "heroPhoto": 3,
    "photoAlt": {
@@ -554,7 +548,6 @@
    "storyKey": "anna-dawson"
   },
   {
-   "sku": "TT-HEL-0002",
    "slug": "heller-swell-mini-red-orange",
    "featured": false,
    "dropDate": "2026-10-01",
@@ -615,9 +608,9 @@
     "moreColours"
    ],
    "photos": [
-    "/assets/products/TT-HEL-0002/1.jpg",
-    "/assets/products/TT-HEL-0002/2.jpg",
-    "/assets/products/TT-HEL-0002/3.jpg"
+    "/assets/products/heller-swell-mini-red-orange/1.jpg",
+    "/assets/products/heller-swell-mini-red-orange/2.jpg",
+    "/assets/products/heller-swell-mini-red-orange/3.jpg"
    ],
    "photoAlt": {
     "en": "Heller Swell Mini wall hook and catchall in Red Orange by Anna Dawson: a single wave-shaped hook and bowl",
@@ -638,7 +631,6 @@
    "storyKey": "anna-dawson"
   },
   {
-   "sku": "TT-HEL-0003",
    "slug": "heller-swell-mini-cream",
    "oldSlugs": [
     "heller-swell-mini-white"
@@ -702,8 +694,8 @@
     "moreColours"
    ],
    "photos": [
-    "/assets/products/TT-HEL-0003/1.jpg",
-    "/assets/products/TT-HEL-0003/2.jpg"
+    "/assets/products/heller-swell-mini-cream/1.jpg",
+    "/assets/products/heller-swell-mini-cream/2.jpg"
    ],
    "photoAlt": {
     "en": "Heller Swell Mini wall hook and catchall in Cream by Anna Dawson: a single wave-shaped hook and bowl",
@@ -722,7 +714,6 @@
    "storyKey": "anna-dawson"
   },
   {
-   "sku": "TT-HEL-0004",
    "slug": "heller-swell-mini-blue",
    "featured": false,
    "dropDate": "2026-10-01",
@@ -783,8 +774,8 @@
     "moreColours"
    ],
    "photos": [
-    "/assets/products/TT-HEL-0004/1.jpg",
-    "/assets/products/TT-HEL-0004/2.jpg"
+    "/assets/products/heller-swell-mini-blue/1.jpg",
+    "/assets/products/heller-swell-mini-blue/2.jpg"
    ],
    "photoAlt": {
     "en": "Heller Swell Mini wall hook and catchall in Blue by Anna Dawson: a single wave-shaped hook and bowl",
@@ -803,7 +794,6 @@
    "storyKey": "anna-dawson"
   },
   {
-   "sku": "TT-HEL-0005",
    "slug": "heller-swell-red-orange",
    "featured": false,
    "dropDate": "2026-10-01",
@@ -864,9 +854,9 @@
     "moreColours"
    ],
    "photos": [
-    "/assets/products/TT-HEL-0005/1.jpg",
-    "/assets/products/TT-HEL-0005/2.jpg",
-    "/assets/products/TT-HEL-0005/3.jpg"
+    "/assets/products/heller-swell-red-orange/1.jpg",
+    "/assets/products/heller-swell-red-orange/2.jpg",
+    "/assets/products/heller-swell-red-orange/3.jpg"
    ],
    "photoAlt": {
     "en": "Heller Swell wall catchall in Red Orange by Anna Dawson: wave-shaped wall hook and tray",
@@ -887,7 +877,6 @@
    "storyKey": "anna-dawson"
   },
   {
-   "sku": "TT-HEL-0006",
    "slug": "heller-swell-blue",
    "featured": false,
    "dropDate": "2026-10-01",
@@ -948,9 +937,9 @@
     "moreColours"
    ],
    "photos": [
-    "/assets/products/TT-HEL-0006/1.jpg",
-    "/assets/products/TT-HEL-0006/2.jpg",
-    "/assets/products/TT-HEL-0006/3.jpg"
+    "/assets/products/heller-swell-blue/1.jpg",
+    "/assets/products/heller-swell-blue/2.jpg",
+    "/assets/products/heller-swell-blue/3.jpg"
    ],
    "photoAlt": {
     "en": "Heller Swell wall catchall in Blue by Anna Dawson: wave-shaped wall hook and tray",
