@@ -282,6 +282,8 @@ html[data-lang="zh"] .badge { letter-spacing: .06em; font-size: .72rem; }
 .pdp-info h1 { font-size: clamp(1.9rem, 3.6vw, 2.8rem); margin: .25em 0 .35em; }
 .pdp-price { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; font-size: 1.6rem; font-weight: 600; margin: 14px 0 6px; }
 .pdp-price .retail { font-size: .88rem; font-weight: 400; color: var(--muted); }
+.sold-label { display: inline-block; font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); border: 1px solid currentColor; border-radius: 99px; padding: 3px 10px; }
+.pdp-price .sold-label { font-size: .9rem; }
 .pdp-stock { font-size: .92rem; color: var(--muted); margin-bottom: 20px; }
 .pdp-lede { font-size: 1.05rem; line-height: 1.7; }
 .pdp .badges { position: static; }

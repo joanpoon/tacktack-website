@@ -145,12 +145,17 @@
     return '<article class="card' + (s.st === "sold" ? " is-sold" : "") + '"><a href="' + url(p) + '">' +
       '<div class="card-media"><img src="' + esc(photo(p)) + '"' + srcset(photo(p), CARD_SIZES) + ' alt="' + esc(alt(p)) + '" width="800" height="1000"' + (eager ? "" : ' loading="lazy"') + ' decoding="async">' + badges(p) + "</div>" +
       '<div class="card-body"><p class="card-kicker">' + esc(kicker(p)) + '</p><h3 class="card-title">' + esc(L(p.name)) + "</h3>" + (dims(p) ? '<p class="card-meta">' + esc(dims(p)) + "</p>" : "") +
-      '<p class="card-price"><span>' + money(p.price) + "</span>" + (p.retailPrice ? '<span class="retail">' + esc(T().retail(money(p.retailPrice))) + "</span>" : "") + "</p></div></a></article>";
+      '<p class="card-price">' + priceHtml(p) + "</p></div></a></article>";
   }
   /* sig(): a fingerprint of what a grid shows. The build writes the same value into data-sig, so a pre-rendered grid is
      only re-drawn when products.json (or the date, for NEW THIS WEEK) has changed since the last build. */
+  // a sold piece shows only "Sold", never its price (same as price_html() in build-pages.py)
+  function priceHtml(p) {
+    if (state(p).st === "sold") return '<span class="sold-label">' + esc(T().badge.sold) + "</span>";
+    return "<span>" + money(p.price) + "</span>" + (p.retailPrice ? '<span class="retail">' + esc(T().retail(money(p.retailPrice))) + "</span>" : "");
+  }
   function sig(list) {
-    return hash(list.map(function (p) { var s = state(p); return [p.slug, s.st, isNew(p) ? 1 : 0, p.price || 0, p.retailPrice ? p.retailPrice : "", L(p.name), photo(p)].join(":"); }).join("|"));
+    return hash(list.map(function (p) { var s = state(p); var sold = s.st === "sold"; return [p.slug, s.st, isNew(p) ? 1 : 0, sold ? 0 : p.price || 0, p.retailPrice && !sold ? p.retailPrice : "", L(p.name), photo(p)].join(":"); }).join("|"));
   }
   function grid(el, list, eager) {
     if (!el) return;
@@ -320,6 +325,7 @@
   }
   function policyText(p) {
     var t = T().policy, price = +p.price || 0;
+    if (state(p).st === "sold") return t.sold;
     if (price < 1500) return t.full(money(price));
     if (price < 10000) return t.dep30(money(Math.ceil(price * 0.3)), money(price));
     return t.dep20(money(Math.max(3000, Math.ceil(price * 0.2))), money(price));
@@ -354,7 +360,7 @@
         '<div class="pdp-info">' +
           '<p class="eyebrow">' + esc(kicker(p)) + "</p>" + badges(p) +
           "<h1>" + esc(name) + "</h1>" +
-          '<div class="pdp-price"><span>' + money(p.price) + "</span>" + (p.retailPrice ? '<span class="retail">' + esc(t.retail(money(p.retailPrice))) + "</span>" : "") + "</div>" +
+          '<div class="pdp-price">' + priceHtml(p) + "</div>" +
           '<p class="pdp-stock">' + esc(stockLine) + "</p>" +
           '<p class="pdp-lede">' + esc(L(p.description)) + "</p>" +
           notices(p.notices) +
@@ -374,7 +380,7 @@
       "</div>" +
       (story ? '<section class="section-tight"><div class="story"><div><p class="eyebrow">' + esc(t.labels.story) + "</p><h2>" + esc(L(story.title)) + "</h2></div><p>" + esc(L(story.body)) + "</p></div></section>" : "") +
       '<section class="section-tight" id="more"><div class="section-head"><h2>' + esc(rel.same.length >= 4 ? t.more(p.brand || "") : t.alsoLike) + '</h2><a class="text-link" href="' + lp("/shop/") + '">' + esc(t.shopAll) + ' →</a></div><div class="grid grid-4">' + rel.more.map(function (x) { return card(x); }).join("") + "</div></section>" +
-      '<div class="sticky-cta" id="sticky-cta"><div class="p">' + money(p.price) + "<small>" + esc(name) + '</small></div><a class="btn" href="' + cta.href + '" target="_blank" rel="noopener">' + WA_ICON + "WhatsApp</a></div>";
+      '<div class="sticky-cta" id="sticky-cta"><div class="p">' + (s.st === "sold" ? esc(t.badge.sold) : money(p.price)) + "<small>" + esc(name) + '</small></div><a class="btn" href="' + cta.href + '" target="_blank" rel="noopener">' + WA_ICON + "WhatsApp</a></div>";
   }
   var LIVE_PARTS = [".pdp-info > .badges", ".pdp-price", ".pdp-stock", "#main-cta", "#policy-text", "#more", "#sticky-cta"];
   function renderProduct() {
