@@ -28,6 +28,7 @@ window.TT_STRINGS = {
       both: "Self-pickup by appointment, or delivery across Hong Kong quoted over WhatsApp. Small pieces can go by courier."
     },
     policy: {
+      sold: "This piece has sold, so it's no longer priced. Message us on WhatsApp and we'll tell you when we find a similar one.",
       full: p => "Under HK$1,500: reserve by paying in full (" + p + "). Pick up or arrange delivery within 7 days.",
       dep30: (d, p) => "30% deposit (" + d + ") holds it for up to 7 days. Balance before pickup or delivery.",
       dep20: (d, p) => "20% deposit (" + d + ") holds it for up to 14 days. Balance before pickup or delivery.",
@@ -37,7 +38,7 @@ window.TT_STRINGS = {
     wa: {
       ask: "WhatsApp to reserve",
       askHold: "Join the waitlist",
-      askSold: "Ask about similar pieces",
+      askSold: "WhatsApp me for similar pieces",
       general: "Chat on WhatsApp",
       msg: (name, url) => "Hi Tack, tack! I'm interested in " + name + ". Is it still available?\n" + url,
       msgHold: (name, url) => "Hi Tack, tack! " + name + " shows as on hold. Could you let me know if it becomes available?\n" + url,
@@ -92,6 +93,7 @@ window.TT_STRINGS = {
       both: "可預約自取，或全港送貨（運費經 WhatsApp 報價）。細件貨品可安排速遞。"
     },
     policy: {
+      sold: "這件已售出，不再標價。WhatsApp 我們，搵到同類貨品會通知你。",
       full: p => "HK$1,500 以下貨品須全數付款（" + p + "）方可確認，並於 7 天內自取或安排送貨。",
       dep30: (d, p) => "付 30% 訂金（" + d + "）可留貨最多 7 天，餘款須於自取或送貨前付清。",
       dep20: (d, p) => "付 20% 訂金（" + d + "）可留貨最多 14 天，餘款須於自取或送貨前付清。",
@@ -101,7 +103,7 @@ window.TT_STRINGS = {
     wa: {
       ask: "WhatsApp 查詢／留貨",
       askHold: "加入候補名單",
-      askSold: "查詢同類貨品",
+      askSold: "WhatsApp 我查詢同類貨品",
       general: "WhatsApp 聯絡我們",
       msg: (name, url) => "你好 Tack, tack!，我想查詢「" + name + "」，請問仲有貨嗎？\n" + url,
       msgHold: (name, url) => "你好 Tack, tack!，「" + name + "」顯示已留貨，如果重新有貨可以通知我嗎？\n" + url,
