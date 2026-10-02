@@ -113,7 +113,7 @@
     }).join("") + "</div>";
   }
   function pdpTrust(p) {   // same as pdp_trust() in build-pages.py
-    var tr = T().trust, g = (p.condition || {}).grade; if (g === "open-box") g = "brand-new";
+    var tr = T().trust, g = (p.condition || {}).grade; if (g === "open-box") g = "brand-new"; if (g === "near-mint") g = "display";
     var items = (g === "brand-new" ? [tr.neu] : []).concat([tr.genuine, tr.pickup, tr.photos]);
     return '<ul class="pdp-trust">' + items.map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + "</ul>";
   }
@@ -337,8 +337,11 @@
   }
   function productMarkup(p) {   // same markup as product_markup() in scripts/build-pages.py
     var t = T(), s = state(p), cta = waFor(p), name = L(p.name);
-    var grade = (p.condition || {}).grade; if (grade === "open-box") grade = "brand-new";   // old grade merged into Brand new
+    var rawGrade = (p.condition || {}).grade || "";
+    var openBox = rawGrade === "open-box";
+    var grade = openBox ? "brand-new" : (rawGrade === "near-mint" ? "display" : rawGrade); // legacy near-mint key shows as Display
     var G = t.grades, gkeys = Object.keys(G), gi = gkeys.indexOf(grade);
+    var gradeName = gi >= 0 ? (openBox ? t.openBoxLabel : G[grade][0]) : t.gradeTbc;
     var stockLine = t.stock[s.st === "sold" ? "sold" : s.st === "on-hold" ? "onHold" : "available"];
     var specs = [
       [t.labels.designer, p.designer], [t.labels.brand, p.brand, p.brand ? brandUrl(p.brand) : ""], [t.labels.model, p.model], [t.labels.year, L(p.year)],
@@ -347,7 +350,7 @@
     ].filter(function (r) { return r[1]; });
     var photos = (p.photos && p.photos.length ? p.photos : [photo(p)]);
     var story = DATA.stories && DATA.stories[p.storyKey || ""];
-    var notes = L((p.condition || {}).notes);
+    var notes = L((p.condition || {}).notes).trim();
     var details = (p.details && (p.details[lang] || p.details.en)) || [];
     var cat = p.category || "other", sep = '<span aria-hidden="true">/</span>', rel = related(p);
     return '<nav class="crumbs" aria-label="' + esc(t.crumbs) + '"><a href="' + lp("/") + '">' + esc(t.home) + "</a>" + sep +
@@ -367,10 +370,12 @@
           '<div class="cta-row" id="main-cta"><a class="btn" href="' + cta.href + '" target="_blank" rel="noopener">' + WA_ICON + esc(cta.label) + '</a><button type="button" class="btn btn-ghost share-btn" id="share" aria-label="' + esc(t.share) + '">' + SHARE_ICON + "</button></div>" +
           pdpTrust(p) +
           '<p class="fine">' + esc(t.policy.pay) + "</p>" +
-          '<section class="block"><h2>' + esc(t.labels.condition) + '</h2><div class="grade-row"><span>' + esc(gi >= 0 ? G[grade][0] : t.gradeTbc) + '</span><span class="tip"><button type="button" class="tip-btn" aria-expanded="false" aria-controls="grade-pop" aria-label="' + esc(t.gradeHelp) + '">?</button>' +
-            '<span class="tip-pop" id="grade-pop" role="tooltip" hidden><strong>' + esc(t.scaleTitle) + "</strong><ol>" + gkeys.map(function (k, i) { return '<li class="' + (i === gi ? "on" : "") + '"><b>' + esc(G[k][0]) + "</b>: " + esc(G[k][1]) + "</li>"; }).join("") + "</ol></span></span></div>" +
+          '<section class="block"><h2>' + esc(t.labels.condition) + '</h2><div class="grade-row"><span>' + esc(gradeName) + '</span><span class="tip"><button type="button" class="tip-btn" aria-expanded="false" aria-controls="grade-pop" aria-label="' + esc(t.gradeHelp) + '">?</button>' +
+            '<span class="tip-pop" id="grade-pop" role="tooltip" hidden><strong>' + esc(t.scaleTitle) + "</strong><ol>" + gkeys.map(function (k, i) { return '<li class="' + (i === gi ? "on" : "") + '"><b>' + esc(G[k][0]) + "</b>: " + esc(G[k][1]) + "</li>"; }).join("") + "</ol>" +
+            '<p class="tip-more">' + esc(t.openBoxNote) + '</p><a href="' + lp("/condition/") + '">' + esc(t.gradeGuide) + "</a></span></span></div>" +
             '<ol class="scale" aria-hidden="true">' + gkeys.map(function (k, i) { return '<li class="' + (i === gi ? "on" : "") + '"></li>'; }).join("") + '</ol><div class="scale-labels" aria-hidden="true"><span>' + esc(G[gkeys[0]][0]) + "</span><span>" + esc(G[gkeys[gkeys.length - 1]][0]) + "</span></div>" +
-            '<p class="fine" style="margin-top:10px">' + esc(gi >= 0 ? (notes || G[grade][1]) : t.gradeTbcNote) + "</p></section>" +
+            '<p class="fine grade-def" style="margin-top:10px">' + esc(gi >= 0 ? G[grade][1] : t.gradeTbcNote) + "</p>" +
+            '<p class="cond-notes" id="cond-notes"' + (notes ? "" : " hidden") + ">" + esc(notes) + "</p></section>" +
           '<section class="block"><h2>' + esc(t.labels.specs) + '</h2><dl class="specs">' + specs.map(function (r) { return "<dt>" + esc(r[0]) + "</dt><dd>" + (r[2] ? '<a href="' + r[2] + '">' + esc(r[1]) + "</a>" : esc(r[1])) + "</dd>"; }).join("") + "</dl></section>" +
           (details.length ? '<section class="block"><h2>' + esc(t.labels.details) + '</h2><ul class="ticks">' + details.map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul></section>" : "") +
           (sizeRow(p, p) ? '<section class="block size-block"><h2>' + esc(t.sizeTitle(p.brand || "")) + "</h2>" + sizeRow(p, p) + '<p class="fine">' + esc(t.sizeNote) + "</p></section>" : "") +
@@ -382,7 +387,7 @@
       '<section class="section-tight" id="more"><div class="section-head"><h2>' + esc(rel.same.length >= 4 ? t.more(p.brand || "") : t.alsoLike) + '</h2><a class="text-link" href="' + lp("/shop/") + '">' + esc(t.shopAll) + ' →</a></div><div class="grid grid-4">' + rel.more.map(function (x) { return card(x); }).join("") + "</div></section>" +
       '<div class="sticky-cta" id="sticky-cta"><div class="p">' + (s.st === "sold" ? esc(t.badge.sold) : money(p.price)) + "<small>" + esc(name) + '</small></div><a class="btn" href="' + cta.href + '" target="_blank" rel="noopener">' + WA_ICON + "WhatsApp</a></div>";
   }
-  var LIVE_PARTS = [".pdp-info > .badges", ".pdp-price", ".pdp-stock", "#main-cta", "#policy-text", "#more", "#sticky-cta"];
+  var LIVE_PARTS = [".pdp-info > .badges", ".pdp-price", ".pdp-stock", "#main-cta", "#policy-text", "#cond-notes", "#more", "#sticky-cta"];
   function renderProduct() {
     var root = $("#product-root"); if (!root) return;
     var p = findProduct(), t = T();

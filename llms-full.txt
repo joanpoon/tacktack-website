@@ -35,6 +35,7 @@
 - [Shop all pieces](https://tacktackstudio.com/shop/)
 - [How to buy, holds and deposits](https://tacktackstudio.com/how-to-buy/)
 - [Delivery and pickup](https://tacktackstudio.com/delivery/)
+- [Condition guide](https://tacktackstudio.com/condition/)
 - [FAQ](https://tacktackstudio.com/faq/)
 - [About](https://tacktackstudio.com/about/)
 - [Contact](https://tacktackstudio.com/contact/)
@@ -84,7 +85,7 @@ Yes, with a deposit. Under HK$1,500 we take full payment; HK$1,500–9,999 needs
 FPS, PayMe, bank transfer and cash, plus PayPal (for overseas buyers). We don't take card payments on the site, and there's no checkout on the site.
 
 ### What do the condition grades mean?
-We use five steps: Brand new, Near mint, Excellent, Good and Fair. Each listing adds notes on any marks, wear or missing parts. Ask and we'll send close-ups.
+We use five grades: Brand new, Display, Excellent, Good and Fair. Brand new means unused and never installed, in original packaging unless stated. An unused piece whose box was opened or is missing is marked Brand new · open box. Each listing can add notes on marks, wear or missing parts. See the condition guide: https://tacktackstudio.com/condition/
 
 ### Can I see a piece before buying?
 Yes. Viewings are free and by appointment (about 30 minutes). A viewing doesn't hold the item, so place a deposit if you don't want to miss it.
@@ -159,4 +160,4 @@ Tack, tack! 是香港的獨立設計小店，現有 Swell（W 73 × D 7.6 × H 3
 - Heller Swell 波浪掛牆收納 · 橙紅色：HK$980，https://tacktackstudio.com/zh/item/heller-swell-red-orange/
 - Heller Swell 波浪掛牆收納 · 藍色：HK$980，https://tacktackstudio.com/zh/item/heller-swell-blue/
 
-Last updated: 2026-10-01
+Last updated: 2026-10-02

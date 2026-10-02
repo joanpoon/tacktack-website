@@ -12,6 +12,7 @@
 - New pieces: Every Thursday. Follow @tacktackstudio on Instagram or Threads.
 - Contact: WhatsApp +852 6507 0791 (https://wa.me/85265070791), email hello@tacktackstudio.com, Instagram and Threads @tacktackstudio
 - Returns: all sales are final; if a piece is materially different from its description when you view it, the deposit is refunded in full.
+- Condition grades: 1 Brand new (unused, never installed; in original packaging unless stated; unused open or missing box is Brand new · open box), 2 Display (never used at home; only shown in a showroom or shop), 3 Excellent (lightly used; no marks visible at a normal distance; works perfectly), 4 Good (honest wear consistent with age; sound and fully working), 5 Fair (clear wear, repair, or replaced part; described and priced to match). Guide: https://tacktackstudio.com/condition/
 
 ## Brands
 - [Isamu Noguchi AKARI](https://tacktackstudio.com/brand/isamu-noguchi-akari/): AKARI is the series of paper light sculptures Isamu Noguchi began in 1951, after visiting Gifu, a Japanese town known for its paper lanterns. Every shade is washi paper stretched over bamboo ribbing, and each one is still made by hand by Ozeki & Co. in Gifu. Every listing here carries an honest condition grade and real measurements. The shades are sold without the cord set: a cord add-on or installation is available, and we quote it on WhatsApp.
@@ -35,6 +36,7 @@
 - [Shop all pieces](https://tacktackstudio.com/shop/)
 - [How to buy, holds and deposits](https://tacktackstudio.com/how-to-buy/)
 - [Delivery and pickup](https://tacktackstudio.com/delivery/)
+- [Condition guide](https://tacktackstudio.com/condition/)
 - [FAQ](https://tacktackstudio.com/faq/)
 - [About](https://tacktackstudio.com/about/)
 - [Contact](https://tacktackstudio.com/contact/)
@@ -46,4 +48,4 @@
 - [Full details: every piece, FAQ and policies](https://tacktackstudio.com/llms-full.txt)
 - [Sitemap](https://tacktackstudio.com/sitemap.xml)
 
-Last updated: 2026-10-01
+Last updated: 2026-10-02

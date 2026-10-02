@@ -302,6 +302,10 @@ html[data-lang="zh"] .block h2 { letter-spacing: .1em; font-size: .82rem; }
 .tip-pop ol { margin: 8px 0 0; padding-left: 18px; }
 .tip-pop li { margin: 3px 0; }
 .tip-pop li.on { font-weight: 700; }
+.tip-pop .tip-more { margin: 10px 0 0; }
+.tip-pop a { display: inline-block; margin-top: 8px; text-decoration: underline; }
+.cond-notes { margin: 8px 0 0; white-space: pre-line; }
+.prose .grade-list { grid-template-columns: 1fr; }
 .specs { display: grid; grid-template-columns: max-content 1fr; gap: 8px 22px; margin: 0; font-size: .94rem; }
 .specs dt { color: var(--muted); }
 .specs dd { margin: 0; }
