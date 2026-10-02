@@ -154,6 +154,18 @@
     if (state(p).st === "sold") return '<span class="sold-label">' + esc(T().badge.sold) + "</span>";
     return "<span>" + money(p.price) + "</span>" + (p.retailPrice ? '<span class="retail">' + esc(T().retail(money(p.retailPrice))) + "</span>" : "");
   }
+  // condition: grade chip, open-box note, condition notes, final-sale line (same as build-pages.py)
+  var COND_NOTE_KEYS = ["flaws", "parts", "box", "electrics", "mark", "year"];
+  function gradeOf(p) { var g = (p.condition || {}).grade || ""; return g === "open-box" ? "brand-new" : g; }
+  function openBox(p) { var c = p.condition || {}; return gradeOf(p) === "brand-new" && (!!c.openBox || c.grade === "open-box"); }
+  function gradeLabel(p) { var g = gradeOf(p), t = T(); if (!t.grades[g]) return ""; return openBox(p) ? t.openBox[0] : t.grades[g][0]; }
+  function gradeChip(p) { var l = gradeLabel(p); return l && state(p).st !== "sold" ? '<a class="grade-chip" href="' + lp("/faq/") + '#condition-guide" aria-label="' + esc(T().chipAria(l)) + '">' + esc(l) + "</a>" : ""; }
+  function condNotes(p) {
+    var c = p.condition || {}, lab = T().condNotes;
+    var rows = COND_NOTE_KEYS.filter(function (k) { return L(c[k]); });
+    return rows.length ? '<h3 class="cond-notes-h">' + esc(lab.title) + '</h3><dl class="specs cond-notes">' + rows.map(function (k) { return "<dt>" + esc(lab[k]) + "</dt><dd>" + esc(L(c[k])) + "</dd>"; }).join("") + "</dl>" : "";
+  }
+  function finalNote(p) { var g = gradeOf(p); return g && g !== "brand-new" ? '<p class="final-note">' + esc(T().finalNote) + "</p>" : ""; }
   function sig(list) {
     return hash(list.map(function (p) { var s = state(p); var sold = s.st === "sold"; return [p.slug, s.st, isNew(p) ? 1 : 0, sold ? 0 : p.price || 0, p.retailPrice && !sold ? p.retailPrice : "", L(p.name), photo(p)].join(":"); }).join("|"));
   }
@@ -360,17 +372,17 @@
         '<div class="pdp-info">' +
           '<p class="eyebrow">' + esc(kicker(p)) + "</p>" + badges(p) +
           "<h1>" + esc(name) + "</h1>" +
-          '<div class="pdp-price">' + priceHtml(p) + "</div>" +
+          '<div class="pdp-price">' + priceHtml(p) + gradeChip(p) + "</div>" +
           '<p class="pdp-stock">' + esc(stockLine) + "</p>" +
           '<p class="pdp-lede">' + esc(L(p.description)) + "</p>" +
           notices(p.notices) +
           '<div class="cta-row" id="main-cta"><a class="btn" href="' + cta.href + '" target="_blank" rel="noopener">' + WA_ICON + esc(cta.label) + '</a><button type="button" class="btn btn-ghost share-btn" id="share" aria-label="' + esc(t.share) + '">' + SHARE_ICON + "</button></div>" +
-          pdpTrust(p) +
+          finalNote(p) + pdpTrust(p) +
           '<p class="fine">' + esc(t.policy.pay) + "</p>" +
-          '<section class="block"><h2>' + esc(t.labels.condition) + '</h2><div class="grade-row"><span>' + esc(gi >= 0 ? G[grade][0] : t.gradeTbc) + '</span><span class="tip"><button type="button" class="tip-btn" aria-expanded="false" aria-controls="grade-pop" aria-label="' + esc(t.gradeHelp) + '">?</button>' +
+          '<section class="block"><h2>' + esc(t.labels.condition) + '</h2><div class="grade-row"><span>' + esc(gi >= 0 ? gradeLabel(p) : t.gradeTbc) + '</span><span class="tip"><button type="button" class="tip-btn" aria-expanded="false" aria-controls="grade-pop" aria-label="' + esc(t.gradeHelp) + '">?</button>' +
             '<span class="tip-pop" id="grade-pop" role="tooltip" hidden><strong>' + esc(t.scaleTitle) + "</strong><ol>" + gkeys.map(function (k, i) { return '<li class="' + (i === gi ? "on" : "") + '"><b>' + esc(G[k][0]) + "</b>: " + esc(G[k][1]) + "</li>"; }).join("") + "</ol></span></span></div>" +
             '<ol class="scale" aria-hidden="true">' + gkeys.map(function (k, i) { return '<li class="' + (i === gi ? "on" : "") + '"></li>'; }).join("") + '</ol><div class="scale-labels" aria-hidden="true"><span>' + esc(G[gkeys[0]][0]) + "</span><span>" + esc(G[gkeys[gkeys.length - 1]][0]) + "</span></div>" +
-            '<p class="fine" style="margin-top:10px">' + esc(gi >= 0 ? (notes || G[grade][1]) : t.gradeTbcNote) + "</p></section>" +
+            '<p class="fine" style="margin-top:10px">' + esc(gi >= 0 ? (notes || (openBox(p) ? t.openBox[1] : G[grade][1])) : t.gradeTbcNote) + "</p>" + condNotes(p) + "</section>" +
           '<section class="block"><h2>' + esc(t.labels.specs) + '</h2><dl class="specs">' + specs.map(function (r) { return "<dt>" + esc(r[0]) + "</dt><dd>" + (r[2] ? '<a href="' + r[2] + '">' + esc(r[1]) + "</a>" : esc(r[1])) + "</dd>"; }).join("") + "</dl></section>" +
           (details.length ? '<section class="block"><h2>' + esc(t.labels.details) + '</h2><ul class="ticks">' + details.map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul></section>" : "") +
           (sizeRow(p, p) ? '<section class="block size-block"><h2>' + esc(t.sizeTitle(p.brand || "")) + "</h2>" + sizeRow(p, p) + '<p class="fine">' + esc(t.sizeNote) + "</p></section>" : "") +
