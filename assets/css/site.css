@@ -427,3 +427,13 @@ body.has-sticky { padding-bottom: 76px; }
 .facts dt { font-weight: 600; font-size: .86rem; letter-spacing: .02em; }
 .facts dd { margin: 0; color: var(--muted); font-size: .92rem; line-height: 1.5; }
 .faq-block h2 { margin-bottom: 8px; }
+
+/* Condition: grade chip next to the price (cream + walnut, never orange), condition notes, final-sale line, guide */
+.grade-chip { display: inline-flex; align-items: center; font-family: "DM Sans", sans-serif; font-size: .8rem; font-weight: 600; letter-spacing: .02em; color: var(--walnut); background: #F5EFE4; border: 1px solid rgba(75, 46, 33, .25); border-radius: 99px; padding: 4px 12px; text-decoration: none; align-self: center; }
+.grade-chip:hover, .grade-chip:focus-visible { border-color: var(--walnut); }
+.cond-notes-h { font-size: .95rem; margin: 16px 0 6px; }
+.final-note { font-size: .88rem; color: var(--walnut); margin: 10px 0 0; }
+.cond-guide-block { margin-top: 36px; padding-top: 8px; scroll-margin-top: 90px; }
+.cond-guide { display: grid; gap: 12px; margin: 14px 0; }
+.cond-guide dt { font-weight: 600; }
+.cond-guide dd { margin: 2px 0 0; color: var(--muted); }
