@@ -437,3 +437,10 @@ body.has-sticky { padding-bottom: 76px; }
 .cond-guide { display: grid; gap: 12px; margin: 14px 0; }
 .cond-guide dt { font-weight: 600; }
 .cond-guide dd { margin: 2px 0 0; color: var(--muted); }
+
+/* Limited-time promo bar (3 Oct to 1 Nov 2026). Hidden outside its dates by the inline script in partials/header.html. */
+.promo-bar { background: var(--blue, #ADDCFB); color: var(--walnut); font-size: .8rem; line-height: 1.4; text-align: center; padding: 7px var(--gutter); letter-spacing: .01em; }
+.promo-bar[hidden] { display: none; }
+.promo-bar p { margin: 0; }
+.promo-bar a { color: inherit; text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; }
+@media (max-width: 520px) { .promo-bar { font-size: .74rem; padding: 6px 14px; } }
