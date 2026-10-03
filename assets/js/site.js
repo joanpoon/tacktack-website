@@ -213,7 +213,7 @@
     }
 
     var brands = {};
-    PRODUCTS.forEach(function (p) { var k = p.brand; if (!brands[k]) brands[k] = { brand: k, designers: [], n: 0 }; brands[k].n++; if (p.designer && brands[k].designers.indexOf(p.designer) < 0) brands[k].designers.push(p.designer); });
+    PRODUCTS.forEach(function (p) { if (state(p).st === "sold") return; var k = p.brand; if (!brands[k]) brands[k] = { brand: k, designers: [], n: 0 }; brands[k].n++; if (p.designer && brands[k].designers.indexOf(p.designer) < 0) brands[k].designers.push(p.designer); });
     setHTML($("#brand-row"), Object.keys(brands).sort().map(function (k) {
       var b = brands[k];
       return '<a class="brand-pill" href="' + brandUrl(k) + '"><strong>' + esc(k) + "</strong><span>" + esc(b.designers.join(", ") || T().pieces(b.n)) + "</span></a>";
@@ -353,8 +353,8 @@
     var G = t.grades, gkeys = Object.keys(G), gi = gkeys.indexOf(grade);
     var stockLine = t.stock[s.st === "sold" ? "sold" : s.st === "on-hold" ? "onHold" : "available"];
     var specs = [
-      [t.labels.designer, p.designer], [t.labels.brand, p.brand, p.brand ? brandUrl(p.brand) : ""], [t.labels.model, p.model], [t.labels.year, L(p.year)],
-      [t.labels.colour, L(p.colour)], [t.labels.material, L(p.material)], [t.labels.dims, dims(p) || t.dimsTbc],
+      [t.labels.designer, p.designer], [t.labels.brand, p.brand, p.brand && PRODUCTS.some(function (x) { return x.brand === p.brand && state(x).st !== "sold"; }) ? brandUrl(p.brand) : ""], [t.labels.model, p.model], [t.labels.year, L(p.year)],
+      [t.labels.colour, L(p.colour)], [t.labels.material, L(p.material)], [t.labels.dims, dims(p) || (state(p).st === "sold" ? "" : t.dimsTbc)],
       [t.labels.weight, p.dimensions && p.dimensions.weightKg ? "≈ " + p.dimensions.weightKg + " kg" : ""]
     ].filter(function (r) { return r[1]; });
     var photos = (p.photos && p.photos.length ? p.photos : [photo(p)]);
@@ -379,13 +379,14 @@
           '<div class="cta-row" id="main-cta"><a class="btn" href="' + cta.href + '" target="_blank" rel="noopener">' + WA_ICON + esc(cta.label) + '</a><button type="button" class="btn btn-ghost share-btn" id="share" aria-label="' + esc(t.share) + '">' + SHARE_ICON + "</button></div>" +
           finalNote(p) + pdpTrust(p) +
           '<p class="fine">' + esc(t.policy.pay) + "</p>" +
+          (state(p).st === "sold" && gi < 0 ? "" :   // an ungraded sold piece has no condition block (same as build-pages.py)
           '<section class="block"><h2>' + esc(t.labels.condition) + '</h2><div class="grade-row"><span>' + esc(gi >= 0 ? gradeLabel(p) : t.gradeTbc) + '</span><span class="tip"><button type="button" class="tip-btn" aria-expanded="false" aria-controls="grade-pop" aria-label="' + esc(t.gradeHelp) + '">?</button>' +
             '<span class="tip-pop" id="grade-pop" role="tooltip" hidden><strong>' + esc(t.scaleTitle) + "</strong><ol>" + gkeys.map(function (k, i) { return '<li class="' + (i === gi ? "on" : "") + '"><b>' + esc(G[k][0]) + "</b>: " + esc(G[k][1]) + "</li>"; }).join("") + "</ol></span></span></div>" +
             '<ol class="scale" aria-hidden="true">' + gkeys.map(function (k, i) { return '<li class="' + (i === gi ? "on" : "") + '"></li>'; }).join("") + '</ol><div class="scale-labels" aria-hidden="true"><span>' + esc(G[gkeys[0]][0]) + "</span><span>" + esc(G[gkeys[gkeys.length - 1]][0]) + "</span></div>" +
-            '<p class="fine" style="margin-top:10px">' + esc(gi >= 0 ? (notes || (openBox(p) ? t.openBox[1] : G[grade][1])) : t.gradeTbcNote) + "</p>" + condNotes(p) + "</section>" +
+            '<p class="fine" style="margin-top:10px">' + esc(gi >= 0 ? (notes || (openBox(p) ? t.openBox[1] : G[grade][1])) : t.gradeTbcNote) + "</p>" + condNotes(p) + "</section>") +
           '<section class="block"><h2>' + esc(t.labels.specs) + '</h2><dl class="specs">' + specs.map(function (r) { return "<dt>" + esc(r[0]) + "</dt><dd>" + (r[2] ? '<a href="' + r[2] + '">' + esc(r[1]) + "</a>" : esc(r[1])) + "</dd>"; }).join("") + "</dl></section>" +
           (details.length ? '<section class="block"><h2>' + esc(t.labels.details) + '</h2><ul class="ticks">' + details.map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul></section>" : "") +
-          (sizeRow(p, p) ? '<section class="block size-block"><h2>' + esc(t.sizeTitle(p.brand || "")) + "</h2>" + sizeRow(p, p) + '<p class="fine">' + esc(t.sizeNote) + "</p></section>" : "") +
+          (sizeRow(p, p) && state(p).st !== "sold" ? '<section class="block size-block"><h2>' + esc(t.sizeTitle(p.brand || "")) + "</h2>" + sizeRow(p, p) + '<p class="fine">' + esc(t.sizeNote) + "</p></section>" : "") +
           '<section class="block"><h2>' + esc(t.labels.fulfilment) + "</h2><p>" + esc(t.fulfil[p.fulfilment] || t.fulfil.both) + ' <a href="' + lp("/delivery/") + '">' + esc(t.fulfilMore) + '</a></p><p class="install-note">' + esc(t.install) + "</p></section>" +
           '<section class="block"><h2>' + esc(t.labels.policy) + '</h2><p id="policy-text">' + esc(policyText(p)) + '</p><p><a class="text-link" href="' + lp("/how-to-buy/") + '">' + esc(t.policy.more) + " →</a></p></section>" +
         "</div>" +

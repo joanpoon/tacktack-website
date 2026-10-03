@@ -994,6 +994,259 @@
     ]
    },
    "storyKey": "anna-dawson"
+  },
+  {
+   "slug": "ferm-living-pond-mirror",
+   "featured": false,
+   "brand": "ferm LIVING",
+   "name": {
+    "en": "Pond Mirror",
+    "zh": "Pond 掛牆鏡"
+   },
+   "model": "Pond Mirror",
+   "colour": {
+    "en": "",
+    "zh": ""
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "category": "decor",
+   "status": "sold",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/ferm-living-pond-mirror/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "ferm LIVING Pond Mirror, an organic wavy-edged wall mirror, hung beside a window above a radiator",
+    "zh": "ferm LIVING Pond Mirror 不規則波浪形掛牆鏡，掛在窗邊暖氣片上方"
+   },
+   "photoAlts": {
+    "en": [
+     "ferm LIVING Pond Mirror, an organic wavy-edged wall mirror, hung beside a window above a radiator"
+    ],
+    "zh": [
+     "ferm LIVING Pond Mirror 不規則波浪形掛牆鏡，掛在窗邊暖氣片上方"
+    ]
+   }
+  },
+  {
+   "slug": "akari-30a-sold",
+   "featured": false,
+   "brand": "AKARI",
+   "designer": "Isamu Noguchi",
+   "name": {
+    "en": "AKARI 30A Pendant",
+    "zh": "AKARI 30A 吊燈"
+   },
+   "model": "30A",
+   "colour": {
+    "en": "",
+    "zh": ""
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "category": "lighting",
+   "status": "sold",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/akari-30a-sold/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "Isamu Noguchi AKARI 30A pendant hanging by a window: a round washi paper shade on bamboo ribbing",
+    "zh": "野口勇 AKARI 30A 和紙吊燈掛在窗邊：竹骨圓形和紙燈罩"
+   },
+   "photoAlts": {
+    "en": [
+     "Isamu Noguchi AKARI 30A pendant hanging by a window: a round washi paper shade on bamboo ribbing"
+    ],
+    "zh": [
+     "野口勇 AKARI 30A 和紙吊燈掛在窗邊：竹骨圓形和紙燈罩"
+    ]
+   }
+  },
+  {
+   "slug": "andtradition-flowerpot-vp9-swim-blue",
+   "featured": false,
+   "brand": "&Tradition",
+   "name": {
+    "en": "Flowerpot VP9 · Swim Blue",
+    "zh": "Flowerpot VP9 · Swim Blue"
+   },
+   "model": "Flowerpot VP9",
+   "colour": {
+    "en": "Swim Blue",
+    "zh": "Swim Blue"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "category": "lighting",
+   "status": "sold",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/andtradition-flowerpot-vp9-swim-blue/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Flowerpot VP9 portable lamp in Swim Blue on a stack of books",
+    "zh": "&Tradition Flowerpot VP9 便攜燈（Swim Blue）放在一疊書上"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Flowerpot VP9 portable lamp in Swim Blue on a stack of books"
+    ],
+    "zh": [
+     "&Tradition Flowerpot VP9 便攜燈（Swim Blue）放在一疊書上"
+    ]
+   }
+  },
+  {
+   "slug": "hay-ice-cube-tray-light-blue",
+   "featured": false,
+   "brand": "HAY",
+   "name": {
+    "en": "Ice Cube Tray · Light Blue",
+    "zh": "製冰盒 · 淺藍色"
+   },
+   "model": "Ice Cube Tray",
+   "colour": {
+    "en": "Light blue",
+    "zh": "淺藍色"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "category": "decor",
+   "status": "sold",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/hay-ice-cube-tray-light-blue/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Ice Cube Tray in light blue, six large square compartments",
+    "zh": "HAY 淺藍色製冰盒，六格大方格"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Ice Cube Tray in light blue, six large square compartments"
+    ],
+    "zh": [
+     "HAY 淺藍色製冰盒，六格大方格"
+    ]
+   }
+  },
+  {
+   "slug": "verpan-pantop-pendant-mint-grey",
+   "featured": false,
+   "brand": "Verpan",
+   "name": {
+    "en": "Pantop Pendant · Mint Grey",
+    "zh": "Pantop 吊燈 · Mint Grey"
+   },
+   "model": "Pantop",
+   "colour": {
+    "en": "Mint Grey",
+    "zh": "Mint Grey"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "category": "lighting",
+   "status": "sold",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/verpan-pantop-pendant-mint-grey/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "Verpan Pantop pendant in Mint Grey: a bell-shaped metal shade",
+    "zh": "Verpan Pantop 吊燈（Mint Grey）：鐘形金屬燈罩"
+   },
+   "photoAlts": {
+    "en": [
+     "Verpan Pantop pendant in Mint Grey: a bell-shaped metal shade"
+    ],
+    "zh": [
+     "Verpan Pantop 吊燈（Mint Grey）：鐘形金屬燈罩"
+    ]
+   }
+  },
+  {
+   "slug": "hay-common-pendant-cord-set-beton-grey",
+   "featured": false,
+   "brand": "HAY",
+   "name": {
+    "en": "Common Pendant Cord Set · Beton Grey",
+    "zh": "Common 吊燈電線組 · Beton Grey"
+   },
+   "model": "Common",
+   "colour": {
+    "en": "Beton Grey",
+    "zh": "Beton Grey"
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "category": "lighting",
+   "status": "sold",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/hay-common-pendant-cord-set-beton-grey/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Common pendant cord set in Beton Grey: ceiling cup, coiled fabric cord and lamp holder",
+    "zh": "HAY Common 吊燈電線組（Beton Grey）：天花蓋、布線及燈頭"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Common pendant cord set in Beton Grey: ceiling cup, coiled fabric cord and lamp holder"
+    ],
+    "zh": [
+     "HAY Common 吊燈電線組（Beton Grey）：天花蓋、布線及燈頭"
+    ]
+   }
+  },
+  {
+   "slug": "hay-rice-paper-shade",
+   "featured": false,
+   "brand": "HAY",
+   "name": {
+    "en": "Rice Paper Shade",
+    "zh": "Rice Paper 紙燈罩"
+   },
+   "model": "Rice Paper Shade",
+   "colour": {
+    "en": "",
+    "zh": ""
+   },
+   "description": {
+    "en": "",
+    "zh": ""
+   },
+   "category": "lighting",
+   "status": "sold",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/hay-rice-paper-shade/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Rice Paper Shade, a round white paper pendant, above a dining table in front of bookshelves",
+    "zh": "HAY Rice Paper 圓形白色紙燈罩，掛在書架前的餐枱上"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Rice Paper Shade, a round white paper pendant, above a dining table in front of bookshelves"
+    ],
+    "zh": [
+     "HAY Rice Paper 圓形白色紙燈罩，掛在書架前的餐枱上"
+    ]
+   }
   }
  ]
 }
