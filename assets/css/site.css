@@ -229,6 +229,10 @@ html[data-lang="zh"] .badge { letter-spacing: .06em; font-size: .72rem; }
 .grade-list li { background: var(--paper); border-radius: var(--radius-sm); padding: 16px 18px; font-size: .9rem; color: var(--muted); border: 1px solid var(--line); }
 .grade-list strong { display: block; color: var(--walnut); font-size: 1rem; margin-bottom: 2px; }
 .grade-list .n { font-size: .7rem; letter-spacing: .14em; font-weight: 600; color: var(--walnut-2); }
+/* Help-page guide: one grade per row, so the longer FAQ wording stays readable in the prose column. */
+.prose .grade-list { grid-template-columns: 1fr; padding-left: 0; }
+.prose .grade-list li > span:not(.n) { display: block; }
+.prose .grade-list li > span:not(.n) + span:not(.n) { margin-top: 6px; }
 
 /* ---------- IG strip ---------- */
 .ig-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
