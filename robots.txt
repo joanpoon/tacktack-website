@@ -23,6 +23,9 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
+User-agent: Bingbot
+Allow: /
+
 User-agent: CCBot
 Allow: /
 

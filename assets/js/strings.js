@@ -56,7 +56,7 @@ window.TT_STRINGS = {
     home: "Home", shop: "Shop", crumbs: "Breadcrumb", fulfilMore: "Delivery & pickup details",
     sizeTitle: function (b) { return "Which " + b + " size?"; }, sizeNote: "Shades drawn to scale. Tap a size to see it.",
     trust: { neu: "Brand new, unused", genuine: "Authentic designer piece", pickup: "Pickup by appointment or delivery across Hong Kong", photos: "Real photos and measurements on WhatsApp" },
-    notices: { cordNotIncluded: "Cord not included. Cord add-on or installation service available. WhatsApp us for a quote.", moreColours: "More colourways available to order. Coming soon." },
+    notices: { cordNotIncluded: "Cord add-on and installation available. WhatsApp us for a quote.", moreColours: "More colourways available to order. Coming soon." },
     install: "Installation service available. Ask us for details.", gallery: "Product photos", photoN: function (i, n) { return "Photo " + i + " of " + n; }, photoMore: function (i) { return " (photo " + i + ")"; },
     filters: { category: "Category", brand: "Brand / designer", status: "Availability", price: "Price", sort: "Sort", reset: "Clear filters" },
     status: { active: "Available & on hold", available: "Available now", "on-hold": "On hold", sold: "Sold", all: "Everything" },
@@ -93,7 +93,7 @@ window.TT_STRINGS = {
     gradeHelp: "評級代表甚麼？",
     labels: { designer: "設計師", brand: "品牌", model: "型號", year: "年份", colour: "顏色", material: "物料", dims: "尺寸", weight: "重量", sku: "貨號", condition: "品相", details: "小提示", fulfilment: "自取及送貨", policy: "留貨及付款", story: "設計故事", specs: "規格" },
     dimsTbc: "尺寸稍後更新，歡迎查詢",
-    stock: { available: "現貨供應", onHold: "目前已被留貨", sold: "這件已經搵到新主人" },
+    stock: { available: "現貨供應", onHold: "目前已被留貨", sold: "這件已經找到新主人" },
     retail: p => "全新參考價約 " + p,
     fulfil: {
       pickup: "預約自取，確認後會提供地址。",
@@ -113,9 +113,9 @@ window.TT_STRINGS = {
       askHold: "加入候補名單",
       askSold: "WhatsApp 我查詢同類貨品",
       general: "WhatsApp 聯絡我們",
-      msg: (name, url) => "你好 Tack, tack!，我想查詢「" + name + "」，請問仲有貨嗎？\n" + url,
+      msg: (name, url) => "你好 Tack, tack!，我想查詢「" + name + "」，請問還有貨嗎？\n" + url,
       msgHold: (name, url) => "你好 Tack, tack!，「" + name + "」顯示已留貨，如果重新有貨可以通知我嗎？\n" + url,
-      msgSold: (name, url) => "你好 Tack, tack!，我喺已售出區見到「" + name + "」，如果再搵到同款可以通知我嗎？\n" + url,
+      msgSold: (name, url) => "你好 Tack, tack!，我在已售出區見到「" + name + "」，如果再找到同款可以通知我嗎？\n" + url,
       msgGeneral: "你好 Tack, tack!，我想查詢："
     },
     share: "分享", copied: "已複製連結",
@@ -123,9 +123,9 @@ window.TT_STRINGS = {
     alsoLike: "你可能也喜歡",
     shopAll: "查看全部",
     home: "主頁", shop: "選購", crumbs: "導覽路徑", fulfilMore: "送貨及自取詳情",
-    sizeTitle: function (b) { return "揀邊個 " + b + " 尺寸？"; }, sizeNote: "燈罩按實際比例繪畫，按一下查看。",
+    sizeTitle: function (b) { return "選哪個 " + b + " 尺寸？"; }, sizeNote: "燈罩按實際比例繪畫，按一下查看。",
     trust: { neu: "全新未使用", genuine: "正品設計好物", pickup: "預約自取或全港送貨", photos: "WhatsApp 即可索取實物相片及尺寸" },
-    notices: { cordNotIncluded: "不包電線。可加購電線或安排安裝服務，歡迎WhatsApp查詢報價。", moreColours: "更多顏色可訂購，即將推出。" },
+    notices: { cordNotIncluded: "可加配電線及安裝服務，歡迎 WhatsApp 查詢報價。", moreColours: "更多顏色可訂購，即將推出。" },
     install: "提供安裝服務，歡迎查詢詳情。", gallery: "產品相片", photoN: function (i, n) { return "第 " + i + " 張相片（共 " + n + " 張）"; }, photoMore: function (i) { return "（相片 " + i + "）"; },
     filters: { category: "類別", brand: "品牌／設計師", status: "供應狀況", price: "價錢", sort: "排序", reset: "清除篩選" },
     status: { active: "有貨及已留貨", available: "現貨", "on-hold": "已留貨", sold: "已售出", all: "全部" },
@@ -136,7 +136,7 @@ window.TT_STRINGS = {
     noResultsCta: "想搵特定款式？WhatsApp 話我知，我們會幫你留意。",
     soldEmpty: "已售出區暫時未有貨品，每件都仲等緊新主人。",
     photoNote: "此為示意插圖，實物相片即將上載；WhatsApp 我們即可索取相片。",
-    notFound: "搵唔到這件貨品，可能已改名或下架。",
+    notFound: "找不到這件貨品，可能已改名或下架。",
     by: "設計：", for_: "品牌："
   }
 };
