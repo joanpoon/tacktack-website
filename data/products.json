@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05",
+ "updated": "2026-10-06",
  "stories": {
   "isamu-noguchi": {
    "title": {
@@ -993,6 +993,100 @@
     ]
    },
    "storyKey": "anna-dawson"
+  },
+  {
+   "slug": "hay-tint-wineglass-pink-amber",
+   "featured": false,
+   "brand": "HAY",
+   "name": {
+    "en": "Tint Wine Glass, set of 2 · Pink / Amber",
+    "zh": "HAY Tint 酒杯（兩隻裝）粉紅／琥珀"
+   },
+   "model": "Tint Wine Glass",
+   "colour": {
+    "en": "Pink / Amber",
+    "zh": "粉紅／琥珀"
+   },
+   "description": {
+    "en": "Set of two tinted wine glasses: pink bowl, amber stem and foot. Brand new, with the original box.",
+    "zh": "兩隻裝著色酒杯：粉紅色杯身，琥珀色杯柄及杯腳。全新，連原裝盒。"
+   },
+   "category": "decor",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "",
+     "zh": ""
+    },
+    "box": {
+     "en": "Original box included.",
+     "zh": "連原裝盒。"
+    }
+   },
+   "status": "sold",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/hay-tint-wineglass-pink-amber/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Tint wine glasses, set of two, with pink bowls and amber stems and feet on a white table",
+    "zh": "HAY Tint 酒杯兩隻裝，粉紅色杯身配琥珀色杯柄及杯腳，放在白色桌面上"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Tint wine glasses, set of two, with pink bowls and amber stems and feet on a white table"
+    ],
+    "zh": [
+     "HAY Tint 酒杯兩隻裝，粉紅色杯身配琥珀色杯柄及杯腳，放在白色桌面上"
+    ]
+   }
+  },
+  {
+   "slug": "hay-tint-wineglass-clear",
+   "featured": false,
+   "brand": "HAY",
+   "name": {
+    "en": "Tint Wine Glass, set of 2 · Clear",
+    "zh": "HAY Tint 酒杯（兩隻裝）透明"
+   },
+   "model": "Tint Wine Glass",
+   "colour": {
+    "en": "Clear",
+    "zh": "透明"
+   },
+   "description": {
+    "en": "Set of two clear Tint wine glasses. Brand new, with the original box.",
+    "zh": "兩隻裝透明酒杯。全新，連原裝盒。"
+   },
+   "category": "decor",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "",
+     "zh": ""
+    },
+    "box": {
+     "en": "Original box included.",
+     "zh": "連原裝盒。"
+    }
+   },
+   "status": "sold",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/hay-tint-wineglass-clear/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Tint wine glasses, set of two, clear, on a white table",
+    "zh": "HAY Tint 透明酒杯兩隻裝，放在白色桌面上"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Tint wine glasses, set of two, clear, on a white table"
+    ],
+    "zh": [
+     "HAY Tint 透明酒杯兩隻裝，放在白色桌面上"
+    ]
+   }
   },
   {
    "slug": "ferm-living-pond-mirror",
