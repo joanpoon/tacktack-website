@@ -71,7 +71,7 @@ window.TT_STRINGS = {
     by: "by", for_: "for"
   },
   zh: {
-    cat: { lighting: "燈飾", seating: "座椅", sofas: "梳化", storage: "收納", tables: "枱", decor: "擺設及家品", other: "其他" },
+    cat: { lighting: "燈飾", seating: "座椅", sofas: "沙發", storage: "收納", tables: "桌", decor: "擺設及家品", other: "其他" },
     all: "全部",
     pieces: n => n + " 件",
     comingSoon: "即將上架", dropH: { neu: "本週新貨", latest: "最新貨品" },
@@ -98,14 +98,14 @@ window.TT_STRINGS = {
     fulfil: {
       pickup: "預約自取，確認後會提供地址。",
       delivery: "全港送貨，運費經 WhatsApp 報價。",
-      both: "可預約自取，或全港送貨（運費經 WhatsApp 報價）。細件貨品可安排速遞。"
+      both: "可預約自取，或全港送貨（運費經 WhatsApp 報價）。小件貨品可安排速遞。"
     },
     policy: {
-      sold: "這件已售出，不再標價。WhatsApp 我們，搵到同類貨品會通知你。",
+      sold: "這件已售出，不再標價。WhatsApp 我們，找到同類貨品會通知你。",
       full: p => "HK$1,500 以下貨品須全數付款（" + p + "）方可確認，並於 7 天內自取或安排送貨。",
       dep30: (d, p) => "付 30% 訂金（" + d + "）可留貨最多 7 天，餘款須於自取或送貨前付清。",
       dep20: (d, p) => "付 20% 訂金（" + d + "）可留貨最多 14 天，餘款須於自取或送貨前付清。",
-      pay: "接受 FPS 轉數快、PayMe、銀行轉帳、現金及 PayPal（海外買家）。私訊及讚好不代表留貨，先付先得。",
+      pay: "接受 FPS 轉數快、PayMe、銀行轉帳、現金及 PayPal（海外買家）。私訊及按讚不代表留貨，先付先得。",
       more: "查看完整留貨及訂金安排"
     },
     wa: {
@@ -115,7 +115,7 @@ window.TT_STRINGS = {
       general: "WhatsApp 聯絡我們",
       msg: (name, url) => "你好 Tack, tack!，我想查詢「" + name + "」，請問還有貨嗎？\n" + url,
       msgHold: (name, url) => "你好 Tack, tack!，「" + name + "」顯示已留貨，如果重新有貨可以通知我嗎？\n" + url,
-      msgSold: (name, url) => "你好 Tack, tack!，我在已售出區見到「" + name + "」，如果再找到同款可以通知我嗎？\n" + url,
+      msgSold: (name, url) => "你好 Tack, tack!，我在已售出區看到「" + name + "」，如果再找到同款可以通知我嗎？\n" + url,
       msgGeneral: "你好 Tack, tack!，我想查詢："
     },
     share: "分享", copied: "已複製連結",
@@ -133,8 +133,8 @@ window.TT_STRINGS = {
     sort: { newest: "最新上架", "price-asc": "價錢：低至高", "price-desc": "價錢：高至低", brand: "品牌 A–Z" },
     results: n => "共 " + n + " 件",
     noResults: "暫時未有符合篩選條件的貨品。",
-    noResultsCta: "想搵特定款式？WhatsApp 話我知，我們會幫你留意。",
-    soldEmpty: "已售出區暫時未有貨品，每件都仲等緊新主人。",
+    noResultsCta: "想找特定款式？在 WhatsApp 告訴我們，我們會幫你留意。",
+    soldEmpty: "已售出區暫時未有貨品，每件都還在等待新主人。",
     photoNote: "此為示意插圖，實物相片即將上載；WhatsApp 我們即可索取相片。",
     notFound: "找不到這件貨品，可能已改名或下架。",
     by: "設計：", for_: "品牌："
