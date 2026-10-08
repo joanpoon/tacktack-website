@@ -995,21 +995,21 @@
    "storyKey": "anna-dawson"
   },
   {
-   "slug": "hay-tint-wineglass-pink-amber",
+   "slug": "hay-tint-wineglass-pink-yellow",
    "featured": false,
    "brand": "HAY",
    "name": {
-    "en": "Tint Wine Glass, set of 2 · Pink / Amber",
-    "zh": "HAY Tint 酒杯（兩隻裝）粉紅／琥珀"
+    "en": "Tint Wine Glass, set of 2 · Pink / Yellow",
+    "zh": "HAY Tint 酒杯（兩隻裝）粉紅／黃色"
    },
    "model": "Tint Wine Glass",
    "colour": {
-    "en": "Pink / Amber",
-    "zh": "粉紅／琥珀"
+    "en": "Pink / Yellow",
+    "zh": "粉紅／黃色"
    },
    "description": {
-    "en": "Set of two tinted wine glasses: pink bowl, amber stem and foot. Brand new, with the original box.",
-    "zh": "兩隻裝著色酒杯：粉紅色杯身，琥珀色杯柄及杯腳。全新，連原裝盒。"
+    "en": "Set of two tinted wine glasses: pink bowl, yellow stem and foot. Brand new, with the original box.",
+    "zh": "兩隻裝著色酒杯：粉紅色杯身，黃色杯柄及杯腳。全新，連原裝盒。"
    },
    "category": "decor",
    "condition": {
@@ -1026,18 +1026,18 @@
    "status": "sold",
    "fulfilment": "both",
    "photos": [
-    "/assets/products/hay-tint-wineglass-pink-amber/1.jpg"
+    "/assets/products/hay-tint-wineglass-pink-yellow/1.jpg"
    ],
    "photoAlt": {
-    "en": "HAY Tint wine glasses, set of two, with pink bowls and amber stems and feet on a white table",
-    "zh": "HAY Tint 酒杯兩隻裝，粉紅色杯身配琥珀色杯柄及杯腳，放在白色桌面上"
+    "en": "HAY Tint wine glasses, set of two, with pink bowls and yellow stems and feet on a white table",
+    "zh": "HAY Tint 酒杯兩隻裝，粉紅色杯身配黃色杯柄及杯腳，放在白色桌面上"
    },
    "photoAlts": {
     "en": [
-     "HAY Tint wine glasses, set of two, with pink bowls and amber stems and feet on a white table"
+     "HAY Tint wine glasses, set of two, with pink bowls and yellow stems and feet on a white table"
     ],
     "zh": [
-     "HAY Tint 酒杯兩隻裝，粉紅色杯身配琥珀色杯柄及杯腳，放在白色桌面上"
+     "HAY Tint 酒杯兩隻裝，粉紅色杯身配黃色杯柄及杯腳，放在白色桌面上"
     ]
    }
   },
