@@ -355,7 +355,8 @@
     var specs = [
       [t.labels.designer, p.designer], [t.labels.brand, p.brand, p.brand && PRODUCTS.some(function (x) { return x.brand === p.brand && state(x).st !== "sold"; }) ? brandUrl(p.brand) : ""], [t.labels.model, p.model], [t.labels.year, L(p.year)],
       [t.labels.colour, L(p.colour)], [t.labels.material, L(p.material)], [t.labels.dims, dims(p) || (state(p).st === "sold" ? "" : t.dimsTbc)],
-      [t.labels.weight, p.dimensions && p.dimensions.weightKg ? "≈ " + p.dimensions.weightKg + " kg" : ""]
+      [t.labels.weight, p.dimensions && p.dimensions.weightKg ? "≈ " + p.dimensions.weightKg + " kg" : ""],
+      [t.labels.sku, p.sku]
     ].filter(function (r) { return r[1]; });
     var photos = (p.photos && p.photos.length ? p.photos : [photo(p)]);
     var story = DATA.stories && DATA.stories[p.storyKey || ""];
