@@ -1,33 +1,54 @@
 # Tack, tack! (tacktackstudio.com). Everything public here may be crawled, indexed and quoted.
 User-agent: *
 Allow: /
+# Empty client-side shell. Real pieces live under /item/.
+Disallow: /product/
+Disallow: /zh/product/
 
 User-agent: GPTBot
 Allow: /
+Disallow: /product/
+Disallow: /zh/product/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /product/
+Disallow: /zh/product/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /product/
+Disallow: /zh/product/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /product/
+Disallow: /zh/product/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /product/
+Disallow: /zh/product/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /product/
+Disallow: /zh/product/
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /product/
+Disallow: /zh/product/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /product/
+Disallow: /zh/product/
 
 User-agent: CCBot
 Allow: /
+Disallow: /product/
+Disallow: /zh/product/
 
 Sitemap: https://tacktackstudio.com/sitemap.xml
 # Plain-text summary for AI assistants: https://tacktackstudio.com/llms.txt

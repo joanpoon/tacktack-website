@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06",
+ "updated": "2026-10-11",
  "stories": {
   "isamu-noguchi": {
    "title": {
@@ -41,9 +41,146 @@
   },
   "DULTON": {
    "slug": "dulton"
+  },
+  "HAY": {
+   "slug": "hay"
   }
  },
  "products": [
+  {
+   "slug": "hay-ice-cube-tray-xxl-ice-blue",
+   "sku": "TT-HAY-0007",
+   "featured": false,
+   "dropDate": "2026-10-08",
+   "brand": "HAY",
+   "name": {
+    "en": "Ice Cube Tray XXL · Ice Blue",
+    "zh": "製冰盒 XXL · 冰藍色"
+   },
+   "model": "Ice Cube Tray XXL 6 Cubes",
+   "year": {
+    "en": "2025SS",
+    "zh": "2025 春夏（2025SS）"
+   },
+   "colour": {
+    "en": "Ice blue",
+    "zh": "冰藍色"
+   },
+   "material": {
+    "en": "100% BPA-free silicone",
+    "zh": "不含 BPA 的矽膠"
+   },
+   "description": {
+    "en": "HAY's Ice Cube Tray XXL holds six extra-large cubes in a compact silicone tray. This one is Ice blue, from the 2025 spring/summer collection (2025SS). Ours is HK$138. Official retail on HAY.nl is €25, about HK$228. Buy it with the Peach Square XL and the two trays together are HK$268.",
+    "zh": "HAY 製冰盒 XXL，六格特大冰塊，體積小巧。這款是冰藍色，屬 2025 春夏（2025SS）。本店售 HK$138。HAY.nl 官方零售價 €25，約 HK$228。與蜜桃色 Square XL 一併購買，兩件共 HK$268。"
+   },
+   "details": {
+    "en": [
+     "Six extra-large cubes",
+     "Flexible silicone; HAY says it is dishwasher safe",
+     "2025 spring/summer (2025SS)",
+     "Official retail on HAY.nl: €25, about HK$228",
+     "Buy both trays together (Ice blue XXL and Peach Square XL) for HK$268"
+    ],
+    "zh": [
+     "六格特大冰塊",
+     "柔軟矽膠；HAY 標示可放洗碗機",
+     "2025 春夏（2025SS）",
+     "HAY.nl 官方零售價：€25，約 HK$228",
+     "兩件一併購買（冰藍色 XXL 及蜜桃色 Square XL）HK$268"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 14,
+    "d": 18,
+    "h": 4,
+    "unit": "cm"
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "",
+     "zh": ""
+    }
+   },
+   "price": 138,
+   "retailPrice": 228,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/hay-ice-cube-tray-xxl-ice-blue/placeholder-1.jpg"
+   ],
+   "photoAlt": {
+    "en": "Illustration of the HAY Ice Cube Tray XXL in Ice blue, six large cubes",
+    "zh": "HAY 製冰盒 XXL 冰藍色示意圖，六格大方格"
+   }
+  },
+  {
+   "slug": "hay-ice-cube-tray-square-xl-peach",
+   "sku": "TT-HAY-0009",
+   "featured": false,
+   "dropDate": "2026-10-08",
+   "brand": "HAY",
+   "name": {
+    "en": "Ice Cube Tray Square XL · Peach",
+    "zh": "製冰盒 Square XL · 蜜桃色"
+   },
+   "model": "Ice Cube Tray Square XL",
+   "colour": {
+    "en": "Peach",
+    "zh": "蜜桃色"
+   },
+   "material": {
+    "en": "Silicone",
+    "zh": "矽膠"
+   },
+   "description": {
+    "en": "HAY's Ice Cube Tray Square XL, in Peach, brand new with the tag. Twelve extra-large square compartments in a flexible silicone tray. Ours is HK$148. Official retail on HAY.nl is €25, about HK$228. Buy it with the Ice blue XXL and the two trays together are HK$268.",
+    "zh": "HAY 製冰盒 Square XL，蜜桃色，全新連吊牌。十二格特大方格，柔軟矽膠。本店售 HK$148。HAY.nl 官方零售價 €25，約 HK$228。與冰藍色 XXL 一併購買，兩件共 HK$268。"
+   },
+   "details": {
+    "en": [
+     "Twelve extra-large square compartments",
+     "Flexible silicone; HAY says it is dishwasher safe",
+     "Brand new, with tag",
+     "Official retail on HAY.nl: €25, about HK$228",
+     "Buy both trays together (Ice blue XXL and Peach Square XL) for HK$268"
+    ],
+    "zh": [
+     "十二格特大方格",
+     "柔軟矽膠；HAY 標示可放洗碗機",
+     "全新，連吊牌",
+     "HAY.nl 官方零售價：€25，約 HK$228",
+     "兩件一併購買（冰藍色 XXL 及蜜桃色 Square XL）HK$268"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 14,
+    "d": 18,
+    "h": 4,
+    "unit": "cm"
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new, with tag.",
+     "zh": "全新，連吊牌。"
+    }
+   },
+   "price": 148,
+   "retailPrice": 228,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/hay-ice-cube-tray-square-xl-peach/placeholder-1.jpg"
+   ],
+   "photoAlt": {
+    "en": "Illustration of the HAY Ice Cube Tray Square XL in Peach",
+    "zh": "HAY 製冰盒 Square XL 蜜桃色示意圖"
+   }
+  },
   {
    "slug": "dulton-double-face-clock-grey",
    "featured": false,
