@@ -6,7 +6,7 @@ window.TT_STRINGS = {
     all: "All",
     pieces: n => n === 1 ? "1 piece" : n + " pieces",
     comingSoon: "Coming soon", dropH: { neu: "This week's drop", latest: "Latest pieces" },
-    badge: { hold: "On hold", sold: "Sold", neu: "New this week" },
+    badge: { hold: "On hold", sold: "Sold", neu: "New this week", preorder: "Pre-order" },
     grades: {
       "brand-new": ["Brand new", "Unused, never installed; in its original packaging unless stated."],
       "display": ["Display", "Never used at home, shown in a showroom or shop; may have light handling marks or no original box, with the details in the notes."],
@@ -24,16 +24,18 @@ window.TT_STRINGS = {
     gradeHelp: "What do the grades mean?",
     labels: { designer: "Designer", brand: "Brand", model: "Model", year: "Year", colour: "Colour", material: "Material", dims: "Dimensions", weight: "Weight", sku: "SKU", condition: "Condition", details: "Good to know", fulfilment: "Pickup & delivery", policy: "Reserving & paying", story: "The story", specs: "Details" },
     dimsTbc: "Measurements coming soon, ask us",
-    stock: { available: "Available now", onHold: "On hold right now", sold: "This piece has found its home" },
+    stock: { available: "Available now", onHold: "On hold right now", sold: "This piece has found its home", preorder: "Coming soon · pre-order available. Japan air freight; we ship it when it lands." },
     retail: p => "New retail approx. " + p,
     fulfil: {
       pickup: "Self-pickup by appointment. We share the address when you book.",
       delivery: "Delivery across Hong Kong, quoted over WhatsApp.",
-      both: "Self-pickup by appointment, or delivery across Hong Kong quoted over WhatsApp. Small pieces can go by courier."
+      both: "Self-pickup by appointment, or delivery across Hong Kong quoted over WhatsApp. Small pieces can go by courier.",
+      preorder: "Japan air freight. Once it lands in Hong Kong, pick up by appointment or we deliver across Hong Kong, quoted on WhatsApp."
     },
     policy: {
       sold: "This piece has sold, so it's no longer priced. Message us on WhatsApp and we'll tell you when we find a similar one.",
       full: p => "Under HK$1,500: reserve by paying in full (" + p + "). Pick up or arrange delivery within 7 days.",
+      preorderFull: p => "Pre-order by paying in full (" + p + "). It is not in Hong Kong yet: we ship it when it lands, then you pick up by appointment or we deliver.",
       dep30: (d, p) => "30% deposit (" + d + ") holds it for up to 7 days. Balance before pickup or delivery.",
       dep20: (d, p) => "20% deposit (" + d + ") holds it for up to 14 days. Balance before pickup or delivery.",
       pay: "FPS · PayMe · Bank transfer · Cash · PayPal (for overseas buyers). Messages and likes don't hold items: first paid, first served.",
@@ -41,10 +43,12 @@ window.TT_STRINGS = {
     },
     wa: {
       ask: "WhatsApp to reserve",
+      askPreorder: "WhatsApp to pre-order",
       askHold: "Join the waitlist",
       askSold: "WhatsApp me for similar pieces",
       general: "Chat on WhatsApp",
       msg: (name, url) => "Hi Tack, tack! I'm interested in " + name + ". Is it still available?\n" + url,
+      msgPreorder: (name, url) => "Hi Tack, tack! I'd like to pre-order " + name + ". Please let me know when it lands.\n" + url,
       msgHold: (name, url) => "Hi Tack, tack! " + name + " shows as on hold. Could you let me know if it becomes available?\n" + url,
       msgSold: (name, url) => "Hi Tack, tack! I saw " + name + " in your sold archive. Please let me know if you find another one.\n" + url,
       msgGeneral: "Hi Tack, tack! I have a question:"
@@ -59,7 +63,7 @@ window.TT_STRINGS = {
     notices: { cordNotIncluded: "Cord add-on and installation available. WhatsApp us for a quote.", moreColours: "More colourways available to order. Coming soon." },
     install: "Installation service available. Ask us for details.", gallery: "Product photos", photoN: function (i, n) { return "Photo " + i + " of " + n; }, photoMore: function (i) { return " (photo " + i + ")"; },
     filters: { category: "Category", brand: "Brand / designer", status: "Availability", price: "Price", sort: "Sort", reset: "Clear filters" },
-    status: { active: "Available & on hold", available: "Available now", "on-hold": "On hold", sold: "Sold", all: "Everything" },
+    status: { active: "Available & on hold", available: "Available now", "pre-order": "Pre-order", "on-hold": "On hold", sold: "Sold", all: "Everything" },
     price: { any: "Any price", u500: "Under HK$500", "500-1500": "HK$500–1,500", "1500-5000": "HK$1,500–5,000", o5000: "HK$5,000+" },
     sort: { newest: "Newest", "price-asc": "Price: low to high", "price-desc": "Price: high to low", brand: "Brand A–Z" },
     results: n => n === 1 ? "1 piece" : n + " pieces",
@@ -75,7 +79,7 @@ window.TT_STRINGS = {
     all: "全部",
     pieces: n => n + " 件",
     comingSoon: "即將上架", dropH: { neu: "本週新貨", latest: "最新貨品" },
-    badge: { hold: "已留貨", sold: "已售出", neu: "本週新貨" },
+    badge: { hold: "已留貨", sold: "已售出", neu: "本週新貨", preorder: "預購" },
     grades: {
       "brand-new": ["全新", "未使用、未安裝；除另有註明外，連原裝包裝。"],
       "display": ["展示品", "未曾家用，曾於陳列室或店舖展示；或有輕微搬運痕跡或無原裝盒，詳見備註。"],
@@ -93,16 +97,18 @@ window.TT_STRINGS = {
     gradeHelp: "評級代表甚麼？",
     labels: { designer: "設計師", brand: "品牌", model: "型號", year: "年份", colour: "顏色", material: "物料", dims: "尺寸", weight: "重量", sku: "貨號", condition: "品相", details: "小提示", fulfilment: "自取及送貨", policy: "留貨及付款", story: "設計故事", specs: "規格" },
     dimsTbc: "尺寸稍後更新，歡迎查詢",
-    stock: { available: "現貨供應", onHold: "目前已被留貨", sold: "這件已經找到新主人" },
+    stock: { available: "現貨供應", onHold: "目前已被留貨", sold: "這件已經找到新主人", preorder: "即將到貨 · 接受預購。日本空運，到港後寄出。" },
     retail: p => "全新參考價約 " + p,
     fulfil: {
       pickup: "預約自取，確認後會提供地址。",
       delivery: "全港送貨，運費經 WhatsApp 報價。",
-      both: "可預約自取，或全港送貨（運費經 WhatsApp 報價）。小件貨品可安排速遞。"
+      both: "可預約自取，或全港送貨（運費經 WhatsApp 報價）。小件貨品可安排速遞。",
+      preorder: "日本空運。到港後可預約自取，或全港送貨（運費經 WhatsApp 報價）。"
     },
     policy: {
       sold: "這件已售出，不再標價。WhatsApp 我們，找到同類貨品會通知你。",
       full: p => "HK$1,500 以下貨品須全數付款（" + p + "）方可確認，並於 7 天內自取或安排送貨。",
+      preorderFull: p => "預購須全數付款（" + p + "）。這件尚未到港：日本空運，到港後才安排自取或送貨。",
       dep30: (d, p) => "付 30% 訂金（" + d + "）可留貨最多 7 天，餘款須於自取或送貨前付清。",
       dep20: (d, p) => "付 20% 訂金（" + d + "）可留貨最多 14 天，餘款須於自取或送貨前付清。",
       pay: "接受 FPS 轉數快、PayMe、銀行轉帳、現金及 PayPal（海外買家）。私訊及按讚不代表留貨，先付先得。",
@@ -110,10 +116,12 @@ window.TT_STRINGS = {
     },
     wa: {
       ask: "WhatsApp 查詢／留貨",
+      askPreorder: "WhatsApp 預購",
       askHold: "加入候補名單",
       askSold: "WhatsApp 我查詢同類貨品",
       general: "WhatsApp 聯絡我們",
       msg: (name, url) => "你好 Tack, tack!，我想查詢「" + name + "」，請問還有貨嗎？\n" + url,
+      msgPreorder: (name, url) => "你好 Tack, tack!，我想預購「" + name + "」，到貨後可以通知我嗎？\n" + url,
       msgHold: (name, url) => "你好 Tack, tack!，「" + name + "」顯示已留貨，如果重新有貨可以通知我嗎？\n" + url,
       msgSold: (name, url) => "你好 Tack, tack!，我在已售出區看到「" + name + "」，如果再找到同款可以通知我嗎？\n" + url,
       msgGeneral: "你好 Tack, tack!，我想查詢："
@@ -128,7 +136,7 @@ window.TT_STRINGS = {
     notices: { cordNotIncluded: "可加配電線及安裝服務，歡迎 WhatsApp 查詢報價。", moreColours: "更多顏色可訂購，即將推出。" },
     install: "提供安裝服務，歡迎查詢詳情。", gallery: "產品相片", photoN: function (i, n) { return "第 " + i + " 張相片（共 " + n + " 張）"; }, photoMore: function (i) { return "（相片 " + i + "）"; },
     filters: { category: "類別", brand: "品牌／設計師", status: "供應狀況", price: "價錢", sort: "排序", reset: "清除篩選" },
-    status: { active: "有貨及已留貨", available: "現貨", "on-hold": "已留貨", sold: "已售出", all: "全部" },
+    status: { active: "有貨及已留貨", available: "現貨", "pre-order": "預購", "on-hold": "已留貨", sold: "已售出", all: "全部" },
     price: { any: "所有價錢", u500: "HK$500 以下", "500-1500": "HK$500–1,500", "1500-5000": "HK$1,500–5,000", o5000: "HK$5,000 以上" },
     sort: { newest: "最新上架", "price-asc": "價錢：低至高", "price-desc": "價錢：高至低", brand: "品牌 A–Z" },
     results: n => "共 " + n + " 件",
