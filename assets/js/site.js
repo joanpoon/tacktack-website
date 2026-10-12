@@ -52,6 +52,7 @@
     var st = state(p).st, w = T().wa, name = L(p.name);
     if (st === "sold") return { href: wa(w.msgSold(name, pageUrl(p))), label: w.askSold };
     if (st === "on-hold") return { href: wa(w.msgHold(name, pageUrl(p))), label: w.askHold };
+    if (st === "pre-order") return { href: wa(w.msgPreorder(name, pageUrl(p))), label: w.askPreorder };
     return { href: wa(w.msg(name, pageUrl(p))), label: w.ask };
   }
   var WA_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>';
@@ -59,8 +60,10 @@
 
   /* ---------------- product helpers (same markup as scripts/build-pages.py) ---------------- */
   function state(p) {
-    // Availability is public only as a status: available, on-hold or sold.
-    return { st: p.status === "sold" || p.status === "on-hold" ? p.status : "available" };
+    // Public availability only: available, pre-order, on-hold or sold. No counts.
+    var s = p.status;
+    if (s === "sold" || s === "on-hold" || s === "pre-order") return { st: s };
+    return { st: "available" };
   }
   // New from the drop (dropDate at DROP_HOUR HKT) until the next weekly drop; no date, no badge. Same as is_new() in build-pages.py.
   function dropStart(p) {
@@ -84,9 +87,8 @@
     var s = state(p), B = T().badge, out = [];
     if (s.st === "sold") out.push(["sold", B.sold]);
     else if (s.st === "on-hold") out.push(["hold", B.hold]);
-    else {
-      if (isNew(p)) out.push(["new", B.neu]);
-    }
+    else if (s.st === "pre-order") out.push(["preorder", B.preorder]);
+    else if (isNew(p)) out.push(["new", B.neu]);
     return '<div class="badges">' + out.map(function (b) { return '<span class="badge badge-' + b[0] + '">' + esc(b[1]) + "</span>"; }).join("") + "</div>";
   }
   function kicker(p) { return [p.brand, p.designer].filter(function (x, i, arr) { return x && arr.indexOf(x) === i; }).join(" · "); }
@@ -284,7 +286,7 @@
     }).join(""));
     var names = {}; PRODUCTS.forEach(function (p) { names[p.brand] = 1; if (p.designer) names[p.designer] = 1; });
     options($("#f-brand"), [["", t.all]].concat(Object.keys(names).sort().map(function (n) { return [n, n]; })), f.brand);
-    options($("#f-status"), ["active", "available", "on-hold", "sold", "all"].map(function (k) { return [k, t.status[k]]; }), f.status);
+    options($("#f-status"), ["active", "available", "pre-order", "on-hold", "sold", "all"].map(function (k) { return [k, t.status[k]]; }), f.status);
     options($("#f-price"), ["any", "u500", "500-1500", "1500-5000", "o5000"].map(function (k) { return [k, t.price[k]]; }), f.price);
     options($("#f-sort"), ["newest", "price-asc", "price-desc", "brand"].map(function (k) { return [k, t.sort[k]]; }), f.sort);
     var list = applyFilters(PRODUCTS, f);
@@ -338,6 +340,7 @@
   function policyText(p) {
     var t = T().policy, price = +p.price || 0;
     if (state(p).st === "sold") return t.sold;
+    if (state(p).st === "pre-order" && price < 1500) return t.preorderFull(money(price));
     if (price < 1500) return t.full(money(price));
     if (price < 10000) return t.dep30(money(Math.ceil(price * 0.3)), money(price));
     return t.dep20(money(Math.max(3000, Math.ceil(price * 0.2))), money(price));
@@ -351,7 +354,7 @@
     var t = T(), s = state(p), cta = waFor(p), name = L(p.name);
     var grade = (p.condition || {}).grade; if (grade === "open-box") grade = "brand-new";   // old grade merged into Brand new
     var G = t.grades, gkeys = Object.keys(G), gi = gkeys.indexOf(grade);
-    var stockLine = t.stock[s.st === "sold" ? "sold" : s.st === "on-hold" ? "onHold" : "available"];
+    var stockLine = t.stock[s.st === "sold" ? "sold" : s.st === "on-hold" ? "onHold" : s.st === "pre-order" ? "preorder" : "available"];
     var specs = [
       [t.labels.designer, p.designer], [t.labels.brand, p.brand, p.brand && PRODUCTS.some(function (x) { return x.brand === p.brand && state(x).st !== "sold"; }) ? brandUrl(p.brand) : ""], [t.labels.model, p.model], [t.labels.year, L(p.year)],
       [t.labels.colour, L(p.colour)], [t.labels.material, L(p.material)], [t.labels.dims, dims(p) || (state(p).st === "sold" ? "" : t.dimsTbc)],
@@ -388,7 +391,7 @@
           '<section class="block"><h2>' + esc(t.labels.specs) + '</h2><dl class="specs">' + specs.map(function (r) { return "<dt>" + esc(r[0]) + "</dt><dd>" + (r[2] ? '<a href="' + r[2] + '">' + esc(r[1]) + "</a>" : esc(r[1])) + "</dd>"; }).join("") + "</dl></section>" +
           (details.length ? '<section class="block"><h2>' + esc(t.labels.details) + '</h2><ul class="ticks">' + details.map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul></section>" : "") +
           (sizeRow(p, p) && state(p).st !== "sold" ? '<section class="block size-block"><h2>' + esc(t.sizeTitle(p.brand || "")) + "</h2>" + sizeRow(p, p) + '<p class="fine">' + esc(t.sizeNote) + "</p></section>" : "") +
-          '<section class="block"><h2>' + esc(t.labels.fulfilment) + "</h2><p>" + esc(t.fulfil[p.fulfilment] || t.fulfil.both) + ' <a href="' + lp("/delivery/") + '">' + esc(t.fulfilMore) + '</a></p><p class="install-note">' + esc(t.install) + "</p></section>" +
+          '<section class="block"><h2>' + esc(t.labels.fulfilment) + "</h2><p>" + esc(s.st === "pre-order" ? t.fulfil.preorder : (t.fulfil[p.fulfilment] || t.fulfil.both)) + ' <a href="' + lp("/delivery/") + '">' + esc(t.fulfilMore) + '</a></p><p class="install-note">' + esc(t.install) + "</p></section>" +
           '<section class="block"><h2>' + esc(t.labels.policy) + '</h2><p id="policy-text">' + esc(policyText(p)) + '</p><p><a class="text-link" href="' + lp("/how-to-buy/") + '">' + esc(t.policy.more) + " →</a></p></section>" +
         "</div>" +
       "</div>" +
