@@ -145,8 +145,16 @@ a.lang-toggle { text-decoration: none; letter-spacing: normal; }   /* the langua
 /* ---------- hero ---------- */
 .hero { padding: clamp(28px, 5vw, 72px) 0 clamp(48px, 7vw, 96px); }
 .hero-grid { display: grid; gap: clamp(32px, 5vw, 72px); align-items: center; }
-.hero h1 { margin: .35em 0 .45em; max-width: 13ch; font-size: clamp(2.2rem, 5.2vw, 4.1rem); }
-html[data-lang="zh"] .hero h1 { max-width: 11em; font-size: clamp(2.1rem, 5vw, 3.8rem); }
+.hero h1 { margin: .35em 0 .45em; max-width: none; font-size: clamp(2.2rem, 5.2vw, 4.1rem); }
+.hero h1 .hero-slogan { display: block; max-width: 13ch; }
+html[data-lang="zh"] .hero h1 { font-size: clamp(2.1rem, 5vw, 3.8rem); }
+html[data-lang="zh"] .hero h1 .hero-slogan { max-width: none; }
+.hero h1 .hero-h1-note {
+  display: block; max-width: 24em; margin-top: .7em;
+  font-family: var(--font); font-weight: 500; font-synthesis: none;
+  font-size: clamp(1rem, 1.45vw, 1.2rem); letter-spacing: 0; line-height: 1.35;
+}
+html[data-lang="zh"] .hero h1 .hero-h1-note { max-width: 18em; letter-spacing: .01em; font-weight: 500; }
 .hero-lede { font-size: clamp(1.05rem, 1.6vw, 1.2rem); color: var(--muted); max-width: 44ch; margin-bottom: 1.8em; }
 .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
 .hero-trust { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 32px; padding: 0; list-style: none; font-size: .88rem; color: var(--muted); }
