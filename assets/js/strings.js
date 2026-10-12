@@ -27,15 +27,15 @@ window.TT_STRINGS = {
     stock: { available: "Available now", onHold: "On hold right now", sold: "This piece has found its home", preorder: "Coming soon · pre-order available. Japan air freight; we ship it when it lands." },
     retail: p => "New retail approx. " + p,
     fulfil: {
-      pickup: "Self-pickup by appointment. We share the address when you book.",
+      pickup: "Showroom self-pickup by appointment. We share the address when you book.",
       delivery: "Delivery across Hong Kong, quoted over WhatsApp.",
-      both: "Self-pickup by appointment, or delivery across Hong Kong quoted over WhatsApp. Small pieces can go by courier.",
-      preorder: "Japan air freight. Once it lands in Hong Kong, pick up by appointment or we deliver across Hong Kong, quoted on WhatsApp."
+      both: "Showroom self-pickup by appointment, or delivery across Hong Kong quoted over WhatsApp. Small pieces can go by courier.",
+      preorder: "Japan air freight. Once it lands in Hong Kong, pick up from the showroom by appointment or we deliver across Hong Kong, quoted on WhatsApp."
     },
     policy: {
       sold: "This piece has sold, so it's no longer priced. Message us on WhatsApp and we'll tell you when we find a similar one.",
       full: p => "Under HK$1,500: reserve by paying in full (" + p + "). Pick up or arrange delivery within 7 days.",
-      preorderFull: p => "Pre-order by paying in full (" + p + "). It is not in Hong Kong yet: we ship it when it lands, then you pick up by appointment or we deliver.",
+      preorderFull: p => "Pre-order by paying in full (" + p + "). It is not in Hong Kong yet: we ship it when it lands, then you pick up from the showroom by appointment or we deliver.",
       dep30: (d, p) => "30% deposit (" + d + ") holds it for up to 7 days. Balance before pickup or delivery.",
       dep20: (d, p) => "20% deposit (" + d + ") holds it for up to 14 days. Balance before pickup or delivery.",
       pay: "FPS · PayMe · Bank transfer · Cash · PayPal (for overseas buyers). Messages and likes don't hold items: first paid, first served.",
@@ -59,7 +59,7 @@ window.TT_STRINGS = {
     shopAll: "Shop all",
     home: "Home", shop: "Shop", crumbs: "Breadcrumb", fulfilMore: "Delivery & pickup details",
     sizeTitle: function (b) { return "Which " + b + " size?"; }, sizeNote: "Shades drawn to scale. Tap a size to see it.",
-    trust: { neu: "Brand new, unused", genuine: "Authentic designer piece", pickup: "Pickup by appointment or delivery across Hong Kong", photos: "Real photos and measurements on WhatsApp" },
+    trust: { neu: "Brand new, unused", genuine: "Authentic designer piece", pickup: "Showroom pickup by appointment or delivery across Hong Kong", photos: "Real photos and measurements on WhatsApp" },
     notices: { cordNotIncluded: "Cord add-on and installation available. WhatsApp us for a quote.", moreColours: "More colourways available to order. Coming soon." },
     install: "Installation service available. Ask us for details.", gallery: "Product photos", photoN: function (i, n) { return "Photo " + i + " of " + n; }, photoMore: function (i) { return " (photo " + i + ")"; },
     filters: { category: "Category", brand: "Brand / designer", status: "Availability", price: "Price", sort: "Sort", reset: "Clear filters" },
@@ -100,10 +100,10 @@ window.TT_STRINGS = {
     stock: { available: "現貨供應", onHold: "目前已被留貨", sold: "這件已經找到新主人", preorder: "即將到貨 · 接受預購。日本空運，到港後寄出。" },
     retail: p => "全新參考價約 " + p,
     fulfil: {
-      pickup: "預約自取，確認後會提供地址。",
+      pickup: "Showroom 預約自取，確認後會提供地址。",
       delivery: "全港送貨，運費經 WhatsApp 報價。",
-      both: "可預約自取，或全港送貨（運費經 WhatsApp 報價）。小件貨品可安排速遞。",
-      preorder: "日本空運。到港後可預約自取，或全港送貨（運費經 WhatsApp 報價）。"
+      both: "可於 Showroom 預約自取，或全港送貨（運費經 WhatsApp 報價）。小件貨品可安排速遞。",
+      preorder: "日本空運。到港後可於 Showroom 預約自取，或全港送貨（運費經 WhatsApp 報價）。"
     },
     policy: {
       sold: "這件已售出，不再標價。WhatsApp 我們，找到同類貨品會通知你。",
@@ -132,7 +132,7 @@ window.TT_STRINGS = {
     shopAll: "查看全部",
     home: "主頁", shop: "選購", crumbs: "導覽路徑", fulfilMore: "送貨及自取詳情",
     sizeTitle: function (b) { return "選哪個 " + b + " 尺寸？"; }, sizeNote: "燈罩按實際比例繪畫，按一下查看。",
-    trust: { neu: "全新未使用", genuine: "正品設計好物", pickup: "預約自取或全港送貨", photos: "WhatsApp 即可索取實物相片及尺寸" },
+    trust: { neu: "全新未使用", genuine: "正品設計好物", pickup: "Showroom 預約自取或全港送貨", photos: "WhatsApp 即可索取實物相片及尺寸" },
     notices: { cordNotIncluded: "可加配電線及安裝服務，歡迎 WhatsApp 查詢報價。", moreColours: "更多顏色可訂購，即將推出。" },
     install: "提供安裝服務，歡迎查詢詳情。", gallery: "產品相片", photoN: function (i, n) { return "第 " + i + " 張相片（共 " + n + " 張）"; }, photoMore: function (i) { return "（相片 " + i + "）"; },
     filters: { category: "類別", brand: "品牌／設計師", status: "供應狀況", price: "價錢", sort: "排序", reset: "清除篩選" },
