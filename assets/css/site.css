@@ -195,6 +195,7 @@ html[data-lang="zh"] .badge { letter-spacing: .06em; font-size: .72rem; }
 .badge-left { background: var(--cream); box-shadow: inset 0 0 0 1px var(--line); }
 .badge-one { background: var(--walnut); color: var(--cream); }
 .badge-hold { background: #fff; border: 1px dashed var(--walnut); }
+.badge-preorder { background: var(--sand); color: var(--walnut); }
 .badge-sold { background: var(--orange); color: #fff; }
 .empty { border: 1.5px dashed var(--line); border-radius: var(--radius); padding: 48px 24px; text-align: center; color: var(--muted); grid-column: 1 / -1; }
 .empty h3 { color: var(--walnut); }
