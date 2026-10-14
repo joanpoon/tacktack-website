@@ -1,5 +1,9 @@
 {
- "updated": "2026-10-12",
+ "updated": "2026-10-14",
+ "homepageDrop": [
+  "dulton-double-face-clock-grey",
+  "dulton-double-face-clock-green"
+ ],
  "stories": {
   "isamu-noguchi": {
    "title": {
@@ -185,6 +189,7 @@
    "slug": "dulton-double-face-clock-grey",
    "featured": false,
    "dropDate": "2026-09-17",
+   "newFrom": "2026-10-08",
    "brand": "DULTON",
    "name": {
     "en": "Double Face Clock, Rectangle · Grey",
@@ -274,6 +279,7 @@
    "slug": "dulton-double-face-clock-green",
    "featured": false,
    "dropDate": "2026-09-17",
+   "newFrom": "2026-10-08",
    "brand": "DULTON",
    "name": {
     "en": "Double Face Clock, Rectangle · Green",
@@ -298,7 +304,7 @@
      "Sweep movement, so no ticking",
      "Dial held by magnets for easy time-setting and battery changes",
      "Runs on 2 × AA batteries",
-     "Japan air freight; we ship it when it lands in Hong Kong.",
+     "Shipped from Japan",
      "Rental-friendly: hang it on a removable adhesive hook or stand it on a shelf, no drilling needed."
     ],
     "zh": [
@@ -306,7 +312,7 @@
      "掃秒機芯，沒有滴答聲",
      "鐘面以磁石固定，調時間及換電池都方便",
      "使用 2 粒 AA 電池",
-     "日本空運，到港後寄出。",
+     "日本直送",
      "租屋友善：可用免釘黏貼掛鉤，或直接放在層架上，無需鑽牆。"
     ]
    },
@@ -334,7 +340,7 @@
     }
    },
    "price": 1328,
-   "status": "pre-order",
+   "status": "available",
    "fulfilment": "both",
    "photos": [
     "/assets/products/dulton-double-face-clock-green/1.jpg",

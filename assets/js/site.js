@@ -195,7 +195,11 @@
   /* ---------------- home ---------------- */
   function renderHome() {
     var active = PRODUCTS.filter(function (p) { return state(p).st !== "sold"; });
-    var drop = active.filter(function (p) { return isNew(p); }).sort(function (a, b) { return (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || byNewest(a, b); });
+    // homepageDrop pins This week's drop (order kept). Otherwise the grid is whatever is still New this week.
+    var bySlug = {};
+    active.forEach(function (p) { bySlug[p.slug] = p; });
+    var pinned = ((DATA && DATA.homepageDrop) || []).map(function (s) { return bySlug[s]; }).filter(Boolean);
+    var drop = pinned.length ? pinned : active.filter(function (p) { return isNew(p); }).sort(function (a, b) { return (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || byNewest(a, b); });
     var dh = $("#drop-h"), dtx = T().dropH[drop.length ? "neu" : "latest"]; if (dh && dh.textContent !== dtx) dh.textContent = dtx;
     if (!drop.length) drop = active.slice().sort(byNewest);
     grid($("#drop-grid"), drop.slice(0, 8), true);
