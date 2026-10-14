@@ -86,8 +86,8 @@
     "zh": "漆面聚碳酸酯及鋼"
    },
    "description": {
-    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This Swim Blue lamp is ex-display. It comes with the charger and without a box. New retail is about HK$1,740. Condition is Good: three minor marks, two small specks on the shade top and one dot on the base. These photos show the colour. They do not show the marks clearly. WhatsApp us for close-ups before you buy.",
-    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞 Swim Blue 是展示品，連充電器，沒有原裝盒。全新參考價約 HK$1,740。品相良好：共三處輕微痕跡，燈罩頂兩點小斑，底座一點。這些相片是顏色參考，看不清楚那些痕跡。購買前請 WhatsApp 索取近照。"
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This Swim Blue lamp is ex-display. It comes with the charger and without a box. New retail is about HK$1,740. Condition is Good: three minor marks, two small specks on the shade top and one dot on the base. The last three photos are close-ups of the shade marks: two specks and a line. The dot on the base is not in these photos.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞 Swim Blue 是展示品，連充電器，沒有原裝盒。全新參考價約 HK$1,740。品相良好：共三處輕微痕跡，燈罩頂兩點小斑，底座一點。最後三張相片是燈罩痕跡的近照：兩點小斑及一條線。底座那一點沒有單獨的相片。"
    },
    "details": {
     "en": [
@@ -115,8 +115,8 @@
    "condition": {
     "grade": "good",
     "notes": {
-     "en": "Ex-display, with the charger, and no box. Good: three minor marks, two small specks on the shade top and one dot on the base. The photos are of the colour and do not show the marks clearly. WhatsApp us for close-ups.",
-     "zh": "展示品，連充電器，沒有原裝盒。品相良好：三處輕微痕跡，燈罩頂兩點小斑，底座一點。相片是顏色參考，看不清楚那些痕跡。請 WhatsApp 索取近照。"
+     "en": "Ex-display, with the charger, and no box. Good: three minor marks, two small specks on the shade top and one dot on the base. The last three photos are close-ups of the shade marks: two specks and a line. The dot on the base is not in these photos.",
+     "zh": "展示品，連充電器，沒有原裝盒。品相良好：三處輕微痕跡，燈罩頂兩點小斑，底座一點。最後三張相片是燈罩痕跡的近照：兩點小斑及一條線。底座那一點沒有單獨的相片。"
     },
     "box": {
      "en": "No original box.",
@@ -138,7 +138,10 @@
    "storyKey": "andtradition",
    "photos": [
     "/assets/products/andtradition-flowerpot-vp9-swim-blue-good/1.jpg",
-    "/assets/products/andtradition-flowerpot-vp9-swim-blue-good/2.jpg"
+    "/assets/products/andtradition-flowerpot-vp9-swim-blue-good/2.jpg",
+    "/assets/products/andtradition-flowerpot-vp9-swim-blue-good/3.jpg",
+    "/assets/products/andtradition-flowerpot-vp9-swim-blue-good/4.jpg",
+    "/assets/products/andtradition-flowerpot-vp9-swim-blue-good/5.jpg"
    ],
    "photoAlt": {
     "en": "&Tradition Flowerpot VP9 portable lamp in Swim Blue, lit on a round wooden coffee table",
@@ -147,11 +150,17 @@
    "photoAlts": {
     "en": [
      "&Tradition Flowerpot VP9 portable lamp in Swim Blue, lit on a round wooden coffee table",
-     "&Tradition Flowerpot VP9 in Swim Blue on a white desk beside a laptop and a small dish"
+     "&Tradition Flowerpot VP9 in Swim Blue on a white desk beside a laptop and a small dish",
+     "Close-up of a small speck on the Swim Blue Flowerpot VP9 shade top, on a wooden surface",
+     "Close-up of a line on the Swim Blue Flowerpot VP9 shade, with the metal dimmer knob",
+     "Another close-up of a speck on the Swim Blue Flowerpot VP9 shade, with the dimmer knob"
     ],
     "zh": [
      "&Tradition Flowerpot VP9 便攜燈（Swim Blue），亮燈放在圓形木咖啡桌上",
-     "&Tradition Flowerpot VP9（Swim Blue）放在白色書桌上，旁邊是電腦及小碟"
+     "&Tradition Flowerpot VP9（Swim Blue）放在白色書桌上，旁邊是電腦及小碟",
+     "Flowerpot VP9（Swim Blue）燈罩頂一小斑的近照，放在木面上",
+     "Flowerpot VP9（Swim Blue）燈罩上一條痕跡的近照，可見金屬調光旋鈕",
+     "Flowerpot VP9（Swim Blue）燈罩另一角度的小斑近照，可見調光旋鈕"
     ]
    },
    "year": {
