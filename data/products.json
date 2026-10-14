@@ -626,8 +626,8 @@
     "zh": "吹製霧面乳白玻璃及漆面鋼"
    },
    "description": {
-    "en": "Signe Hytte designed the Journey SHY2 in 2018 for &Tradition: a mouth-blown opal-glass sphere on a lacquered steel wall base, H 24 × W 18 × L 26 cm. This one is black. Condition is Good. There is a small hairline crack on the opal glass near the base join. It is not clear in these photos. WhatsApp us and we will send a close-up. HK$1,340 is half of the HK$2,680 retail. It is a 220–240V fitting, which suits Hong Kong. Installation is available as an add-on, quoted on WhatsApp.",
-    "zh": "Signe Hytte 於 2018 年為 &Tradition 設計 Journey SHY2：吹製乳白玻璃圓罩，配漆面鋼製壁燈底座，高 24 × 闊 18 × 長 26 cm。這盞是黑色。品相良好。乳白玻璃近底座接位有一條細小髮絲裂紋。這些相片看不清楚。WhatsApp 我們會再傳近照。HK$1,340 是 HK$2,680 參考價的一半。電壓 220–240V，適用於香港。安裝可作附加服務，WhatsApp 報價。"
+    "en": "Signe Hytte designed the Journey SHY2 in 2018 for &Tradition: a mouth-blown opal-glass sphere on a lacquered steel wall base, H 24 × W 18 × L 26 cm. This one is black. Condition is Good. There is a small hairline crack on the opal glass near the base join. The last two photos are close-ups of that crack, marked with a soft circle. HK$1,340 is half of the HK$2,680 retail. It is a 220–240V fitting, which suits Hong Kong. Installation is available as an add-on, quoted on WhatsApp.",
+    "zh": "Signe Hytte 於 2018 年為 &Tradition 設計 Journey SHY2：吹製乳白玻璃圓罩，配漆面鋼製壁燈底座，高 24 × 闊 18 × 長 26 cm。這盞是黑色。品相良好。乳白玻璃近底座接位有一條細小髮絲裂紋。最後兩張相片是裂紋近照，已用淺色圓圈標出。HK$1,340 是 HK$2,680 參考價的一半。電壓 220–240V，適用於香港。安裝可作附加服務，WhatsApp 報價。"
    },
    "details": {
     "en": [
@@ -658,8 +658,8 @@
    "condition": {
     "grade": "good",
     "notes": {
-     "en": "Good. Small hairline crack on the opal glass near the base join. It is not clear in these photos. WhatsApp us for a close-up. Installation is available as an add-on.",
-     "zh": "品相良好。乳白玻璃近底座接位有一條細小髮絲裂紋。這些相片看不清楚。請 WhatsApp 索取近照。安裝可作附加服務。"
+     "en": "Good. Small hairline crack on the opal glass near the base join. The last two photos are close-ups of the crack, marked with a soft circle. Installation is available as an add-on.",
+     "zh": "品相良好。乳白玻璃近底座接位有一條細小髮絲裂紋。最後兩張相片是裂紋近照，已用淺色圓圈標出。安裝可作附加服務。"
     },
     "flaws": {
      "en": "Small hairline crack on the opal glass near the base join.",
@@ -679,7 +679,9 @@
     "/assets/products/andtradition-journey-wall-lamp-shy2/1.jpg",
     "/assets/products/andtradition-journey-wall-lamp-shy2/2.jpg",
     "/assets/products/andtradition-journey-wall-lamp-shy2/3.jpg",
-    "/assets/products/andtradition-journey-wall-lamp-shy2/4.jpg"
+    "/assets/products/andtradition-journey-wall-lamp-shy2/4.jpg",
+    "/assets/products/andtradition-journey-wall-lamp-shy2/5.jpg",
+    "/assets/products/andtradition-journey-wall-lamp-shy2/6.jpg"
    ],
    "photoAlt": {
     "en": "&Tradition Journey SHY2 wall lamp in black, lit, with an opal glass shade",
@@ -688,15 +690,19 @@
    "photoAlts": {
     "en": [
      "&Tradition Journey SHY2 wall lamp in black, lit, with an opal glass shade",
-     "Close view of the Journey SHY2 opal glass shade where it meets the black base. The hairline crack is not clear in this photo",
+     "Close view of the Journey SHY2 opal glass shade where it meets the black base. The hairline crack is shown in the last two photos",
      "&Tradition Journey SHY2 wall lamp, unlit, black base and opal glass shade",
-     "&Tradition Journey SHY2 wall lamp seen across a living room, black base and opal glass shade"
+     "&Tradition Journey SHY2 wall lamp seen across a living room, black base and opal glass shade",
+     "Close-up of the hairline crack on the Journey SHY2 opal glass near the base join, marked with a soft circle",
+     "Slightly wider view of the same hairline crack on the Journey SHY2 opal glass, marked with a soft circle"
     ],
     "zh": [
      "&Tradition Journey SHY2 壁燈，黑色底座，乳白玻璃燈罩亮燈",
-     "Journey SHY2 乳白玻璃燈罩與黑色底座相接處的近照。這張相片看不清楚那條髮絲裂紋",
+     "Journey SHY2 乳白玻璃燈罩與黑色底座相接處的近照。髮絲裂紋見最後兩張相片",
      "&Tradition Journey SHY2 壁燈未亮燈，黑色底座配乳白玻璃燈罩",
-     "&Tradition Journey SHY2 壁燈在客廳另一端所見，黑色底座配乳白玻璃燈罩"
+     "&Tradition Journey SHY2 壁燈在客廳另一端所見，黑色底座配乳白玻璃燈罩",
+     "Journey SHY2 乳白玻璃近底座接位的髮絲裂紋近照，淺色圓圈標出位置",
+     "同一處髮絲裂紋稍闊的近照，淺色圓圈標出位置"
     ]
    },
    "year": {
