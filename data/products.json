@@ -34,6 +34,16 @@
     "en": "DULTON is a Japanese homeware brand known for taking everyday, utilitarian objects and making them more fun to live with. The Double Face Clock borrows from the two-sided clocks hung in train stations and public buildings, redrawn as a low rectangle for homes with lower ceilings.",
     "zh": "DULTON 是日本家品品牌，擅長把日常實用的工具變得更有趣、更好用。雙面掛鐘參考了火車站及公共建築常見的雙面鐘，改成矮身長方形，樓底較矮的家居也適用。"
    }
+  },
+  "andtradition": {
+   "title": {
+    "en": "&Tradition",
+    "zh": "&Tradition"
+   },
+   "body": {
+    "en": "&Tradition is a Danish design brand. These lamps are Verner Panton's Flowerpot VP9, a portable lamp from 1968; the Mist AP15 pendant by All the Way to Paris; and the Journey SHY2 wall lamp by Signe Hytte, from 2018.",
+    "zh": "&Tradition 是丹麥設計品牌。這批燈包括 Verner Panton 1968 年的 Flowerpot VP9 便攜燈、All the Way to Paris 的 Mist AP15 吊燈，以及 Signe Hytte 2018 年的 Journey SHY2 壁燈。"
+   }
   }
  },
  "brands": {
@@ -48,9 +58,653 @@
   },
   "HAY": {
    "slug": "hay"
+  },
+  "&Tradition": {
+   "slug": "andtradition"
   }
  },
  "products": [
+  {
+   "slug": "andtradition-flowerpot-vp9-swim-blue-good",
+   "sku": "TT-ANT-0001",
+   "featured": false,
+   "dropDate": "2026-10-14",
+   "newFrom": "2026-10-22",
+   "brand": "&Tradition",
+   "designer": "Verner Panton",
+   "name": {
+    "en": "Flowerpot VP9 · Swim Blue · Good",
+    "zh": "Flowerpot VP9 · Swim Blue · 良好"
+   },
+   "model": "Flowerpot VP9",
+   "colour": {
+    "en": "Swim Blue",
+    "zh": "Swim Blue"
+   },
+   "material": {
+    "en": "Lacquered polycarbonate and steel",
+    "zh": "漆面聚碳酸酯及鋼"
+   },
+   "description": {
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This Swim Blue lamp is ex-display. It comes with the charger and without a box. New retail is about HK$1,740. Condition is Good: three minor marks, two small specks on the shade top and one dot on the base. These photos show the colour. They do not show the marks clearly. WhatsApp us for close-ups before you buy.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞 Swim Blue 是展示品，連充電器，沒有原裝盒。全新參考價約 HK$1,740。品相良好：共三處輕微痕跡，燈罩頂兩點小斑，底座一點。這些相片是顏色參考，看不清楚那些痕跡。購買前請 WhatsApp 索取近照。"
+   },
+   "details": {
+    "en": [
+     "Portable lamp, Verner Panton, 1968",
+     "Lacquered polycarbonate shade and base, steel dimmer",
+     "Ø16 × H 29.5 cm, about 0.8 kg",
+     "Built-in LED with a touch dimmer; charges by USB",
+     "Keep it indoors when you store it"
+    ],
+    "zh": [
+     "便攜燈，Verner Panton，1968 年",
+     "漆面聚碳酸酯燈罩及底座，鋼製調光按鈕",
+     "Ø16 × 高 29.5 cm，約 0.8 kg",
+     "內置 LED，觸控調光，以 USB 充電",
+     "存放時請放在室內"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "dia": 16,
+    "h": 29.5,
+    "unit": "cm",
+    "weightKg": 0.8
+   },
+   "condition": {
+    "grade": "good",
+    "notes": {
+     "en": "Ex-display, with the charger, and no box. Good: three minor marks, two small specks on the shade top and one dot on the base. The photos are of the colour and do not show the marks clearly. WhatsApp us for close-ups.",
+     "zh": "展示品，連充電器，沒有原裝盒。品相良好：三處輕微痕跡，燈罩頂兩點小斑，底座一點。相片是顏色參考，看不清楚那些痕跡。請 WhatsApp 索取近照。"
+    },
+    "box": {
+     "en": "No original box.",
+     "zh": "沒有原裝盒。"
+    },
+    "electrics": {
+     "en": "USB charger included.",
+     "zh": "連 USB 充電器。"
+    },
+    "flaws": {
+     "en": "Three minor marks: two small specks on the shade top and one dot on the base.",
+     "zh": "三處輕微痕跡：燈罩頂兩點小斑，底座一點。"
+    }
+   },
+   "price": 1180,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "storyKey": "andtradition",
+   "photos": [
+    "/assets/products/andtradition-flowerpot-vp9-swim-blue-good/1.jpg",
+    "/assets/products/andtradition-flowerpot-vp9-swim-blue-good/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Flowerpot VP9 portable lamp in Swim Blue, lit on a round wooden coffee table",
+    "zh": "&Tradition Flowerpot VP9 便攜燈（Swim Blue），亮燈放在圓形木咖啡桌上"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Flowerpot VP9 portable lamp in Swim Blue, lit on a round wooden coffee table",
+     "&Tradition Flowerpot VP9 in Swim Blue on a white desk beside a laptop and a small dish"
+    ],
+    "zh": [
+     "&Tradition Flowerpot VP9 便攜燈（Swim Blue），亮燈放在圓形木咖啡桌上",
+     "&Tradition Flowerpot VP9（Swim Blue）放在白色書桌上，旁邊是電腦及小碟"
+    ]
+   },
+   "year": {
+    "en": "1968",
+    "zh": "1968 年"
+   },
+   "retailPrice": 1740
+  },
+  {
+   "slug": "andtradition-flowerpot-vp9-swim-blue-excellent",
+   "sku": "TT-ANT-0013",
+   "featured": false,
+   "dropDate": "2026-10-14",
+   "newFrom": "2026-10-22",
+   "brand": "&Tradition",
+   "designer": "Verner Panton",
+   "name": {
+    "en": "Flowerpot VP9 · Swim Blue · Excellent",
+    "zh": "Flowerpot VP9 · Swim Blue · 極佳"
+   },
+   "model": "Flowerpot VP9",
+   "colour": {
+    "en": "Swim Blue",
+    "zh": "Swim Blue"
+   },
+   "material": {
+    "en": "Lacquered polycarbonate and steel",
+    "zh": "漆面聚碳酸酯及鋼"
+   },
+   "description": {
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This Swim Blue lamp is ex-display. It comes with the charger and without a box, and it looks clean. New retail is about HK$1,740. It is a different piece from the Good Swim Blue at HK$1,180.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞 Swim Blue 是展示品，連充電器，沒有原裝盒，看起來乾淨。全新參考價約 HK$1,740。與 HK$1,180 那盞品相良好的 Swim Blue 是不同的一件。"
+   },
+   "details": {
+    "en": [
+     "Portable lamp, Verner Panton, 1968",
+     "Lacquered polycarbonate shade and base, steel dimmer",
+     "Ø16 × H 29.5 cm, about 0.8 kg",
+     "Built-in LED with a touch dimmer; charges by USB",
+     "Keep it indoors when you store it"
+    ],
+    "zh": [
+     "便攜燈，Verner Panton，1968 年",
+     "漆面聚碳酸酯燈罩及底座，鋼製調光按鈕",
+     "Ø16 × 高 29.5 cm，約 0.8 kg",
+     "內置 LED，觸控調光，以 USB 充電",
+     "存放時請放在室內"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "dia": 16,
+    "h": 29.5,
+    "unit": "cm",
+    "weightKg": 0.8
+   },
+   "condition": {
+    "grade": "excellent",
+    "notes": {
+     "en": "Ex-display, with the charger, and no box. Excellent: it looks clean, with no marks called out.",
+     "zh": "展示品，連充電器，沒有原裝盒。品相極佳：看起來乾淨，沒有需要標明的痕跡。"
+    },
+    "box": {
+     "en": "No original box.",
+     "zh": "沒有原裝盒。"
+    },
+    "electrics": {
+     "en": "USB charger included.",
+     "zh": "連 USB 充電器。"
+    }
+   },
+   "price": 1280,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "storyKey": "andtradition",
+   "photos": [
+    "/assets/products/andtradition-flowerpot-vp9-swim-blue-excellent/1.jpg",
+    "/assets/products/andtradition-flowerpot-vp9-swim-blue-excellent/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Flowerpot VP9 portable lamp in Swim Blue, lit on a round wooden coffee table",
+    "zh": "&Tradition Flowerpot VP9 便攜燈（Swim Blue），亮燈放在圓形木咖啡桌上"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Flowerpot VP9 portable lamp in Swim Blue, lit on a round wooden coffee table",
+     "&Tradition Flowerpot VP9 in Swim Blue on a white desk beside a laptop and a small dish"
+    ],
+    "zh": [
+     "&Tradition Flowerpot VP9 便攜燈（Swim Blue），亮燈放在圓形木咖啡桌上",
+     "&Tradition Flowerpot VP9（Swim Blue）放在白色書桌上，旁邊是電腦及小碟"
+    ]
+   },
+   "year": {
+    "en": "1968",
+    "zh": "1968 年"
+   },
+   "retailPrice": 1740
+  },
+  {
+   "slug": "andtradition-flowerpot-vp9-mustard",
+   "sku": "TT-ANT-0003",
+   "featured": false,
+   "dropDate": "2026-10-14",
+   "newFrom": "2026-10-22",
+   "brand": "&Tradition",
+   "designer": "Verner Panton",
+   "name": {
+    "en": "Flowerpot VP9 · Mustard",
+    "zh": "Flowerpot VP9 · Mustard"
+   },
+   "model": "Flowerpot VP9",
+   "colour": {
+    "en": "Mustard",
+    "zh": "Mustard"
+   },
+   "material": {
+    "en": "Lacquered polycarbonate and steel",
+    "zh": "漆面聚碳酸酯及鋼"
+   },
+   "description": {
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This Mustard lamp is ex-display. It comes with the charging cable and without a box, and no marks were noted. New retail is about HK$1,740.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞 Mustard 是展示品，連充電線，沒有原裝盒，沒有需要標明的痕跡。全新參考價約 HK$1,740。"
+   },
+   "details": {
+    "en": [
+     "Portable lamp, Verner Panton, 1968",
+     "Lacquered polycarbonate shade and base, steel dimmer",
+     "Ø16 × H 29.5 cm, about 0.8 kg",
+     "Built-in LED with a touch dimmer; charges by USB",
+     "Keep it indoors when you store it"
+    ],
+    "zh": [
+     "便攜燈，Verner Panton，1968 年",
+     "漆面聚碳酸酯燈罩及底座，鋼製調光按鈕",
+     "Ø16 × 高 29.5 cm，約 0.8 kg",
+     "內置 LED，觸控調光，以 USB 充電",
+     "存放時請放在室內"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "dia": 16,
+    "h": 29.5,
+    "unit": "cm",
+    "weightKg": 0.8
+   },
+   "condition": {
+    "grade": "excellent",
+    "notes": {
+     "en": "Ex-display, with the charging cable, and no box. Excellent: no marks called out.",
+     "zh": "展示品，連充電線，沒有原裝盒。品相極佳：沒有需要標明的痕跡。"
+    },
+    "box": {
+     "en": "No original box.",
+     "zh": "沒有原裝盒。"
+    },
+    "electrics": {
+     "en": "Charging cable included.",
+     "zh": "連充電線。"
+    }
+   },
+   "price": 1280,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "storyKey": "andtradition",
+   "photos": [
+    "/assets/products/andtradition-flowerpot-vp9-mustard/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Flowerpot VP9 in Mustard on a white desk beside a small vase of flowers",
+    "zh": "&Tradition Flowerpot VP9（Mustard）放在白色書桌上，旁邊是一小瓶花"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Flowerpot VP9 in Mustard on a white desk beside a small vase of flowers"
+    ],
+    "zh": [
+     "&Tradition Flowerpot VP9（Mustard）放在白色書桌上，旁邊是一小瓶花"
+    ]
+   },
+   "year": {
+    "en": "1968",
+    "zh": "1968 年"
+   },
+   "retailPrice": 1740
+  },
+  {
+   "slug": "andtradition-flowerpot-vp9-matt-black",
+   "sku": "TT-ANT-0011",
+   "featured": false,
+   "dropDate": "2026-10-14",
+   "newFrom": "2026-10-22",
+   "brand": "&Tradition",
+   "designer": "Verner Panton",
+   "name": {
+    "en": "Flowerpot VP9 · Matt Black",
+    "zh": "Flowerpot VP9 · Matt Black"
+   },
+   "model": "Flowerpot VP9",
+   "colour": {
+    "en": "Matt Black",
+    "zh": "Matt Black"
+   },
+   "material": {
+    "en": "Lacquered polycarbonate and steel",
+    "zh": "漆面聚碳酸酯及鋼"
+   },
+   "description": {
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This Matt Black lamp is brand new and still in its box. We'll confirm the rechargeable battery is included and working before you pay.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞 Matt Black 是全新，仍有原裝盒。付款前我們會確認充電電池已包括並且運作正常。"
+   },
+   "details": {
+    "en": [
+     "Portable lamp, Verner Panton, 1968",
+     "Lacquered polycarbonate shade and base, steel dimmer",
+     "Ø16 × H 29.5 cm, about 0.8 kg",
+     "Built-in LED with a touch dimmer; charges by USB",
+     "Keep it indoors when you store it"
+    ],
+    "zh": [
+     "便攜燈，Verner Panton，1968 年",
+     "漆面聚碳酸酯燈罩及底座，鋼製調光按鈕",
+     "Ø16 × 高 29.5 cm，約 0.8 kg",
+     "內置 LED，觸控調光，以 USB 充電",
+     "存放時請放在室內"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "dia": 16,
+    "h": 29.5,
+    "unit": "cm",
+    "weightKg": 0.8
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new, with the original box. We'll confirm the rechargeable battery is included and working before you pay.",
+     "zh": "全新，連原裝盒。付款前我們會確認充電電池已包括並且運作正常。"
+    },
+    "box": {
+     "en": "Original box included.",
+     "zh": "連原裝盒。"
+    },
+    "electrics": {
+     "en": "Rechargeable. We'll confirm the battery is included and working before you pay.",
+     "zh": "可充電。付款前我們會確認電池已包括並且運作正常。"
+    }
+   },
+   "price": 1580,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "storyKey": "andtradition",
+   "photos": [
+    "/assets/products/andtradition-flowerpot-vp9-matt-black/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Flowerpot VP9 in Matt Black on a pale wooden shelf beside a book",
+    "zh": "&Tradition Flowerpot VP9（Matt Black）放在淺木層架上，旁邊是一本書"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Flowerpot VP9 in Matt Black on a pale wooden shelf beside a book"
+    ],
+    "zh": [
+     "&Tradition Flowerpot VP9（Matt Black）放在淺木層架上，旁邊是一本書"
+    ]
+   },
+   "year": {
+    "en": "1968",
+    "zh": "1968 年"
+   }
+  },
+  {
+   "slug": "andtradition-flowerpot-vp9-dark-green",
+   "sku": "TT-ANT-0012",
+   "featured": false,
+   "dropDate": "2026-10-14",
+   "newFrom": "2026-10-22",
+   "brand": "&Tradition",
+   "designer": "Verner Panton",
+   "name": {
+    "en": "Flowerpot VP9 · Dark Green",
+    "zh": "Flowerpot VP9 · Dark Green"
+   },
+   "model": "Flowerpot VP9",
+   "colour": {
+    "en": "Dark green",
+    "zh": "深綠色"
+   },
+   "material": {
+    "en": "Lacquered polycarbonate and steel",
+    "zh": "漆面聚碳酸酯及鋼"
+   },
+   "description": {
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This one is dark green, brand new, and still in its box. We'll confirm the rechargeable battery is included and working before you pay.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞是深綠色，全新，仍有原裝盒。付款前我們會確認充電電池已包括並且運作正常。"
+   },
+   "details": {
+    "en": [
+     "Portable lamp, Verner Panton, 1968",
+     "Lacquered polycarbonate shade and base, steel dimmer",
+     "Ø16 × H 29.5 cm, about 0.8 kg",
+     "Built-in LED with a touch dimmer; charges by USB",
+     "Keep it indoors when you store it"
+    ],
+    "zh": [
+     "便攜燈，Verner Panton，1968 年",
+     "漆面聚碳酸酯燈罩及底座，鋼製調光按鈕",
+     "Ø16 × 高 29.5 cm，約 0.8 kg",
+     "內置 LED，觸控調光，以 USB 充電",
+     "存放時請放在室內"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "dia": 16,
+    "h": 29.5,
+    "unit": "cm",
+    "weightKg": 0.8
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new, with the original box. Dark green. We'll confirm the rechargeable battery is included and working before you pay.",
+     "zh": "全新，連原裝盒。深綠色。付款前我們會確認充電電池已包括並且運作正常。"
+    },
+    "box": {
+     "en": "Original box included.",
+     "zh": "連原裝盒。"
+    },
+    "electrics": {
+     "en": "Rechargeable. We'll confirm the battery is included and working before you pay.",
+     "zh": "可充電。付款前我們會確認電池已包括並且運作正常。"
+    }
+   },
+   "price": 1580,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "storyKey": "andtradition",
+   "photos": [
+    "/assets/products/andtradition-flowerpot-vp9-dark-green/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Flowerpot VP9 in dark green, a studio packshot on white",
+    "zh": "&Tradition Flowerpot VP9 深綠色，白色背景的產品照"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Flowerpot VP9 in dark green, a studio packshot on white"
+    ],
+    "zh": [
+     "&Tradition Flowerpot VP9 深綠色，白色背景的產品照"
+    ]
+   },
+   "year": {
+    "en": "1968",
+    "zh": "1968 年"
+   }
+  },
+  {
+   "slug": "andtradition-mist-pendant-ap15",
+   "sku": "TT-ANT-0004",
+   "featured": false,
+   "dropDate": "2026-10-14",
+   "newFrom": "2026-10-22",
+   "brand": "&Tradition",
+   "designer": "All the Way to Paris",
+   "name": {
+    "en": "Mist Pendant AP15",
+    "zh": "Mist 吊燈 AP15"
+   },
+   "model": "Mist AP15",
+   "colour": {
+    "en": "White opal glass",
+    "zh": "白色乳白玻璃"
+   },
+   "material": {
+    "en": "Mouth-blown opal glass, aluminium, textile cord",
+    "zh": "吹製乳白玻璃、鋁、布線"
+   },
+   "description": {
+    "en": "Mist AP15 is a small pendant by All the Way to Paris for &Tradition. The shade is mouth-blown opal glass, about Ø25 × H 13 cm, with white aluminium details and a textile cord. This one is brand new. The cord and a bulb are included. New retail is HK$3,190, so HK$2,480 is about 22% under that. It is a 220–240V fitting, which suits Hong Kong. Installation is available as an add-on, quoted on WhatsApp. The price is for one pendant.",
+    "zh": "Mist AP15 是 All the Way to Paris 為 &Tradition 設計的小型吊燈。燈罩是吹製乳白玻璃，約 Ø25 × 高 13 cm，配白色鋁件及布線。這盞全新。連電線及一顆燈泡。全新參考價 HK$3,190，HK$2,480 約低 22%。電壓 220–240V，適用於香港。安裝可作附加服務，WhatsApp 報價。價錢是一盞吊燈。"
+   },
+   "details": {
+    "en": [
+     "One pendant, Ø25 × H 13 cm, about 1.3 kg",
+     "Mouth-blown opal glass shade",
+     "Cord and a bulb included with this one",
+     "220–240V, G9, max 20W",
+     "Installation available as an add-on, quoted on WhatsApp"
+    ],
+    "zh": [
+     "一盞吊燈，Ø25 × 高 13 cm，約 1.3 kg",
+     "吹製乳白玻璃燈罩",
+     "這件連電線及一顆燈泡",
+     "220–240V，G9，最高 20W",
+     "安裝可作附加服務，WhatsApp 報價"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "dia": 25,
+    "h": 13,
+    "unit": "cm",
+    "weightKg": 1.3
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new. Cord and a bulb are included. Installation is available as an add-on, quoted on WhatsApp.",
+     "zh": "全新。連電線及一顆燈泡。安裝可作附加服務，WhatsApp 報價。"
+    },
+    "electrics": {
+     "en": "Cord and a bulb included. 220–240V. Installation available as an add-on.",
+     "zh": "連電線及一顆燈泡。220–240V。安裝可作附加服務。"
+    }
+   },
+   "price": 2480,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "storyKey": "andtradition",
+   "photos": [
+    "/assets/products/andtradition-mist-pendant-ap15/1.jpg",
+    "/assets/products/andtradition-mist-pendant-ap15/2.jpg",
+    "/assets/products/andtradition-mist-pendant-ap15/3.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Mist AP15 pendant, one mouth-blown opal glass shade over a dining table",
+    "zh": "&Tradition Mist AP15 吊燈，一盞吹製乳白玻璃燈罩掛在餐桌上方"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Mist AP15 pendant, one mouth-blown opal glass shade over a dining table",
+     "&Tradition Mist AP15 pendant hanging against a pale rustic wall",
+     "A cluster of &Tradition Mist pendants in a living room. This listing is for one AP15 pendant"
+    ],
+    "zh": [
+     "&Tradition Mist AP15 吊燈，一盞吹製乳白玻璃燈罩掛在餐桌上方",
+     "&Tradition Mist AP15 吊燈掛在淺色木牆前",
+     "客廳裡一組 &Tradition Mist 吊燈。這件貨品是一盞 AP15"
+    ]
+   },
+   "retailPrice": 3190
+  },
+  {
+   "slug": "andtradition-journey-wall-lamp-shy2",
+   "sku": "TT-ANT-0002",
+   "featured": false,
+   "dropDate": "2026-10-14",
+   "newFrom": "2026-10-22",
+   "brand": "&Tradition",
+   "designer": "Signe Hytte",
+   "name": {
+    "en": "Journey Wall Lamp SHY2",
+    "zh": "Journey 壁燈 SHY2"
+   },
+   "model": "Journey SHY2",
+   "colour": {
+    "en": "Black",
+    "zh": "黑色"
+   },
+   "material": {
+    "en": "Mouth-blown satinised opal glass and lacquered steel",
+    "zh": "吹製霧面乳白玻璃及漆面鋼"
+   },
+   "description": {
+    "en": "Signe Hytte designed the Journey SHY2 in 2018 for &Tradition: a mouth-blown opal-glass sphere on a lacquered steel wall base, H 24 × W 18 × L 26 cm. This one is black. Condition is Good. There is a small hairline crack on the opal glass near the base join. It is not clear in these photos. WhatsApp us and we will send a close-up. HK$1,340 is half of the HK$2,680 retail. It is a 220–240V fitting, which suits Hong Kong. Installation is available as an add-on, quoted on WhatsApp.",
+    "zh": "Signe Hytte 於 2018 年為 &Tradition 設計 Journey SHY2：吹製乳白玻璃圓罩，配漆面鋼製壁燈底座，高 24 × 闊 18 × 長 26 cm。這盞是黑色。品相良好。乳白玻璃近底座接位有一條細小髮絲裂紋。這些相片看不清楚。WhatsApp 我們會再傳近照。HK$1,340 是 HK$2,680 參考價的一半。電壓 220–240V，適用於香港。安裝可作附加服務，WhatsApp 報價。"
+   },
+   "details": {
+    "en": [
+     "Wall lamp, Signe Hytte, 2018",
+     "H 24 × W 18 × L 26 cm, about 1.3 kg",
+     "Mouth-blown satinised opal glass, lacquered steel base",
+     "Black",
+     "220–240V, suitable for Hong Kong. We'll confirm the bulb or LED module on WhatsApp",
+     "Installation available as an add-on, quoted on WhatsApp"
+    ],
+    "zh": [
+     "壁燈，Signe Hytte，2018 年",
+     "高 24 × 闊 18 × 長 26 cm，約 1.3 kg",
+     "吹製霧面乳白玻璃，漆面鋼底座",
+     "黑色",
+     "220–240V，適用於香港。燈泡或 LED 模組請 WhatsApp 確認",
+     "安裝可作附加服務，WhatsApp 報價"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "w": 18,
+    "d": 26,
+    "h": 24,
+    "unit": "cm",
+    "weightKg": 1.3
+   },
+   "condition": {
+    "grade": "good",
+    "notes": {
+     "en": "Good. Small hairline crack on the opal glass near the base join. It is not clear in these photos. WhatsApp us for a close-up. Installation is available as an add-on.",
+     "zh": "品相良好。乳白玻璃近底座接位有一條細小髮絲裂紋。這些相片看不清楚。請 WhatsApp 索取近照。安裝可作附加服務。"
+    },
+    "flaws": {
+     "en": "Small hairline crack on the opal glass near the base join.",
+     "zh": "乳白玻璃近底座接位有一條細小髮絲裂紋。"
+    },
+    "electrics": {
+     "en": "220–240V. We'll confirm the bulb or LED module on WhatsApp. Installation available as an add-on.",
+     "zh": "220–240V。燈泡或 LED 模組請 WhatsApp 確認。安裝可作附加服務。"
+    }
+   },
+   "price": 1340,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "storyKey": "andtradition",
+   "photos": [
+    "/assets/products/andtradition-journey-wall-lamp-shy2/1.jpg",
+    "/assets/products/andtradition-journey-wall-lamp-shy2/2.jpg",
+    "/assets/products/andtradition-journey-wall-lamp-shy2/3.jpg",
+    "/assets/products/andtradition-journey-wall-lamp-shy2/4.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Journey SHY2 wall lamp in black, lit, with an opal glass shade",
+    "zh": "&Tradition Journey SHY2 壁燈，黑色底座，乳白玻璃燈罩亮燈"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Journey SHY2 wall lamp in black, lit, with an opal glass shade",
+     "Close view of the Journey SHY2 opal glass shade where it meets the black base. The hairline crack is not clear in this photo",
+     "&Tradition Journey SHY2 wall lamp, unlit, black base and opal glass shade",
+     "&Tradition Journey SHY2 wall lamp seen across a living room, black base and opal glass shade"
+    ],
+    "zh": [
+     "&Tradition Journey SHY2 壁燈，黑色底座，乳白玻璃燈罩亮燈",
+     "Journey SHY2 乳白玻璃燈罩與黑色底座相接處的近照。這張相片看不清楚那條髮絲裂紋",
+     "&Tradition Journey SHY2 壁燈未亮燈，黑色底座配乳白玻璃燈罩",
+     "&Tradition Journey SHY2 壁燈在客廳另一端所見，黑色底座配乳白玻璃燈罩"
+    ]
+   },
+   "year": {
+    "en": "2018",
+    "zh": "2018 年"
+   },
+   "retailPrice": 2680
+  },
   {
    "slug": "hay-ice-cube-tray-xxl-ice-blue",
    "sku": "TT-HAY-0007",
