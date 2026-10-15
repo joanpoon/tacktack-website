@@ -1382,7 +1382,7 @@
   },
   {
    "slug": "akari-45d",
-   "featured": true,
+   "featured": false,
    "dropDate": "2026-09-24",
    "newFrom": "2026-10-08",
    "brand": "AKARI",
@@ -1439,7 +1439,7 @@
     }
    },
    "price": 1780,
-   "status": "available",
+   "status": "sold",
    "fulfilment": "both",
    "notices": [
     "cordNotIncluded"
