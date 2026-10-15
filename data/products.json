@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-14",
+ "updated": "2026-10-15",
  "homepageDrop": [
-  "dulton-double-face-clock-grey",
-  "dulton-double-face-clock-green"
+  "yoshitomo-nara-green-eyes",
+  "yoshitomo-nara-eye-patch"
  ],
  "stories": {
   "isamu-noguchi": {
@@ -44,6 +44,16 @@
     "en": "&Tradition is a Danish design brand. These lamps are Verner Panton's Flowerpot VP9, a portable lamp from 1968; the Mist AP15 pendant by All the Way to Paris; and the Journey SHY2 wall lamp by Signe Hytte, from 2018.",
     "zh": "&Tradition 是丹麥設計品牌。這批燈包括 Verner Panton 1968 年的 Flowerpot VP9 便攜燈、All the Way to Paris 的 Mist AP15 吊燈，以及 Signe Hytte 2018 年的 Journey SHY2 壁燈。"
    }
+  },
+  "yoshitomo-nara": {
+   "title": {
+    "en": "Yoshitomo Nara",
+    "zh": "奈良美智"
+   },
+   "body": {
+    "en": "Yoshitomo Nara (b. 1959) is a Japanese artist whose wide-eyed children sit somewhere between cute and slightly dangerous. These two MoMA Exclusive prints reproduce works in MoMA's collection: Green Eyes (2002) and Untitled (Eye Patch) (2012). We brought them back from MoMA Design Store Osaka — brand new, boxed, and small enough to courier across Hong Kong.",
+    "zh": "奈良美智（Yoshitomo Nara，生於 1959 年）是日本藝術家，畫中那些大眼睛小孩既可愛，又帶點不好惹。這兩張 MoMA Exclusive 海報翻印 MoMA 館藏：Green Eyes（2002）及 Untitled (Eye Patch)（2012）。我們在大阪 MoMA Design Store 買回來——全新、連原裝盒，小件可用速遞送往全港。"
+   }
   }
  },
  "brands": {
@@ -61,9 +71,179 @@
   },
   "&Tradition": {
    "slug": "andtradition"
+  },
+  "Yoshitomo Nara": {
+   "slug": "yoshitomo-nara"
   }
  },
  "products": [
+  {
+   "slug": "yoshitomo-nara-green-eyes",
+   "sku": "TT-NAR-0001",
+   "featured": false,
+   "dropDate": "2026-10-15",
+   "brand": "Yoshitomo Nara",
+   "designer": "Yoshitomo Nara",
+   "name": {
+    "en": "Green Eyes Print",
+    "zh": "Green Eyes 海報"
+   },
+   "model": "Green Eyes",
+   "year": {
+    "en": "2002",
+    "zh": "2002 年"
+   },
+   "material": {
+    "en": "Paper",
+    "zh": "紙"
+   },
+   "description": {
+    "en": "Nara's child looks straight at you: two green eyes, a pair of plasters, a red collar on a blue sky. This is the MoMA Exclusive print of Green Eyes (2002), 28 × 36 cm, still in its box. We bought it at MoMA Design Store Osaka. Brand new, unframed — lean it on a shelf or have it framed for a small wall.",
+    "zh": "奈良美智筆下的小孩直望着你：一雙綠眼、兩貼膠布、紅色衣領，背景是藍天。這是 MoMA Exclusive 的 Green Eyes（2002）海報，28 × 36 cm，仍在原裝盒裡。我們在大阪 MoMA Design Store 買到。全新、不連相框——可以靠在層架上，或者自己配框掛在小牆上。"
+   },
+   "details": {
+    "en": [
+     "MoMA Exclusive print of Green Eyes (2002)",
+     "28 × 36 cm (11 × 14 in)",
+     "Brand new, with the original box",
+     "Unframed; the framed photos are MoMA's, for reference",
+     "From MoMA Design Store Osaka, 21 August 2026",
+     "Small piece: courier across Hong Kong"
+    ],
+    "zh": [
+     "MoMA Exclusive 海報，翻印 Green Eyes（2002）",
+     "28 × 36 cm（11 × 14 in）",
+     "全新，連原裝盒",
+     "不連相框；有框相片為 MoMA 官方參考圖",
+     "2026 年 8 月 21 日於大阪 MoMA Design Store 購入",
+     "小件貨品，可安排全港速遞"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 28,
+    "h": 36,
+    "unit": "cm"
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new (boxed). From MoMA Design Store Osaka, 21 August 2026.",
+     "zh": "全新（連原裝盒）。2026 年 8 月 21 日於大阪 MoMA Design Store 購入。"
+    },
+    "box": {
+     "en": "Original box included.",
+     "zh": "連原裝盒。"
+    }
+   },
+   "price": 298,
+   "status": "available",
+   "fulfilment": "both",
+   "storyKey": "yoshitomo-nara",
+   "photos": [
+    "/assets/products/yoshitomo-nara-green-eyes/1.jpg",
+    "/assets/products/yoshitomo-nara-green-eyes/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "Yoshitomo Nara Green Eyes print in a clear sleeve, standing in a magazine rack, with the Tack, tack! wordmark",
+    "zh": "奈良美智 Green Eyes 海報套着透明膠套，立在雜誌架上，右下角有 Tack, tack! 字樣"
+   },
+   "photoAlts": {
+    "en": [
+     "Yoshitomo Nara Green Eyes print in a clear sleeve, standing in a magazine rack, with the Tack, tack! wordmark",
+     "MoMA studio shot of the Green Eyes print in a white frame on a pale wall; frame not included"
+    ],
+    "zh": [
+     "奈良美智 Green Eyes 海報套着透明膠套，立在雜誌架上，右下角有 Tack, tack! 字樣",
+     "MoMA 官方相片：Green Eyes 海報配白框掛在淺色牆上；相框不另附"
+    ]
+   }
+  },
+  {
+   "slug": "yoshitomo-nara-eye-patch",
+   "sku": "TT-NAR-0002",
+   "featured": false,
+   "dropDate": "2026-10-15",
+   "brand": "Yoshitomo Nara",
+   "designer": "Yoshitomo Nara",
+   "name": {
+    "en": "Eye Patch Print",
+    "zh": "Eye Patch 海報"
+   },
+   "model": "Eye Patch",
+   "year": {
+    "en": "2012",
+    "zh": "2012 年"
+   },
+   "material": {
+    "en": "Paper",
+    "zh": "紙"
+   },
+   "description": {
+    "en": "The kid with the eye patch: one amber eye, a plaster cross, a yellow shirt on pink. This is the MoMA Exclusive print of Untitled (Eye Patch) (2012), 28 × 36 cm, still in its box. From MoMA Design Store Osaka. Brand new, unframed — lean it on a shelf or have it framed for a small wall.",
+    "zh": "戴着眼罩的小孩：一隻琥珀色的眼睛、一貼十字膠布、黃色衣服配粉紅色背景。這是 MoMA Exclusive 的 Untitled (Eye Patch)（2012）海報，28 × 36 cm，仍在原裝盒裡。大阪 MoMA Design Store 購入。全新、不連相框——可以靠在層架上，或者自己配框掛在小牆上。"
+   },
+   "details": {
+    "en": [
+     "MoMA Exclusive print of Untitled (Eye Patch) (2012)",
+     "28 × 36 cm (11 × 14 in)",
+     "Brand new, with the original box",
+     "Unframed; the framed photos are MoMA's, for reference",
+     "From MoMA Design Store Osaka, 21 August 2026",
+     "Small piece: courier across Hong Kong"
+    ],
+    "zh": [
+     "MoMA Exclusive 海報，翻印 Untitled (Eye Patch)（2012）",
+     "28 × 36 cm（11 × 14 in）",
+     "全新，連原裝盒",
+     "不連相框；有框相片為 MoMA 官方參考圖",
+     "2026 年 8 月 21 日於大阪 MoMA Design Store 購入",
+     "小件貨品，可安排全港速遞"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 28,
+    "h": 36,
+    "unit": "cm"
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new (boxed). From MoMA Design Store Osaka, 21 August 2026.",
+     "zh": "全新（連原裝盒）。2026 年 8 月 21 日於大阪 MoMA Design Store 購入。"
+    },
+    "box": {
+     "en": "Original box included.",
+     "zh": "連原裝盒。"
+    }
+   },
+   "price": 328,
+   "status": "available",
+   "fulfilment": "both",
+   "storyKey": "yoshitomo-nara",
+   "photos": [
+    "/assets/products/yoshitomo-nara-eye-patch/1.jpg",
+    "/assets/products/yoshitomo-nara-eye-patch/2.jpg",
+    "/assets/products/yoshitomo-nara-eye-patch/3.jpg"
+   ],
+   "photoAlt": {
+    "en": "Yoshitomo Nara Eye Patch print in a clear sleeve, standing in a magazine rack, with the Tack, tack! wordmark",
+    "zh": "奈良美智 Eye Patch 海報套着透明膠套，立在雜誌架上，右下角有 Tack, tack! 字樣"
+   },
+   "photoAlts": {
+    "en": [
+     "Yoshitomo Nara Eye Patch print in a clear sleeve, standing in a magazine rack, with the Tack, tack! wordmark",
+     "MoMA studio shot of the Eye Patch print in a white frame on a pale wall; frame not included",
+     "MoMA packshot of the Eye Patch print on a white background, unframed"
+    ],
+    "zh": [
+     "奈良美智 Eye Patch 海報套着透明膠套，立在雜誌架上，右下角有 Tack, tack! 字樣",
+     "MoMA 官方相片：Eye Patch 海報配白框掛在淺色牆上；相框不另附",
+     "MoMA 官方白底產品照：Eye Patch 海報，不連相框"
+    ]
+   }
+  },
   {
    "slug": "andtradition-flowerpot-vp9-swim-blue-good",
    "sku": "TT-ANT-0001",
