@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14",
+ "updated": "2026-10-15",
  "homepageDrop": [
   "dulton-double-face-clock-grey",
   "dulton-double-face-clock-green"
@@ -1214,7 +1214,7 @@
   },
   {
    "slug": "akari-45d",
-   "featured": true,
+   "featured": false,
    "dropDate": "2026-09-24",
    "newFrom": "2026-10-08",
    "brand": "AKARI",
@@ -1271,7 +1271,7 @@
     }
    },
    "price": 1780,
-   "status": "available",
+   "status": "sold",
    "fulfilment": "both",
    "notices": [
     "cordNotIncluded"
