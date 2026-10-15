@@ -1,0 +1,144 @@
+{
+  "_readme": "Traditional Chinese share cards (og:image + twitter:image, 1200x630) for the /zh/ pages. Rendered by scripts/dev/render-og-zh.js into assets/og/zh/<file>; build-pages.py wires them into the zh pages (EN pages keep assets/brand/og-default.png). Rules: lifestyle photos only (never a white-background AKARI shot), no prices, no SKUs, no stock counts. Brand look from logo/final/README.md: Paytone One wordmark 'Tack, tack!', Walnut #4B2E21, Pale Blue #ADDCFB, Cream #F5EFE4, Signal Orange #E4572E accent.",
+  "cards": [
+    {
+      "path": "/",
+      "file": "home.jpg",
+      "theme": "cream",
+      "kicker": "香港 · 設計經典 · 全新及二手",
+      "title": "好設計，<br>值得傳下去。",
+      "sub": "野口勇 AKARI、Heller、DULTON 等精選設計",
+      "foot": "WhatsApp 查詢 · 預約自取 · 全港送貨",
+      "photos": [
+        "/assets/products/akari-55d/1.jpg",
+        "/assets/products/heller-swell-mini-cream/2.jpg",
+        "/assets/products/akari-45d/4.jpg"
+      ],
+      "alt": "Tack, tack!：好設計，值得傳下去。香港設計小店，野口勇 AKARI 紙燈及 Heller Swell 生活照"
+    },
+    {
+      "path": "/shop/",
+      "file": "shop.jpg",
+      "theme": "cream",
+      "kicker": "選購",
+      "title": "精選設計經典",
+      "sub": "燈飾、家品及掛牆收納，逢星期四上新",
+      "foot": "WhatsApp 查詢 · 預約自取 · 全港送貨",
+      "photos": [
+        "/assets/products/dulton-double-face-clock-green/4.jpg",
+        "/assets/products/akari-30a/1.jpg",
+        "/assets/products/heller-swell-blue/2.jpg"
+      ],
+      "alt": "Tack, tack! 選購：精選設計經典，DULTON 雙面掛鐘、野口勇 AKARI 紙燈及 Heller Swell 生活照"
+    },
+    {
+      "path": "/brand/isamu-noguchi-akari/",
+      "file": "brand-isamu-noguchi-akari.jpg",
+      "theme": "blue",
+      "kicker": "野口勇 · 岐阜手工和紙燈",
+      "title": "野口勇 AKARI<br>紙燈",
+      "sub": "30A、45D、55D 三個尺寸，全部全新",
+      "foot": "WhatsApp 查詢 · 預約自取 · 全港送貨",
+      "photos": [
+        "/assets/products/akari-45d/1.jpg",
+        "/assets/products/akari-30a/3.jpg"
+      ],
+      "alt": "野口勇 AKARI 和紙燈在家中亮起的生活照，Tack, tack! 香港"
+    },
+    {
+      "path": "/brand/heller/",
+      "file": "brand-heller.jpg",
+      "theme": "cream",
+      "kicker": "Heller · Anna Dawson",
+      "title": "Heller Swell<br>波浪掛牆收納",
+      "sub": "Swell 及 Swell Mini，多款顏色，全部全新",
+      "foot": "WhatsApp 查詢 · 預約自取 · 全港送貨",
+      "photos": [
+        "/assets/products/heller-swell-mini-cream/2.jpg",
+        "/assets/products/heller-swell-red-orange/3.jpg"
+      ],
+      "alt": "Heller Swell 及 Swell Mini 波浪掛牆收納掛在牆上的生活照，Tack, tack! 香港"
+    },
+    {
+      "path": "/brand/dulton/",
+      "file": "brand-dulton.jpg",
+      "theme": "blue",
+      "kicker": "DULTON · 日本家品",
+      "title": "DULTON<br>雙面掛鐘",
+      "sub": "車站式雙面鐘，長方形設計，全部全新",
+      "foot": "WhatsApp 查詢 · 預約自取 · 全港送貨",
+      "photos": [
+        "/assets/products/dulton-double-face-clock-green/4.jpg",
+        "/assets/products/dulton-double-face-clock-grey/3.jpg"
+      ],
+      "alt": "DULTON 長方形雙面掛鐘在家中的生活照，Tack, tack! 香港"
+    },
+    {
+      "path": "/about/",
+      "file": "about.jpg",
+      "theme": "cream",
+      "kicker": "關於 Tack, tack!",
+      "title": "為好設計<br>找個好歸宿。",
+      "sub": "香港獨立設計小店<br>精選來自世界各地的經典設計",
+      "foot": "Instagram · Threads @tacktackstudio",
+      "photos": [
+        "/assets/products/akari-55d/2.jpg"
+      ],
+      "alt": "關於 Tack, tack!：香港獨立設計小店，野口勇 AKARI 紙燈生活照"
+    },
+    {
+      "path": "/faq/",
+      "file": "faq.jpg",
+      "theme": "walnut",
+      "kicker": "常見問題",
+      "title": "有問題？<br>一次睇清。",
+      "sub": "購買、留貨、付款、送貨及自取",
+      "foot": "WhatsApp +852 6507 0791",
+      "photos": [
+        "/assets/products/akari-45d/6.jpg"
+      ],
+      "alt": "Tack, tack! 常見問題：購買、留貨、付款、送貨及自取"
+    },
+    {
+      "path": "/how-to-buy/",
+      "file": "how-to-buy.jpg",
+      "theme": "walnut",
+      "kicker": "購買流程",
+      "title": "WhatsApp 查詢，<br>簡單購買。",
+      "sub": "FPS 轉數快 · PayMe · 銀行轉帳 · 現金<br>海外買家可用 PayPal",
+      "foot": "預約自取 · 全港送貨",
+      "photos": [
+        "/assets/products/heller-swell-mini-blue/2.jpg"
+      ],
+      "alt": "Tack, tack! 購買流程：WhatsApp 查詢，FPS、PayMe、銀行轉帳、現金或海外 PayPal 付款"
+    },
+    {
+      "path": "/contact/",
+      "file": "contact.jpg",
+      "theme": "cream",
+      "kicker": "聯絡我們",
+      "title": "WhatsApp 查詢，<br>預約睇貨。",
+      "sub": "最快回覆 · Showroom 睇貨須預約<br>hello@tacktackstudio.com",
+      "foot": "WhatsApp +852 6507 0791",
+      "photos": [
+        "/assets/products/akari-30a/1.jpg",
+        "/assets/products/dulton-double-face-clock-grey/3.jpg"
+      ],
+      "alt": "Tack, tack! 聯絡：WhatsApp 查詢、預約 Showroom 睇貨及自取"
+    },
+    {
+      "path": "/delivery/",
+      "file": "delivery.jpg",
+      "theme": "walnut",
+      "kicker": "送貨及自取",
+      "title": "全港送貨，<br>或預約自取。",
+      "sub": "限時：滿 HK$1,000 免運費（至 11 月 1 日）<br>運費經 WhatsApp 報價",
+      "foot": "Showroom 自取須預約",
+      "photos": [
+        "/assets/products/heller-swell-mini-cream/2.jpg",
+        "/assets/products/akari-55d/2.jpg"
+      ],
+      "alt": "Tack, tack! 送貨及自取：全港送貨或預約自取，限時滿額免運"
+    }
+  ]
+}
