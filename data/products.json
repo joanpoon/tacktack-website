@@ -1174,7 +1174,8 @@
     }
    },
    "price": 1328,
-   "status": "available",
+   "status": "on-hold",
+   "preorderOpen": true,
    "fulfilment": "both",
    "photos": [
     "/assets/products/dulton-double-face-clock-green/1.jpg",
