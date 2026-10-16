@@ -2318,6 +2318,53 @@
      "HAY Rice Paper 圓形白色紙燈罩，掛在書架前的餐桌上"
     ]
    }
+  },
+  {
+   "slug": "dulton-double-face-clock-green-sold",
+   "featured": false,
+   "brand": "DULTON",
+   "name": {
+    "en": "Double Face Clock, Rectangle · Green",
+    "zh": "雙面掛鐘（長方形）· 綠色"
+   },
+   "model": "Double Face Clock Rectangle",
+   "colour": {
+    "en": "Green",
+    "zh": "綠色"
+   },
+   "material": {
+    "en": "ABS resin body and frame, glass cover",
+    "zh": "ABS 樹脂機身及外框、玻璃面"
+   },
+   "description": {
+    "en": "A station-style two-sided clock in green, redrawn by DULTON as a long, low rectangle for the home. This one has sold. Message us on WhatsApp if you would like another. A separate green clock stays on hold in Hong Kong, and more are available to pre-order.",
+    "zh": "DULTON 雙面掛鐘（長方形）· 綠色，車站風格、矮身長方形，適合家居。此件已售出。如想再找一隻，歡迎 WhatsApp 查詢。另有綠色仍在售：香港現貨已留貨，仍可預購。"
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 44.2,
+    "d": 9.8,
+    "h": 18.7,
+    "unit": "cm",
+    "weightKg": 2
+   },
+   "status": "sold",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/dulton-double-face-clock-green/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "The dark green DULTON Double Face Clock projecting from a wall above a doorway into a dining room",
+    "zh": "DULTON 深綠色雙面掛鐘從牆面伸出，掛在通往飯廳的門口上方"
+   },
+   "photoAlts": {
+    "en": [
+     "The dark green DULTON Double Face Clock projecting from a wall above a doorway into a dining room"
+    ],
+    "zh": [
+     "DULTON 深綠色雙面掛鐘從牆面伸出，掛在通往飯廳的門口上方"
+    ]
+   }
   }
  ]
 }
