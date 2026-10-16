@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15",
+ "updated": "2026-10-16",
  "homepageDrop": [
   "dulton-double-face-clock-grey",
   "dulton-double-face-clock-green"
@@ -1943,7 +1943,7 @@
     }
    },
    "price": 980,
-   "status": "available",
+   "status": "on-hold",
    "fulfilment": "both",
    "notices": [
     "moreColours"
