@@ -607,7 +607,8 @@
    "year": {
     "en": "1968",
     "zh": "1968 年"
-   }
+   },
+   "retailPrice": 1740
   },
   {
    "slug": "andtradition-flowerpot-vp9-dark-green",
@@ -679,24 +680,28 @@
    "sizeGuide": false,
    "storyKey": "andtradition",
    "photos": [
-    "/assets/products/andtradition-flowerpot-vp9-dark-green/1.jpg"
+    "/assets/products/andtradition-flowerpot-vp9-dark-green/1.jpg",
+    "/assets/products/andtradition-flowerpot-vp9-dark-green/2.jpg"
    ],
    "photoAlt": {
-    "en": "&Tradition Flowerpot VP9 in dark green, a studio packshot on white",
-    "zh": "&Tradition Flowerpot VP9 深綠色，白色背景的產品照"
+    "en": "Glossy dark green &Tradition Flowerpot VP9 on a white round table with a small dish and a cup, plants behind",
+    "zh": "深綠色 &Tradition Flowerpot VP9 放在白色圓桌上，旁邊是小碟及杯子，背景有植物"
    },
    "photoAlts": {
     "en": [
+     "Glossy dark green &Tradition Flowerpot VP9 on a white round table with a small dish and a cup, plants behind",
      "&Tradition Flowerpot VP9 in dark green, a studio packshot on white"
     ],
     "zh": [
+     "深綠色 &Tradition Flowerpot VP9 放在白色圓桌上，旁邊是小碟及杯子，背景有植物",
      "&Tradition Flowerpot VP9 深綠色，白色背景的產品照"
     ]
    },
    "year": {
     "en": "1968",
     "zh": "1968 年"
-   }
+   },
+   "retailPrice": 1740
   },
   {
    "slug": "andtradition-mist-pendant-ap15",
@@ -867,23 +872,23 @@
     "/assets/products/andtradition-journey-wall-lamp-shy2/6.jpg"
    ],
    "photoAlt": {
-    "en": "&Tradition Journey SHY2 wall lamp in black, lit, with an opal glass shade",
-    "zh": "&Tradition Journey SHY2 壁燈，黑色底座，乳白玻璃燈罩亮燈"
+    "en": "&Tradition Journey SHY2 wall lamp, lit, mounted on a concrete wall above a bed with linen curtains",
+    "zh": "&Tradition Journey SHY2 壁燈亮着，裝在水泥牆上，下方是床及麻質窗簾"
    },
    "photoAlts": {
     "en": [
-     "&Tradition Journey SHY2 wall lamp in black, lit, with an opal glass shade",
-     "Close view of the Journey SHY2 opal glass shade where it meets the black base. The hairline crack is shown in the last two photos",
-     "&Tradition Journey SHY2 wall lamp, unlit, black base and opal glass shade",
-     "&Tradition Journey SHY2 wall lamp seen across a living room, black base and opal glass shade",
+     "&Tradition Journey SHY2 wall lamp, lit, mounted on a concrete wall above a bed with linen curtains",
+     "&Tradition Journey SHY2 wall lamp, lit, in the corner of a room beside a pale curtain",
+     "&Tradition Journey SHY2 wall lamp, lit, on a wooden surface: black base and opal glass shade",
+     "&Tradition Journey SHY2 wall lamp, lit, another view on a wooden surface with the black base and round opal shade",
      "Close-up of the hairline crack on the Journey SHY2 opal glass near the base join, marked with a soft circle",
      "Slightly wider view of the same hairline crack on the Journey SHY2 opal glass, marked with a soft circle"
     ],
     "zh": [
-     "&Tradition Journey SHY2 壁燈，黑色底座，乳白玻璃燈罩亮燈",
-     "Journey SHY2 乳白玻璃燈罩與黑色底座相接處的近照。髮絲裂紋見最後兩張相片",
-     "&Tradition Journey SHY2 壁燈未亮燈，黑色底座配乳白玻璃燈罩",
-     "&Tradition Journey SHY2 壁燈在客廳另一端所見，黑色底座配乳白玻璃燈罩",
+     "&Tradition Journey SHY2 壁燈亮着，裝在水泥牆上，下方是床及麻質窗簾",
+     "&Tradition Journey SHY2 壁燈亮着，在房間一角，旁邊是淺色窗簾",
+     "&Tradition Journey SHY2 壁燈亮着，放在木面上：黑色底座配乳白玻璃燈罩",
+     "&Tradition Journey SHY2 壁燈亮着，木面上的另一個角度，黑色底座配圓形乳白玻璃燈罩",
      "Journey SHY2 乳白玻璃近底座接位的髮絲裂紋近照，淺色圓圈標出位置",
      "同一處髮絲裂紋稍闊的近照，淺色圓圈標出位置"
     ]
@@ -957,11 +962,22 @@
    "status": "available",
    "fulfilment": "both",
    "photos": [
-    "/assets/products/hay-ice-cube-tray-xxl-ice-blue/placeholder-1.jpg"
+    "/assets/products/hay-ice-cube-tray-xxl-ice-blue/1.jpg",
+    "/assets/products/hay-ice-cube-tray-xxl-ice-blue/2.jpg"
    ],
    "photoAlt": {
-    "en": "Illustration of the HAY Ice Cube Tray XXL in Ice blue, six large cubes",
-    "zh": "HAY 製冰盒 XXL 冰藍色示意圖，六格大方格"
+    "en": "HAY Ice Cube Tray XXL in Ice Blue, six large compartments, on a white background",
+    "zh": "HAY 製冰盒 XXL 冰藍色，六格特大冰塊，白色背景的產品照"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Ice Cube Tray XXL in Ice Blue, six large compartments, on a white background",
+     "HAY Ice Cube Tray XXL in Ice Blue on top of a stack of peach, grey and lavender trays, with a loose ice cube on a steel counter"
+    ],
+    "zh": [
+     "HAY 製冰盒 XXL 冰藍色，六格特大冰塊，白色背景的產品照",
+     "HAY 製冰盒 XXL 冰藍色放在蜜桃色、灰色及淺紫色製冰盒上面，不鏽鋼檯面有一粒散落的冰塊"
+    ]
    }
   },
   {
@@ -1023,11 +1039,22 @@
    "status": "available",
    "fulfilment": "both",
    "photos": [
-    "/assets/products/hay-ice-cube-tray-square-xl-peach/placeholder-1.jpg"
+    "/assets/products/hay-ice-cube-tray-square-xl-peach/1.jpg",
+    "/assets/products/hay-ice-cube-tray-square-xl-peach/2.jpg"
    ],
    "photoAlt": {
-    "en": "Illustration of the HAY Ice Cube Tray Square XL in Peach",
-    "zh": "HAY 製冰盒 Square XL 蜜桃色示意圖"
+    "en": "Stack of HAY ice cube trays against blue tiles, with the Peach Square XL tray in the middle",
+    "zh": "一疊 HAY 製冰盒靠着藍色瓷磚牆，蜜桃色 Square XL 在中間"
+   },
+   "photoAlts": {
+    "en": [
+     "Stack of HAY ice cube trays against blue tiles, with the Peach Square XL tray in the middle",
+     "HAY Ice Cube Tray Square XL in Peach, filled with coloured ice, beside lemon water and a raspberry drink"
+    ],
+    "zh": [
+     "一疊 HAY 製冰盒靠着藍色瓷磚牆，蜜桃色 Square XL 在中間",
+     "HAY 製冰盒 Square XL 蜜桃色，盛着彩色冰塊，旁邊是檸檬水及覆盆子飲品"
+    ]
    }
   },
   {
