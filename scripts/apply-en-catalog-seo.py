@@ -21,7 +21,7 @@ DATE = "2026-10-17"
 PAGES = {
     "index.html": (
         None,
-        "Hong Kong design shop. In stock: Noguchi AKARI, grey DULTON Double Face wall clock, Nara prints and Flowerpot VP9. Green DULTON is on hold, with pre-order.",
+        "Hong Kong design shop. In stock: Noguchi AKARI, grey DULTON Double Face wall clock, Nara prints and Flowerpot VP9. Green DULTON: next batch arriving soon, with pre-order.",
     ),
     "shop/index.html": (
         None,
@@ -79,12 +79,12 @@ PAGES = {
 
 LEDE = {
     "index.html": (
-        "Curated designer lighting, furniture and objects, new and pre-loved, in stock in Hong Kong: from Isamu Noguchi's paper AKARI to Heller's wave-shaped Swell. The grey DULTON Double Face clock is in stock in Hong Kong. Green is on hold here, and more are available to pre-order (Japan air freight).",
         "Curated designer lighting, furniture and objects, new and pre-loved, in stock in Hong Kong: from Isamu Noguchi's paper AKARI to Heller's wave-shaped Swell. This week's drop is the DULTON Double Face wall clock: grey is in stock, and green is on hold with pre-order (Japan air freight). Yoshitomo Nara prints and &amp;Tradition Flowerpot VP9 portable lamps are in the shop too.",
+        "Curated designer lighting, furniture and objects, new and pre-loved, in stock in Hong Kong: from Isamu Noguchi's paper AKARI to Heller's wave-shaped Swell. This week's drop is the DULTON Double Face wall clock: grey is in stock, and the next green batch is arriving soon, with pre-order (Japan air freight). Yoshitomo Nara prints and &amp;Tradition Flowerpot VP9 portable lamps are in the shop too.",
     ),
     "zh/index.html": (
-        "精選全新及二手設計師燈飾、家具及家品，香港現貨：由野口勇的 AKARI 和紙燈，到 Heller 的波浪 Swell。灰色 DULTON 雙面鐘是香港現貨。綠色已留貨，仍可預購更多（日本空運）。",
         "精選全新及二手設計師燈飾、家具及家品，香港現貨：由野口勇的 AKARI 和紙燈，到 Heller 的波浪 Swell。本週新貨是 DULTON 雙面鐘：灰色是香港現貨，綠色已留貨，仍可預購（日本空運）。店內亦有奈良美智海報及 &amp;Tradition Flowerpot VP9 便攜燈。",
+        "精選全新及二手設計師燈飾、家具及家品，香港現貨：由野口勇的 AKARI 和紙燈，到 Heller 的波浪 Swell。本週新貨是 DULTON 雙面鐘：灰色是香港現貨，綠色下一批即將到貨，仍可預購（日本空運）。店內亦有奈良美智海報及 &amp;Tradition Flowerpot VP9 便攜燈。",
     ),
 }
 

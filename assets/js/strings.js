@@ -24,7 +24,7 @@ window.TT_STRINGS = {
     gradeHelp: "What do the grades mean?",
     labels: { designer: "Designer", brand: "Brand", model: "Model", year: "Year", colour: "Colour", material: "Material", origin: "Origin", dims: "Dimensions", weight: "Weight", sku: "SKU", condition: "Condition", details: "Good to know", fulfilment: "Pickup & delivery", policy: "Reserving & paying", story: "The story", specs: "Details" },
     dimsTbc: "Measurements coming soon, ask us",
-    stock: { available: "Available now", onHold: "On hold right now", onHoldPreorder: "On hold in Hong Kong. More are available to pre-order: Japan air freight, and we ship it when it lands.", sold: "This piece has found its home", preorder: "Coming soon · pre-order available. Japan air freight; we ship it when it lands." },
+    stock: { available: "Available now", onHold: "On hold right now", onHoldPreorder: "On hold in Hong Kong. More are available to pre-order: Japan air freight, and we ship it when it lands.", sold: "This piece has found its home", preorder: "Next batch arriving soon. Pre-order available: Japan air freight, and we ship it when it lands." },
     retail: p => "New retail approx. " + p,
     fulfil: {
       pickup: "Showroom self-pickup by appointment. We share the address when you book.",
@@ -97,7 +97,7 @@ window.TT_STRINGS = {
     gradeHelp: "評級代表甚麼？",
     labels: { designer: "設計師", brand: "品牌", model: "型號", year: "年份", colour: "顏色", material: "物料", origin: "產地", dims: "尺寸", weight: "重量", sku: "貨號", condition: "品相", details: "小提示", fulfilment: "自取及送貨", policy: "留貨及付款", story: "設計故事", specs: "規格" },
     dimsTbc: "尺寸稍後更新，歡迎查詢",
-    stock: { available: "現貨供應", onHold: "目前已被留貨", onHoldPreorder: "香港現貨已被留貨。仍可預購更多：日本空運，到港後寄出。", sold: "這件已經找到新主人", preorder: "即將到貨 · 接受預購。日本空運，到港後寄出。" },
+    stock: { available: "現貨供應", onHold: "目前已被留貨", onHoldPreorder: "香港現貨已被留貨。仍可預購更多：日本空運，到港後寄出。", sold: "這件已經找到新主人", preorder: "下一批即將到貨。仍可預購：日本空運，到港後寄出。" },
     retail: p => "全新參考價約 " + p,
     fulfil: {
       pickup: "Showroom 預約自取，確認後會提供地址。",
