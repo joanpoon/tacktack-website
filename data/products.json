@@ -79,6 +79,7 @@
  "products": [
   {
    "slug": "yoshitomo-nara-green-eyes",
+   "zhType": "海報",
    "sku": "TT-NAR-0001",
    "featured": false,
    "dropDate": "2026-10-15",
@@ -155,6 +156,7 @@
   },
   {
    "slug": "yoshitomo-nara-eye-patch",
+   "zhType": "海報",
    "sku": "TT-NAR-0002",
    "featured": false,
    "dropDate": "2026-10-15",
@@ -234,6 +236,7 @@
   },
   {
    "slug": "andtradition-flowerpot-vp9-swim-blue-good",
+   "zhType": "便攜燈",
    "sku": "TT-ANT-0001",
    "featured": false,
    "dropDate": "2026-10-14",
@@ -336,6 +339,7 @@
   },
   {
    "slug": "andtradition-flowerpot-vp9-swim-blue-excellent",
+   "zhType": "便攜燈",
    "sku": "TT-ANT-0013",
    "featured": false,
    "dropDate": "2026-10-14",
@@ -428,6 +432,7 @@
   },
   {
    "slug": "andtradition-flowerpot-vp9-mustard",
+   "zhType": "便攜燈",
    "sku": "TT-ANT-0003",
    "featured": false,
    "dropDate": "2026-10-14",
@@ -517,6 +522,7 @@
   },
   {
    "slug": "andtradition-flowerpot-vp9-matt-black",
+   "zhType": "便攜燈",
    "sku": "TT-ANT-0011",
    "featured": false,
    "dropDate": "2026-10-14",
@@ -605,6 +611,7 @@
   },
   {
    "slug": "andtradition-flowerpot-vp9-dark-green",
+   "zhType": "便攜燈",
    "sku": "TT-ANT-0012",
    "featured": false,
    "dropDate": "2026-10-14",
@@ -693,6 +700,7 @@
   },
   {
    "slug": "andtradition-mist-pendant-ap15",
+   "zhType": "吊燈",
    "sku": "TT-ANT-0004",
    "featured": false,
    "dropDate": "2026-10-14",
@@ -780,6 +788,7 @@
   },
   {
    "slug": "andtradition-journey-wall-lamp-shy2",
+   "zhType": "壁燈",
    "sku": "TT-ANT-0002",
    "featured": false,
    "dropDate": "2026-10-14",
@@ -887,6 +896,7 @@
   },
   {
    "slug": "hay-ice-cube-tray-xxl-ice-blue",
+   "zhType": "矽膠製冰盒",
    "sku": "TT-HAY-0007",
    "featured": false,
    "dropDate": "2026-10-08",
@@ -956,6 +966,7 @@
   },
   {
    "slug": "hay-ice-cube-tray-square-xl-peach",
+   "zhType": "矽膠製冰盒",
    "sku": "TT-HAY-0009",
    "featured": false,
    "dropDate": "2026-10-08",
@@ -1021,6 +1032,7 @@
   },
   {
    "slug": "dulton-double-face-clock-grey",
+   "zhType": "雙面鐘",
    "featured": false,
    "dropDate": "2026-09-17",
    "newFrom": "2026-10-08",
@@ -1111,6 +1123,7 @@
   },
   {
    "slug": "dulton-double-face-clock-green",
+   "zhType": "雙面鐘",
    "featured": false,
    "dropDate": "2026-09-17",
    "newFrom": "2026-10-08",
@@ -1205,6 +1218,7 @@
   },
   {
    "slug": "akari-55d",
+   "zhType": "和紙吊燈",
    "featured": true,
    "dropDate": "2026-09-24",
    "newFrom": "2026-10-08",
@@ -1292,6 +1306,7 @@
   },
   {
    "slug": "akari-30a",
+   "zhType": "和紙吊燈",
    "oldSlugs": [
     "akari-33a"
    ],
@@ -1383,6 +1398,7 @@
   },
   {
    "slug": "akari-45d",
+   "zhType": "和紙吊燈",
    "featured": false,
    "dropDate": "2026-09-24",
    "newFrom": "2026-10-08",
@@ -1479,6 +1495,7 @@
   },
   {
    "slug": "heller-swell-white",
+   "zhType": "波浪掛牆收納",
    "featured": true,
    "dropDate": "2026-10-01",
    "brand": "Heller",
@@ -1562,6 +1579,7 @@
   },
   {
    "slug": "heller-swell-mini-red-orange",
+   "zhType": "波浪掛鈎",
    "featured": false,
    "dropDate": "2026-10-01",
    "brand": "Heller",
@@ -1645,6 +1663,7 @@
   },
   {
    "slug": "heller-swell-mini-cream",
+   "zhType": "波浪掛鈎",
    "oldSlugs": [
     "heller-swell-mini-white"
    ],
@@ -1728,6 +1747,7 @@
   },
   {
    "slug": "heller-swell-mini-blue",
+   "zhType": "波浪掛鈎",
    "featured": false,
    "dropDate": "2026-10-01",
    "brand": "Heller",
@@ -1808,6 +1828,7 @@
   },
   {
    "slug": "heller-swell-red-orange",
+   "zhType": "波浪掛牆收納",
    "featured": false,
    "dropDate": "2026-10-01",
    "brand": "Heller",
@@ -1891,6 +1912,7 @@
   },
   {
    "slug": "heller-swell-blue",
+   "zhType": "波浪掛牆收納",
    "featured": false,
    "dropDate": "2026-10-01",
    "brand": "Heller",
@@ -1974,6 +1996,7 @@
   },
   {
    "slug": "hay-tint-wineglass-pink-yellow",
+   "zhType": "玻璃酒杯",
    "featured": false,
    "brand": "HAY",
    "name": {
@@ -2021,6 +2044,7 @@
   },
   {
    "slug": "hay-tint-wineglass-clear",
+   "zhType": "玻璃酒杯",
    "featured": false,
    "brand": "HAY",
    "name": {
@@ -2068,6 +2092,7 @@
   },
   {
    "slug": "ferm-living-pond-mirror",
+   "zhType": "波浪掛牆鏡",
    "featured": false,
    "brand": "ferm LIVING",
    "name": {
@@ -2104,6 +2129,7 @@
   },
   {
    "slug": "akari-30a-sold",
+   "zhType": "和紙吊燈",
    "featured": false,
    "brand": "AKARI",
    "designer": "Isamu Noguchi",
@@ -2141,6 +2167,7 @@
   },
   {
    "slug": "andtradition-flowerpot-vp9-swim-blue",
+   "zhType": "便攜燈",
    "featured": false,
    "brand": "&Tradition",
    "name": {
@@ -2177,6 +2204,7 @@
   },
   {
    "slug": "hay-ice-cube-tray-light-blue",
+   "zhType": "矽膠製冰盒",
    "featured": false,
    "brand": "HAY",
    "name": {
@@ -2213,6 +2241,7 @@
   },
   {
    "slug": "verpan-pantop-pendant-mint-grey",
+   "zhType": "鐘形吊燈",
    "featured": false,
    "brand": "Verpan",
    "name": {
@@ -2249,6 +2278,7 @@
   },
   {
    "slug": "hay-common-pendant-cord-set-beton-grey",
+   "zhType": "吊燈電線組",
    "featured": false,
    "brand": "HAY",
    "name": {
@@ -2285,6 +2315,7 @@
   },
   {
    "slug": "hay-rice-paper-shade",
+   "zhType": "米紙燈罩",
    "featured": false,
    "brand": "HAY",
    "name": {
@@ -2321,6 +2352,7 @@
   },
   {
    "slug": "dulton-double-face-clock-green-sold",
+   "zhType": "雙面鐘",
    "featured": false,
    "brand": "DULTON",
    "name": {

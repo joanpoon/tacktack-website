@@ -1,0 +1,211 @@
+{
+  "_readme": "Traditional Chinese (Hong Kong) titles and meta descriptions for public catalog pages. scripts/apply-zh-seo.py writes these into /zh/ <title>, meta description, Open Graph and Twitter tags, and the matching ItemPage / CollectionPage / WebPage schema. English pages are left alone. New products: set zhType on the product (a Traditional Chinese product noun such as 吊燈 or 雙面鐘). If this file has no entry for the slug, the script builds a title from the brand or designer, model, zhType, colour and condition, then a plain shop description. Do not put prices in titles. Do not use Simplified characters.",
+  "products": {
+    "akari-55d": {
+      "zhType": "和紙吊燈",
+      "title": "野口勇 AKARI 55D 和紙吊燈（全新）｜香港 | Tack, tack!",
+      "description": "全新野口勇 AKARI 55D 和紙吊燈。和紙配竹骨，岐阜人手製，直徑 55 cm。HK$2,080，香港現貨。WhatsApp 查詢，Showroom 預約自取或全港送貨。"
+    },
+    "akari-30a": {
+      "zhType": "和紙吊燈",
+      "title": "野口勇 AKARI 30A 和紙吊燈（全新）｜香港 | Tack, tack!",
+      "description": "全新野口勇 AKARI 30A 和紙吊燈，原色白和紙。直徑 30 cm 小巧和紙燈罩，岐阜人手製。HK$1,680，香港現貨。WhatsApp 查詢，Showroom 預約自取或全港送貨。"
+    },
+    "akari-45d": {
+      "zhType": "和紙吊燈",
+      "title": "已售出：野口勇 AKARI 45D 和紙吊燈 | Tack, tack!",
+      "description": "野口勇 AKARI 45D 和紙吊燈（竹骨圓形燈罩，直徑 45 cm）已於 Tack, tack!（香港）售出，頁面沒有標示價錢。WhatsApp +852 6507 0791 查詢同類貨品。"
+    },
+    "akari-30a-sold": {
+      "zhType": "和紙吊燈",
+      "title": "已售出：野口勇 AKARI 30A 和紙吊燈 | Tack, tack!",
+      "description": "野口勇 AKARI 30A 和紙吊燈（竹骨圓形燈罩）已於 Tack, tack!（香港）售出，頁面沒有標示價錢。WhatsApp +852 6507 0791 查詢同類貨品。"
+    },
+    "dulton-double-face-clock-grey": {
+      "zhType": "雙面鐘",
+      "title": "DULTON 雙面鐘 灰色（全新）｜香港 | Tack, tack!",
+      "description": "全新 DULTON 雙面鐘（長方形掛牆鐘），灰色。雙面鐘面、無聲掃秒機芯，闊 44 cm。HK$1,328，香港現貨。WhatsApp 查詢，Showroom 預約自取或全港送貨。"
+    },
+    "dulton-double-face-clock-green": {
+      "zhType": "雙面鐘",
+      "title": "DULTON 雙面鐘 綠色（全新）｜香港 | Tack, tack!",
+      "description": "全新 DULTON 雙面鐘（長方形掛牆鐘），綠色。雙面鐘面、無聲掃秒機芯，闊 44 cm。HK$1,328。香港現貨已留貨，仍可預購（日本空運）。WhatsApp 查詢。"
+    },
+    "heller-swell-white": {
+      "zhType": "波浪掛牆收納",
+      "title": "Heller Swell 波浪掛牆收納 白色（全新）｜香港 | Tack, tack!",
+      "description": "全新 Heller Swell 波浪掛牆收納，白色。Anna Dawson 設計的波浪造型，承重達 34 kg。HK$980，香港現貨。WhatsApp 查詢，Showroom 預約自取或全港送貨。"
+    },
+    "heller-swell-blue": {
+      "zhType": "波浪掛牆收納",
+      "title": "Heller Swell 波浪掛牆收納 藍色（全新）｜香港 | Tack, tack!",
+      "description": "全新 Heller Swell 波浪掛牆收納，藍色。Anna Dawson 設計的波浪造型，承重達 34 kg。HK$980，香港現貨已留貨。WhatsApp 查詢。"
+    },
+    "heller-swell-red-orange": {
+      "zhType": "波浪掛牆收納",
+      "title": "Heller Swell 波浪掛牆收納 橙紅色（全新）｜香港 | Tack, tack!",
+      "description": "全新 Heller Swell 波浪掛牆收納，橙紅色。Anna Dawson 設計的波浪造型，承重達 34 kg。HK$980，香港現貨。WhatsApp 查詢，Showroom 預約自取或全港送貨。"
+    },
+    "heller-swell-mini-blue": {
+      "zhType": "波浪掛鈎",
+      "title": "Heller Swell Mini 波浪掛鈎 藍色（全新）｜香港 | Tack, tack!",
+      "description": "全新 Heller Swell Mini 迷你波浪掛鈎（掛牆收納），藍色。一半掛鈎、一半小碟，承重達 8.6 kg。HK$280，香港現貨。WhatsApp 查詢，Showroom 預約自取或全港送貨。"
+    },
+    "heller-swell-mini-cream": {
+      "zhType": "波浪掛鈎",
+      "title": "Heller Swell Mini 波浪掛鈎 奶油色（全新）｜香港 | Tack, tack!",
+      "description": "全新 Heller Swell Mini 迷你波浪掛鈎（掛牆收納），奶油色。一半掛鈎、一半小碟，承重達 8.6 kg。HK$280，香港現貨。WhatsApp 查詢，Showroom 預約自取或全港送貨。"
+    },
+    "heller-swell-mini-red-orange": {
+      "zhType": "波浪掛鈎",
+      "title": "Heller Swell Mini 波浪掛鈎 橙紅色（全新）｜香港 | Tack, tack!",
+      "description": "全新 Heller Swell Mini 迷你波浪掛鈎（掛牆收納），橙紅色。一半掛鈎、一半小碟，承重達 8.6 kg。HK$280，香港現貨。WhatsApp 查詢，Showroom 預約自取或全港送貨。"
+    },
+    "yoshitomo-nara-green-eyes": {
+      "zhType": "海報",
+      "title": "奈良美智 Green Eyes（綠眼）海報（全新）｜香港 | Tack, tack!",
+      "description": "全新奈良美智 Green Eyes（綠眼）海報，MoMA Exclusive。28 × 36 cm，不連相框。HK$298，香港現貨。WhatsApp 查詢，小件可速遞。"
+    },
+    "yoshitomo-nara-eye-patch": {
+      "zhType": "海報",
+      "title": "奈良美智 Eye Patch（眼罩）海報（全新）｜香港 | Tack, tack!",
+      "description": "全新奈良美智 Eye Patch（眼罩）海報，MoMA Exclusive。28 × 36 cm，不連相框。HK$328，香港現貨。WhatsApp 查詢，小件可速遞。"
+    },
+    "andtradition-flowerpot-vp9-swim-blue-good": {
+      "zhType": "便攜燈",
+      "title": "&Tradition Flowerpot VP9 便攜燈 Swim Blue（良好）｜香港 | Tack, tack!",
+      "description": "展示品 &Tradition Flowerpot VP9 便攜燈（Verner Panton），Swim Blue，品相良好，三處輕微痕跡。香港 HK$1,180，全新參考價約 HK$1,740。連充電器，沒有原裝盒。WhatsApp 查詢。"
+    },
+    "andtradition-flowerpot-vp9-swim-blue-excellent": {
+      "zhType": "便攜燈",
+      "title": "&Tradition Flowerpot VP9 便攜燈 Swim Blue（極佳）｜香港 | Tack, tack!",
+      "description": "展示品 &Tradition Flowerpot VP9 便攜燈（Verner Panton），Swim Blue，品相極佳，看起來乾淨。香港 HK$1,280，全新參考價約 HK$1,740。連充電器，沒有原裝盒。WhatsApp 查詢。"
+    },
+    "andtradition-flowerpot-vp9-mustard": {
+      "zhType": "便攜燈",
+      "title": "&Tradition Flowerpot VP9 便攜燈 Mustard（極佳）｜香港 | Tack, tack!",
+      "description": "展示品 &Tradition Flowerpot VP9 便攜燈（Verner Panton），Mustard（芥末黃），品相極佳。香港 HK$1,280，全新參考價約 HK$1,740。連充電線，沒有原裝盒。WhatsApp 查詢。"
+    },
+    "andtradition-flowerpot-vp9-matt-black": {
+      "zhType": "便攜燈",
+      "title": "&Tradition Flowerpot VP9 便攜燈 Matt Black（全新）｜香港 | Tack, tack!",
+      "description": "全新 &Tradition Flowerpot VP9 便攜燈（Verner Panton），Matt Black（啞黑），連原裝盒。香港 HK$1,580。USB 充電。WhatsApp 查詢。"
+    },
+    "andtradition-flowerpot-vp9-dark-green": {
+      "zhType": "便攜燈",
+      "title": "&Tradition Flowerpot VP9 便攜燈 深綠色（全新）｜香港 | Tack, tack!",
+      "description": "全新 &Tradition Flowerpot VP9 便攜燈（Verner Panton），深綠色，連原裝盒。香港 HK$1,580。USB 充電。WhatsApp 查詢。"
+    },
+    "andtradition-flowerpot-vp9-swim-blue": {
+      "zhType": "便攜燈",
+      "title": "已售出：&Tradition Flowerpot VP9 便攜燈 Swim Blue | Tack, tack!",
+      "description": "&Tradition Flowerpot VP9 便攜燈（Swim Blue）已於 Tack, tack!（香港）售出，頁面沒有標示價錢。WhatsApp +852 6507 0791 查詢同類貨品。"
+    },
+    "andtradition-mist-pendant-ap15": {
+      "zhType": "吊燈",
+      "title": "&Tradition Mist AP15 吊燈（全新）｜香港 | Tack, tack!",
+      "description": "全新 &Tradition Mist AP15 吊燈，All the Way to Paris 設計，吹製乳白玻璃。香港 HK$2,480，全新參考價約 HK$3,190。連電線及燈泡，可加安裝。WhatsApp 查詢。"
+    },
+    "andtradition-journey-wall-lamp-shy2": {
+      "zhType": "壁燈",
+      "title": "&Tradition Journey SHY2 壁燈（良好）｜香港 | Tack, tack!",
+      "description": "&Tradition Journey SHY2 壁燈，Signe Hytte 設計，黑色，品相良好。乳白玻璃近底座有一條細小髮絲裂紋。香港 HK$1,340，全新參考價約 HK$2,680。可加安裝。WhatsApp 查詢。"
+    },
+    "hay-ice-cube-tray-xxl-ice-blue": {
+      "zhType": "矽膠製冰盒",
+      "title": "HAY 矽膠製冰盒 XXL 冰藍色（全新）｜香港 | Tack, tack!",
+      "description": "全新 HAY 矽膠製冰盒 XXL，冰藍色（2025 春夏），六格特大冰塊。香港售 HK$138，官方零售價約 HK$228。與蜜桃色一併購買 HK$268。WhatsApp 查詢。"
+    },
+    "hay-ice-cube-tray-square-xl-peach": {
+      "zhType": "矽膠製冰盒",
+      "title": "HAY 矽膠製冰盒 Square XL 蜜桃色（全新）｜香港 | Tack, tack!",
+      "description": "全新 HAY 矽膠製冰盒 Square XL，蜜桃色，連吊牌。香港售 HK$148，官方零售價約 HK$228。與冰藍色一併購買 HK$268。WhatsApp 查詢。"
+    },
+    "hay-ice-cube-tray-light-blue": {
+      "zhType": "矽膠製冰盒",
+      "title": "已售出：HAY 矽膠製冰盒 · 淺藍色 | Tack, tack!",
+      "description": "HAY 淺藍色矽膠製冰盒（六格大方格）已於 Tack, tack!（香港）售出，頁面沒有標示價錢。WhatsApp +852 6507 0791 查詢同類貨品。"
+    },
+    "hay-tint-wineglass-clear": {
+      "zhType": "玻璃酒杯",
+      "title": "已售出：HAY Tint 玻璃酒杯（兩隻裝）透明 | Tack, tack!",
+      "description": "HAY Tint 玻璃酒杯（兩隻裝，透明）已於 Tack, tack!（香港）售出，頁面沒有標示價錢。全新，連原裝盒。WhatsApp +852 6507 0791 查詢同類貨品。"
+    },
+    "hay-tint-wineglass-pink-yellow": {
+      "zhType": "玻璃酒杯",
+      "title": "已售出：HAY Tint 玻璃酒杯（兩隻裝）粉紅／黃色 | Tack, tack!",
+      "description": "HAY Tint 玻璃酒杯（兩隻裝，粉紅杯身、黃色杯腳）已於 Tack, tack!（香港）售出，頁面沒有標示價錢。全新，連原裝盒。WhatsApp +852 6507 0791 查詢同類貨品。"
+    },
+    "hay-rice-paper-shade": {
+      "zhType": "米紙燈罩",
+      "title": "已售出：HAY Rice Paper 米紙燈罩 | Tack, tack!",
+      "description": "HAY Rice Paper 圓形白色米紙燈罩已於 Tack, tack!（香港）售出，頁面沒有標示價錢。WhatsApp +852 6507 0791 查詢同類貨品。"
+    },
+    "hay-common-pendant-cord-set-beton-grey": {
+      "zhType": "吊燈電線組",
+      "title": "已售出：HAY Common 吊燈電線組 Beton Grey | Tack, tack!",
+      "description": "HAY Common 吊燈電線組（Beton Grey，天花蓋、布線及燈頭）已於 Tack, tack!（香港）售出，頁面沒有標示價錢。WhatsApp +852 6507 0791 查詢同類貨品。"
+    },
+    "ferm-living-pond-mirror": {
+      "zhType": "波浪掛牆鏡",
+      "title": "已售出：ferm LIVING Pond 波浪掛牆鏡 | Tack, tack!",
+      "description": "ferm LIVING Pond 掛牆鏡（不規則波浪形）已於 Tack, tack!（香港）售出，頁面沒有標示價錢。WhatsApp +852 6507 0791 查詢同類貨品。"
+    },
+    "verpan-pantop-pendant-mint-grey": {
+      "zhType": "鐘形吊燈",
+      "title": "已售出：Verpan Pantop 鐘形吊燈 Mint Grey | Tack, tack!",
+      "description": "Verpan Pantop 鐘形吊燈（Mint Grey，金屬燈罩）已於 Tack, tack!（香港）售出，頁面沒有標示價錢。WhatsApp +852 6507 0791 查詢同類貨品。"
+    },
+    "dulton-double-face-clock-green-sold": {
+      "zhType": "雙面鐘",
+      "title": "已售出：DULTON 雙面鐘（長方形）· 綠色 | Tack, tack!",
+      "description": "DULTON 雙面鐘（長方形掛牆鐘，綠色）已於 Tack, tack!（香港）售出，頁面沒有標示價錢。另一隻綠色已留貨，仍可預購。WhatsApp +852 6507 0791 查詢。"
+    }
+  },
+  "pages": {
+    "zh/index.html": {
+      "title": "Tack, tack!｜香港現貨：野口勇 AKARI、DULTON 雙面鐘",
+      "description": "香港設計小店：野口勇 AKARI 和紙燈、灰色 DULTON 雙面鐘現貨、奈良美智海報及 &Tradition Flowerpot 便攜燈。綠色雙面鐘已留貨，仍可預購。預約自取或全港送貨。"
+    },
+    "zh/shop/index.html": {
+      "title": "選購設計師燈飾及家品｜香港 | Tack, tack!",
+      "description": "香港選購設計燈飾及家品：野口勇 AKARI 和紙燈、&Tradition Flowerpot 便攜燈、DULTON 雙面鐘（灰色現貨；綠色已留貨，仍可預購）、Heller Swell、HAY 矽膠製冰盒及奈良美智海報。"
+    },
+    "zh/sold/index.html": {
+      "title": "已售出｜香港設計師燈飾及家品 | Tack, tack!",
+      "description": "Tack, tack! 已售出紀錄：野口勇 AKARI、DULTON 雙面鐘、HAY、&Tradition、ferm LIVING 等設計師燈飾及家品。看到心儀的一件？WhatsApp 我們，很多時候可以再找。"
+    },
+    "zh/category/lighting/index.html": {
+      "title": "設計師燈飾｜香港：野口勇 AKARI、&Tradition | Tack, tack!",
+      "description": "香港設計師燈飾：野口勇 AKARI 和紙燈、&Tradition Flowerpot VP9 便攜燈、Mist 吊燈及 Journey 壁燈。如實品相及實際尺寸。WhatsApp 查詢，Showroom 預約自取或全港送貨。"
+    },
+    "zh/category/decor/index.html": {
+      "title": "設計師家品及擺設｜香港 | Tack, tack!",
+      "description": "香港設計家品：奈良美智海報、Heller Swell 波浪掛牆收納及掛鈎、DULTON 雙面鐘、HAY 矽膠製冰盒。如實品相，WhatsApp 查詢，小件可速遞。"
+    },
+    "zh/brand/isamu-noguchi-akari/index.html": {
+      "title": "野口勇 AKARI 和紙燈 香港｜30A、45D、55D | Tack, tack!",
+      "description": "香港選購正品野口勇 AKARI 和紙燈（紙燈、吊燈），岐阜人手製作：30A、55D 現貨，附按比例尺寸比較。45D 已售出。WhatsApp 查詢。"
+    },
+    "zh/brand/dulton/index.html": {
+      "title": "DULTON 雙面鐘｜香港 | Tack, tack!",
+      "description": "DULTON 雙面鐘（長方形掛牆鐘）：灰色是香港現貨。綠色已留貨，仍可預購更多（日本空運）。WhatsApp 查詢，Showroom 預約自取或全港送貨。"
+    },
+    "zh/brand/hay/index.html": {
+      "title": "HAY 矽膠製冰盒｜香港 | Tack, tack!",
+      "description": "香港 HAY 矽膠製冰盒：XXL 冰藍色 HK$138、Square XL 蜜桃色 HK$148，全部全新。官方零售價約 HK$228。兩件一併 HK$268。WhatsApp 查詢。"
+    },
+    "zh/brand/heller/index.html": {
+      "title": "Heller Swell 香港｜波浪掛牆收納及迷你掛鈎 | Tack, tack!",
+      "description": "香港選購 Anna Dawson 為 Heller 設計的 Swell 波浪掛牆收納及 Swell Mini 迷你掛鈎，掛外套、袋、鎖匙都得。WhatsApp 查詢，Showroom 預約自取或全港送貨。"
+    },
+    "zh/brand/andtradition/index.html": {
+      "title": "&Tradition 燈飾｜香港 Flowerpot VP9 便攜燈 | Tack, tack!",
+      "description": "香港 &Tradition 燈飾：Verner Panton Flowerpot VP9 便攜燈、Mist AP15 乳白玻璃吊燈及 Journey SHY2 壁燈。如實品相。WhatsApp 查詢。"
+    },
+    "zh/brand/yoshitomo-nara/index.html": {
+      "title": "奈良美智海報｜香港 Green Eyes、Eye Patch | Tack, tack!",
+      "description": "香港奈良美智 MoMA Exclusive 海報，全新、不連相框：Green Eyes（綠眼）HK$298、Eye Patch（眼罩）HK$328。28 × 36 cm。WhatsApp 查詢，小件可速遞。"
+    }
+  }
+}
