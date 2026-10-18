@@ -361,7 +361,9 @@
   function addonBlock(p) {
     var items = addonItems(p); if (!items.length) return "";
     var t = T();
-    return '<section class="block" id="addons"><h2>' + esc(t.addonTitle) + "</h2><p>" + esc(t.addonNote) + '</p><ul class="ticks">' + items.map(function (x) {
+    var title = L(p.addonTitle) || t.addonTitle;
+    var note = p.addonNote ? L(p.addonNote) : t.addonNote;
+    return '<section class="block" id="addons"><h2>' + esc(title) + "</h2>" + (note ? "<p>" + esc(note) + "</p>" : "") + '<ul class="ticks">' + items.map(function (x) {
       return '<li><a href="' + url(x) + '">' + esc(L(x.name)) + "</a></li>";
     }).join("") + "</ul></section>";
   }
