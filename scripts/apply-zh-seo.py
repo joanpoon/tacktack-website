@@ -113,7 +113,9 @@ def check_copy(label: str, title: str, description: str) -> None:
         raise SystemExit(f"{label} contains Simplified characters: {hits}")
     if "HK$" in title or "＄" in title:
         raise SystemExit(f"{label} title includes a price: {title}")
-    if "成本" in blob:
+    # Purchase-source names stay out of public SEO. The fragments are joined so the
+    # forbidden name is not stored as one searchable token in this file.
+    if ("Mo" "MA Design Store") in blob or "成本" in blob:
         raise SystemExit(f"{label} exposes private wording")
 
 
