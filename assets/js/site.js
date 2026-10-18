@@ -127,15 +127,17 @@
     return lst[i] || (alt(p) + T().photoMore(i + 1));
   }
   function thumb(src) { return String(src).replace(/^(\/assets\/products\/[^\/]+\/)([^\/]+\.jpg)$/, "$1t/$2"); }   // same as thumb() in build-pages.py
+  function fitAttr(p) { return p.photoFit === "contain" ? ' class="fit-contain"' : ""; }
+  function photoBox(p) { return p.photoFit === "contain" ? ' width="1400" height="1400"' : ' width="800" height="1000"'; }
   function notices(keys) {   // same as notices() in build-pages.py
     var N = T().notices; keys = (keys || []).filter(function (k) { return N[k]; });
     return keys.length ? '<ul class="notices">' + keys.map(function (k) { return '<li data-notice="' + esc(k) + '">' + esc(N[k]) + "</li>"; }).join("") + "</ul>" : "";
   }
   function gallery(p, photos) {   // same markup as gallery() in build-pages.py
     var t = T(), n = photos.length;
-    if (n === 1) return '<div class="gallery-main"><img id="main-photo" src="' + esc(photos[0]) + '"' + srcset(photos[0], GALLERY_SIZES) + ' alt="' + esc(alt(p)) + '" width="800" height="1000" fetchpriority="high"></div>';
+    if (n === 1) return '<div class="gallery-main"><img id="main-photo"' + fitAttr(p) + ' src="' + esc(photos[0]) + '"' + srcset(photos[0], GALLERY_SIZES) + ' alt="' + esc(alt(p)) + '"' + photoBox(p) + ' fetchpriority="high"></div>';
     var slides = photos.map(function (ph, i) {
-      return "<img" + (i === 0 ? ' id="main-photo"' : "") + ' src="' + esc(ph) + '"' + srcset(ph, GALLERY_SIZES) + ' alt="' + esc(altN(p, i)) + '" width="800" height="1000"' + (i === 0 ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"') + ">";
+      return "<img" + (i === 0 ? ' id="main-photo"' : "") + fitAttr(p) + ' src="' + esc(ph) + '"' + srcset(ph, GALLERY_SIZES) + ' alt="' + esc(altN(p, i)) + '"' + photoBox(p) + (i === 0 ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"') + ">";
     }).join("");
     return '<div class="gallery"><div class="gallery-main gallery-track" id="gallery" tabindex="0" role="region" aria-label="' + esc(t.gallery) + '">' + slides +
       '</div><span class="gallery-count" aria-hidden="true">1 / ' + n + "</span></div>" +
@@ -147,8 +149,8 @@
   function card(p, eager) {
     var s = state(p);
     return '<article class="card' + (s.st === "sold" ? " is-sold" : "") + '"><a href="' + url(p) + '">' +
-      '<div class="card-media"><img src="' + esc(photo(p)) + '"' + srcset(photo(p), CARD_SIZES) + ' alt="' + esc(alt(p)) + '" width="800" height="1000"' + (eager ? "" : ' loading="lazy"') + ' decoding="async">' + badges(p) + "</div>" +
-      '<div class="card-body"><p class="card-kicker">' + esc(kicker(p)) + '</p><h3 class="card-title">' + esc(L(p.name)) + "</h3>" + (dims(p) ? '<p class="card-meta">' + esc(dims(p)) + "</p>" : "") +
+      '<div class="card-media"><img' + fitAttr(p) + ' src="' + esc(photo(p)) + '"' + srcset(photo(p), CARD_SIZES) + ' alt="' + esc(alt(p)) + '"' + photoBox(p) + (eager ? "" : ' loading="lazy"') + ' decoding="async">' + badges(p) + "</div>" +
+      '<div class="card-body">' + (kicker(p) ? '<p class="card-kicker">' + esc(kicker(p)) + "</p>" : "") + '<h3 class="card-title">' + esc(L(p.name)) + "</h3>" + (dims(p) ? '<p class="card-meta">' + esc(dims(p)) + "</p>" : "") +
       '<p class="card-price">' + priceHtml(p) + "</p></div></a></article>";
   }
   /* sig(): a fingerprint of what a grid shows. The build writes the same value into data-sig, so a pre-rendered grid is
@@ -221,7 +223,7 @@
     }
 
     var brands = {};
-    PRODUCTS.forEach(function (p) { if (state(p).st === "sold") return; var k = p.brand; if (!brands[k]) brands[k] = { brand: k, designers: [], n: 0 }; brands[k].n++; if (p.designer && brands[k].designers.indexOf(p.designer) < 0) brands[k].designers.push(p.designer); });
+    PRODUCTS.forEach(function (p) { if (state(p).st === "sold" || !p.brand) return; var k = p.brand; if (!brands[k]) brands[k] = { brand: k, designers: [], n: 0 }; brands[k].n++; if (p.designer && brands[k].designers.indexOf(p.designer) < 0) brands[k].designers.push(p.designer); });
     setHTML($("#brand-row"), Object.keys(brands).sort().map(function (k) {
       var b = brands[k];
       return '<a class="brand-pill" href="' + brandUrl(k) + '"><strong>' + esc(k) + "</strong><span>" + esc(b.designers.join(", ") || T().pieces(b.n)) + "</span></a>";
@@ -245,7 +247,7 @@
     var ig = $("#ig-grid");
     if (ig) {
       var pics = PRODUCTS.slice().sort(byNewest).slice(0, 6);
-      setHTML(ig, pics.map(function (p) { return '<a href="https://www.instagram.com/' + C.INSTAGRAM + '/" target="_blank" rel="noopener" aria-label="Instagram @' + C.INSTAGRAM + ": " + esc(L(p.name)) + '"><img src="' + esc(photo(p)) + '" alt="" loading="lazy" width="800" height="1000"></a>'; }).join(""));
+      setHTML(ig, pics.map(function (p) { return '<a href="https://www.instagram.com/' + C.INSTAGRAM + '/" target="_blank" rel="noopener" aria-label="Instagram @' + C.INSTAGRAM + ": " + esc(L(p.name)) + '"><img' + fitAttr(p) + ' src="' + esc(photo(p)) + '" alt="" loading="lazy"' + photoBox(p) + "></a>"; }).join(""));
     }
   }
 
@@ -272,7 +274,7 @@
     }).sort(function (a, b) {
       if (f.sort === "price-asc") return a.price - b.price;
       if (f.sort === "price-desc") return b.price - a.price;
-      if (f.sort === "brand") return (a.brand + L(a.name)).localeCompare(b.brand + L(b.name));
+      if (f.sort === "brand") return ((a.brand || "") + L(a.name)).localeCompare((b.brand || "") + L(b.name));
       return soldLast(a, b);
     });
   }
@@ -290,7 +292,7 @@
       var n = c[0] ? counts[c[0]] || 0 : PRODUCTS.filter(function (p) { return state(p).st !== "sold"; }).length;
       return '<button type="button" class="chip-btn" data-cat="' + c[0] + '" aria-pressed="' + (f.category === c[0]) + '">' + esc(c[1]) + '<span class="n">' + n + "</span></button>";
     }).join(""));
-    var names = {}; PRODUCTS.forEach(function (p) { names[p.brand] = 1; if (p.designer) names[p.designer] = 1; });
+    var names = {}; PRODUCTS.forEach(function (p) { if (p.brand) names[p.brand] = 1; if (p.designer) names[p.designer] = 1; });
     options($("#f-brand"), [["", t.all]].concat(Object.keys(names).sort().map(function (n) { return [n, n]; })), f.brand);
     options($("#f-status"), ["active", "available", "pre-order", "on-hold", "sold", "all"].map(function (k) { return [k, t.status[k]]; }), f.status);
     options($("#f-price"), ["any", "u500", "500-1500", "1500-5000", "o5000"].map(function (k) { return [k, t.price[k]]; }), f.price);
@@ -351,8 +353,22 @@
     if (price < 10000) return t.dep30(money(Math.ceil(price * 0.3)), money(price));
     return t.dep20(money(Math.max(3000, Math.ceil(price * 0.2))), money(price));
   }
+  function addonItems(p) {
+    return (p.addons || []).map(function (slug) {
+      return PRODUCTS.filter(function (x) { return x.slug === slug; })[0];
+    }).filter(function (x) { return x && state(x).st !== "sold"; });
+  }
+  function addonBlock(p) {
+    var items = addonItems(p); if (!items.length) return "";
+    var t = T();
+    return '<section class="block" id="addons"><h2>' + esc(t.addonTitle) + "</h2><p>" + esc(t.addonNote) + '</p><ul class="ticks">' + items.map(function (x) {
+      return '<li><a href="' + url(x) + '">' + esc(L(x.name)) + "</a></li>";
+    }).join("") + "</ul></section>";
+  }
   function related(p) {
-    var same = PRODUCTS.filter(function (x) { return x.slug !== p.slug && (x.brand === p.brand || x.designer === p.designer) && state(x).st !== "sold"; });
+    var extras = addonItems(p);
+    if (extras.length) return { same: [], more: extras.slice(0, 4) };
+    var same = PRODUCTS.filter(function (x) { return x.slug !== p.slug && state(x).st !== "sold" && ((p.brand && x.brand === p.brand) || (p.designer && x.designer === p.designer)); });
     var more = same.concat(PRODUCTS.filter(function (x) { return x.slug !== p.slug && same.indexOf(x) < 0 && state(x).st !== "sold"; })).slice(0, 4);
     return { same: same, more: more };
   }
@@ -380,7 +396,7 @@
           (photos.some(isPlaceholder) ? '<p class="photo-note">' + esc(t.photoNote) + "</p>" : "") +
         "</div>" +
         '<div class="pdp-info">' +
-          '<p class="eyebrow">' + esc(kicker(p)) + "</p>" + badges(p) +
+          (kicker(p) ? '<p class="eyebrow">' + esc(kicker(p)) + "</p>" : "") + badges(p) +
           "<h1>" + esc(name) + "</h1>" +
           '<div class="pdp-price">' + priceHtml(p) + gradeChip(p) + "</div>" +
           '<p class="pdp-stock">' + esc(stockLine) + "</p>" +
@@ -396,13 +412,14 @@
             '<p class="fine" style="margin-top:10px">' + esc(gi >= 0 ? (notes || (openBox(p) ? t.openBox[1] : G[grade][1])) : t.gradeTbcNote) + "</p>" + condNotes(p) + "</section>") +
           '<section class="block"><h2>' + esc(t.labels.specs) + '</h2><dl class="specs">' + specs.map(function (r) { return "<dt>" + esc(r[0]) + "</dt><dd>" + (r[2] ? '<a href="' + r[2] + '">' + esc(r[1]) + "</a>" : esc(r[1])) + "</dd>"; }).join("") + "</dl></section>" +
           (details.length ? '<section class="block"><h2>' + esc(t.labels.details) + '</h2><ul class="ticks">' + details.map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul></section>" : "") +
+          addonBlock(p) +
           (sizeRow(p, p) && state(p).st !== "sold" ? '<section class="block size-block"><h2>' + esc(t.sizeTitle(p.brand || "")) + "</h2>" + sizeRow(p, p) + '<p class="fine">' + esc(t.sizeNote) + "</p></section>" : "") +
           '<section class="block"><h2>' + esc(t.labels.fulfilment) + "</h2><p>" + esc(s.st === "pre-order" || preorderOpen(p) ? t.fulfil.preorder : (t.fulfil[p.fulfilment] || t.fulfil.both)) + ' <a href="' + lp("/delivery/") + '">' + esc(t.fulfilMore) + '</a></p><p class="install-note">' + esc(t.install) + "</p></section>" +
           '<section class="block"><h2>' + esc(t.labels.policy) + '</h2><p id="policy-text">' + esc(policyText(p)) + '</p><p><a class="text-link" href="' + lp("/how-to-buy/") + '">' + esc(t.policy.more) + " →</a></p></section>" +
         "</div>" +
       "</div>" +
       (story ? '<section class="section-tight"><div class="story"><div><p class="eyebrow">' + esc(t.labels.story) + "</p><h2>" + esc(L(story.title)) + "</h2></div><p>" + esc(L(story.body)) + "</p></div></section>" : "") +
-      '<section class="section-tight" id="more"><div class="section-head"><h2>' + esc(rel.same.length >= 4 ? t.more(p.brand || "") : t.alsoLike) + '</h2><a class="text-link" href="' + lp("/shop/") + '">' + esc(t.shopAll) + ' →</a></div><div class="grid grid-4">' + rel.more.map(function (x) { return card(x); }).join("") + "</div></section>" +
+      '<section class="section-tight" id="more"><div class="section-head"><h2>' + esc(rel.same.length >= 4 && p.brand ? t.more(p.brand) : t.alsoLike) + '</h2><a class="text-link" href="' + lp("/shop/") + '">' + esc(t.shopAll) + ' →</a></div><div class="grid grid-4">' + rel.more.map(function (x) { return card(x); }).join("") + "</div></section>" +
       '<div class="sticky-cta" id="sticky-cta"><div class="p">' + (s.st === "sold" ? esc(t.badge.sold) : money(p.price)) + "<small>" + esc(name) + '</small></div><a class="btn" href="' + cta.href + '" target="_blank" rel="noopener">' + WA_ICON + "WhatsApp</a></div>";
   }
   var LIVE_PARTS = [".pdp-info > .badges", ".pdp-price", ".pdp-stock", "#main-cta", "#policy-text", "#more", "#sticky-cta"];
