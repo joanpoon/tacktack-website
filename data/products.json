@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18",
+ "updated": "2026-10-16",
  "homepageDrop": [
   "dulton-double-face-clock-grey",
   "dulton-double-face-clock-green"
@@ -54,16 +54,6 @@
     "en": "Yoshitomo Nara (b. 1959) is a Japanese artist whose wide-eyed children sit somewhere between cute and slightly dangerous. These two MoMA Exclusive prints reproduce works in MoMA's collection: Green Eyes (2002) and Untitled (Eye Patch) (2012). Brand new, unframed, and small enough to courier across Hong Kong.",
     "zh": "奈良美智（Yoshitomo Nara，生於 1959 年）是日本藝術家，畫中那些大眼睛小孩既可愛，又帶點不好惹。這兩張 MoMA Exclusive 海報翻印 MoMA 館藏：Green Eyes（2002）及 Untitled (Eye Patch)（2012）。全新、不連相框，小件可用速遞送往全港。"
    }
-  },
-  "fukuikinzokukogei": {
-   "title": {
-    "en": "Fukuikinzokukogei",
-    "zh": "福井金屬工藝"
-   },
-   "body": {
-    "en": "Fukuikinzokukogei makes small metal fittings in Japan. This gypsum board hook is for hanging a picture, a poster or a DULTON clock on a rental wall. Each one is rated for 7 kg, and we sell them as a set of two.",
-    "zh": "福井金屬工藝在日本製作小型金屬配件。這款石膏板掛鈎適合租屋用來掛畫、海報或 DULTON 時鐘。單個承重 7 kg，本店以兩件一套發售。"
-   }
   }
  },
  "brands": {
@@ -84,72 +74,9 @@
   },
   "Yoshitomo Nara": {
    "slug": "yoshitomo-nara"
-  },
-  "Fukuikinzokukogei": {
-   "slug": "fukuikinzokukogei"
   }
  },
  "products": [
-  {
-   "slug": "fukuikinzokukogei-gypsum-board-hook",
-   "zhType": "石膏板掛鈎",
-   "sku": "TT-FUK-0001",
-   "featured": false,
-   "dropDate": "2026-10-18",
-   "brand": "Fukuikinzokukogei",
-   "name": {
-    "en": "Made in Japan · rental-friendly wall hook for DULTON clocks & pictures · set of 2",
-    "zh": "日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫 · 兩件裝"
-   },
-   "model": "Gypsum board hook",
-   "material": {
-    "en": "Metal",
-    "zh": "金屬"
-   },
-   "origin": {
-    "en": "Made in Japan",
-    "zh": "日本製造"
-   },
-   "description": {
-    "en": "Sold as a set of two, HK$30 for the pair. These wall hooks are made in Japan for gypsum board: a small, rental-friendly way to hang a poster, a frame or a DULTON clock. Each hook is rated for 7 kg. A useful add-on if you are already taking a print, a clock or a picture.",
-    "zh": "以兩件一套發售，一套 HK$30。這對日本製石膏板掛鈎，適合租屋用來掛海報、畫框或 DULTON 時鐘。單個承重 7 kg。已經選了海報、時鐘或掛畫，可以一併加上這對掛鈎。"
-   },
-   "details": {
-    "en": [
-     "Sold as a set of 2, HK$30 for the set",
-     "7 kg load capacity each",
-     "Made in Japan",
-     "For posters, clocks and frames, especially DULTON clocks",
-     "Rental-friendly wall hook for gypsum board"
-    ],
-    "zh": [
-     "兩件一套，每套 HK$30",
-     "單個承重 7 kg",
-     "日本製",
-     "適合海報、時鐘及畫框，尤其是 DULTON 時鐘",
-     "租屋友好的石膏板掛鈎"
-    ]
-   },
-   "category": "decor",
-   "condition": {
-    "grade": "brand-new",
-    "notes": {
-     "en": "Brand new.",
-     "zh": "全新。"
-    }
-   },
-   "price": 30,
-   "status": "available",
-   "fulfilment": "both",
-   "storyKey": "fukuikinzokukogei",
-   "photos": [
-    "/assets/products/fukuikinzokukogei-gypsum-board-hook/1.jpg"
-   ],
-   "photoAlt": {
-    "en": "Illustrated gypsum board wall hook: a grey J-hook on a round plate, labelled made in Japan, 7 kg each, set of 2",
-    "zh": "石膏板掛鈎插圖：圓形底板配灰色 J 形掛鈎，標明日本製、單個承重 7 kg、兩件裝"
-   }
-  },
   {
    "slug": "yoshitomo-nara-green-eyes",
    "zhType": "海報",
