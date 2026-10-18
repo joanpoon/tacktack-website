@@ -378,7 +378,7 @@
     var t = T(), s = state(p), cta = waFor(p), name = L(p.name);
     var grade = (p.condition || {}).grade; if (grade === "open-box") grade = "brand-new";   // old grade merged into Brand new
     var G = t.grades, gkeys = Object.keys(G), gi = gkeys.indexOf(grade);
-    var stockLine = t.stock[s.st === "sold" ? "sold" : preorderOpen(p) ? "onHoldPreorder" : s.st === "on-hold" ? "onHold" : s.st === "pre-order" ? "preorder" : "available"];
+    var stockLine = L(p.stockNote) || t.stock[s.st === "sold" ? "sold" : preorderOpen(p) ? "onHoldPreorder" : s.st === "on-hold" ? "onHold" : s.st === "pre-order" ? "preorder" : "available"];
     var specs = [
       [t.labels.designer, p.designer], [t.labels.brand, p.brand, p.brand && PRODUCTS.some(function (x) { return x.brand === p.brand && state(x).st !== "sold"; }) ? brandUrl(p.brand) : ""], [t.labels.model, p.model], [t.labels.year, L(p.year)],
       [t.labels.colour, L(p.colour)], [t.labels.material, L(p.material)], [t.labels.origin, L(p.origin)], [t.labels.dims, dims(p) || (state(p).st === "sold" ? "" : t.dimsTbc)],
