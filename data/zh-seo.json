@@ -160,6 +160,11 @@
       "zhType": "雙面鐘",
       "title": "已售出：DULTON 雙面鐘（長方形）· 綠色 | Tack, tack!",
       "description": "DULTON 雙面鐘（長方形掛牆鐘，綠色）已於 Tack, tack!（香港）售出，頁面沒有標示價錢。另一隻綠色已留貨，仍可預購。WhatsApp +852 6507 0791 查詢。"
+    },
+    "fukuikinzokukogei-gypsum-board-hook": {
+      "zhType": "石膏板掛鈎",
+      "title": "福井金屬工藝 石膏板掛鈎（全新・兩件裝）｜香港 | Tack, tack!",
+      "description": "全新日本製石膏板掛鈎，兩件一套。單個承重 7 kg，適合海報、畫框及 DULTON 時鐘，租屋牆身也用得上。HK$30 一套，香港現貨。WhatsApp 查詢，Showroom 預約自取或全港送貨。"
     }
   },
   "pages": {
@@ -181,7 +186,7 @@
     },
     "zh/category/decor/index.html": {
       "title": "設計師家品及擺設｜香港 | Tack, tack!",
-      "description": "香港設計家品：奈良美智海報、Heller Swell 波浪掛牆收納及掛鈎、DULTON 雙面鐘、HAY 矽膠製冰盒。如實品相，WhatsApp 查詢，小件可速遞。"
+      "description": "香港設計家品：奈良美智海報、Heller Swell 波浪掛牆收納及掛鈎、DULTON 雙面鐘、HAY 矽膠製冰盒及福井金屬工藝石膏板掛鈎。如實品相，WhatsApp 查詢，小件可速遞。"
     },
     "zh/brand/isamu-noguchi-akari/index.html": {
       "title": "野口勇 AKARI 和紙燈 香港｜30A、45D、55D | Tack, tack!",
@@ -206,6 +211,10 @@
     "zh/brand/yoshitomo-nara/index.html": {
       "title": "奈良美智海報｜香港 Green Eyes、Eye Patch | Tack, tack!",
       "description": "香港奈良美智 MoMA Exclusive 海報，全新、不連相框：Green Eyes（綠眼）HK$298、Eye Patch（眼罩）HK$328。28 × 36 cm。WhatsApp 查詢，小件可速遞。"
+    },
+    "zh/brand/fukuikinzokukogei/index.html": {
+      "title": "福井金屬工藝 石膏板掛鈎｜香港 | Tack, tack!",
+      "description": "日本製石膏板掛鈎，兩件一套 HK$30。單個承重 7 kg，適合海報、畫框及 DULTON 時鐘。香港現貨。WhatsApp 查詢，Showroom 預約自取或全港送貨。"
     }
   }
 }
