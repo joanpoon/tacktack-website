@@ -1345,7 +1345,7 @@
   {
    "slug": "dulton-double-face-clock-green",
    "zhType": "雙面鐘",
-   "sku": "TT-DUL-0004",
+   "sku": "TT-DUL-0003",
    "featured": false,
    "dropDate": "2026-09-17",
    "newFrom": "2026-10-08",
@@ -1373,7 +1373,7 @@
      "Sweep movement, so no ticking",
      "Dial held by magnets for easy time-setting and battery changes",
      "Runs on 2 × AA batteries",
-     "Shipped from Japan",
+     "In stock in Hong Kong",
      "Rental-friendly: stand it on a shelf, or mount on the wall.",
      "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
     ],
@@ -1382,7 +1382,7 @@
      "掃秒機芯，沒有滴答聲",
      "鐘面以磁石固定，調時間及換電池都方便",
      "使用 2 粒 AA 電池",
-     "日本直送",
+     "香港現貨",
      "租屋友善：可放在層架上，或裝在牆上。",
      "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
     ]
@@ -1411,10 +1411,10 @@
     }
    },
    "price": 1328,
-   "status": "pre-order",
+   "status": "available",
    "stockNote": {
-    "en": "Next batch arriving soon. Pre-order available: Japan air freight, and we ship it when it lands.",
-    "zh": "下一批即將到貨。仍可預購：日本空運，到港後寄出。"
+    "en": "In stock in Hong Kong",
+    "zh": "香港現貨"
    },
    "fulfilment": "both",
    "photos": [
@@ -2632,8 +2632,8 @@
     "zh": "ABS 樹脂機身及外框、玻璃面"
    },
    "description": {
-    "en": "A station-style two-sided clock in green, redrawn by DULTON as a long, low rectangle for the home. This one has sold. Message us on WhatsApp if you would like another. A separate green listing: next batch arriving soon, and pre-order is open.",
-    "zh": "DULTON 雙面掛鐘（長方形）· 綠色，車站風格、矮身長方形，適合家居。此件已售出。如想再找一隻，歡迎 WhatsApp 查詢。另有綠色仍在售：下一批即將到貨，仍可預購。"
+    "en": "A station-style two-sided clock in green, redrawn by DULTON as a long, low rectangle for the home. This one has sold. Message us on WhatsApp if you would like another. A separate green listing is in stock in Hong Kong.",
+    "zh": "DULTON 雙面掛鐘（長方形）· 綠色，車站風格、矮身長方形，適合家居。此件已售出。如想再找一隻，歡迎 WhatsApp 查詢。另有綠色仍在售：香港現貨。"
    },
    "category": "decor",
    "dimensions": {
