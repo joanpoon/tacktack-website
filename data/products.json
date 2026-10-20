@@ -2080,6 +2080,7 @@
   {
    "slug": "heller-swell-red-orange",
    "zhType": "波浪掛牆收納",
+   "sku": "TT-SWE-0007",
    "featured": false,
    "dropDate": "2026-10-01",
    "brand": "Heller",
@@ -2139,7 +2140,11 @@
     }
    },
    "price": 980,
-   "status": "available",
+   "status": "pre-order",
+   "stockNote": {
+    "en": "Next batch arriving soon. Pre-order available.",
+    "zh": "下一批即將到貨。仍可預購。"
+   },
    "fulfilment": "both",
    "notices": [
     "moreColours"

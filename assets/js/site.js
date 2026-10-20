@@ -348,7 +348,7 @@
   function policyText(p) {
     var t = T().policy, price = +p.price || 0;
     if (state(p).st === "sold") return t.sold;
-    if ((state(p).st === "pre-order" || preorderOpen(p)) && price < 1500) return t.preorderFull(money(price));
+    if ((state(p).st === "pre-order" || preorderOpen(p)) && price < 1500) return (p.stockNote && t.preorderFullNoted ? t.preorderFullNoted(money(price)) : t.preorderFull(money(price)));
     if (price < 1500) return t.full(money(price));
     if (price < 10000) return t.dep30(money(Math.ceil(price * 0.3)), money(price));
     return t.dep20(money(Math.max(3000, Math.ceil(price * 0.2))), money(price));
@@ -416,7 +416,7 @@
           (details.length ? '<section class="block"><h2>' + esc(t.labels.details) + '</h2><ul class="ticks">' + details.map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul></section>" : "") +
           addonBlock(p) +
           (sizeRow(p, p) && state(p).st !== "sold" ? '<section class="block size-block"><h2>' + esc(t.sizeTitle(p.brand || "")) + "</h2>" + sizeRow(p, p) + '<p class="fine">' + esc(t.sizeNote) + "</p></section>" : "") +
-          '<section class="block"><h2>' + esc(t.labels.fulfilment) + "</h2><p>" + esc(s.st === "pre-order" || preorderOpen(p) ? t.fulfil.preorder : (t.fulfil[p.fulfilment] || t.fulfil.both)) + ' <a href="' + lp("/delivery/") + '">' + esc(t.fulfilMore) + '</a></p><p class="install-note">' + esc(t.install) + "</p></section>" +
+          '<section class="block"><h2>' + esc(t.labels.fulfilment) + "</h2><p>" + esc(s.st === "pre-order" || preorderOpen(p) ? (p.stockNote && t.fulfil.preorderNoted ? t.fulfil.preorderNoted : t.fulfil.preorder) : (t.fulfil[p.fulfilment] || t.fulfil.both)) + ' <a href="' + lp("/delivery/") + '">' + esc(t.fulfilMore) + '</a></p><p class="install-note">' + esc(t.install) + "</p></section>" +
           '<section class="block"><h2>' + esc(t.labels.policy) + '</h2><p id="policy-text">' + esc(policyText(p)) + '</p><p><a class="text-link" href="' + lp("/how-to-buy/") + '">' + esc(t.policy.more) + " →</a></p></section>" +
         "</div>" +
       "</div>" +
