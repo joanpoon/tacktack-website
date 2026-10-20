@@ -30,12 +30,14 @@ window.TT_STRINGS = {
       pickup: "Showroom self-pickup by appointment. We share the address when you book.",
       delivery: "Delivery across Hong Kong, quoted over WhatsApp.",
       both: "Showroom self-pickup by appointment, or delivery across Hong Kong quoted over WhatsApp. Small pieces can go by courier.",
-      preorder: "Japan air freight. Once it lands in Hong Kong, pick up from the showroom by appointment or we deliver across Hong Kong, quoted on WhatsApp."
+      preorder: "Japan air freight. Once it lands in Hong Kong, pick up from the showroom by appointment or we deliver across Hong Kong, quoted on WhatsApp.",
+      preorderNoted: "Once it lands in Hong Kong, pick up from the showroom by appointment or we deliver across Hong Kong, quoted on WhatsApp."
     },
     policy: {
       sold: "This piece has sold, so it's no longer priced. Message us on WhatsApp and we'll tell you when we find a similar one.",
       full: p => "Under HK$1,500: reserve by paying in full (" + p + "). Pick up or arrange delivery within 7 days.",
       preorderFull: p => "Pre-order by paying in full (" + p + "). It is not in Hong Kong yet: we ship it when it lands, then you pick up from the showroom by appointment or we deliver.",
+      preorderFullNoted: p => "Pre-order by paying in full (" + p + "). It is not in Hong Kong yet: we ship it when it lands, then you pick up from the showroom by appointment or we deliver.",
       dep30: (d, p) => "30% deposit (" + d + ") holds it for up to 7 days. Balance before pickup or delivery.",
       dep20: (d, p) => "20% deposit (" + d + ") holds it for up to 14 days. Balance before pickup or delivery.",
       pay: "FPS · PayMe · Bank transfer · Cash · PayPal (for overseas buyers). Messages and likes don't hold items: first paid, first served.",
@@ -105,12 +107,14 @@ window.TT_STRINGS = {
       pickup: "Showroom 預約自取，確認後會提供地址。",
       delivery: "全港送貨，運費經 WhatsApp 報價。",
       both: "可於 Showroom 預約自取，或全港送貨（運費經 WhatsApp 報價）。小件貨品可安排速遞。",
-      preorder: "日本空運。到港後可於 Showroom 預約自取，或全港送貨（運費經 WhatsApp 報價）。"
+      preorder: "日本空運。到港後可於 Showroom 預約自取，或全港送貨（運費經 WhatsApp 報價）。",
+      preorderNoted: "到港後可於 Showroom 預約自取，或全港送貨（運費經 WhatsApp 報價）。"
     },
     policy: {
       sold: "這件已售出，不再標價。WhatsApp 我們，找到同類貨品會通知你。",
       full: p => "HK$1,500 以下貨品須全數付款（" + p + "）方可確認，並於 7 天內自取或安排送貨。",
       preorderFull: p => "預購須全數付款（" + p + "）。這件尚未到港：日本空運，到港後才安排自取或送貨。",
+      preorderFullNoted: p => "預購須全數付款（" + p + "）。這件尚未到港，到港後才安排自取或送貨。",
       dep30: (d, p) => "付 30% 訂金（" + d + "）可留貨最多 7 天，餘款須於自取或送貨前付清。",
       dep20: (d, p) => "付 20% 訂金（" + d + "）可留貨最多 14 天，餘款須於自取或送貨前付清。",
       pay: "接受 FPS 轉數快、PayMe、銀行轉帳、現金及 PayPal（海外買家）。私訊及按讚不代表留貨，先付先得。",
