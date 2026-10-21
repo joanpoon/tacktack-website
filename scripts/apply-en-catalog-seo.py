@@ -9,6 +9,8 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
+import sys
 from html import escape as html_escape
 from html import unescape as html_unescape
 from pathlib import Path
@@ -249,6 +251,7 @@ def main() -> None:
     for rel, spec in TINT.items():
         ensure_tint_product(ROOT / rel, spec)
         print("tint", rel)
+    subprocess.check_call([sys.executable, str(ROOT / "scripts" / "build-merchant-feed.py")])
 
 
 if __name__ == "__main__":

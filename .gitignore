@@ -1,0 +1,2 @@
+# Local Merchant feed blocklist. One literal phrase per line. Do not commit.
+scripts/merchant-private-patterns.local
