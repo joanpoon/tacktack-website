@@ -398,7 +398,7 @@
     var stockLine = L(p.stockNote) || t.stock[s.st === "sold" ? "sold" : preorderOpen(p) ? "onHoldPreorder" : s.st === "on-hold" ? "onHold" : s.st === "pre-order" ? "preorder" : "available"];
     var specs = [
       [t.labels.designer, p.designer], [t.labels.brand, p.brand, p.brand && DATA.brands && DATA.brands[p.brand] ? brandUrl(p.brand) : ""], [t.labels.model, p.model], [t.labels.year, L(p.year)],
-      [t.labels.colour, L(p.colour)], [t.labels.material, L(p.material)], [t.labels.origin, L(p.origin)], [t.labels.dims, dims(p) || (state(p).st === "sold" ? "" : t.dimsTbc)],
+      [t.labels.colour, L(p.colour)], [t.labels.material, L(p.material)], [t.labels.origin, L(p.origin)], [t.labels.dims, dims(p)],
       [t.labels.weight, p.dimensions && p.dimensions.weightKg ? "≈ " + p.dimensions.weightKg + " kg" : ""],
       [t.labels.sku, p.sku]
     ].filter(function (r) { return r[1]; });
