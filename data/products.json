@@ -760,10 +760,6 @@
      "en": "Brand new, with box, charging cable included.",
      "zh": "全新連盒，附充電線。"
     },
-    "box": {
-     "en": "With box.",
-     "zh": "全新連盒。"
-    },
     "electrics": {
      "en": "Charging cable included.",
      "zh": "附充電線。"
@@ -847,12 +843,8 @@
    "condition": {
     "grade": "brand-new",
     "notes": {
-     "en": "Brand new, with box, charging cable included. Dark green.",
-     "zh": "全新連盒，附充電線。深綠色。"
-    },
-    "box": {
-     "en": "With box.",
-     "zh": "全新連盒。"
+     "en": "Brand new, with box, charging cable included.",
+     "zh": "全新連盒，附充電線。"
     },
     "electrics": {
      "en": "Charging cable included.",
