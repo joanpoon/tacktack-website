@@ -263,7 +263,7 @@ html[data-lang="zh"] .badge { letter-spacing: .06em; font-size: .72rem; }
 .page-head { padding: clamp(32px, 5vw, 64px) 0 clamp(20px, 3vw, 32px); }
 .page-head h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); margin: .3em 0 .3em; }
 .page-head p { color: var(--muted); max-width: 56ch; font-size: 1.05rem; }
-/* English on EN and ZH. Sits under the brand name; not a homepage badge. */
+/* Under the brand kicker on a product page, or the brand name on a brand page. Not a homepage badge. */
 p.official-dealer {
   margin: -.45em 0 .7em;
   max-width: none;

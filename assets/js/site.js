@@ -94,6 +94,12 @@
     return '<div class="badges">' + out.map(function (b) { return '<span class="badge badge-' + b[0] + '">' + esc(b[1]) + "</span>"; }).join("") + "</div>";
   }
   function kicker(p) { return [p.brand, p.designer].filter(function (x, i, arr) { return x && arr.indexOf(x) === i; }).join(" · "); }
+  function dealerNote(p) {   // brands[name].officialDealer in products.json; every status, including sold
+    var info = DATA && DATA.brands && p.brand && DATA.brands[p.brand];
+    var text = L(info && info.officialDealer);
+    if (!text) return "";
+    return '<p class="official-dealer" lang="' + (lang === "zh" ? "zh-Hant-HK" : "en") + '">' + esc(text) + "</p>";
+  }
   function photo(p, i) { return (p.photos && p.photos[i || 0]) || "/assets/brand/mark.svg"; }
   function url(p) { return lp("/item/" + p.slug + "/"); }
   function alt(p) { return isPlaceholder(photo(p)) ? L(p.name) + (lang === "zh" ? "（示意插圖）" : " (illustration)") : (L(p.photoAlt) || L(p.name)); }
@@ -430,7 +436,7 @@
           (photos.some(isPlaceholder) ? '<p class="photo-note">' + esc(t.photoNote) + "</p>" : "") +
         "</div>" +
         '<div class="pdp-info">' +
-          (kicker(p) ? '<p class="eyebrow">' + esc(kicker(p)) + "</p>" : "") + badges(p) +
+          (kicker(p) ? '<p class="eyebrow">' + esc(kicker(p)) + "</p>" : "") + dealerNote(p) + badges(p) +
           "<h1>" + esc(name) + "</h1>" +
           '<div class="pdp-price">' + priceHtml(p) + gradeChip(p) + "</div>" +
           '<p class="pdp-stock">' + esc(stockLine) + "</p>" +
