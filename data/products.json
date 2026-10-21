@@ -999,8 +999,8 @@
     "zh": "吹製霧面乳白玻璃及漆面鋼"
    },
    "description": {
-    "en": "Signe Hytte designed the Journey SHY2 in 2018 for &Tradition: a mouth-blown opal-glass sphere on a lacquered steel wall base, H 24 × W 18 × L 26 cm. This one is black. Condition is Good. There is a small hairline crack on the opal glass near the base join. New retail is about HK$2,680. It is a 220–240V fitting, which suits Hong Kong. Installation is available as an add-on, quoted on WhatsApp.",
-    "zh": "Signe Hytte 於 2018 年為 &Tradition 設計 Journey SHY2：吹製乳白玻璃圓罩，配漆面鋼製壁燈底座，高 24 × 闊 18 × 長 26 cm。這盞是黑色。品相良好。乳白玻璃近底座接位有一條細小髮絲裂紋。全新參考價約 HK$2,680。電壓 220–240V，適用於香港。安裝可作附加服務，WhatsApp 報價。"
+    "en": "Signe Hytte designed the Journey SHY2 in 2018 for &Tradition: a mouth-blown opal-glass sphere on a lacquered steel wall base, H 24 × W 18 × L 26 cm. This one is black. Condition is Good. There is a small hairline crack on the opal glass near the base join. New retail is about HK$2,680. It is a 220–240V fitting, which suits Hong Kong. Takes a G9 bulb. Installation is available as an add-on, quoted on WhatsApp.",
+    "zh": "Signe Hytte 於 2018 年為 &Tradition 設計 Journey SHY2：吹製乳白玻璃圓罩，配漆面鋼製壁燈底座，高 24 × 闊 18 × 長 26 cm。這盞是黑色。品相良好。乳白玻璃近底座接位有一條細小髮絲裂紋。全新參考價約 HK$2,680。電壓 220–240V，適用於香港。使用 G9 燈泡。安裝可作附加服務，WhatsApp 報價。"
    },
    "details": {
     "en": [
@@ -1009,6 +1009,7 @@
      "Mouth-blown satinised opal glass, lacquered steel base",
      "Black",
      "220–240V, suitable for Hong Kong.",
+     "Takes a G9 bulb.",
      "Installation available as an add-on, quoted on WhatsApp"
     ],
     "zh": [
@@ -1017,6 +1018,7 @@
      "吹製霧面乳白玻璃，漆面鋼底座",
      "黑色",
      "220–240V，適用於香港。",
+     "使用 G9 燈泡。",
      "安裝可作附加服務，WhatsApp 報價"
     ]
    },
@@ -1031,16 +1033,16 @@
    "condition": {
     "grade": "good",
     "notes": {
-     "en": "Good. Small hairline crack on the opal glass near the base join. Installation is available as an add-on.",
-     "zh": "品相良好。乳白玻璃近底座接位有一條細小髮絲裂紋。安裝可作附加服務。"
+     "en": "Good. Small hairline crack on the opal glass near the base join. Takes a G9 bulb. Installation is available as an add-on.",
+     "zh": "品相良好。乳白玻璃近底座接位有一條細小髮絲裂紋。使用 G9 燈泡。安裝可作附加服務。"
     },
     "flaws": {
      "en": "Small hairline crack on the opal glass near the base join.",
      "zh": "乳白玻璃近底座接位有一條細小髮絲裂紋。"
     },
     "electrics": {
-     "en": "220–240V. Installation available as an add-on.",
-     "zh": "220–240V。安裝可作附加服務。"
+     "en": "220–240V. Takes a G9 bulb. Installation available as an add-on.",
+     "zh": "220–240V。使用 G9 燈泡。安裝可作附加服務。"
     }
    },
    "price": 1340,
