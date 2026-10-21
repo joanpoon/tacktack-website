@@ -165,7 +165,24 @@
   function gradeOf(p) { var g = (p.condition || {}).grade || ""; return g === "open-box" ? "brand-new" : g; }
   function openBox(p) { var c = p.condition || {}; return gradeOf(p) === "brand-new" && (!!c.openBox || c.grade === "open-box"); }
   function gradeLabel(p) { var g = gradeOf(p), t = T(); if (!t.grades[g]) return ""; return openBox(p) ? t.openBox[0] : t.grades[g][0]; }
-  function gradeChip(p) { var l = gradeLabel(p); return l && state(p).st !== "sold" ? '<a class="grade-chip" href="' + lp("/faq/") + '#condition-guide" aria-label="' + esc(T().chipAria(l)) + '">' + esc(l) + "</a>" : ""; }
+  function gradeChip(p) { var l = gradeLabel(p); return l && state(p).st !== "sold" ? '<a class="grade-chip" href="' + lp("/condition/") + '" aria-label="' + esc(T().chipAria(l)) + '">' + esc(l) + "</a>" : ""; }
+  // Brand pages and /condition/ on every PDP (same links build-pages.py should emit). Display names match the shop page.
+  function discoverLinks() {
+    var t = T(), zh = lang === "zh";
+    var brands = [
+      ["&Tradition", "andtradition", "&Tradition"],
+      ["Isamu Noguchi AKARI", "isamu-noguchi-akari", "野口勇 AKARI"],
+      ["DULTON", "dulton", "DULTON"],
+      ["Heller", "heller", "Heller"],
+      ["HAY", "hay", "HAY"],
+      ["Yoshitomo Nara", "yoshitomo-nara", "奈良美智"]
+    ];
+    var bits = brands.map(function (b) { return '<a href="' + lp("/brand/" + b[1] + "/") + '">' + esc(zh ? b[2] : b[0]) + "</a>"; });
+    var label = zh ? "按設計師及品牌： " : "By designer & brand: ";
+    return '<p class="muted shop-browse">' + label.replace("&", "&amp;") + bits.join(" · ") + "<br>" +
+      '<a href="' + lp("/condition/") + '">' + esc(t.condGuide) + "</a> · " +
+      '<a href="' + lp("/contact/") + '">' + esc(t.contact) + "</a></p>";
+  }
   function condNotes(p) {
     var c = p.condition || {}, lab = T().condNotes;
     var rows = COND_NOTE_KEYS.filter(function (k) { return L(c[k]); });
@@ -380,8 +397,8 @@
     var G = t.grades, gkeys = Object.keys(G), gi = gkeys.indexOf(grade);
     var stockLine = L(p.stockNote) || t.stock[s.st === "sold" ? "sold" : preorderOpen(p) ? "onHoldPreorder" : s.st === "on-hold" ? "onHold" : s.st === "pre-order" ? "preorder" : "available"];
     var specs = [
-      [t.labels.designer, p.designer], [t.labels.brand, p.brand, p.brand && PRODUCTS.some(function (x) { return x.brand === p.brand && state(x).st !== "sold"; }) ? brandUrl(p.brand) : ""], [t.labels.model, p.model], [t.labels.year, L(p.year)],
-      [t.labels.colour, L(p.colour)], [t.labels.material, L(p.material)], [t.labels.origin, L(p.origin)], [t.labels.dims, dims(p) || (state(p).st === "sold" ? "" : t.dimsTbc)],
+      [t.labels.designer, p.designer], [t.labels.brand, p.brand, p.brand && DATA.brands && DATA.brands[p.brand] ? brandUrl(p.brand) : ""], [t.labels.model, p.model], [t.labels.year, L(p.year)],
+      [t.labels.colour, L(p.colour)], [t.labels.material, L(p.material)], [t.labels.origin, L(p.origin)], [t.labels.dims, dims(p)],
       [t.labels.weight, p.dimensions && p.dimensions.weightKg ? "≈ " + p.dimensions.weightKg + " kg" : ""],
       [t.labels.sku, p.sku]
     ].filter(function (r) { return r[1]; });
@@ -421,7 +438,8 @@
         "</div>" +
       "</div>" +
       (story ? '<section class="section-tight"><div class="story"><div><p class="eyebrow">' + esc(t.labels.story) + "</p><h2>" + esc(L(story.title)) + "</h2></div><p>" + esc(L(story.body)) + "</p></div></section>" : "") +
-      '<section class="section-tight" id="more"><div class="section-head"><h2>' + esc(rel.same.length >= 4 && p.brand ? t.more(p.brand) : t.alsoLike) + '</h2><a class="text-link" href="' + lp("/shop/") + '">' + esc(t.shopAll) + ' →</a></div><div class="grid grid-4">' + rel.more.map(function (x) { return card(x); }).join("") + "</div></section>" +
+      '<section class="section-tight" id="more"><div class="section-head"><h2>' + esc(rel.same.length >= 4 && p.brand ? t.more(p.brand) : t.alsoLike) + '</h2><span>' + (p.brand && DATA.brands && DATA.brands[p.brand] ? '<a class="text-link" href="' + brandUrl(p.brand) + '">' + esc(t.more(p.brand)) + " →</a> · " : "") + '<a class="text-link" href="' + lp("/shop/") + '">' + esc(t.shopAll) + " →</a></span></div><div class=\"grid grid-4\">" + rel.more.map(function (x) { return card(x); }).join("") + "</div></section>" +
+      discoverLinks() +
       '<div class="sticky-cta" id="sticky-cta"><div class="p">' + (s.st === "sold" ? esc(t.badge.sold) : money(p.price)) + "<small>" + esc(name) + '</small></div><a class="btn" href="' + cta.href + '" target="_blank" rel="noopener">' + WA_ICON + "WhatsApp</a></div>";
   }
   var LIVE_PARTS = [".pdp-info > .badges", ".pdp-price", ".pdp-stock", "#main-cta", "#policy-text", "#more", "#sticky-cta"];

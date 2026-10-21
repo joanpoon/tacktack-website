@@ -9,8 +9,8 @@ window.TT_STRINGS = {
     badge: { hold: "On hold", sold: "Sold", neu: "New this week", preorder: "Pre-order" },
     grades: {
       "brand-new": ["Brand new", "Unused, never installed; in its original packaging unless stated."],
-      "display": ["Display", "Never used at home, shown in a showroom or shop; may have light handling marks or no original box, with the details in the notes."],
-      "excellent": ["Excellent", "Lightly used; no marks visible at a normal distance, works perfectly."],
+      "display": ["Display", "Never used at home, shown in a showroom or shop."],
+      "excellent": ["Excellent", "Lightly used, and it works perfectly."],
       "good": ["Good", "Honest wear consistent with age, all shown in photos; sound and fully working."],
       "fair": ["Fair", "Clear wear, a repair or a replaced part, described and priced to match."]
     },
@@ -23,7 +23,6 @@ window.TT_STRINGS = {
     scaleTitle: "Our 5-grade condition scale",
     gradeHelp: "What do the grades mean?",
     labels: { designer: "Designer", brand: "Brand", model: "Model", year: "Year", colour: "Colour", material: "Material", origin: "Origin", dims: "Dimensions", weight: "Weight", sku: "SKU", condition: "Condition", details: "Good to know", fulfilment: "Pickup & delivery", policy: "Reserving & paying", story: "The story", specs: "Details" },
-    dimsTbc: "Measurements coming soon, ask us",
     stock: { available: "Available now", onHold: "On hold right now", onHoldPreorder: "On hold in Hong Kong. More are available to pre-order: Japan air freight, and we ship it when it lands.", sold: "This piece has found its home", preorder: "Coming soon · pre-order available. Japan air freight; we ship it when it lands." },
     retail: p => "New retail approx. " + p,
     fulfil: {
@@ -34,7 +33,7 @@ window.TT_STRINGS = {
       preorderNoted: "Once it lands in Hong Kong, pick up from the showroom by appointment or we deliver across Hong Kong, quoted on WhatsApp."
     },
     policy: {
-      sold: "This piece has sold, so it's no longer priced. Message us on WhatsApp and we'll tell you when we find a similar one.",
+      sold: "This piece has found a new home. WhatsApp us for something similar.",
       full: p => "Under HK$1,500: reserve by paying in full (" + p + "). Pick up or arrange delivery within 7 days.",
       preorderFull: p => "Pre-order by paying in full (" + p + "). It is not in Hong Kong yet: we ship it when it lands, then you pick up from the showroom by appointment or we deliver.",
       preorderFullNoted: p => "Pre-order by paying in full (" + p + "). It is not in Hong Kong yet: we ship it when it lands, then you pick up from the showroom by appointment or we deliver.",
@@ -62,10 +61,11 @@ window.TT_STRINGS = {
     addonNote: "Optional add-on for a DULTON clock, a Heller Swell (including Mini), a Nara print, or the solid wood picture frame.",
     shopAll: "Shop all",
     home: "Home", shop: "Shop", crumbs: "Breadcrumb", fulfilMore: "Delivery & pickup details",
+    condGuide: "Condition guide", contact: "Contact",
     sizeTitle: function (b) { return "Which " + b + " size?"; }, sizeNote: "Shades drawn to scale. Tap a size to see it.",
     trust: { neu: "Brand new, unused", genuine: "Authentic designer piece", pickup: "Showroom pickup by appointment or delivery across Hong Kong", photos: "Real photos and measurements on WhatsApp" },
-    notices: { cordNotIncluded: "Cord add-on and installation available. WhatsApp us for a quote.", moreColours: "More colourways available to order. Coming soon." },
-    install: "Installation service available. Ask us for details.", gallery: "Product photos", photoN: function (i, n) { return "Photo " + i + " of " + n; }, photoMore: function (i) { return " (photo " + i + ")"; },
+    notices: { cordNotIncluded: "Shade only. Hong Kong wiring and installation are available on request.", moreColours: "More colourways available to order. Coming soon." },
+    install: "We can arrange installation. Ask us on WhatsApp.", gallery: "Product photos", photoN: function (i, n) { return "Photo " + i + " of " + n; }, photoMore: function (i) { return " (photo " + i + ")"; },
     filters: { category: "Category", brand: "Brand / designer", status: "Availability", price: "Price", sort: "Sort", reset: "Clear filters" },
     status: { active: "Available & on hold", available: "Available now", "pre-order": "Pre-order", "on-hold": "On hold", sold: "Sold", all: "Everything" },
     price: { any: "Any price", u500: "Under HK$500", "500-1500": "HK$500–1,500", "1500-5000": "HK$1,500–5,000", o5000: "HK$5,000+" },
@@ -86,8 +86,8 @@ window.TT_STRINGS = {
     badge: { hold: "已留貨", sold: "已售出", neu: "本週新貨", preorder: "預購" },
     grades: {
       "brand-new": ["全新", "未使用、未安裝；除另有註明外，連原裝包裝。"],
-      "display": ["展示品", "未曾家用，曾於陳列室或店舖展示；或有輕微搬運痕跡或無原裝盒，詳見備註。"],
-      "excellent": ["極佳", "輕度使用；正常距離看不到痕跡，功能完好。"],
+      "display": ["展示品", "未曾家用，曾於陳列室或店舖展示。"],
+      "excellent": ["極佳", "輕度使用，功能完好。"],
       "good": ["良好", "有與年份相符的使用痕跡，全部有相片；結構穩固、功能正常。"],
       "fair": ["一般", "明顯磨損、曾維修或更換零件，已詳述並反映於價格。"]
     },
@@ -100,7 +100,6 @@ window.TT_STRINGS = {
     scaleTitle: "五級品相評級",
     gradeHelp: "評級代表甚麼？",
     labels: { designer: "設計師", brand: "品牌", model: "型號", year: "年份", colour: "顏色", material: "物料", origin: "產地", dims: "尺寸", weight: "重量", sku: "貨號", condition: "品相", details: "小提示", fulfilment: "自取及送貨", policy: "留貨及付款", story: "設計故事", specs: "規格" },
-    dimsTbc: "尺寸稍後更新，歡迎查詢",
     stock: { available: "現貨供應", onHold: "目前已被留貨", onHoldPreorder: "香港現貨已被留貨。仍可預購更多：日本空運，到港後寄出。", sold: "這件已經找到新主人", preorder: "即將到貨 · 接受預購。日本空運，到港後寄出。" },
     retail: p => "全新參考價約 " + p,
     fulfil: {
@@ -111,7 +110,7 @@ window.TT_STRINGS = {
       preorderNoted: "到港後可於 Showroom 預約自取，或全港送貨（運費經 WhatsApp 報價）。"
     },
     policy: {
-      sold: "這件已售出，不再標價。WhatsApp 我們，找到同類貨品會通知你。",
+      sold: "這件已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。",
       full: p => "HK$1,500 以下貨品須全數付款（" + p + "）方可確認，並於 7 天內自取或安排送貨。",
       preorderFull: p => "預購須全數付款（" + p + "）。這件尚未到港：日本空運，到港後才安排自取或送貨。",
       preorderFullNoted: p => "預購須全數付款（" + p + "）。這件尚未到港，到港後才安排自取或送貨。",
@@ -139,10 +138,11 @@ window.TT_STRINGS = {
     addonNote: "可加購，配 DULTON 時鐘、Heller Swell（包括 Mini）、奈良美智海報或實木相框。",
     shopAll: "查看全部",
     home: "主頁", shop: "選購", crumbs: "導覽路徑", fulfilMore: "送貨及自取詳情",
+    condGuide: "品相指南", contact: "聯絡",
     sizeTitle: function (b) { return "選哪個 " + b + " 尺寸？"; }, sizeNote: "燈罩按實際比例繪畫，按一下查看。",
     trust: { neu: "全新未使用", genuine: "正品設計好物", pickup: "Showroom 預約自取或全港送貨", photos: "WhatsApp 即可索取實物相片及尺寸" },
-    notices: { cordNotIncluded: "可加配電線及安裝服務，歡迎 WhatsApp 查詢報價。", moreColours: "更多顏色可訂購，即將推出。" },
-    install: "提供安裝服務，歡迎查詢詳情。", gallery: "產品相片", photoN: function (i, n) { return "第 " + i + " 張相片（共 " + n + " 張）"; }, photoMore: function (i) { return "（相片 " + i + "）"; },
+    notices: { cordNotIncluded: "只售燈罩。香港電線及安裝可按需要安排。", moreColours: "更多顏色可訂購，即將推出。" },
+    install: "可以幫你安排安裝，WhatsApp 問我哋就得。", gallery: "產品相片", photoN: function (i, n) { return "第 " + i + " 張相片（共 " + n + " 張）"; }, photoMore: function (i) { return "（相片 " + i + "）"; },
     filters: { category: "類別", brand: "品牌／設計師", status: "供應狀況", price: "價錢", sort: "排序", reset: "清除篩選" },
     status: { active: "有貨及已留貨", available: "現貨", "pre-order": "預購", "on-hold": "已留貨", sold: "已售出", all: "全部" },
     price: { any: "所有價錢", u500: "HK$500 以下", "500-1500": "HK$500–1,500", "1500-5000": "HK$1,500–5,000", o5000: "HK$5,000 以上" },

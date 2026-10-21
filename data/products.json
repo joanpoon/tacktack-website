@@ -89,8 +89,8 @@
    "featured": false,
    "dropDate": "2026-10-18",
    "name": {
-    "en": "Made in Japan · rental-friendly wall hook for DULTON clocks & pictures",
-    "zh": "日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫"
+    "en": "Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures",
+    "zh": "租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫"
    },
    "colour": {
     "en": "Silver / white",
@@ -101,8 +101,8 @@
     "zh": "日本製造"
    },
    "description": {
-    "en": "Set of 2, silver / white, brand new. Made in Japan. A rental-friendly wall hook for gypsum board, for a DULTON clock, a picture, a Heller Swell (including Mini), or a Nara print in the solid wood picture frame. 7KG load capacity each.",
-    "zh": "兩件裝，銀色／白色，全新。日本製。租屋友好的石膏板掛牆掛鈎，可配 DULTON 時鐘、畫、Heller Swell（包括 Mini），或配實木相框的奈良美智海報。單個承重7KG。"
+    "en": "Set of 2, silver / white, brand new. Made in Japan. A rental-friendly wall hook for gypsum board, for a DULTON clock, a picture, a Heller Swell (including Mini), or a Nara print in the solid wood picture frame. Holds up to 7 kg each.",
+    "zh": "兩件裝，銀色／白色，全新。日本製。租屋友善的石膏板掛牆掛鈎，可配 DULTON 時鐘、畫、Heller Swell（包括 Mini），或配實木相框的奈良美智海報。單個最多承重 7 kg。"
    },
    "details": {
     "en": [
@@ -110,7 +110,7 @@
      "Silver / white",
      "Brand new",
      "Made in Japan",
-     "7KG load capacity each",
+     "Holds up to 7 kg each",
      "Rental-friendly wall hook for gypsum board",
      "For a DULTON clock, a Heller Swell (including Mini), a Nara print, or the solid wood picture frame"
     ],
@@ -119,8 +119,8 @@
      "銀色／白色",
      "全新",
      "日本製",
-     "單個承重7KG",
-     "租屋友好的石膏板掛牆掛鈎",
+     "單個最多承重 7 kg",
+     "租屋友善的石膏板掛牆掛鈎",
      "可配 DULTON 時鐘、Heller Swell（包括 Mini）、奈良美智海報或實木相框"
     ]
    },
@@ -140,8 +140,8 @@
    ],
    "photoFit": "contain",
    "photoAlt": {
-    "en": "Wall hook with a white round cap and a grey hook, labelled made in Japan, rental-friendly wall hook for DULTON clocks and pictures, 7KG each, set of 2",
-    "zh": "掛牆掛鈎，白色圓蓋配灰色掛鈎，標明日本製、租屋友好掛鈎適合 DULTON 時鐘與掛畫、單個承重7KG、兩件裝"
+    "en": "Wall hook with a white round cap and a grey hook, labelled made in Japan, rental-friendly wall hook for DULTON clocks and pictures, holds up to 7 kg each, set of 2",
+    "zh": "掛牆掛鈎，白色圓蓋配灰色掛鈎，標明日本製、租屋友善掛鈎適合 DULTON 時鐘與掛畫、單個最多承重 7 kg、兩件裝"
    },
    "addons": [
     "dulton-double-face-clock-grey",
@@ -155,7 +155,11 @@
     "yoshitomo-nara-green-eyes",
     "yoshitomo-nara-eye-patch",
     "solid-wood-picture-frame-for-nara-prints"
-   ]
+   ],
+   "stockNote": {
+    "en": "Coming soon · pre-order available.",
+    "zh": "即將到貨 · 接受預購。"
+   }
   },
   {
    "slug": "solid-wood-picture-frame-for-nara-prints",
@@ -188,7 +192,7 @@
      "Outer size W 33.7 × D 2 × H 46 cm",
      "Inner opening sized for the Nara prints",
      "Add-on for the Green Eyes and Eye Patch prints",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "實木，可掛牆",
@@ -198,7 +202,7 @@
      "外尺寸闊 33.7 × 深 2 × 高 46 cm",
      "內開口按奈良美智海報尺寸",
      "可加購，配 Green Eyes 及 Eye Patch 海報",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -232,7 +236,7 @@
    },
    "addonNote": {
     "en": "An add-on for the Nara prints. The wall hook is optional, for hanging on gypsum board.",
-    "zh": "這是奈良美智海報的加購相框。石膏板掛牆可另配租屋友好掛鈎。"
+    "zh": "這是奈良美智海報的加購相框。石膏板掛牆可另配租屋友善掛鈎。"
    },
    "addons": [
     "yoshitomo-nara-green-eyes",
@@ -272,7 +276,7 @@
      "Brand new",
      "Unframed; framed photos are for reference only",
      "Small piece: courier across Hong Kong",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45.",
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45.",
      "Optional add-on: solid wood picture frame for Nara prints, white, hanging, HK$98."
     ],
     "zh": [
@@ -281,7 +285,7 @@
      "全新",
      "不連相框；有框相片僅供參考",
      "小件貨品，可安排全港速遞",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。",
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。",
      "可加購：實木掛牆相框，適合奈良美智海報，白色，HK$98。"
     ]
    },
@@ -326,7 +330,7 @@
    },
    "addonNote": {
     "en": "The print is unframed. Add the white solid wood picture frame, and the wall hook if you want to hang it.",
-    "zh": "海報不連相框。可加購白色實木掛牆相框；如要掛牆，可再配租屋友好掛鈎。"
+    "zh": "海報不連相框。可加購白色實木掛牆相框；如要掛牆，可再配租屋友善掛鈎。"
    },
    "addons": [
     "solid-wood-picture-frame-for-nara-prints",
@@ -366,7 +370,7 @@
      "Brand new",
      "Unframed; framed photos are for reference only",
      "Small piece: courier across Hong Kong",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45.",
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45.",
      "Optional add-on: solid wood picture frame for Nara prints, white, hanging, HK$98."
     ],
     "zh": [
@@ -375,7 +379,7 @@
      "全新",
      "不連相框；有框相片僅供參考",
      "小件貨品，可安排全港速遞",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。",
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。",
      "可加購：實木掛牆相框，適合奈良美智海報，白色，HK$98。"
     ]
    },
@@ -423,7 +427,7 @@
    },
    "addonNote": {
     "en": "The print is unframed. Add the white solid wood picture frame, and the wall hook if you want to hang it.",
-    "zh": "海報不連相框。可加購白色實木掛牆相框；如要掛牆，可再配租屋友好掛鈎。"
+    "zh": "海報不連相框。可加購白色實木掛牆相框；如要掛牆，可再配租屋友善掛鈎。"
    },
    "addons": [
     "solid-wood-picture-frame-for-nara-prints",
@@ -454,8 +458,8 @@
     "zh": "漆面聚碳酸酯及鋼"
    },
    "description": {
-    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This Swim Blue lamp is ex-display. It comes with the charger and without a box. New retail is about HK$1,740. Condition is Good: three minor marks, two small specks on the shade top and one dot on the base. The last two photos are close-ups of the shade marks: a speck and a line. The dot on the base is not in these photos.",
-    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞 Swim Blue 是展示品，連充電器，沒有原裝盒。全新參考價約 HK$1,740。品相良好：共三處輕微痕跡，燈罩頂兩點小斑，底座一點。最後兩張相片是燈罩痕跡的近照：一點小斑及一條線。底座那一點沒有單獨的相片。"
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. Charger included. New retail is about HK$1,740. Good: three small marks, two on the shade top and one on the base.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。連充電器。全新參考價約 HK$1,740。品相良好：燈罩頂兩處、底座一處輕微痕跡。"
    },
    "details": {
     "en": [
@@ -483,20 +487,16 @@
    "condition": {
     "grade": "good",
     "notes": {
-     "en": "Ex-display, with the charger, and no box. Good: three minor marks, two small specks on the shade top and one dot on the base. The last two photos are close-ups of the shade marks: a speck and a line. The dot on the base is not in these photos.",
-     "zh": "展示品，連充電器，沒有原裝盒。品相良好：三處輕微痕跡，燈罩頂兩點小斑，底座一點。最後兩張相片是燈罩痕跡的近照：一點小斑及一條線。底座那一點沒有單獨的相片。"
-    },
-    "box": {
-     "en": "No original box.",
-     "zh": "沒有原裝盒。"
+     "en": "Charger included. Good: three small marks, two on the shade top and one on the base.",
+     "zh": "連充電器。品相良好：燈罩頂兩處、底座一處輕微痕跡。"
     },
     "electrics": {
      "en": "USB charger included.",
      "zh": "連 USB 充電器。"
     },
     "flaws": {
-     "en": "Three minor marks: two small specks on the shade top and one dot on the base.",
-     "zh": "三處輕微痕跡：燈罩頂兩點小斑，底座一點。"
+     "en": "Three small marks: two on the shade top and one on the base.",
+     "zh": "燈罩頂兩處、底座一處輕微痕跡。"
     }
    },
    "price": 1180,
@@ -557,8 +557,8 @@
     "zh": "漆面聚碳酸酯及鋼"
    },
    "description": {
-    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This Swim Blue lamp is ex-display. It comes with the charger and without a box, and it looks clean. New retail is about HK$1,740. It is a different piece from the Good Swim Blue at HK$1,180.",
-    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞 Swim Blue 是展示品，連充電器，沒有原裝盒，看起來乾淨。全新參考價約 HK$1,740。與 HK$1,180 那盞品相良好的 Swim Blue 是不同的一件。"
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This Swim Blue lamp is Excellent. New retail is about HK$1,740.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞 Swim Blue 品相極佳。全新參考價約 HK$1,740。"
    },
    "details": {
     "en": [
@@ -586,12 +586,8 @@
    "condition": {
     "grade": "excellent",
     "notes": {
-     "en": "Ex-display, with the charger, and no box. Excellent: it looks clean, with no marks called out.",
-     "zh": "展示品，連充電器，沒有原裝盒。品相極佳：看起來乾淨，沒有需要標明的痕跡。"
-    },
-    "box": {
-     "en": "No original box.",
-     "zh": "沒有原裝盒。"
+     "en": "Excellent.",
+     "zh": "品相極佳。"
     },
     "electrics": {
      "en": "USB charger included.",
@@ -650,8 +646,8 @@
     "zh": "漆面聚碳酸酯及鋼"
    },
    "description": {
-    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This Mustard lamp is ex-display. It comes with the charging cable and without a box, and no marks were noted. New retail is about HK$1,740.",
-    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞 Mustard 是展示品，連充電線，沒有原裝盒，沒有需要標明的痕跡。全新參考價約 HK$1,740。"
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This Mustard lamp is Excellent. New retail is about HK$1,740.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞 Mustard 品相極佳。全新參考價約 HK$1,740。"
    },
    "details": {
     "en": [
@@ -679,12 +675,8 @@
    "condition": {
     "grade": "excellent",
     "notes": {
-     "en": "Ex-display, with the charging cable, and no box. Excellent: no marks called out.",
-     "zh": "展示品，連充電線，沒有原裝盒。品相極佳：沒有需要標明的痕跡。"
-    },
-    "box": {
-     "en": "No original box.",
-     "zh": "沒有原裝盒。"
+     "en": "Excellent.",
+     "zh": "品相極佳。"
     },
     "electrics": {
      "en": "Charging cable included.",
@@ -740,8 +732,8 @@
     "zh": "漆面聚碳酸酯及鋼"
    },
    "description": {
-    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This Matt Black lamp is brand new and still in its box. We'll confirm the rechargeable battery is included and working before you pay.",
-    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞 Matt Black 是全新，仍有原裝盒。付款前我們會確認充電電池已包括並且運作正常。"
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This Matt Black lamp is Brand new, with box, charging cable included.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞 Matt Black 全新連盒，附充電線。"
    },
    "details": {
     "en": [
@@ -769,16 +761,12 @@
    "condition": {
     "grade": "brand-new",
     "notes": {
-     "en": "Brand new, with the original box. We'll confirm the rechargeable battery is included and working before you pay.",
-     "zh": "全新，連原裝盒。付款前我們會確認充電電池已包括並且運作正常。"
-    },
-    "box": {
-     "en": "Original box included.",
-     "zh": "連原裝盒。"
+     "en": "Brand new, with box, charging cable included.",
+     "zh": "全新連盒，附充電線。"
     },
     "electrics": {
-     "en": "Rechargeable. We'll confirm the battery is included and working before you pay.",
-     "zh": "可充電。付款前我們會確認電池已包括並且運作正常。"
+     "en": "Charging cable included.",
+     "zh": "附充電線。"
     }
    },
    "price": 1580,
@@ -830,8 +818,8 @@
     "zh": "漆面聚碳酸酯及鋼"
    },
    "description": {
-    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This one is dark green, brand new, and still in its box. We'll confirm the rechargeable battery is included and working before you pay.",
-    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞是深綠色，全新，仍有原裝盒。付款前我們會確認充電電池已包括並且運作正常。"
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This one is dark green, and it is Brand new, with box, charging cable included.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞是深綠色，全新連盒，附充電線。"
    },
    "details": {
     "en": [
@@ -859,16 +847,12 @@
    "condition": {
     "grade": "brand-new",
     "notes": {
-     "en": "Brand new, with the original box. Dark green. We'll confirm the rechargeable battery is included and working before you pay.",
-     "zh": "全新，連原裝盒。深綠色。付款前我們會確認充電電池已包括並且運作正常。"
-    },
-    "box": {
-     "en": "Original box included.",
-     "zh": "連原裝盒。"
+     "en": "Brand new, with box, charging cable included.",
+     "zh": "全新連盒，附充電線。"
     },
     "electrics": {
-     "en": "Rechargeable. We'll confirm the battery is included and working before you pay.",
-     "zh": "可充電。付款前我們會確認電池已包括並且運作正常。"
+     "en": "Charging cable included.",
+     "zh": "附充電線。"
     }
    },
    "price": 1580,
@@ -923,8 +907,8 @@
     "zh": "吹製乳白玻璃、鋁、布線"
    },
    "description": {
-    "en": "Mist AP15 is a small pendant by All the Way to Paris for &Tradition. The shade is mouth-blown opal glass, about Ø25 × H 13 cm, with white aluminium details and a textile cord. This one is brand new. The cord and a bulb are included. New retail is HK$3,190, so HK$2,480 is about 22% under that. It is a 220–240V fitting, which suits Hong Kong. Installation is available as an add-on, quoted on WhatsApp. The price is for one pendant.",
-    "zh": "Mist AP15 是 All the Way to Paris 為 &Tradition 設計的小型吊燈。燈罩是吹製乳白玻璃，約 Ø25 × 高 13 cm，配白色鋁件及布線。這盞全新。連電線及一顆燈泡。全新參考價 HK$3,190，HK$2,480 約低 22%。電壓 220–240V，適用於香港。安裝可作附加服務，WhatsApp 報價。價錢是一盞吊燈。"
+    "en": "Mist AP15 is a small pendant by All the Way to Paris for &Tradition. The shade is mouth-blown opal glass, about Ø25 × H 13 cm, with white aluminium details and a textile cord. This one is brand new. The cord and a bulb are included. New retail is about HK$3,190. It is a 220–240V fitting, which suits Hong Kong. Installation is available as an add-on, quoted on WhatsApp.",
+    "zh": "Mist AP15 是 All the Way to Paris 為 &Tradition 設計的小型吊燈。燈罩是吹製乳白玻璃，約 Ø25 × 高 13 cm，配白色鋁件及布線。這盞全新。連電線及一顆燈泡。全新參考價約 HK$3,190。電壓 220–240V，適用於香港。安裝可作附加服務，WhatsApp 報價。"
    },
    "details": {
     "en": [
@@ -1011,8 +995,8 @@
     "zh": "吹製霧面乳白玻璃及漆面鋼"
    },
    "description": {
-    "en": "Signe Hytte designed the Journey SHY2 in 2018 for &Tradition: a mouth-blown opal-glass sphere on a lacquered steel wall base, H 24 × W 18 × L 26 cm. This one is black. Condition is Good. There is a small hairline crack on the opal glass near the base join. The last two photos are close-ups of that crack, marked with a soft circle. HK$1,340 is half of the HK$2,680 retail. It is a 220–240V fitting, which suits Hong Kong. Installation is available as an add-on, quoted on WhatsApp.",
-    "zh": "Signe Hytte 於 2018 年為 &Tradition 設計 Journey SHY2：吹製乳白玻璃圓罩，配漆面鋼製壁燈底座，高 24 × 闊 18 × 長 26 cm。這盞是黑色。品相良好。乳白玻璃近底座接位有一條細小髮絲裂紋。最後兩張相片是裂紋近照，已用淺色圓圈標出。HK$1,340 是 HK$2,680 參考價的一半。電壓 220–240V，適用於香港。安裝可作附加服務，WhatsApp 報價。"
+    "en": "Signe Hytte designed the Journey SHY2 in 2018 for &Tradition: a mouth-blown opal-glass sphere on a lacquered steel wall base, H 24 × W 18 × L 26 cm. This one is black. Condition is Good. There is a small hairline crack on the opal glass near the base join. New retail is about HK$2,680. It is a 220–240V fitting, which suits Hong Kong. Takes a G9 bulb. Installation is available as an add-on, quoted on WhatsApp.",
+    "zh": "Signe Hytte 於 2018 年為 &Tradition 設計 Journey SHY2：吹製乳白玻璃圓罩，配漆面鋼製壁燈底座，高 24 × 闊 18 × 長 26 cm。這盞是黑色。品相良好。乳白玻璃近底座接位有一條細小髮絲裂紋。全新參考價約 HK$2,680。電壓 220–240V，適用於香港。使用 G9 燈泡。安裝可作附加服務，WhatsApp 報價。"
    },
    "details": {
     "en": [
@@ -1020,7 +1004,8 @@
      "H 24 × W 18 × L 26 cm, about 1.3 kg",
      "Mouth-blown satinised opal glass, lacquered steel base",
      "Black",
-     "220–240V, suitable for Hong Kong. We'll confirm the bulb or LED module on WhatsApp",
+     "220–240V, suitable for Hong Kong.",
+     "Takes a G9 bulb.",
      "Installation available as an add-on, quoted on WhatsApp"
     ],
     "zh": [
@@ -1028,7 +1013,8 @@
      "高 24 × 闊 18 × 長 26 cm，約 1.3 kg",
      "吹製霧面乳白玻璃，漆面鋼底座",
      "黑色",
-     "220–240V，適用於香港。燈泡或 LED 模組請 WhatsApp 確認",
+     "220–240V，適用於香港。",
+     "使用 G9 燈泡。",
      "安裝可作附加服務，WhatsApp 報價"
     ]
    },
@@ -1043,16 +1029,16 @@
    "condition": {
     "grade": "good",
     "notes": {
-     "en": "Good. Small hairline crack on the opal glass near the base join. The last two photos are close-ups of the crack, marked with a soft circle. Installation is available as an add-on.",
-     "zh": "品相良好。乳白玻璃近底座接位有一條細小髮絲裂紋。最後兩張相片是裂紋近照，已用淺色圓圈標出。安裝可作附加服務。"
+     "en": "Good. Small hairline crack on the opal glass near the base join. Takes a G9 bulb. Installation is available as an add-on.",
+     "zh": "品相良好。乳白玻璃近底座接位有一條細小髮絲裂紋。使用 G9 燈泡。安裝可作附加服務。"
     },
     "flaws": {
      "en": "Small hairline crack on the opal glass near the base join.",
      "zh": "乳白玻璃近底座接位有一條細小髮絲裂紋。"
     },
     "electrics": {
-     "en": "220–240V. We'll confirm the bulb or LED module on WhatsApp. Installation available as an add-on.",
-     "zh": "220–240V。燈泡或 LED 模組請 WhatsApp 確認。安裝可作附加服務。"
+     "en": "220–240V. Takes a G9 bulb. Installation available as an add-on.",
+     "zh": "220–240V。使用 G9 燈泡。安裝可作附加服務。"
     }
    },
    "price": 1340,
@@ -1286,7 +1272,7 @@
      "Runs on 2 × AA batteries",
      "Shipped from Japan",
      "Rental-friendly: stand it on a shelf, or mount on the wall.",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "雙面鐘面，兩邊都能看到時間",
@@ -1295,7 +1281,7 @@
      "使用 2 粒 AA 電池",
      "日本直送",
      "租屋友善：可放在層架上，或裝在牆上。",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -1380,7 +1366,7 @@
      "Runs on 2 × AA batteries",
      "In stock in Hong Kong",
      "Rental-friendly: stand it on a shelf, or mount on the wall.",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "雙面鐘面，兩邊都能看到時間",
@@ -1389,7 +1375,7 @@
      "使用 2 粒 AA 電池",
      "香港現貨",
      "租屋友善：可放在層架上，或裝在牆上。",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -1481,12 +1467,12 @@
     "en": [
      "Handmade in Gifu, Japan",
      "Folds flat for moving",
-     "Cord set, fitting and bulb: please WhatsApp us to confirm what's included and whether it suits HK sockets"
+     "Shade only. Hong Kong wiring and installation are available on request."
     ],
     "zh": [
      "日本岐阜人手製作",
      "可摺平，搬運方便",
-     "電線、燈座及燈泡配置：請 WhatsApp 我們確認包括甚麼，以及是否適用於香港電壓及插座"
+     "只售燈罩。香港電線及安裝可按需要安排。"
     ]
    },
    "category": "lighting",
@@ -1503,8 +1489,8 @@
      "zh": ""
     },
     "electrics": {
-     "en": "Cord add-on and installation available; quoted on WhatsApp.",
-     "zh": "可加配電線及安裝服務，WhatsApp 報價。"
+     "en": "Shade only. Hong Kong wiring and installation are available on request.",
+     "zh": "只售燈罩。香港電線及安裝可按需要安排。"
     }
    },
    "price": 2080,
@@ -1572,12 +1558,12 @@
     "en": [
      "Handmade in Gifu, Japan",
      "Folds flat for moving",
-     "Cord set, fitting and bulb: please WhatsApp us to confirm what's included and whether it suits HK sockets"
+     "Shade only. Hong Kong wiring and installation are available on request."
     ],
     "zh": [
      "日本岐阜人手製作",
      "可摺平，搬運方便",
-     "電線、燈座及燈泡配置：請 WhatsApp 我們確認包括甚麼，以及是否適用於香港電壓及插座"
+     "只售燈罩。香港電線及安裝可按需要安排。"
     ]
    },
    "category": "lighting",
@@ -1592,8 +1578,8 @@
      "zh": ""
     },
     "electrics": {
-     "en": "Cord add-on and installation available; quoted on WhatsApp.",
-     "zh": "可加配電線及安裝服務，WhatsApp 報價。"
+     "en": "Shade only. Hong Kong wiring and installation are available on request.",
+     "zh": "只售燈罩。香港電線及安裝可按需要安排。"
     }
    },
    "price": 1680,
@@ -1661,12 +1647,12 @@
     "en": [
      "Handmade in Gifu, Japan",
      "Folds flat for moving",
-     "Cord set, fitting and bulb: please WhatsApp us to confirm what's included and whether it suits HK sockets"
+     "Shade only. Hong Kong wiring and installation are available on request."
     ],
     "zh": [
      "日本岐阜人手製作",
      "可摺平，搬運方便",
-     "電線、燈座及燈泡配置：請 WhatsApp 我們確認包括甚麼，以及是否適用於香港電壓及插座"
+     "只售燈罩。香港電線及安裝可按需要安排。"
     ]
    },
    "category": "lighting",
@@ -1683,8 +1669,8 @@
      "zh": ""
     },
     "electrics": {
-     "en": "Cord add-on and installation available; quoted on WhatsApp.",
-     "zh": "可加配電線及安裝服務，WhatsApp 報價。"
+     "en": "Shade only. Hong Kong wiring and installation are available on request.",
+     "zh": "只售燈罩。香港電線及安裝可按需要安排。"
     }
    },
    "price": 1780,
@@ -1762,13 +1748,13 @@
      "Holds up to 34 kg (75 lb), per Heller",
      "Wall-mounted, with Heller fixings",
      "Apartment Therapy Small/Cool Design Award 2024",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "根據 Heller，承重可達 34 kg（75 lb）",
      "掛牆安裝，配 Heller 配件",
      "2024 年 Apartment Therapy Small/Cool 設計獎",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -1852,13 +1838,13 @@
      "Holds up to 8.6 kg (19 lb), per Heller",
      "Indoor/outdoor use",
      "Wall-mounted, with Heller bracket and screws",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "根據 Heller，承重可達 8.6 kg（19 lb）",
      "室內及戶外均可使用",
      "掛牆安裝，配 Heller 掛牆支架及螺絲",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -1945,13 +1931,13 @@
      "Holds up to 8.6 kg (19 lb), per Heller",
      "Indoor/outdoor use",
      "Wall-mounted, with Heller bracket and screws",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "根據 Heller，承重可達 8.6 kg（19 lb）",
      "室內及戶外均可使用",
      "掛牆安裝，配 Heller 掛牆支架及螺絲",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -1981,7 +1967,7 @@
    ],
    "photoAlt": {
     "en": "The Cream Swell Mini beside a bed, holding headphones above a green bedside table",
-    "zh": "奶油色 Swell Mini 掛在床邊，掛着耳機，下面是綠色床頭几"
+    "zh": "奶油色 Swell Mini 掛在床邊，掛着耳機，下面是綠色床頭櫃"
    },
    "photoAlts": {
     "en": [
@@ -1989,7 +1975,7 @@
      "Heller Swell Mini wall hook and catchall in Cream by Anna Dawson: a single wave-shaped hook and bowl"
     ],
     "zh": [
-     "奶油色 Swell Mini 掛在床邊，掛着耳機，下面是綠色床頭几",
+     "奶油色 Swell Mini 掛在床邊，掛着耳機，下面是綠色床頭櫃",
      "Heller Swell Mini 波浪掛牆掛鈎收納（奶油色），Anna Dawson 設計：單個波浪形掛鈎連收納碗"
     ]
    },
@@ -2032,13 +2018,13 @@
      "Holds up to 8.6 kg (19 lb), per Heller",
      "Indoor/outdoor use",
      "Wall-mounted, with Heller bracket and screws",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "根據 Heller，承重可達 8.6 kg（19 lb）",
      "室內及戶外均可使用",
      "掛牆安裝，配 Heller 掛牆支架及螺絲",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -2120,13 +2106,13 @@
      "Holds up to 34 kg (75 lb), per Heller",
      "Wall-mounted, with Heller fixings",
      "Apartment Therapy Small/Cool Design Award 2024",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "根據 Heller，承重可達 34 kg（75 lb）",
      "掛牆安裝，配 Heller 配件",
      "2024 年 Apartment Therapy Small/Cool 設計獎",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -2214,13 +2200,13 @@
      "Holds up to 34 kg (75 lb), per Heller",
      "Wall-mounted, with Heller fixings",
      "Apartment Therapy Small/Cool Design Award 2024",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "根據 Heller，承重可達 34 kg（75 lb）",
      "掛牆安裝，配 Heller 配件",
      "2024 年 Apartment Therapy Small/Cool 設計獎",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -2282,8 +2268,8 @@
     "zh": "粉紅／黃色"
    },
    "description": {
-    "en": "Set of two tinted wine glasses: pink bowl, yellow stem and foot. Brand new, with the original box.",
-    "zh": "兩隻裝著色酒杯：粉紅色杯身，黃色杯柄及杯腳。全新，連原裝盒。"
+    "en": "Set of two tinted wine glasses: pink bowl, yellow stem and foot. Brand new.",
+    "zh": "兩隻裝著色酒杯：粉紅色杯身，黃色杯柄及杯腳。全新。"
    },
    "category": "decor",
    "condition": {
@@ -2291,10 +2277,6 @@
     "notes": {
      "en": "",
      "zh": ""
-    },
-    "box": {
-     "en": "Original box included.",
-     "zh": "連原裝盒。"
     }
    },
    "status": "sold",
@@ -2330,8 +2312,8 @@
     "zh": "透明"
    },
    "description": {
-    "en": "Set of two clear Tint wine glasses. Brand new, with the original box.",
-    "zh": "兩隻裝透明酒杯。全新，連原裝盒。"
+    "en": "Set of two clear Tint wine glasses. Brand new.",
+    "zh": "兩隻裝透明酒杯。全新。"
    },
    "category": "decor",
    "condition": {
@@ -2339,10 +2321,6 @@
     "notes": {
      "en": "",
      "zh": ""
-    },
-    "box": {
-     "en": "Original box included.",
-     "zh": "連原裝盒。"
     }
    },
    "status": "sold",
@@ -2642,8 +2620,8 @@
     "zh": "ABS 樹脂機身及外框、玻璃面"
    },
    "description": {
-    "en": "A station-style two-sided clock in green, redrawn by DULTON as a long, low rectangle for the home. This one has sold. Message us on WhatsApp if you would like another. A separate green listing is in stock in Hong Kong.",
-    "zh": "DULTON 雙面掛鐘（長方形）· 綠色，車站風格、矮身長方形，適合家居。此件已售出。如想再找一隻，歡迎 WhatsApp 查詢。另有綠色仍在售：香港現貨。"
+    "en": "A station-style two-sided clock in green, redrawn by DULTON as a long, low rectangle for the home. This one has found a new home. WhatsApp us for something similar. The green clock is still available.",
+    "zh": "DULTON 雙面掛鐘（長方形）· 綠色，車站風格、矮身長方形，適合家居。這隻已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。綠色那隻仍有現貨。"
    },
    "category": "decor",
    "dimensions": {
