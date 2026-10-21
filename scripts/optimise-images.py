@@ -2,8 +2,11 @@
 """Build AVIF, WebP and resized JPEG variants from the photos already on each page.
 
 Original JPG/PNG files stay in place. Metadata is stripped without recompressing
-pixels (exiftool -all=). Variants are only scaled down, never cropped or upscaled,
-and each one is encoded from that same source file. The img src in every
+pixels. EXIF, XMP, IPTC and GPS go; an ICC profile is kept, so a tagged file
+renders the same colours as the untouched original. Variants are only scaled
+down, never cropped or upscaled, and each one is encoded from that same source
+file. A source whose ICC profile is not sRGB is converted to sRGB before
+encoding, and that sRGB profile is embedded in the variant. The img src in every
 <picture> remains the original, so the fallback stays the locked photo.
 
 Page markup for grids and product galleries is also emitted by assets/js/site.js
@@ -28,6 +31,7 @@ ROOT = Path(__file__).resolve().parents[1]
 HASH_BEFORE = Path("/tmp/pixel-hashes-before.txt")
 REPORT_PATH = Path("/tmp/optim-report.json")
 MANIFEST_PATH = ROOT / "assets" / "img-variants.json"
+SRGB_ICC = Path("/usr/share/color/icc/ghostscript/srgb.icc")
 
 STANDARD_WIDTHS = (400, 800, 1200, 1600)
 # Homepage heroes are about 447 device px on the Lighthouse mobile preset.
@@ -98,8 +102,39 @@ def widths_for(intrinsic: int, rel: str = "") -> list[int]:
     return sorted(chosen)
 
 
-def make_ref(src: Path, width: int, intrinsic: int, dest: Path) -> tuple[int, int]:
-    cmd = ["convert", str(src), "-strip"]
+def profile_description(src: Path) -> str:
+    proc = subprocess.run(
+        ["exiftool", "-s3", "-ProfileDescription", str(src)],
+        capture_output=True, text=True, check=False,
+    )
+    return proc.stdout.strip()
+
+
+def is_nonsrgb(description: str) -> bool:
+    """True when the file carries an ICC profile that is not sRGB."""
+    if not description:
+        return False
+    norm = "".join(ch for ch in description.lower() if ch.isalnum())
+    return norm not in {"srgb", "srgbiec6196621"}
+
+
+def embed_srgb(path: Path) -> None:
+    run([
+        "exiftool", "-overwrite_original",
+        f"-icc_profile<={SRGB_ICC}", str(path),
+    ])
+
+
+def make_ref(src: Path, width: int, intrinsic: int, dest: Path, to_srgb: bool) -> tuple[int, int]:
+    # A non-sRGB profile is applied here, so the encoded pixels match the
+    # colour a browser shows for the tagged original. sRGB and untagged
+    # sources keep their pixel values; -strip only drops metadata.
+    cmd = ["convert", str(src)]
+    if to_srgb:
+        if not SRGB_ICC.is_file():
+            raise RuntimeError(f"sRGB profile missing: {SRGB_ICC}")
+        cmd += ["-profile", str(SRGB_ICC)]
+    cmd.append("-strip")
     if width < intrinsic:
         cmd += ["-filter", "Lanczos", "-resize", f"{width}x"]
     cmd.append(f"png24:{dest}")
@@ -168,6 +203,7 @@ def process_source(src_str: str) -> dict:
     rel = src.relative_to(ROOT).as_posix()
     widths = widths_for(intrinsic, rel)
     url = "/" + rel
+    to_srgb = is_nonsrgb(profile_description(src))
     variants = []
     min_ssim = 1.0
     with tempfile.TemporaryDirectory(prefix="ttimg-") as tmp:
@@ -176,7 +212,7 @@ def process_source(src_str: str) -> dict:
         trial = work / "trial"
         win = work / "win"
         for width in widths:
-            ref_w, ref_h = make_ref(src, width, intrinsic, ref)
+            ref_w, ref_h = make_ref(src, width, intrinsic, ref, to_srgb)
             expect_h = intrinsic_h if width == intrinsic else max(1, round(intrinsic_h * width / intrinsic))
             if abs(ref_h - expect_h) > 2:
                 raise RuntimeError(f"{src} {width}px height {ref_h} != {expect_h} (crop or stretch)")
@@ -212,6 +248,8 @@ def process_source(src_str: str) -> dict:
             avif_out.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy(win.with_suffix(".avif"), avif_out)
             avif_ssim = ssim(avif_out, ref, work)
+            if to_srgb:
+                embed_srgb(avif_out)
             min_ssim = min(min_ssim, avif_ssim)
             variants.append({
                 "fmt": "avif", "w": width, "h": ref_h, "q": q, "yuv": yuv,
@@ -229,6 +267,8 @@ def process_source(src_str: str) -> dict:
             webp_out = src.parent / "r" / f"{src.stem}-{width}.webp"
             shutil.copy(win.with_suffix(".webp"), webp_out)
             webp_ssim = ssim(webp_out, ref, work)
+            if to_srgb:
+                embed_srgb(webp_out)
             min_ssim = min(min_ssim, webp_ssim)
             variants.append({
                 "fmt": "webp", "w": width, "h": ref_h, "q": q,
@@ -245,6 +285,8 @@ def process_source(src_str: str) -> dict:
                 jpg_out = src.parent / "r" / f"{src.stem}-{width}.jpg"
                 shutil.copy(win.with_suffix(".jpg"), jpg_out)
                 jpg_ssim = ssim(jpg_out, ref, work)
+                if to_srgb:
+                    embed_srgb(jpg_out)
                 min_ssim = min(min_ssim, jpg_ssim)
                 variants.append({
                     "fmt": "jpg", "w": width, "h": ref_h, "q": q,
@@ -338,6 +380,12 @@ def rewrite_html(manifest: dict, roles: dict[str, set]) -> tuple[int, list[str]]
 
         def replacer(match: re.Match) -> str:
             tag = match.group(0)
+            # Regeneration must leave an existing <picture> alone. Wrapping the
+            # inner <img> again would nest a second picture.
+            prev_open = text.rfind("<picture", 0, match.start())
+            prev_close = text.rfind("</picture>", 0, match.start())
+            if prev_open > prev_close:
+                return tag
             attrs = parse_attrs(tag)
             src = attrs.get("src", "")
             if not src or src.endswith(".svg") or src not in manifest:
@@ -399,7 +447,9 @@ def strip_metadata() -> dict:
     for i in range(0, len(files), 40):
         chunk = files[i:i + 40]
         proc = subprocess.run(
-            ["exiftool", "-all=", "-overwrite_original"] + chunk,
+            # -tagsfromfile @ copies the ICC profile back from the file as it
+            # was before -all= ran, in the same invocation. Pixels are untouched.
+            ["exiftool", "-all=", "-tagsfromfile", "@", "-icc_profile", "-overwrite_original"] + chunk,
             cwd=ROOT, capture_output=True, text=True,
         )
         blob = proc.stdout + proc.stderr
