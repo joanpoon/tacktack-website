@@ -10,6 +10,7 @@
   var lang = ZH.test(location.pathname) ? "zh" : "en";   // the language comes from the address: /zh/… is 繁中
   var page = document.body.getAttribute("data-page") || "";
   var DATA = null, PRODUCTS = [], ALL = [];
+  var IMG = {};   // responsive AVIF/WebP/JPG candidates from /assets/img-variants.json
   var renderers = [];
 
   function $(s, r) { return (r || document).querySelector(s); }
@@ -98,9 +99,17 @@
   function alt(p) { return isPlaceholder(photo(p)) ? L(p.name) + (lang === "zh" ? "（示意插圖）" : " (illustration)") : (L(p.photoAlt) || L(p.name)); }
   function isPlaceholder(src) { return /placeholder-\d/.test(src); }
   var CARD_SIZES = "(min-width: 1100px) 300px, (min-width: 760px) 31vw, 48vw", GALLERY_SIZES = "(min-width: 900px) 52vw, 100vw";
-  function srcset(src, sizes) {   // same as srcset() in build-pages.py
+  function srcset(src, sizes) {   // fallback when a photo has no generated variants yet
     var m = /^(\/assets\/products\/[^\/]+\/)([^\/]+\.jpg)$/.exec(src || "");
     return m ? ' srcset="' + m[1] + "m/" + m[2] + " 600w, " + src + ' 1200w" sizes="' + sizes + '"' : "";
+  }
+  // AVIF, then WebP, then a resized JPG (the original file stays the img src). Same markup scripts/optimise-images.py writes.
+  function picture(src, sizes, attrs) {
+    var v = IMG[src], sizesAttr = sizes ? ' sizes="' + sizes + '"' : "";
+    if (!v || !v.avif) return "<img" + attrs + ' src="' + esc(src) + '"' + srcset(src, sizes) + ">";
+    return '<picture><source type="image/avif" srcset="' + v.avif + '"' + sizesAttr + '>' +
+      '<source type="image/webp" srcset="' + v.webp + '"' + sizesAttr + '>' +
+      '<img' + attrs + ' src="' + esc(src) + '" srcset="' + v.jpg + '"' + sizesAttr + "></picture>";
   }
   function heroPhoto(p) { var ph = p.photos || [], n = p.heroPhoto || 1; return n > 0 && n <= ph.length ? ph[n - 1] : photo(p); }   // same as hero_photo()
   function sizeCm(p) { var d = p.dimensions || {}; return p.category === "lighting" ? (d.dia || d.w || 0) : 0; }   // round shades only, same as size_cm()
@@ -135,21 +144,22 @@
   }
   function gallery(p, photos) {   // same markup as gallery() in build-pages.py
     var t = T(), n = photos.length;
-    if (n === 1) return '<div class="gallery-main"><img id="main-photo"' + fitAttr(p) + ' src="' + esc(photos[0]) + '"' + srcset(photos[0], GALLERY_SIZES) + ' alt="' + esc(alt(p)) + '"' + photoBox(p) + ' fetchpriority="high"></div>';
+    var eager = ' loading="eager" fetchpriority="high"', lazy = ' loading="lazy" decoding="async"';
+    if (n === 1) return '<div class="gallery-main">' + picture(photos[0], GALLERY_SIZES, ' id="main-photo"' + fitAttr(p) + ' alt="' + esc(alt(p)) + '"' + photoBox(p) + eager) + "</div>";
     var slides = photos.map(function (ph, i) {
-      return "<img" + (i === 0 ? ' id="main-photo"' : "") + fitAttr(p) + ' src="' + esc(ph) + '"' + srcset(ph, GALLERY_SIZES) + ' alt="' + esc(altN(p, i)) + '"' + photoBox(p) + (i === 0 ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"') + ">";
+      return picture(ph, GALLERY_SIZES, (i === 0 ? ' id="main-photo"' : "") + fitAttr(p) + ' alt="' + esc(altN(p, i)) + '"' + photoBox(p) + (i === 0 ? eager : lazy));
     }).join("");
     return '<div class="gallery"><div class="gallery-main gallery-track" id="gallery" tabindex="0" role="region" aria-label="' + esc(t.gallery) + '">' + slides +
       '</div><span class="gallery-count" aria-hidden="true">1 / ' + n + "</span></div>" +
       '<div class="thumbs">' + photos.map(function (ph, i) {
-        return '<button type="button" data-slide="' + i + '" aria-current="' + (i === 0) + '" aria-label="' + esc(t.photoN(i + 1, n)) + '"><img src="' + esc(thumb(ph)) + '" alt="" width="80" height="100" decoding="async"></button>';
+        return '<button type="button" data-slide="' + i + '" aria-current="' + (i === 0) + '" aria-label="' + esc(t.photoN(i + 1, n)) + '">' + picture(thumb(ph), "76px", ' alt="" width="80" height="100" decoding="async"') + "</button>";
       }).join("") + "</div>";
   }
   function brandUrl(b) { var info = DATA && DATA.brands && DATA.brands[b]; return lp("/brand/" + ((info && info.slug) || slugify(b)) + "/"); }
   function card(p, eager) {
     var s = state(p);
     return '<article class="card' + (s.st === "sold" ? " is-sold" : "") + '"><a href="' + url(p) + '">' +
-      '<div class="card-media"><img' + fitAttr(p) + ' src="' + esc(photo(p)) + '"' + srcset(photo(p), CARD_SIZES) + ' alt="' + esc(alt(p)) + '"' + photoBox(p) + (eager ? "" : ' loading="lazy"') + ' decoding="async">' + badges(p) + "</div>" +
+      '<div class="card-media">' + picture(photo(p), CARD_SIZES, fitAttr(p) + ' alt="' + esc(alt(p)) + '"' + photoBox(p) + (eager ? "" : ' loading="lazy"') + ' decoding="async"') + badges(p) + "</div>" +
       '<div class="card-body">' + (kicker(p) ? '<p class="card-kicker">' + esc(kicker(p)) + "</p>" : "") + '<h3 class="card-title">' + esc(L(p.name)) + "</h3>" + (dims(p) ? '<p class="card-meta">' + esc(dims(p)) + "</p>" : "") +
       '<p class="card-price">' + priceHtml(p) + "</p></div></a></article>";
   }
@@ -205,7 +215,12 @@
 
   /* ---------------- data ---------------- */
   function load() {
-    return fetch("/data/products.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (d) {
+    return Promise.all([
+      fetch("/data/products.json", { cache: "no-cache" }).then(function (r) { return r.json(); }),
+      fetch("/assets/img-variants.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : {}; }, function () { return {}; })
+    ]).then(function (pair) {
+      var d = pair[0];
+      IMG = pair[1] || {};
       DATA = d;
       ALL = (d.products || []).filter(function (p) { return p.published !== false && p.slug; });
       PRODUCTS = ALL.filter(function (p) { return !p.dropDate || p.dropDate <= TODAY; }); // future drop dates stay hidden until the day
@@ -256,7 +271,7 @@
       var link = $("a", el), img = $("img", el);
       var hp = heroPhoto(p), hi = (p.photos || []).indexOf(hp);
       if (link && img && link.getAttribute("href") === url(p) && img.getAttribute("src") === hp) return;   // pre-rendered and still right
-      el.innerHTML = '<a href="' + url(p) + '"><img src="' + esc(hp) + '"' + srcset(hp, "(min-width: 900px) 30vw, 62vw") + ' alt="' + esc(altN(p, hi > 0 ? hi : 0)) + '" width="800" height="1000" fetchpriority="high"></a>';
+      el.innerHTML = '<a href="' + url(p) + '">' + picture(hp, "(min-width: 900px) 30vw, 62vw", ' alt="' + esc(altN(p, hi > 0 ? hi : 0)) + '" width="800" height="1000" loading="eager" fetchpriority="high"') + "</a>";
     });
     var tag = $("#hero-tag");
     if (tag && a) { if (tag.getAttribute("href") !== url(a)) tag.setAttribute("href", url(a)); setHTML(tag, '<span class="dot"></span>' + (isNew(a) ? esc(T().badge.neu) + " · " : "") + esc(L(a.name))); }
@@ -264,7 +279,7 @@
     var ig = $("#ig-grid");
     if (ig) {
       var pics = PRODUCTS.slice().sort(byNewest).slice(0, 6);
-      setHTML(ig, pics.map(function (p) { return '<a href="https://www.instagram.com/' + C.INSTAGRAM + '/" target="_blank" rel="noopener" aria-label="Instagram @' + C.INSTAGRAM + ": " + esc(L(p.name)) + '"><img' + fitAttr(p) + ' src="' + esc(photo(p)) + '" alt="" loading="lazy"' + photoBox(p) + "></a>"; }).join(""));
+      setHTML(ig, pics.map(function (p) { return '<a href="https://www.instagram.com/' + C.INSTAGRAM + '/" target="_blank" rel="noopener" aria-label="Instagram @' + C.INSTAGRAM + ": " + esc(L(p.name)) + '">' + picture(photo(p), "(min-width: 800px) 16vw, 33vw", fitAttr(p) + ' alt="" loading="lazy"' + photoBox(p)) + "</a>"; }).join(""));
     }
   }
 
