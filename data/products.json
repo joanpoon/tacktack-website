@@ -1243,6 +1243,7 @@
   {
    "slug": "dulton-double-face-clock-grey",
    "zhType": "雙面鐘",
+   "sku": "TT-DUL-0001",
    "featured": false,
    "dropDate": "2026-09-17",
    "newFrom": "2026-10-08",
@@ -1437,6 +1438,7 @@
   {
    "slug": "akari-55d",
    "zhType": "和紙吊燈",
+   "sku": "TT-NOG-0001",
    "featured": true,
    "dropDate": "2026-09-24",
    "newFrom": "2026-10-08",
@@ -1525,6 +1527,7 @@
   {
    "slug": "akari-30a",
    "zhType": "和紙吊燈",
+   "sku": "TT-NOG-0002",
    "oldSlugs": [
     "akari-33a"
    ],
@@ -1714,6 +1717,7 @@
   {
    "slug": "heller-swell-white",
    "zhType": "波浪掛牆收納",
+   "sku": "TT-SWE-0001",
    "featured": true,
    "dropDate": "2026-10-01",
    "brand": "Heller",
@@ -1804,6 +1808,7 @@
   {
    "slug": "heller-swell-mini-red-orange",
    "zhType": "波浪掛鈎",
+   "sku": "TT-SWE-0002",
    "featured": false,
    "dropDate": "2026-10-01",
    "brand": "Heller",
@@ -1894,6 +1899,7 @@
   {
    "slug": "heller-swell-mini-cream",
    "zhType": "波浪掛鈎",
+   "sku": "TT-SWE-0003",
    "oldSlugs": [
     "heller-swell-mini-white"
    ],
@@ -1984,6 +1990,7 @@
   {
    "slug": "heller-swell-mini-blue",
    "zhType": "波浪掛鈎",
+   "sku": "TT-SWE-0004",
    "featured": false,
    "dropDate": "2026-10-01",
    "brand": "Heller",
