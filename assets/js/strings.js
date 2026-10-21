@@ -10,7 +10,7 @@ window.TT_STRINGS = {
     grades: {
       "brand-new": ["Brand new", "Unused, never installed; in its original packaging unless stated."],
       "display": ["Display", "Never used at home, shown in a showroom or shop; may have light handling marks or no original box, with the details in the notes."],
-      "excellent": ["Excellent", "Lightly used; no marks visible at a normal distance, works perfectly."],
+      "excellent": ["Excellent", "Lightly used, and it works perfectly."],
       "good": ["Good", "Honest wear consistent with age, all shown in photos; sound and fully working."],
       "fair": ["Fair", "Clear wear, a repair or a replaced part, described and priced to match."]
     },
@@ -34,7 +34,7 @@ window.TT_STRINGS = {
       preorderNoted: "Once it lands in Hong Kong, pick up from the showroom by appointment or we deliver across Hong Kong, quoted on WhatsApp."
     },
     policy: {
-      sold: "This piece has sold, so it's no longer priced. Message us on WhatsApp and we'll tell you when we find a similar one.",
+      sold: "This piece has found a new home. WhatsApp us for something similar.",
       full: p => "Under HK$1,500: reserve by paying in full (" + p + "). Pick up or arrange delivery within 7 days.",
       preorderFull: p => "Pre-order by paying in full (" + p + "). It is not in Hong Kong yet: we ship it when it lands, then you pick up from the showroom by appointment or we deliver.",
       preorderFullNoted: p => "Pre-order by paying in full (" + p + "). It is not in Hong Kong yet: we ship it when it lands, then you pick up from the showroom by appointment or we deliver.",
@@ -65,7 +65,7 @@ window.TT_STRINGS = {
     condGuide: "Condition guide", contact: "Contact",
     sizeTitle: function (b) { return "Which " + b + " size?"; }, sizeNote: "Shades drawn to scale. Tap a size to see it.",
     trust: { neu: "Brand new, unused", genuine: "Authentic designer piece", pickup: "Showroom pickup by appointment or delivery across Hong Kong", photos: "Real photos and measurements on WhatsApp" },
-    notices: { cordNotIncluded: "Cord add-on and installation available. WhatsApp us for a quote.", moreColours: "More colourways available to order. Coming soon." },
+    notices: { cordNotIncluded: "Shade only. Hong Kong wiring and installation are available on request.", moreColours: "More colourways available to order. Coming soon." },
     install: "Installation service available. Ask us for details.", gallery: "Product photos", photoN: function (i, n) { return "Photo " + i + " of " + n; }, photoMore: function (i) { return " (photo " + i + ")"; },
     filters: { category: "Category", brand: "Brand / designer", status: "Availability", price: "Price", sort: "Sort", reset: "Clear filters" },
     status: { active: "Available & on hold", available: "Available now", "pre-order": "Pre-order", "on-hold": "On hold", sold: "Sold", all: "Everything" },
@@ -88,7 +88,7 @@ window.TT_STRINGS = {
     grades: {
       "brand-new": ["全新", "未使用、未安裝；除另有註明外，連原裝包裝。"],
       "display": ["展示品", "未曾家用，曾於陳列室或店舖展示；或有輕微搬運痕跡或無原裝盒，詳見備註。"],
-      "excellent": ["極佳", "輕度使用；正常距離看不到痕跡，功能完好。"],
+      "excellent": ["極佳", "輕度使用，功能完好。"],
       "good": ["良好", "有與年份相符的使用痕跡，全部有相片；結構穩固、功能正常。"],
       "fair": ["一般", "明顯磨損、曾維修或更換零件，已詳述並反映於價格。"]
     },
@@ -112,7 +112,7 @@ window.TT_STRINGS = {
       preorderNoted: "到港後可於 Showroom 預約自取，或全港送貨（運費經 WhatsApp 報價）。"
     },
     policy: {
-      sold: "這件已售出，不再標價。WhatsApp 我們，找到同類貨品會通知你。",
+      sold: "這件已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。",
       full: p => "HK$1,500 以下貨品須全數付款（" + p + "）方可確認，並於 7 天內自取或安排送貨。",
       preorderFull: p => "預購須全數付款（" + p + "）。這件尚未到港：日本空運，到港後才安排自取或送貨。",
       preorderFullNoted: p => "預購須全數付款（" + p + "）。這件尚未到港，到港後才安排自取或送貨。",
@@ -143,7 +143,7 @@ window.TT_STRINGS = {
     condGuide: "品相指南", contact: "聯絡",
     sizeTitle: function (b) { return "選哪個 " + b + " 尺寸？"; }, sizeNote: "燈罩按實際比例繪畫，按一下查看。",
     trust: { neu: "全新未使用", genuine: "正品設計好物", pickup: "Showroom 預約自取或全港送貨", photos: "WhatsApp 即可索取實物相片及尺寸" },
-    notices: { cordNotIncluded: "可加配電線及安裝服務，歡迎 WhatsApp 查詢報價。", moreColours: "更多顏色可訂購，即將推出。" },
+    notices: { cordNotIncluded: "只售燈罩。香港電線及安裝可按需要安排。", moreColours: "更多顏色可訂購，即將推出。" },
     install: "提供安裝服務，歡迎查詢詳情。", gallery: "產品相片", photoN: function (i, n) { return "第 " + i + " 張相片（共 " + n + " 張）"; }, photoMore: function (i) { return "（相片 " + i + "）"; },
     filters: { category: "類別", brand: "品牌／設計師", status: "供應狀況", price: "價錢", sort: "排序", reset: "清除篩選" },
     status: { active: "有貨及已留貨", available: "現貨", "pre-order": "預購", "on-hold": "已留貨", sold: "已售出", all: "全部" },
