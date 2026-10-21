@@ -16,6 +16,8 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -146,6 +148,7 @@ def main() -> None:
             n += 1
             print(path.relative_to(ROOT))
     print(f"{n} pages")
+    subprocess.check_call([sys.executable, str(ROOT / "scripts" / "build-merchant-feed.py")])
 
 
 if __name__ == "__main__":

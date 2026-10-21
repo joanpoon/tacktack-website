@@ -52,3 +52,6 @@ Disallow: /zh/product/
 
 Sitemap: https://tacktackstudio.com/sitemap.xml
 # Plain-text summary for AI assistants: https://tacktackstudio.com/llms.txt
+# Google Merchant Center fetches these product feeds directly. They are not sitemaps.
+# https://tacktackstudio.com/feeds/google-merchant.xml
+# https://tacktackstudio.com/feeds/google-merchant-zh.xml
