@@ -9,7 +9,7 @@ window.TT_STRINGS = {
     badge: { hold: "On hold", sold: "Sold", neu: "New this week", preorder: "Pre-order" },
     grades: {
       "brand-new": ["Brand new", "Unused, never installed; in its original packaging unless stated."],
-      "display": ["Display", "Never used at home, shown in a showroom or shop; may have light handling marks or no original box, with the details in the notes."],
+      "display": ["Display", "Never used at home, shown in a showroom or shop."],
       "excellent": ["Excellent", "Lightly used, and it works perfectly."],
       "good": ["Good", "Honest wear consistent with age, all shown in photos; sound and fully working."],
       "fair": ["Fair", "Clear wear, a repair or a replaced part, described and priced to match."]
@@ -87,7 +87,7 @@ window.TT_STRINGS = {
     badge: { hold: "已留貨", sold: "已售出", neu: "本週新貨", preorder: "預購" },
     grades: {
       "brand-new": ["全新", "未使用、未安裝；除另有註明外，連原裝包裝。"],
-      "display": ["展示品", "未曾家用，曾於陳列室或店舖展示；或有輕微搬運痕跡或無原裝盒，詳見備註。"],
+      "display": ["展示品", "未曾家用，曾於陳列室或店舖展示。"],
       "excellent": ["極佳", "輕度使用，功能完好。"],
       "good": ["良好", "有與年份相符的使用痕跡，全部有相片；結構穩固、功能正常。"],
       "fair": ["一般", "明顯磨損、曾維修或更換零件，已詳述並反映於價格。"]
