@@ -89,8 +89,8 @@
    "featured": false,
    "dropDate": "2026-10-18",
    "name": {
-    "en": "Made in Japan · rental-friendly wall hook for DULTON clocks & pictures",
-    "zh": "日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫"
+    "en": "Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures",
+    "zh": "租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫"
    },
    "colour": {
     "en": "Silver / white",
@@ -101,8 +101,8 @@
     "zh": "日本製造"
    },
    "description": {
-    "en": "Set of 2, silver / white, brand new. Made in Japan. A rental-friendly wall hook for gypsum board, for a DULTON clock, a picture, a Heller Swell (including Mini), or a Nara print in the solid wood picture frame. 7KG load capacity each.",
-    "zh": "兩件裝，銀色／白色，全新。日本製。租屋友好的石膏板掛牆掛鈎，可配 DULTON 時鐘、畫、Heller Swell（包括 Mini），或配實木相框的奈良美智海報。單個承重7KG。"
+    "en": "Set of 2, silver / white, brand new. Made in Japan. A rental-friendly wall hook for gypsum board, for a DULTON clock, a picture, a Heller Swell (including Mini), or a Nara print in the solid wood picture frame. Holds up to 7 kg each.",
+    "zh": "兩件裝，銀色／白色，全新。日本製。租屋友善的石膏板掛牆掛鈎，可配 DULTON 時鐘、畫、Heller Swell（包括 Mini），或配實木相框的奈良美智海報。單個最多承重 7 kg。"
    },
    "details": {
     "en": [
@@ -110,7 +110,7 @@
      "Silver / white",
      "Brand new",
      "Made in Japan",
-     "7KG load capacity each",
+     "Holds up to 7 kg each",
      "Rental-friendly wall hook for gypsum board",
      "For a DULTON clock, a Heller Swell (including Mini), a Nara print, or the solid wood picture frame"
     ],
@@ -119,8 +119,8 @@
      "銀色／白色",
      "全新",
      "日本製",
-     "單個承重7KG",
-     "租屋友好的石膏板掛牆掛鈎",
+     "單個最多承重 7 kg",
+     "租屋友善的石膏板掛牆掛鈎",
      "可配 DULTON 時鐘、Heller Swell（包括 Mini）、奈良美智海報或實木相框"
     ]
    },
@@ -140,8 +140,8 @@
    ],
    "photoFit": "contain",
    "photoAlt": {
-    "en": "Wall hook with a white round cap and a grey hook, labelled made in Japan, rental-friendly wall hook for DULTON clocks and pictures, 7KG each, set of 2",
-    "zh": "掛牆掛鈎，白色圓蓋配灰色掛鈎，標明日本製、租屋友好掛鈎適合 DULTON 時鐘與掛畫、單個承重7KG、兩件裝"
+    "en": "Wall hook with a white round cap and a grey hook, labelled made in Japan, rental-friendly wall hook for DULTON clocks and pictures, holds up to 7 kg each, set of 2",
+    "zh": "掛牆掛鈎，白色圓蓋配灰色掛鈎，標明日本製、租屋友善掛鈎適合 DULTON 時鐘與掛畫、單個最多承重 7 kg、兩件裝"
    },
    "addons": [
     "dulton-double-face-clock-grey",
@@ -155,7 +155,11 @@
     "yoshitomo-nara-green-eyes",
     "yoshitomo-nara-eye-patch",
     "solid-wood-picture-frame-for-nara-prints"
-   ]
+   ],
+   "stockNote": {
+    "en": "Coming soon · pre-order available.",
+    "zh": "即將到貨 · 接受預購。"
+   }
   },
   {
    "slug": "solid-wood-picture-frame-for-nara-prints",
@@ -188,7 +192,7 @@
      "Outer size W 33.7 × D 2 × H 46 cm",
      "Inner opening sized for the Nara prints",
      "Add-on for the Green Eyes and Eye Patch prints",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "實木，可掛牆",
@@ -198,7 +202,7 @@
      "外尺寸闊 33.7 × 深 2 × 高 46 cm",
      "內開口按奈良美智海報尺寸",
      "可加購，配 Green Eyes 及 Eye Patch 海報",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -232,7 +236,7 @@
    },
    "addonNote": {
     "en": "An add-on for the Nara prints. The wall hook is optional, for hanging on gypsum board.",
-    "zh": "這是奈良美智海報的加購相框。石膏板掛牆可另配租屋友好掛鈎。"
+    "zh": "這是奈良美智海報的加購相框。石膏板掛牆可另配租屋友善掛鈎。"
    },
    "addons": [
     "yoshitomo-nara-green-eyes",
@@ -272,7 +276,7 @@
      "Brand new",
      "Unframed; framed photos are for reference only",
      "Small piece: courier across Hong Kong",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45.",
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45.",
      "Optional add-on: solid wood picture frame for Nara prints, white, hanging, HK$98."
     ],
     "zh": [
@@ -281,7 +285,7 @@
      "全新",
      "不連相框；有框相片僅供參考",
      "小件貨品，可安排全港速遞",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。",
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。",
      "可加購：實木掛牆相框，適合奈良美智海報，白色，HK$98。"
     ]
    },
@@ -326,7 +330,7 @@
    },
    "addonNote": {
     "en": "The print is unframed. Add the white solid wood picture frame, and the wall hook if you want to hang it.",
-    "zh": "海報不連相框。可加購白色實木掛牆相框；如要掛牆，可再配租屋友好掛鈎。"
+    "zh": "海報不連相框。可加購白色實木掛牆相框；如要掛牆，可再配租屋友善掛鈎。"
    },
    "addons": [
     "solid-wood-picture-frame-for-nara-prints",
@@ -366,7 +370,7 @@
      "Brand new",
      "Unframed; framed photos are for reference only",
      "Small piece: courier across Hong Kong",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45.",
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45.",
      "Optional add-on: solid wood picture frame for Nara prints, white, hanging, HK$98."
     ],
     "zh": [
@@ -375,7 +379,7 @@
      "全新",
      "不連相框；有框相片僅供參考",
      "小件貨品，可安排全港速遞",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。",
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。",
      "可加購：實木掛牆相框，適合奈良美智海報，白色，HK$98。"
     ]
    },
@@ -423,7 +427,7 @@
    },
    "addonNote": {
     "en": "The print is unframed. Add the white solid wood picture frame, and the wall hook if you want to hang it.",
-    "zh": "海報不連相框。可加購白色實木掛牆相框；如要掛牆，可再配租屋友好掛鈎。"
+    "zh": "海報不連相框。可加購白色實木掛牆相框；如要掛牆，可再配租屋友善掛鈎。"
    },
    "addons": [
     "solid-wood-picture-frame-for-nara-prints",
@@ -1268,7 +1272,7 @@
      "Runs on 2 × AA batteries",
      "Shipped from Japan",
      "Rental-friendly: stand it on a shelf, or mount on the wall.",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "雙面鐘面，兩邊都能看到時間",
@@ -1277,7 +1281,7 @@
      "使用 2 粒 AA 電池",
      "日本直送",
      "租屋友善：可放在層架上，或裝在牆上。",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -1362,7 +1366,7 @@
      "Runs on 2 × AA batteries",
      "In stock in Hong Kong",
      "Rental-friendly: stand it on a shelf, or mount on the wall.",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "雙面鐘面，兩邊都能看到時間",
@@ -1371,7 +1375,7 @@
      "使用 2 粒 AA 電池",
      "香港現貨",
      "租屋友善：可放在層架上，或裝在牆上。",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -1744,13 +1748,13 @@
      "Holds up to 34 kg (75 lb), per Heller",
      "Wall-mounted, with Heller fixings",
      "Apartment Therapy Small/Cool Design Award 2024",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "根據 Heller，承重可達 34 kg（75 lb）",
      "掛牆安裝，配 Heller 配件",
      "2024 年 Apartment Therapy Small/Cool 設計獎",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -1834,13 +1838,13 @@
      "Holds up to 8.6 kg (19 lb), per Heller",
      "Indoor/outdoor use",
      "Wall-mounted, with Heller bracket and screws",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "根據 Heller，承重可達 8.6 kg（19 lb）",
      "室內及戶外均可使用",
      "掛牆安裝，配 Heller 掛牆支架及螺絲",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -1927,13 +1931,13 @@
      "Holds up to 8.6 kg (19 lb), per Heller",
      "Indoor/outdoor use",
      "Wall-mounted, with Heller bracket and screws",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "根據 Heller，承重可達 8.6 kg（19 lb）",
      "室內及戶外均可使用",
      "掛牆安裝，配 Heller 掛牆支架及螺絲",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -1963,7 +1967,7 @@
    ],
    "photoAlt": {
     "en": "The Cream Swell Mini beside a bed, holding headphones above a green bedside table",
-    "zh": "奶油色 Swell Mini 掛在床邊，掛着耳機，下面是綠色床頭几"
+    "zh": "奶油色 Swell Mini 掛在床邊，掛着耳機，下面是綠色床頭櫃"
    },
    "photoAlts": {
     "en": [
@@ -1971,7 +1975,7 @@
      "Heller Swell Mini wall hook and catchall in Cream by Anna Dawson: a single wave-shaped hook and bowl"
     ],
     "zh": [
-     "奶油色 Swell Mini 掛在床邊，掛着耳機，下面是綠色床頭几",
+     "奶油色 Swell Mini 掛在床邊，掛着耳機，下面是綠色床頭櫃",
      "Heller Swell Mini 波浪掛牆掛鈎收納（奶油色），Anna Dawson 設計：單個波浪形掛鈎連收納碗"
     ]
    },
@@ -2014,13 +2018,13 @@
      "Holds up to 8.6 kg (19 lb), per Heller",
      "Indoor/outdoor use",
      "Wall-mounted, with Heller bracket and screws",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "根據 Heller，承重可達 8.6 kg（19 lb）",
      "室內及戶外均可使用",
      "掛牆安裝，配 Heller 掛牆支架及螺絲",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -2102,13 +2106,13 @@
      "Holds up to 34 kg (75 lb), per Heller",
      "Wall-mounted, with Heller fixings",
      "Apartment Therapy Small/Cool Design Award 2024",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "根據 Heller，承重可達 34 kg（75 lb）",
      "掛牆安裝，配 Heller 配件",
      "2024 年 Apartment Therapy Small/Cool 設計獎",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
@@ -2196,13 +2200,13 @@
      "Holds up to 34 kg (75 lb), per Heller",
      "Wall-mounted, with Heller fixings",
      "Apartment Therapy Small/Cool Design Award 2024",
-     "Optional add-on: Made in Japan · rental-friendly wall hook for DULTON clocks & pictures, set of 2, 7KG load capacity each, HK$45."
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
     "zh": [
      "根據 Heller，承重可達 34 kg（75 lb）",
      "掛牆安裝，配 Heller 配件",
      "2024 年 Apartment Therapy Small/Cool 設計獎",
-     "可加購：日本製 · 租屋友好掛鈎，適合 DULTON 時鐘與掛畫，兩件裝，單個承重7KG，HK$45。"
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
    },
    "category": "decor",
