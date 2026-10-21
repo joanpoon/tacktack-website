@@ -339,6 +339,9 @@ html[data-lang="zh"] .block h2 { letter-spacing: .1em; font-size: .82rem; }
 @media (min-width: 900px) { .story { grid-template-columns: 1fr 2fr; } }
 .story h2 { margin-top: .3em; }
 .story p { font-size: 1.05rem; line-height: 1.75; margin: 0; }
+.story-body { display: grid; gap: 14px; }
+.story-body ul { margin: 0; padding-left: 1.2em; }
+.story-body li { margin: .2em 0; }
 .sticky-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; background: rgba(245,239,228,.96); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-top: 1px solid var(--line); padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); display: flex; gap: 12px; align-items: center; transform: translateY(110%); transition: transform .25s; }
 .sticky-cta.show { transform: none; }
 .sticky-cta .p { font-weight: 600; line-height: 1.2; font-size: .95rem; min-width: 0; }
