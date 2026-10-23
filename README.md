@@ -36,7 +36,7 @@ To scan only files you changed against `origin/main`:
 python3 scripts/check-public-copy.py
 ```
 
-The check fails on unit-comparison lines, site-mechanics hedges, “previously on display”, “no original box”, `花盆燈`, the Japanese middle-dot `・`, boxed-new wording except the two locked Flowerpot SKUs, raw SKU / 貨號 in body copy, exclusive-dealer claims, and private cost / source / qty / showroom-address lines.
+The check fails on unit-comparison lines, site-mechanics hedges, “previously on display”, “no original box”, `花盆燈`, the Japanese middle-dot `・`, raw SKU / 貨號 in body copy, exclusive-dealer claims, and private cost / source / qty / showroom-address lines.
 
 The same script aligns each product page's schema.org Product and Offer JSON-LD (name, description, sku, brand, image, and the offer's price, currency, availability, condition, and url) with the catalog and the copy already on the page. It does not change visible copy. Sold pages use `https://schema.org/SoldOut`.
 

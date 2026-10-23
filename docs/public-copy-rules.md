@@ -4,6 +4,8 @@ Source of truth for tacktackstudio.com product and site copy.
 
 Joan locked these on **21 Oct 2026** after rejects on [PR #57](https://github.com/joanpoon/tacktack-website/pull/57) and the follow-up copy cleanup. The checker reads the JSON block at the bottom of this file. Do not add a banned phrase unless Joan re-locks it and this file is updated first.
 
+**23 Oct 2026.** Joan lifted the ban on `with box` / `boxed` / `連盒` next to Brand new / 全新. Her words: "980 is brand new without box 1080 is brand new with box". `Brand new, with box`, `Brand new, without box`, 「全新連盒」, and 「全新，不連盒」 are allowed on any SKU. The `brand-new-boxed` rule and its Flowerpot VP9-only exception are removed.
+
 Live catalog copy lives in:
 
 - `data/products.json` (names, descriptions, details, condition notes)
@@ -33,21 +35,7 @@ A failing run prints the file, the rule id, and the matched phrase. Fix the copy
 
 ## Exceptions (Joan-locked)
 
-Use these exact sentences only on the listed public slugs / SKUs. They exist so the privacy and boxed-new checks do not false-hold locked shop language.
-
-### Flowerpot VP9 — box line
-
-Joan, 21 Oct 2026 16:42 HKT. **Matt Black and Dark Green only.**
-
-| Public name | Slug | SKU |
-| --- | --- | --- |
-| Flowerpot VP9 · Matt Black | `andtradition-flowerpot-vp9-matt-black` | `TT-ANT-0011` |
-| Flowerpot VP9 · Dark Green | `andtradition-flowerpot-vp9-dark-green` | `TT-ANT-0012` |
-
-Allowed sentence (EN): `Brand new, with box, charging cable included`
-Allowed sentence (ZH): `全新連盒，附充電線`
-
-The `&Tradition` brand pages may repeat that sentence when they describe those two lamps. No other SKU may say boxed / with box / 連盒 next to Brand new / 全新.
+Use these exact sentences only on the listed public slugs / SKUs. They exist so the checks do not false-hold locked shop language.
 
 ### Heller Swell — official dealer
 
@@ -79,7 +67,6 @@ Clear bans. The checker fails closed on these.
 | `no-original-box` | `may have no original box`, `no original box`, `可能沒有原盒`, `不附原盒` | Unless Joan re-locks it. |
 | `flowerpot-zh-name` | `花盆燈` | House name is **Flowerpot 燈**. |
 | `katakana-middle-dot` | `・` (U+30FB) | Use `·` (U+00B7). |
-| `brand-new-boxed` | `boxed` / `with box` / `連盒` next to Brand new / 全新 | Except the two Flowerpot SKUs above, using the locked sentence only. |
 | `raw-sku` | Bare `TT-XXX-0000` codes in public body copy | JSON-LD `sku`, catalog `sku`, and a labeled SKU / 貨號 field stay. Do not drop a code into a caption or story. |
 | `exclusive-dealer` | exclusive / sole dealer, 獨家, 唯一授權 | Heller is official, not exclusive. |
 | `privacy-cost` | unit cost, our cost, purchase cost, 成本, 進貨價 | Public retail “what does it cost?” is fine. |
@@ -133,23 +120,6 @@ Clear bans. The checker fails closed on these.
     "(?:SKU|貨號)\\s*[:：]?\\s*TT-[A-Z]{3}-\\d{4}"
   ],
   "exceptions": [
-    {
-      "id": "flowerpot-box",
-      "locked": "Joan 21 Oct 2026 16:42 HKT",
-      "slugs": [
-        "andtradition-flowerpot-vp9-matt-black",
-        "andtradition-flowerpot-vp9-dark-green"
-      ],
-      "skus": ["TT-ANT-0011", "TT-ANT-0012"],
-      "path_prefixes": [
-        "brand/andtradition/",
-        "zh/brand/andtradition/"
-      ],
-      "phrases": [
-        "Brand new, with box, charging cable included",
-        "全新連盒，附充電線"
-      ]
-    },
     {
       "id": "heller-dealer",
       "locked": "Official dealer, not exclusive or sole",
@@ -261,15 +231,6 @@ Clear bans. The checker fails closed on these.
       "scope": "all",
       "reason": "Use middle dot U+00B7 (·), not katakana middle dot U+30FB (・).",
       "patterns": ["・"]
-    },
-    {
-      "id": "brand-new-boxed",
-      "scope": "all",
-      "reason": "Boxed / with box / 連盒 next to Brand new / 全新 is locked to two Flowerpot SKUs.",
-      "patterns": [
-        "(?:brand\\s*new|全新).{0,48}(?:with\\s+box|\\bboxed\\b|連盒)",
-        "(?:with\\s+box|\\bboxed\\b|連盒).{0,48}(?:brand\\s*new|全新)"
-      ]
     },
     {
       "id": "raw-sku",

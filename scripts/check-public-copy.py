@@ -298,17 +298,14 @@ def print_hits(hits: list[tuple[str, str, str, str]]) -> None:
 
 def self_test() -> None:
     rules = load_rules()
-    box = "Brand new, with box, charging cable included. Charging cable included."
-    zh_box = "全新連盒，附充電線。"
     dealer = "Official Heller dealer. Heller 官方授權經銷商。"
-    slug_box = "andtradition-flowerpot-vp9-matt-black"
-    slug_other = "andtradition-flowerpot-vp9-mustard"
     slug_swell = "heller-swell-white"
 
-    assert not scan_text(box, rules, f"item/{slug_box}/index.html", "t", slug=slug_box)
-    assert not scan_text(zh_box, rules, f"zh/item/{slug_box}/index.html", "t", slug=slug_box)
-    assert scan_text(box, rules, f"item/{slug_other}/index.html", "t", slug=slug_other)
-    assert scan_text("Brand new, with box.", rules, f"item/{slug_box}/index.html", "t", slug=slug_box)
+    assert not scan_text("Brand new, with box.", rules, "item/x/index.html", "t", slug="x")
+    assert not scan_text("Brand new, without box.", rules, "item/x/index.html", "t", slug="x")
+    assert not scan_text("Brand new, boxed.", rules, "item/x/index.html", "t", slug="x")
+    assert not scan_text("全新連盒。", rules, "item/x/index.html", "t", slug="x")
+    assert not scan_text("全新，不連盒。", rules, "item/x/index.html", "t", slug="x")
     assert not scan_text(dealer, rules, f"item/{slug_swell}/index.html", "t", slug=slug_swell)
     assert not scan_text("Official Heller dealer.", rules, "about/index.html", "t")
     assert scan_text("Exclusive Heller dealer.", rules, f"item/{slug_swell}/index.html", "t", slug=slug_swell)
