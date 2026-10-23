@@ -1,0 +1,23 @@
+name: Public copy
+
+on:
+  pull_request:
+
+jobs:
+  check:
+    name: Banned phrases
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Fetch PR base
+        run: git fetch --no-tags origin "${{ github.base_ref }}"
+      - name: Scan changed public copy
+        run: python3 scripts/check-public-copy.py --base "origin/${{ github.base_ref }}"
+      - name: Full scan when the rules or checker change
+        run: |
+          if git diff --name-only "origin/${{ github.base_ref }}...HEAD" \
+            | grep -Eq '^(docs/public-copy-rules\.md|scripts/check-public-copy\.py|\.github/workflows/public-copy\.yml)$'; then
+            python3 scripts/check-public-copy.py --all
+          fi
