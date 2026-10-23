@@ -5,7 +5,7 @@ window.TT_STRINGS = {
     cat: { lighting: "Lighting", seating: "Seating", sofas: "Sofas & Lounge", storage: "Storage", tables: "Tables", decor: "Decor & Objects", other: "Other" },
     all: "All",
     pieces: n => n === 1 ? "1 piece" : n + " pieces",
-    comingSoon: "Coming soon", dropH: { neu: "This week's drop", latest: "Latest pieces" },
+    comingSoon: "Coming soon", dropH: { neu: "New this week", latest: "Latest pieces" },
     badge: { hold: "On hold", sold: "Sold", neu: "New this week", preorder: "Pre-order" },
     grades: {
       "brand-new": ["Brand new", "Unused, never installed; in its original packaging unless stated."],

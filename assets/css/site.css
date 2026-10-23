@@ -6,14 +6,20 @@
   font-style: normal;
   font-display: swap;
 }
-/* Paytone One (SIL OFL 1.1, licence in assets/fonts/PaytoneOne-OFL.txt): the wordmark face, used ONLY for
-   display headings (hero, page titles, section titles, story titles). Body and UI stay DM Sans. */
+/* Display face: a Latin subset of Paytone One (SIL OFL 1.1, licence in assets/fonts/PaytoneOne-OFL.txt),
+   named Tack Display because Paytone/Paytone One are Reserved Font Names. Display headings only; body stays DM Sans.
+   Tack Display Fallback is metric-matched so the swap does not move the headline. */
 @font-face {
-  font-family: "Paytone One";
-  src: url("/assets/fonts/PaytoneOne-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  font-family: "Tack Display Fallback";
+  src: local("Arial"), local("Liberation Sans"), local("Arimo"), local("Nimbus Sans");
+  font-weight: 400; font-style: normal; font-display: swap;
+  size-adjust: 107.33%; ascent-override: 103.7%; descent-override: 26.37%; line-gap-override: 0%;
+}
+@font-face {
+  font-family: "Tack Display";
+  src: url("/assets/fonts/tack-display-latin.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 :root {
@@ -31,7 +37,7 @@
   --radius-sm: 12px;
   --wrap: 1240px;
   --gutter: clamp(20px, 4vw, 48px);
-  --display: "Paytone One", "DM Sans", system-ui, sans-serif;
+  --display: "Tack Display", "Tack Display Fallback", "DM Sans", system-ui, sans-serif;
   --font: "DM Sans", "PingFang HK", "PingFang TC", "Noto Sans TC", "Noto Sans CJK TC", "Microsoft JhengHei", system-ui, sans-serif;
   --shadow: 0 1px 2px rgba(75,46,33,.06), 0 8px 30px rgba(75,46,33,.06);
 }
@@ -484,3 +490,48 @@ body.has-sticky { padding-bottom: 76px; }
 .promo-bar p { margin: 0; }
 .promo-bar a { color: inherit; text-decoration: underline; text-underline-offset: 2px; white-space: nowrap; }
 @media (max-width: 520px) { .promo-bar { font-size: .74rem; padding: 6px 14px; } }
+
+/* ---------- warm editorial homepage (Joan, Oct 2026) ----------
+   Blue #ADDCFB is a small accent only here: the New this week dot, link underlines, the WhatsApp pill and a thin footer rule. */
+body[data-page="home"] { background: #FBF7F0; }
+body[data-page="home"] .site-header { background: #FBF7F0; }
+.w-hero { position: relative; height: clamp(520px, 62vw, 820px); overflow: hidden; background: #d9c8b4; }
+.w-hero picture, .w-hero img { display: block; width: 100%; height: 100%; }
+.w-hero img { object-fit: cover; object-position: 50% 50%; }
+.w-hero-text { position: absolute; left: clamp(24px, 5vw, 72px); top: 56%; color: var(--walnut); margin: 0; }
+.w-hero-title { display: block; font-family: var(--display); font-size: clamp(2.9rem, 5.8vw, 5.25rem); line-height: 1; letter-spacing: -.012em; }
+.w-hero-sub { display: block; margin-top: 18px; font-family: var(--display); font-size: clamp(.9rem, 1.4vw, 1.25rem); }
+.w-hero-sub a { text-decoration: none; color: inherit; }
+.w-intro { max-width: 720px; margin: 0 auto; padding: clamp(88px, 10vw, 150px) 26px clamp(88px, 9vw, 140px); text-align: center; }
+.w-intro h1 { font-size: clamp(2rem, 3.2vw, 2.9rem); margin: 22px 0 0; }
+.w-intro .w-slogan { font-family: var(--font); font-size: clamp(1.2rem, 1.7vw, 1.5rem); line-height: 1.7; margin-top: 18px; font-weight: 300; letter-spacing: 2px; }
+.w-intro p.w-lede { font-size: clamp(1rem, 1.25vw, 1.125rem); line-height: 1.8; margin: 44px 0 0; color: #6b5346; }
+.w-pill { display: inline-block; margin-top: 40px; background: var(--blue); color: var(--walnut); font-size: .875rem; padding: 12px 26px; border-radius: 999px; letter-spacing: .02em; text-decoration: none; }
+.w-pill:hover { text-decoration: none; filter: brightness(.97); }
+body[data-page="home"] .text-link { text-decoration: none; border-bottom: 3px solid var(--blue); padding-bottom: 3px; white-space: nowrap; }
+body[data-page="home"] .eyebrow { color: #8a7262; letter-spacing: .2em; }
+.w-drop .eyebrow::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--blue); box-shadow: 0 0 0 1.5px var(--walnut); margin-right: 10px; vertical-align: 1px; }
+body[data-page="home"] .w-drop { padding-bottom: clamp(90px, 10vw, 150px); }
+body[data-page="home"] .card-media { border-radius: 0; background: #eee3d3; }
+body[data-page="home"] .grid-4 { gap: 28px; }
+.w-split { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; padding-bottom: clamp(90px, 10vw, 140px); }
+.w-tile { position: relative; display: block; aspect-ratio: 4 / 5; overflow: hidden; text-decoration: none; color: var(--walnut); }
+.w-tile picture, .w-tile img { display: block; width: 100%; height: 100%; }
+.w-tile img { object-fit: cover; }
+.w-tile-t { position: absolute; left: 0; right: 0; top: 9%; text-align: center; font-family: var(--display); font-size: clamp(2.2rem, 3.4vw, 3rem); line-height: 1.05; }
+.w-tile-c { position: absolute; left: 0; right: 0; top: calc(9% + 64px); text-align: center; font-family: var(--display); font-size: clamp(.95rem, 1.3vw, 1.125rem); }
+.w-tile.is-light { color: #F6EFE3; }
+.w-tile.is-right .w-tile-t, .w-tile.is-right .w-tile-c { text-align: right; left: auto; right: 40px; }
+body[data-page="home"] .panel-blue, body[data-page="home"] .panel-paper { background: transparent; }
+body[data-page="home"] .panel-blue .step { background: transparent; border: 1px solid var(--line); }
+body[data-page="home"] .site-footer { border-top: 3px solid var(--blue); margin-top: 0; }
+@media (max-width: 600px) {
+  .w-hero { height: 560px; }
+  .w-hero-text { left: 24px; top: 12%; }
+  .w-hero-sub { margin-top: 12px; }
+  body[data-page="home"] .grid-4 { gap: 28px 14px; }
+  .w-split { grid-template-columns: 1fr; gap: 16px; }
+  .w-tile-c { top: calc(9% + 52px); }
+  .w-tile.is-right .w-tile-t { font-size: 1.75rem; top: 7%; max-width: 40%; right: 22px; }
+  .w-tile.is-right .w-tile-c { font-size: .75rem; top: calc(7% + 70px); max-width: 36%; right: 22px; line-height: 1.4; }
+}
