@@ -1776,8 +1776,8 @@
    "condition": {
     "grade": "brand-new",
     "notes": {
-     "en": "",
-     "zh": ""
+     "en": "Brand new, without box. Unused, never installed.",
+     "zh": "全新，不連盒。未使用、未安裝。"
     }
    },
    "price": 980,
@@ -2137,8 +2137,8 @@
    "condition": {
     "grade": "brand-new",
     "notes": {
-     "en": "",
-     "zh": ""
+     "en": "Brand new, without box. Unused, never installed.",
+     "zh": "全新，不連盒。未使用、未安裝。"
     }
    },
    "price": 980,
@@ -2170,6 +2170,94 @@
      "橙紅色 Heller Swell 掛在白牆上，掛着啡色手袋及小物",
      "客廳牆上的橙紅色 Heller Swell 掛着帽及帆布袋，旁邊是同色 Swell Mini",
      "Heller Swell 波浪掛牆收納（橙紅色），Anna Dawson 設計：波浪形掛鈎連收納槽"
+    ]
+   },
+   "storyKey": "anna-dawson"
+  },
+  {
+   "slug": "heller-swell-yellow",
+   "zhType": "波浪掛牆收納",
+   "featured": false,
+   "dropDate": "2026-10-24",
+   "brand": "Heller",
+   "designer": "Anna Dawson",
+   "name": {
+    "en": "Swell Wall Catchall · Yellow",
+    "zh": "Swell 波浪掛牆收納 · 黃色"
+   },
+   "model": "Swell",
+   "year": {
+    "en": "2022 design, launched by Heller 2023",
+    "zh": "2022 年設計，Heller 於 2023 年推出"
+   },
+   "colour": {
+    "en": "Yellow",
+    "zh": "黃色"
+   },
+   "material": {
+    "en": "Recycled ABS plastic",
+    "zh": "再生 ABS 塑膠"
+   },
+   "origin": {
+    "en": "Made in USA",
+    "zh": "美國製造"
+   },
+   "description": {
+    "en": "Anna Dawson, a California surfer, shaped Swell after the rhythm of ocean waves. The crests catch coats, bags and caps; the troughs cradle keys and sunglasses. It's the entryway fix for a small flat that also happens to look like a sculpture. Yellow is the sunniest of the colours: a cheerful wave that brightens an entryway or a pale wall.",
+    "zh": "設計師 Anna Dawson 是加州的衝浪愛好者，Swell 的線條就是海浪的起伏。浪尖可以掛外套、袋和帽，浪谷可以放鎖匙和太陽眼鏡。小單位玄關的收納救星，掛上牆又像一件雕塑。黃色是最明亮的一款：一道愉快的浪，令玄關或淺色牆面更添朝氣。"
+   },
+   "details": {
+    "en": [
+     "Holds up to 34 kg (75 lb), per Heller",
+     "Wall-mounted, with Heller fixings",
+     "Apartment Therapy Small/Cool Design Award 2024",
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
+    ],
+    "zh": [
+     "根據 Heller，承重可達 34 kg（75 lb）",
+     "掛牆安裝，配 Heller 配件",
+     "2024 年 Apartment Therapy Small/Cool 設計獎",
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 73,
+    "d": 7.6,
+    "h": 35.6,
+    "unit": "cm",
+    "weightKg": 2.3
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new, without box. Unused, never installed.",
+     "zh": "全新，不連盒。未使用、未安裝。"
+    }
+   },
+   "price": 980,
+   "status": "pre-order",
+   "stockNote": {
+    "en": "Next batch arriving soon. Pre-order available.",
+    "zh": "下一批即將到貨。仍可預購。"
+   },
+   "fulfilment": "both",
+   "notices": [
+    "moreColours"
+   ],
+   "photos": [
+    "/assets/products/heller-swell-yellow/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "The Yellow Heller Swell on a white wall holding a green tote bag and a black pouch",
+    "zh": "黃色 Heller Swell 掛在白牆上，掛着綠色布袋及黑色小袋"
+   },
+   "photoAlts": {
+    "en": [
+     "The Yellow Heller Swell on a white wall holding a green tote bag and a black pouch"
+    ],
+    "zh": [
+     "黃色 Heller Swell 掛在白牆上，掛着綠色布袋及黑色小袋"
     ]
    },
    "storyKey": "anna-dawson"
@@ -2231,8 +2319,8 @@
    "condition": {
     "grade": "brand-new",
     "notes": {
-     "en": "",
-     "zh": ""
+     "en": "Brand new, without box. Unused, never installed.",
+     "zh": "全新，不連盒。未使用、未安裝。"
     }
    },
    "price": 980,

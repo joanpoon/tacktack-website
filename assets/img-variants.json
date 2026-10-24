@@ -957,5 +957,19 @@
   "avif": "/assets/products/andtradition-journey-wall-lamp-shy2/r/6-400.avif 400w, /assets/products/andtradition-journey-wall-lamp-shy2/r/6-800.avif 800w, /assets/products/andtradition-journey-wall-lamp-shy2/r/6-1200.avif 1200w",
   "webp": "/assets/products/andtradition-journey-wall-lamp-shy2/r/6-400.webp 400w, /assets/products/andtradition-journey-wall-lamp-shy2/r/6-800.webp 800w, /assets/products/andtradition-journey-wall-lamp-shy2/r/6-1200.webp 1200w",
   "jpg": "/assets/products/andtradition-journey-wall-lamp-shy2/r/6-400.jpg 400w, /assets/products/andtradition-journey-wall-lamp-shy2/r/6-800.jpg 800w, /assets/products/andtradition-journey-wall-lamp-shy2/6.jpg 1200w"
+ },
+ "/assets/products/heller-swell-yellow/1.jpg": {
+  "w": 736,
+  "h": 920,
+  "avif": "/assets/products/heller-swell-yellow/r/1-400.avif 400w, /assets/products/heller-swell-yellow/r/1-736.avif 736w",
+  "webp": "/assets/products/heller-swell-yellow/r/1-400.webp 400w, /assets/products/heller-swell-yellow/r/1-736.webp 736w",
+  "jpg": "/assets/products/heller-swell-yellow/r/1-400.jpg 400w, /assets/products/heller-swell-yellow/1.jpg 736w"
+ },
+ "/assets/products/heller-swell-yellow/t/1.jpg": {
+  "w": 160,
+  "h": 200,
+  "avif": "/assets/products/heller-swell-yellow/t/r/1-160.avif 160w",
+  "webp": "/assets/products/heller-swell-yellow/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/heller-swell-yellow/t/1.jpg 160w"
  }
 }
