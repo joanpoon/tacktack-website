@@ -2263,6 +2263,94 @@
    "storyKey": "anna-dawson"
   },
   {
+   "slug": "heller-swell-black",
+   "zhType": "波浪掛牆收納",
+   "featured": false,
+   "dropDate": "2026-10-25",
+   "brand": "Heller",
+   "designer": "Anna Dawson",
+   "name": {
+    "en": "Swell Wall Catchall · Black",
+    "zh": "Swell 波浪掛牆收納 · 黑色"
+   },
+   "model": "Swell",
+   "year": {
+    "en": "2022 design, launched by Heller 2023",
+    "zh": "2022 年設計，Heller 於 2023 年推出"
+   },
+   "colour": {
+    "en": "Black",
+    "zh": "黑色"
+   },
+   "material": {
+    "en": "Recycled ABS plastic",
+    "zh": "再生 ABS 塑膠"
+   },
+   "origin": {
+    "en": "Made in USA",
+    "zh": "美國製造"
+   },
+   "description": {
+    "en": "Anna Dawson, a California surfer, shaped Swell after the rhythm of ocean waves. The crests catch coats, bags and caps; the troughs cradle keys and sunglasses. It's the entryway fix for a small flat that also happens to look like a sculpture. Black is the most graphic of the colours: a bold, clean wave that stands out on a white or pale wall.",
+    "zh": "設計師 Anna Dawson 是加州的衝浪愛好者，Swell 的線條就是海浪的起伏。浪尖可以掛外套、袋和帽，浪谷可以放鎖匙和太陽眼鏡。小單位玄關的收納救星，掛上牆又像一件雕塑。黑色是線條感最強的一款：俐落鮮明的一道浪，在白色或淺色牆面上格外突出。"
+   },
+   "details": {
+    "en": [
+     "Holds up to 34 kg (75 lb), per Heller",
+     "Wall-mounted, with Heller fixings",
+     "Apartment Therapy Small/Cool Design Award 2024",
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
+    ],
+    "zh": [
+     "根據 Heller，承重可達 34 kg（75 lb）",
+     "掛牆安裝，配 Heller 配件",
+     "2024 年 Apartment Therapy Small/Cool 設計獎",
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 73,
+    "d": 7.6,
+    "h": 35.6,
+    "unit": "cm",
+    "weightKg": 2.3
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new, without box. Unused, never installed.",
+     "zh": "全新，不連盒。未使用、未安裝。"
+    }
+   },
+   "price": 980,
+   "status": "pre-order",
+   "stockNote": {
+    "en": "Next batch arriving soon. Pre-order available.",
+    "zh": "下一批即將到貨。仍可預購。"
+   },
+   "fulfilment": "both",
+   "notices": [
+    "moreColours"
+   ],
+   "photos": [
+    "/assets/products/heller-swell-black/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "Heller Swell wall catchall in Black by Anna Dawson on a white background",
+    "zh": "黑色 Heller Swell 波浪掛牆收納，Anna Dawson 設計，白色背景"
+   },
+   "photoAlts": {
+    "en": [
+     "Heller Swell wall catchall in Black by Anna Dawson on a white background"
+    ],
+    "zh": [
+     "黑色 Heller Swell 波浪掛牆收納，Anna Dawson 設計，白色背景"
+    ]
+   },
+   "storyKey": "anna-dawson"
+  },
+  {
    "slug": "heller-swell-blue",
    "zhType": "波浪掛牆收納",
    "featured": false,
