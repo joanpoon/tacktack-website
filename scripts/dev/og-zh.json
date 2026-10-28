@@ -117,14 +117,14 @@
       "file": "contact.jpg",
       "theme": "cream",
       "kicker": "聯絡我們",
-      "title": "WhatsApp 查詢，<br>預約睇貨。",
-      "sub": "最快回覆 · Showroom 睇貨須預約<br>hello@tacktackstudio.com",
+      "title": "WhatsApp 查詢，<br>預約看貨。",
+      "sub": "最快回覆 · Showroom 看貨須預約<br>hello@tacktackstudio.com",
       "foot": "WhatsApp +852 6507 0791",
       "photos": [
         "/assets/products/akari-30a/1.jpg",
         "/assets/products/dulton-double-face-clock-grey/3.jpg"
       ],
-      "alt": "Tack, tack! 聯絡：WhatsApp 查詢、預約 Showroom 睇貨及自取"
+      "alt": "Tack, tack! 聯絡：WhatsApp 查詢、預約 Showroom 看貨及自取"
     },
     {
       "path": "/delivery/",
