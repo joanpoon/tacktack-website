@@ -142,7 +142,7 @@ window.TT_STRINGS = {
     sizeTitle: function (b) { return "選哪個 " + b + " 尺寸？"; }, sizeNote: "燈罩按實際比例繪畫，按一下查看。",
     trust: { neu: "全新未使用", genuine: "正品設計好物", pickup: "Showroom 預約自取或全港送貨", photos: "WhatsApp 即可索取實物相片及尺寸" },
     notices: { cordNotIncluded: "只售燈罩。香港電線及安裝可按需要安排。", moreColours: "更多顏色可訂購，即將推出。" },
-    install: "可以幫你安排安裝，WhatsApp 問我哋就得。", gallery: "產品相片", photoN: function (i, n) { return "第 " + i + " 張相片（共 " + n + " 張）"; }, photoMore: function (i) { return "（相片 " + i + "）"; },
+    install: "我們可以為你安排安裝，歡迎 WhatsApp 查詢。", gallery: "產品相片", photoN: function (i, n) { return "第 " + i + " 張相片（共 " + n + " 張）"; }, photoMore: function (i) { return "（相片 " + i + "）"; },
     filters: { category: "類別", brand: "品牌／設計師", status: "供應狀況", price: "價錢", sort: "排序", reset: "清除篩選" },
     status: { active: "有貨及已留貨", available: "現貨", "pre-order": "預購", "on-hold": "已留貨", sold: "已售出", all: "全部" },
     price: { any: "所有價錢", u500: "HK$500 以下", "500-1500": "HK$500–1,500", "1500-5000": "HK$1,500–5,000", o5000: "HK$5,000 以上" },
