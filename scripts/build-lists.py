@@ -12,6 +12,8 @@ What it writes:
   * shop, sold, category and brand grids (EN + /zh/) and their ItemList JSON-LD
   * designer hub pages /designer/<slug>/ and /zh/designer/<slug>/ from data/designers.json
   * item and designer entries in sitemap.xml (other URLs are kept as they are)
+  * the ## Designers section in llms.txt and llms-full.txt (English name, EN URL
+    and English lead, in designers.json order) and the matching links in ## Pages
   * feeds/google-merchant.xml and feeds/google-merchant-zh.xml (via build-merchant-feed.py)
 
 A product is public when published is not false, it has a slug, and its
@@ -437,6 +439,77 @@ def build_sitemap(text):
     return text[:text.index("  <url>")] + "".join(out) + "</urlset>\n"
 
 
+# ---------- llms.txt / llms-full.txt ----------
+def _section_match(text, heading):
+    """From a `## heading` line through the next `## ` heading, or to EOF."""
+    return re.search(rf"^## {re.escape(heading)}[ \t]*\n.*?(?=^## |\Z)", text, re.M | re.S)
+
+
+def _put_section(text, heading, body):
+    """Replace one section. body includes its heading and a trailing newline."""
+    m = _section_match(text, heading)
+    if not m:
+        return None
+    block = body if body.endswith("\n") else body + "\n"
+    if text[m.end():].startswith("## "):
+        block += "\n"
+    return text[:m.start()] + block + text[m.end():]
+
+
+def designer_llms_lines():
+    """One English bullet per designer: name, EN hub URL, English lead."""
+    lines = []
+    for d in DESIGNERS:
+        url = f"{SITE}/designer/{d['slug']}/"
+        lead = L(d.get("lead"), "en").strip()
+        lines.append(f"- [{d['name']}]({url}): {lead}" if lead else f"- [{d['name']}]({url})")
+    return lines
+
+
+def designers_section_body():
+    return "## Designers\n" + "\n".join(designer_llms_lines()) + "\n"
+
+
+def sync_designers_section(text):
+    """Rewrite ## Designers from DESIGNERS, or insert it after ## Brands."""
+    replaced = _put_section(text, "Designers", designers_section_body())
+    if replaced is not None:
+        return replaced
+    brands = _section_match(text, "Brands")
+    if not brands:
+        return text
+    block = designers_section_body()
+    if text[brands.end():].startswith("## "):
+        block += "\n"
+    return text[:brands.end()] + block + text[brands.end():]
+
+
+# A Pages bullet whose link is the EN designer hub. Other Pages lines stay.
+_DESIGNER_PAGE_LINE = re.compile(r"^- \[[^\]]*\]\(" + re.escape(SITE) + r"/designer/[a-z0-9-]+/\)")
+
+
+def sync_pages_designers(text):
+    """Keep ## Pages designer bullets in designers.json order. Leave every other line."""
+    m = _section_match(text, "Pages")
+    if not m:
+        return text
+    lines = m.group(0).split("\n")
+    kept = [ln for ln in lines if not _DESIGNER_PAGE_LINE.match(ln)]
+    bullets = [f"- [{d['name']}]({SITE}/designer/{d['slug']}/)" for d in DESIGNERS]
+    insert_at = next((i for i, ln in enumerate(kept) if ln.startswith("- [") and "繁體中文" in ln), None)
+    if insert_at is None:
+        insert_at = len(kept)
+        while insert_at > 0 and kept[insert_at - 1] == "":
+            insert_at -= 1
+    new_lines = kept[:insert_at] + bullets + kept[insert_at:]
+    return text[:m.start()] + "\n".join(new_lines) + text[m.end():]
+
+
+def sync_llms_designers(text):
+    """Sync ## Designers and the designer links in ## Pages from designers.json."""
+    return sync_pages_designers(sync_designers_section(text))
+
+
 # ---------- feeds ----------
 def feed_module():
     spec = importlib.util.spec_from_file_location("bmf", ROOT / "scripts/build-merchant-feed.py")
@@ -490,6 +563,9 @@ def build() -> dict[Path, str]:
         for path in sorted((ROOT / pre / "brand").glob("*/index.html")):
             files[path] = add_designer_links(get(path), by_brand.get(path.parent.name, []), lang)
     files[ROOT / "sitemap.xml"] = build_sitemap(get(ROOT / "sitemap.xml"))
+    for name in ("llms.txt", "llms-full.txt"):
+        path = ROOT / name
+        files[path] = sync_llms_designers(get(path))
     return files
 
 
@@ -546,7 +622,7 @@ def main():
         for p in PUBLIC:
             if st(p) in ("available", "pre-order") and not p.get("sku"):
                 print(f"NOTE {p['slug']}: no SKU yet, so it stays out of the Merchant feeds until one is set")
-        print(f"OK: {len(PUBLIC)} public pieces, every one linked; lists, sitemap and feeds up to date")
+        print(f"OK: {len(PUBLIC)} public pieces, every one linked; lists, sitemap, feeds and llms files up to date")
         return
     problems = unlinked(files, feeds)
     if problems:
