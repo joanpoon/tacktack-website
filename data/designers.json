@@ -1,0 +1,153 @@
+{
+  "_note": "Designer hub pages. scripts/build-lists.py writes /designer/<slug>/ and /zh/designer/<slug>/ from this file and lists every public product whose designer matches name. Copy: short, warm, 'we'. ZH lines are 書面語 and end without 。",
+  "designers": [
+    {
+      "slug": "isamu-noguchi",
+      "name": "Isamu Noguchi",
+      "zhName": "野口勇",
+      "born": "1904",
+      "died": "1988",
+      "nationality": {
+        "en": "Japanese-American",
+        "zh": "日裔美國"
+      },
+      "brandSlug": "isamu-noguchi-akari",
+      "brandLabel": {
+        "en": "Isamu Noguchi AKARI",
+        "zh": "野口勇 AKARI"
+      },
+      "title": {
+        "en": "Isamu Noguchi and AKARI light sculptures, Hong Kong",
+        "zh": "野口勇與 AKARI 光雕塑｜香港"
+      },
+      "description": {
+        "en": "Isamu Noguchi (1904–1988) and his AKARI light sculptures of washi paper and bamboo. The AKARI pieces we have in Hong Kong, with prices. Enquire on WhatsApp.",
+        "zh": "野口勇（1904–1988）與他以和紙及竹骨製作的 AKARI 光雕塑。我們在香港的 AKARI 作品及價格，歡迎 WhatsApp 查詢。"
+      },
+      "jobTitle": {
+        "en": "Sculptor and designer",
+        "zh": "雕塑家及設計師"
+      },
+      "lead": {
+        "en": "A sculptor who taught paper to hold light.",
+        "zh": "一位讓和紙盛載光線的雕塑家"
+      },
+      "story": {
+        "en": [
+          "Isamu Noguchi (1904–1988) was a Japanese-American sculptor whose work moved between stone, gardens, stage sets and furniture.",
+          "In 1951 he visited Gifu, a town known for its paper lanterns, and began designing AKARI: light sculptures of washi paper over a bamboo frame.",
+          "Akari means light in Japanese, and Noguchi liked that it also suggests lightness.",
+          "We love how an AKARI softens a room. The light comes through the paper warm and even, never harsh.",
+          "Here are the AKARI pieces we have now, and the ones that have already found a home."
+        ],
+        "zh": [
+          "野口勇（Isamu Noguchi，1904–1988）是日裔美國雕塑家，作品橫跨石雕、庭園、舞台佈景及家具",
+          "1951 年，他到訪以紙燈籠聞名的岐阜，開始設計 AKARI：以和紙包覆竹骨架的光雕塑",
+          "AKARI 在日文中解作「光」，野口勇也喜歡它帶有輕盈的意思",
+          "我們喜歡 AKARI 讓房間變得柔和，光線穿過和紙，溫暖均勻，從不刺眼",
+          "以下是我們現有的 AKARI，以及已找到新家的作品"
+        ]
+      }
+    },
+    {
+      "slug": "verner-panton",
+      "name": "Verner Panton",
+      "zhName": "Verner Panton",
+      "born": "1926",
+      "died": "1998",
+      "nationality": {
+        "en": "Danish",
+        "zh": "丹麥"
+      },
+      "brandSlug": "andtradition",
+      "brandLabel": {
+        "en": "&Tradition",
+        "zh": "&Tradition"
+      },
+      "title": {
+        "en": "Verner Panton and the Flowerpot lamp, Hong Kong",
+        "zh": "Verner Panton 與 Flowerpot 燈｜香港"
+      },
+      "description": {
+        "en": "Verner Panton (1926–1998) designed the Flowerpot lamp in 1968. The Flowerpot VP9 lamps we have in Hong Kong, new and pre-loved, with prices.",
+        "zh": "Verner Panton（1926–1998）在 1968 年設計了 Flowerpot 燈。我們在香港的 Flowerpot VP9，全新及二手，附價格。"
+      },
+      "jobTitle": {
+        "en": "Designer",
+        "zh": "設計師"
+      },
+      "lead": {
+        "en": "Colour, curves and a lamp that still makes people smile.",
+        "zh": "色彩、弧線，以及一盞至今仍讓人會心一笑的燈"
+      },
+      "story": {
+        "en": [
+          "Verner Panton (1926–1998) was a Danish designer who loved bold colour, round forms and rooms designed as one whole.",
+          "He designed the Flowerpot lamp in 1968: two half-spheres facing each other, very much of its time.",
+          "&Tradition makes the Flowerpot today, including the VP9, a small portable version that runs without a cable once charged.",
+          "We like it on a desk, a bedside table or a dinner table, in whichever colour makes you smile.",
+          "Here is every Flowerpot we have now, plus the ones already sold."
+        ],
+        "zh": [
+          "Verner Panton（1926–1998）是丹麥設計師，偏愛大膽的色彩、圓潤的造型，以及整體構思的空間",
+          "他在 1968 年設計了 Flowerpot 燈：兩個半球相對而立，充滿那個年代的氣息",
+          "&Tradition 現時生產 Flowerpot，包括可攜式的 VP9，充電後無需電線也能使用",
+          "我們喜歡把它放在書桌、床頭或餐桌上，挑一個讓你會心一笑的顏色",
+          "以下是我們現有的 Flowerpot 燈，以及已售出的作品"
+        ]
+      }
+    },
+    {
+      "slug": "yoshitomo-nara",
+      "name": "Yoshitomo Nara",
+      "zhName": "奈良美智",
+      "born": "1959",
+      "nationality": {
+        "en": "Japanese",
+        "zh": "日本"
+      },
+      "brandSlug": "yoshitomo-nara",
+      "brandLabel": {
+        "en": "Yoshitomo Nara prints",
+        "zh": "奈良美智海報"
+      },
+      "title": {
+        "en": "Yoshitomo Nara, the artist behind the prints",
+        "zh": "奈良美智｜海報背後的藝術家"
+      },
+      "description": {
+        "en": "Yoshitomo Nara (b. 1959) and his wide-eyed children. The brand-new Nara prints we have in Hong Kong, 28 × 36 cm, with prices. Enquire on WhatsApp.",
+        "zh": "奈良美智（生於 1959 年）與他筆下的大眼睛小孩。我們在香港的全新奈良美智海報，28 × 36 cm，附價格，歡迎 WhatsApp 查詢。"
+      },
+      "jobTitle": {
+        "en": "Artist",
+        "zh": "藝術家"
+      },
+      "lead": {
+        "en": "Sweet, a little defiant, and impossible to ignore.",
+        "zh": "甜美，帶點倔強，讓人過目難忘"
+      },
+      "story": {
+        "en": [
+          "Yoshitomo Nara (born 1959 in Hirosaki, Aomori) is a Japanese artist.",
+          "He studied art in Japan and then in Germany. His wide-eyed children look sweet and a little defiant at the same time.",
+          "Punk and folk music run through his work, and you can feel it in the attitude of his figures.",
+          "We picked two brand-new prints that bring that attitude into a small space. Each is 28 × 36 cm and unframed.",
+          "If you'd like them ready to hang, we also have a white solid wood frame made for these prints."
+        ],
+        "zh": [
+          "奈良美智（Yoshitomo Nara，1959 年生於日本青森縣弘前市）是日本藝術家",
+          "他先後在日本及德國修讀藝術，筆下大眼睛的小孩，看似甜美，卻又帶點倔強",
+          "龐克與民謠音樂貫穿他的創作，人物的神態也帶著這份態度",
+          "我們挑選了兩張全新海報，為小空間帶來這份態度，每張 28 × 36 cm，不連相框",
+          "如想掛起即用，我們另有專為這兩張海報而設的白色實木相框"
+        ]
+      },
+      "extraLink": {
+        "slug": "solid-wood-picture-frame-for-nara-prints",
+        "en": "White solid wood picture frame for the Nara prints",
+        "zh": "奈良美智海報專用白色實木相框"
+      }
+    }
+  ]
+}
