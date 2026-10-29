@@ -23,7 +23,7 @@ DATE = "2026-10-17"
 PAGES = {
     "index.html": (
         None,
-        "Hong Kong design shop. This week's drop is &Tradition lighting: Verner Panton's Flowerpot VP9, plus Journey SHY2 and Mist AP15, in stock in Hong Kong. Enquire on WhatsApp.",
+        "Hong Kong design shop. This week's drop is Yoshitomo Nara prints: Green Eyes and Eye Patch, brand new and in stock in Hong Kong. Enquire on WhatsApp.",
     ),
     "shop/index.html": (
         None,
@@ -82,11 +82,11 @@ PAGES = {
 LEDE = {
     "index.html": (
         "Curated designer lighting, furniture and objects, new and pre-loved, in stock in Hong Kong: from Isamu Noguchi's paper AKARI to Heller's wave-shaped Swell. The grey DULTON Double Face clock is in stock in Hong Kong. Green is on hold here, and more are available to pre-order (Japan air freight).",
-        "Curated designer lighting, furniture and objects, new and pre-loved, in stock in Hong Kong: from Isamu Noguchi's paper AKARI to Heller's wave-shaped Swell. This week's drop is &amp;Tradition lighting: Verner Panton's Flowerpot VP9 portable lamps, the Journey SHY2 wall lamp and the Mist AP15 pendant, in stock in Hong Kong. Yoshitomo Nara prints and the DULTON clocks are in the shop too. Enquire on WhatsApp, pay by FPS, PayMe, cash or PayPal (for overseas buyers), then pick up from the showroom by appointment or have it delivered in Hong Kong.",
+        "Curated designer lighting, furniture and objects, new and pre-loved, in stock in Hong Kong: from Isamu Noguchi's paper AKARI to Heller's wave-shaped Swell. This week's drop is Yoshitomo Nara prints: Green Eyes and Eye Patch, brand new and in stock in Hong Kong. &amp;Tradition lighting and the DULTON clocks are in the shop too. Enquire on WhatsApp, pay by FPS, PayMe, cash or PayPal (for overseas buyers), then pick up from the showroom by appointment or have it delivered in Hong Kong.",
     ),
     "zh/index.html": (
         "精選全新及二手設計師燈飾、家具及家品，香港現貨：由野口勇的 AKARI 和紙燈，到 Heller 的波浪 Swell。灰色 DULTON 雙面鐘是香港現貨。綠色已留貨，仍可預購更多（日本空運）。",
-        "精選全新及二手設計師燈飾、家具及家品，香港現貨：由野口勇的 AKARI 和紙燈，到 Heller 的波浪 Swell。本週新貨是 &amp;Tradition 燈飾：Verner Panton 的 Flowerpot VP9 便攜燈、Journey SHY2 壁燈及 Mist AP15 吊燈，香港現貨。店內亦有奈良美智海報及 DULTON 雙面鐘。WhatsApp 查詢，FPS、PayMe、現金或 PayPal（海外買家）付款，Showroom 預約自取或全港送貨。",
+        "精選全新及二手設計師燈飾、家具及家品，香港現貨：由野口勇的 AKARI 和紙燈，到 Heller 的波浪 Swell。本週新貨是奈良美智海報：Green Eyes 及 Eye Patch，全新，香港現貨。店內亦有 &amp;Tradition 燈飾及 DULTON 雙面鐘。WhatsApp 查詢，FPS、PayMe、現金或 PayPal（海外買家）付款，Showroom 預約自取或全港送貨。",
     ),
 }
 
