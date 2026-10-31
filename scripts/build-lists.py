@@ -16,6 +16,10 @@ What it writes:
     and English lead, in designers.json order) and the matching links in ## Pages
   * feeds/google-merchant.xml and feeds/google-merchant-zh.xml (via build-merchant-feed.py)
 
+A selling price over HK$5,000 is not public. The catalogue field becomes
+priceOnRequest, and pages, feeds, JSON-LD and llms text say
+"Price on request · DM us" / "價格請私訊查詢" instead. HK$5,000 itself still shows.
+
 A product is public when published is not false, it has a slug, and its
 drop has started: dropAt (ISO time with offset) if set, otherwise dropDate
 (HKT day). Renamed slugs (oldSlugs) are redirect pages and are never listed.
@@ -31,6 +35,8 @@ import json
 import re
 import sys
 from pathlib import Path
+
+import public_price
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://tacktackstudio.com"
@@ -160,6 +166,8 @@ def badges(p, lang):
 def price_html(p, lang):
     if st(p) == "sold":
         return f'<span class="sold-label">{esc(S[lang]["badge"]["sold"])}</span>'
+    if public_price.hides_price(p):
+        return f"<span>{esc(public_price.POR[lang])}</span>"
     r = f'<span class="retail">{esc(S[lang]["retail"].format(money(p["retailPrice"])))}</span>' if p.get("retailPrice") else ""
     return f"<span>{money(p.get('price'))}</span>{r}"
 
@@ -202,8 +210,10 @@ def sig(lst, lang):
     rows = []
     for p in lst:
         sold = st(p) == "sold"
-        rows.append(":".join([p["slug"], st(p), "1" if is_new(p) else "0", "0" if sold else js_str(p.get("price") or 0),
-                              js_str(p.get("retailPrice")) if p.get("retailPrice") and not sold else "",
+        hidden = public_price.hides_price(p)
+        price_part = "0" if sold else ("por" if hidden else js_str(p.get("price") or 0))
+        retail_part = js_str(p.get("retailPrice")) if p.get("retailPrice") and not sold and not hidden else ""
+        rows.append(":".join([p["slug"], st(p), "1" if is_new(p) else "0", price_part, retail_part,
                               L(p.get("name"), lang), photo(p)]))
     return js_hash("|".join(rows))
 
@@ -533,7 +543,14 @@ def build_feeds(write: bool):
 
 
 # ---------- build ----------
+HIDDEN: list[public_price.Hidden] = []
+
+
 def build() -> dict[Path, str]:
+    global HIDDEN
+    catalog_path = ROOT / "data/products.json"
+    catalog_text = catalog_path.read_text(encoding="utf-8")
+    HIDDEN, catalog_text_out = public_price.conceal_catalog(CATALOG, catalog_text)
     files: dict[Path, str] = {}
 
     def get(path):
@@ -566,6 +583,9 @@ def build() -> dict[Path, str]:
     for name in ("llms.txt", "llms-full.txt"):
         path = ROOT / name
         files[path] = sync_llms_designers(get(path))
+    files = public_price.redact_outputs(files, HIDDEN)
+    if catalog_text_out != catalog_text:
+        files[catalog_path] = catalog_text_out
     return files
 
 
@@ -596,19 +616,40 @@ def unlinked(files, feeds) -> list[str]:
                     problems.append(f"{p['slug']}: not linked from /{page.relative_to(ROOT).parent}/")
             if SITE + item_path(p, lang) + "<" not in sm.replace("</loc>", "<"):
                 problems.append(f"{p['slug']}: missing from sitemap ({lang})")
-        if st(p) in ("available", "pre-order") and p.get("sku"):
+        hidden = public_price.hides_price(p)
+        if st(p) in ("available", "pre-order") and p.get("sku") and not hidden:
             for name, text in feed_text.items():
                 if f"<g:id>{p['sku']}</g:id>" not in text:
                     problems.append(f"{p['slug']}: missing from feeds/{name}")
+        if hidden and p.get("sku"):
+            for name, text in feed_text.items():
+                if f"<g:id>{p['sku']}</g:id>" in text:
+                    problems.append(f"{p['slug']}: price on request must stay out of feeds/{name}")
     return problems
+
+
+def self_test_prices() -> None:
+    over = {"slug": "x", "status": "available", "price": public_price.THRESHOLD + 1}
+    assert public_price.POR["en"] in price_html(over, "en")
+    assert "HK$" not in price_html(over, "en")
+    assert public_price.POR["zh"] in price_html(over, "zh")
+    assert price_html({"status": "available", "price": public_price.THRESHOLD}, "en") == "<span>HK$5,000</span>"
+    assert "sold-label" in price_html({"status": "sold", "price": public_price.THRESHOLD + 1}, "en")
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true", help="write nothing; fail if a file is stale or a public piece is unlinked")
     a = ap.parse_args()
+    feed_module().self_test()
+    self_test_prices()
     files = build()
     feeds = build_feeds(write=False)
+    leaked = public_price.leaks({**files, **feeds}, HIDDEN)
+    if leaked:
+        for rel in leaked:
+            print(f"PUBLIC PRICE {rel}")
+        sys.exit(1)
     stale = [p for p, t in {**files, **feeds}.items() if not p.exists() or p.read_text(encoding="utf-8") != t]
     if a.check:   # judge what is on disk now, the files GitHub Pages would serve
         disk_feeds = {k: (k.read_text(encoding="utf-8") if k.exists() else "") for k in feeds}
@@ -640,6 +681,10 @@ def main():
             print(f"wrote {p.relative_to(ROOT)}")
     hidden = [p["slug"] for p in ALL if not is_public(p)]
     print(f"public {len(PUBLIC)} · not yet public {len(hidden)}{': ' + ', '.join(hidden) if hidden else ''}")
+    if HIDDEN:
+        print(f"price on request: {len(HIDDEN)}")
+        for item in HIDDEN:
+            print(f"  {item.sku or item.slug} {item.title_en}")
 
 
 if __name__ == "__main__":

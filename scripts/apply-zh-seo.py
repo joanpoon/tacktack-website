@@ -23,6 +23,8 @@ from html import escape as html_escape
 from html import unescape as html_unescape
 from pathlib import Path
 
+import public_price
+
 ROOT = Path(__file__).resolve().parents[1]
 PRODUCTS_PATH = ROOT / "data" / "products.json"
 SEO_PATH = ROOT / "data" / "zh-seo.json"
@@ -93,7 +95,10 @@ def fallback_seo(product: dict) -> dict:
         grade_bit = f"（{grade}）" if grade else ""
         title = f"{head}{grade_bit}｜香港{SUFFIX}"
         price = product.get("price")
-        price_bit = f"HK${price:,}，" if isinstance(price, int) else ""
+        if public_price.hides_price(product):
+            price_bit = f"{public_price.POR['zh']}，"
+        else:
+            price_bit = f"HK${price:,}，" if isinstance(price, int) else ""
         grade_word = f"{grade}" if grade else ""
         if on_hold and product.get("preorderOpen"):
             stock = "香港現貨已留貨，仍可預購。"
@@ -106,6 +111,18 @@ def fallback_seo(product: dict) -> dict:
             "WhatsApp 查詢，Showroom 預約自取或全港送貨。"
         )
     return {"zhType": zh_type, "title": title, "description": description}
+
+
+def public_copy(product: dict, entry: dict) -> dict:
+    """Drop this item's selling price from reviewed SEO when it is over HK$5,000."""
+    amount = public_price.numeric_price(product)
+    if not public_price.hides_price(product) or amount is None or amount <= public_price.THRESHOLD:
+        return entry
+    title = public_price.replace_price_text(entry["title"], amount, public_price.POR["zh"])
+    description = public_price.replace_price_text(entry["description"], amount, public_price.POR["zh"])
+    if title == entry["title"] and description == entry["description"]:
+        return entry
+    return {**entry, "title": title, "description": description}
 
 
 def check_copy(label: str, title: str, description: str) -> None:
@@ -240,6 +257,18 @@ def self_test() -> None:
         raise SystemExit(f"fallback title failed: {seo['title']}")
     if not seo["title"].endswith(SUFFIX) or "｜香港" not in seo["title"]:
         raise SystemExit(f"fallback title shape failed: {seo['title']}")
+    if "HK$" not in seo["description"]:
+        raise SystemExit("fallback description should keep a price at HK$5000 or under")
+    hidden = dict(sample)
+    hidden["price"] = public_price.THRESHOLD + 1
+    hidden_seo = fallback_seo(hidden)
+    if "HK$" in hidden_seo["title"] or "HK$" in hidden_seo["description"]:
+        raise SystemExit("fallback SEO included a selling price over HK$5000")
+    if public_price.POR["zh"] not in hidden_seo["description"]:
+        raise SystemExit("fallback SEO should say the price is on request")
+    reviewed = public_copy(hidden, {"title": "燈｜香港 | Tack, tack!", "description": f"售 HK${public_price.THRESHOLD + 1:,}。"})
+    if "HK$" in reviewed["description"] or public_price.POR["zh"] not in reviewed["description"]:
+        raise SystemExit("reviewed SEO still contains a selling price over HK$5000")
 
 
 def main() -> None:
@@ -263,6 +292,7 @@ def main() -> None:
     changes = []
     for slug, product in by_slug.items():
         entry = reviewed.get(slug) or fallback_seo(product)
+        entry = public_copy(product, entry)
         check_copy(slug, entry["title"], entry["description"])
         path = ROOT / "zh" / "item" / slug / "index.html"
         if not path.exists():

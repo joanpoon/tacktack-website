@@ -22,6 +22,11 @@ g:availability_date is added for a pre-order only when the catalog has a
 public date on availabilityDate, availableOn, preorderDate, or
 preorderAvailableOn. A product with no manufacturer brand uses the shop
 name as g:brand.
+
+A selling price over HK$5,000 is left out of the feed, because Merchant
+requires a price. The Offer keeps availability and the other public fields,
+and drops price and priceCurrency. scripts/build-lists.py writes the public
+"price on request" label on the pages.
 """
 
 from __future__ import annotations
@@ -34,6 +39,8 @@ from html import unescape
 from pathlib import Path
 from xml.etree import ElementTree
 from xml.sax.saxutils import escape
+
+import public_price
 
 ROOT = Path(__file__).resolve().parents[1]
 PRODUCTS_PATH = ROOT / "data" / "products.json"
@@ -285,6 +292,8 @@ def feed_record(product: dict, lang: str) -> tuple[dict | None, str | None, str 
     if not sku:
         kind = "Pre-order" if status == "preorder" else "Available"
         return None, f"{slug}: {kind}, no SKU", None
+    if public_price.hides_price(product):
+        return None, f"{label}: price on request", None
 
     title = clean_public_copy(localized(product.get("name"), lang))
     description = clean_public_copy(localized(product.get("description"), lang))
@@ -466,6 +475,13 @@ def sync_product_node(node: dict, product: dict, lang: str, page_name: str, page
     changed = False
     name = page_name or localized(product.get("name"), lang)
     description = page_description or localized(product.get("description"), lang)
+    hide_price = public_price.hides_price(product)
+    amount = public_price.numeric_price(product)
+    if hide_price and amount is not None and amount > public_price.THRESHOLD:
+        if name:
+            name = public_price.replace_price_text(name, amount, public_price.POR[lang])
+        if description:
+            description = public_price.replace_price_text(description, amount, public_price.POR[lang])
     if name:
         changed |= set_if(node, "name", name)
     if description:
@@ -507,7 +523,12 @@ def sync_product_node(node: dict, product: dict, lang: str, page_name: str, page
             changed |= set_if(offer, "availability", availability)
         if condition:
             changed |= set_if(offer, "itemCondition", condition)
-        if isinstance(price, (int, float)) and not isinstance(price, bool):
+        if hide_price:
+            if "price" in offer or "priceCurrency" in offer:
+                offer.pop("price", None)
+                offer.pop("priceCurrency", None)
+                changed = True
+        elif isinstance(price, (int, float)) and not isinstance(price, bool):
             changed |= set_if(offer, "price", price)
             changed |= set_if(offer, "priceCurrency", "HKD")
     return changed
@@ -694,6 +715,15 @@ def self_test() -> None:
     assert held is None and "On hold" in held_reason
     no_sku, no_sku_reason, _note = feed_record({**sample, "sku": ""}, "en")
     assert no_sku is None and "no SKU" in no_sku_reason
+    public_price.self_test()
+    hidden_product = {**sample, "sku": "TT-TEST-POR", "price": public_price.THRESHOLD + 1}
+    hidden_item, hidden_reason, _note = feed_record(hidden_product, "en")
+    assert hidden_item is None and hidden_reason == "TT-TEST-POR: price on request"
+    assert str(public_price.THRESHOLD + 1) not in hidden_reason
+    node = {"@type": "Product", "offers": {"@type": "Offer", "priceCurrency": "HKD", "price": public_price.THRESHOLD + 1}}
+    assert sync_product_node(node, hidden_product, "en", "Sample", "A public sentence.")
+    assert "price" not in node["offers"] and "priceCurrency" not in node["offers"]
+    assert node["offers"]["availability"] == "https://schema.org/PreOrder"
 
 
 def main() -> None:

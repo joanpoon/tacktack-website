@@ -15,6 +15,8 @@ from html import escape as html_escape
 from html import unescape as html_unescape
 from pathlib import Path
 
+import public_price
+
 ROOT = Path(__file__).resolve().parents[1]
 SUFFIX = " | Tack, tack!"
 DATE = "2026-10-17"
@@ -118,6 +120,21 @@ TINT = {
 }
 
 
+def scrub_en(text: str | None) -> str | None:
+    """Remove a selling price over HK$5,000 from English meta copy."""
+    if not text:
+        return text
+    catalog = json.loads((ROOT / "data/products.json").read_text(encoding="utf-8"))
+    amounts = []
+    for product in catalog.get("products") or []:
+        amount = public_price.numeric_price(product)
+        if amount is not None and amount > public_price.THRESHOLD:
+            amounts.append(amount)
+    if not amounts:
+        return text
+    return public_price.scrub_str(text, amounts, "en")
+
+
 def set_attr(html: str, pattern: str, value: str) -> str:
     esc = html_escape(value, quote=True)
     new, n = re.subn(pattern, rf"\g<1>{esc}\g<2>", html, count=1)
@@ -154,6 +171,7 @@ def update_ld(html: str, title: str | None, description: str | None) -> str:
 
 
 def apply_meta(path: Path, title: str | None, description: str | None) -> None:
+    title, description = scrub_en(title), scrub_en(description)
     html = path.read_text(encoding="utf-8")
     if title:
         html = re.sub(
@@ -239,6 +257,7 @@ def main() -> None:
         apply_meta(ROOT / rel, title, description)
         print("meta", rel)
     for rel, (old, new) in LEDE.items():
+        new = scrub_en(new) or new
         path = ROOT / rel
         html = path.read_text(encoding="utf-8")
         if old not in html:
