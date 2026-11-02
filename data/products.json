@@ -1777,7 +1777,7 @@
      "zh": "全新，不連盒。未使用、未安裝。"
     }
    },
-   "price": 980,
+   "price": 1150,
    "status": "available",
    "fulfilment": "both",
    "notices": [
@@ -2134,11 +2134,11 @@
    "condition": {
     "grade": "brand-new",
     "notes": {
-     "en": "Brand new, without box. Unused, never installed.",
-     "zh": "全新，不連盒。未使用、未安裝。"
+     "en": "Brand new, with box.",
+     "zh": "全新連盒。"
     }
    },
-   "price": 980,
+   "price": 1150,
    "status": "pre-order",
    "stockNote": {
     "en": "Next batch arriving soon. Pre-order available.",
@@ -2232,7 +2232,7 @@
      "zh": "全新，不連盒。未使用、未安裝。"
     }
    },
-   "price": 980,
+   "price": 1150,
    "status": "pre-order",
    "stockNote": {
     "en": "Next batch arriving soon. Pre-order available.",
@@ -2320,7 +2320,7 @@
      "zh": "全新，不連盒。未使用、未安裝。"
     }
    },
-   "price": 980,
+   "price": 1150,
    "status": "pre-order",
    "stockNote": {
     "en": "Next batch arriving soon. Pre-order available.",
@@ -2350,6 +2350,7 @@
   {
    "slug": "heller-swell-blue",
    "zhType": "波浪掛牆收納",
+   "sku": "TT-SWE-0008",
    "featured": false,
    "dropDate": "2026-10-01",
    "brand": "Heller",
@@ -2404,12 +2405,16 @@
    "condition": {
     "grade": "brand-new",
     "notes": {
-     "en": "Brand new, without box. Unused, never installed.",
-     "zh": "全新，不連盒。未使用、未安裝。"
+     "en": "Brand new, with box.",
+     "zh": "全新連盒。"
     }
    },
-   "price": 980,
-   "status": "on-hold",
+   "price": 1150,
+   "status": "pre-order",
+   "stockNote": {
+    "en": "Next batch arriving soon. Pre-order available.",
+    "zh": "下一批即將到貨。仍可預購。"
+   },
    "fulfilment": "both",
    "notices": [
     "moreColours"

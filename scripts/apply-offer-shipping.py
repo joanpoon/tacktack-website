@@ -4,8 +4,8 @@
 Google Merchant listing wants shippingRate and deliveryTime inside
 offers.shippingDetails. The shop does not publish a flat delivery fee: the
 delivery page says Hong Kong delivery is quoted on WhatsApp before payment.
-A limited free-delivery offer is time-boxed and conditional, so this script
-does not set shippingRate.value to 0.
+Every delivery is quoted on WhatsApp, so this script does not set
+shippingRate.value to 0.
 
 deliveryTime is a generic local window (arrange on WhatsApp, then courier or
 movers), not a guaranteed arrival date. Pre-order offers use a longer
@@ -57,7 +57,6 @@ def shipping_details(zh: bool, preorder: bool) -> dict:
         name = "預購後全港送貨（WhatsApp 報價）" if preorder else "全港送貨（WhatsApp 報價）"
         description = (
             "全港送貨於付款前經 WhatsApp 報價。小件可速遞，大型家具由搬運公司運送。"
-            "這不是常設免運。限時滿額免運見送貨頁。"
         )
     else:
         name = (
@@ -67,8 +66,7 @@ def shipping_details(zh: bool, preorder: bool) -> dict:
         )
         description = (
             "Delivery anywhere in Hong Kong is quoted on WhatsApp before you pay. "
-            "Small pieces go by courier; large furniture goes by movers. "
-            "This is not a standing free-shipping rate. A limited offer is described on the delivery page."
+            "Small pieces go by courier; large furniture goes by movers."
         )
     return {
         "@type": "OfferShippingDetails",

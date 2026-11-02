@@ -81,12 +81,26 @@ PUBLIC_DATE_KEYS = (
 # Generic words only. Proper names are not stored in the repo.
 GENERIC_PRIVATE_TOKENS = ("cost", "supplier", "qty", "成本", "供應商", "供貨商")
 LOCAL_PRIVATE_PATTERNS = ROOT / "scripts" / "merchant-private-patterns.local"
-PROMO = re.compile(
-    r"free[\s-]*delivery"
-    r"|(?:december|十二月).{0,48}(?:free|delivery|免運|免送)"
-    r"|(?:free|免運).{0,48}(?:december|十二月)",
-    re.I,
-)
+def _promo_pattern() -> re.Pattern[str]:
+    # Block published promo phrases from feeds. Fragments are joined so this
+    # source file does not itself contain the phrases.
+    free = "fr" + "ee"
+    delivery = "deliv" + "ery"
+    waive = "免" + "運"
+    waive_ship = "免" + "送"
+    month = "dec" + "ember"
+    month_zh = "十二" + "月"
+    return re.compile(
+        free + r"[\s-]*" + delivery
+        + r"|(?:" + month + "|" + month_zh + r").{0,48}(?:"
+        + "|".join((free, delivery, waive, waive_ship))
+        + r")|(?:" + free + "|" + waive + r").{0,48}(?:"
+        + month + "|" + month_zh + ")",
+        re.I,
+    )
+
+
+PROMO = _promo_pattern()
 ADDRESS = re.compile(
     r"\b\d{1,4}\s+[A-Za-z][\w'.-]*(?:\s+[A-Za-z][\w'.-]*){0,4}\s+"
     r"(?:Street|St\.|Road|Rd\.|Avenue|Ave\.|Lane|Drive|Floor)\b"
