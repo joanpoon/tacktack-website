@@ -132,13 +132,13 @@
       "theme": "walnut",
       "kicker": "送貨及自取",
       "title": "全港送貨，<br>或預約自取。",
-      "sub": "限時：滿 HK$1,000 免運費（至 11 月 1 日）<br>運費經 WhatsApp 報價",
+      "sub": "運費經 WhatsApp 報價",
       "foot": "Showroom 自取須預約",
       "photos": [
         "/assets/products/heller-swell-mini-cream/2.jpg",
         "/assets/products/akari-55d/2.jpg"
       ],
-      "alt": "Tack, tack! 送貨及自取：全港送貨或預約自取，限時滿額免運"
+      "alt": "Tack, tack! 送貨及自取：全港送貨或預約自取"
     }
   ]
 }
