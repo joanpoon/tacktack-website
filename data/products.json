@@ -1777,7 +1777,7 @@
      "zh": "全新，不連盒。未使用、未安裝。"
     }
    },
-   "price": 1150,
+   "price": 980,
    "status": "available",
    "fulfilment": "both",
    "notices": [
@@ -2228,8 +2228,8 @@
    "condition": {
     "grade": "brand-new",
     "notes": {
-     "en": "Brand new, without box. Unused, never installed.",
-     "zh": "全新，不連盒。未使用、未安裝。"
+     "en": "Brand new, with box.",
+     "zh": "全新連盒。"
     }
    },
    "price": 1150,
@@ -2316,8 +2316,8 @@
    "condition": {
     "grade": "brand-new",
     "notes": {
-     "en": "Brand new, without box. Unused, never installed.",
-     "zh": "全新，不連盒。未使用、未安裝。"
+     "en": "Brand new, with box.",
+     "zh": "全新連盒。"
     }
    },
    "price": 1150,
