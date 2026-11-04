@@ -985,5 +985,117 @@
   "avif": "/assets/products/heller-swell-black/t/r/1-160.avif 160w",
   "webp": "/assets/products/heller-swell-black/t/r/1-160.webp 160w",
   "jpg": "/assets/products/heller-swell-black/t/1.jpg 160w"
+ },
+ "/assets/products/andtradition-betty-tk1/t/1.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/andtradition-betty-tk1/t/r/1-160.avif 160w",
+  "webp": "/assets/products/andtradition-betty-tk1/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/andtradition-betty-tk1/t/1.jpg 160w"
+ },
+ "/assets/products/andtradition-betty-tk1/t/2.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/andtradition-betty-tk1/t/r/2-160.avif 160w",
+  "webp": "/assets/products/andtradition-betty-tk1/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/andtradition-betty-tk1/t/2.jpg 160w"
+ },
+ "/assets/products/andtradition-betty-tk1/t/3.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/andtradition-betty-tk1/t/r/3-160.avif 160w",
+  "webp": "/assets/products/andtradition-betty-tk1/t/r/3-160.webp 160w",
+  "jpg": "/assets/products/andtradition-betty-tk1/t/3.jpg 160w"
+ },
+ "/assets/products/andtradition-betty-tk1/2.jpg": {
+  "w": 2000,
+  "h": 2000,
+  "avif": "/assets/products/andtradition-betty-tk1/r/2-400.avif 400w, /assets/products/andtradition-betty-tk1/r/2-800.avif 800w, /assets/products/andtradition-betty-tk1/r/2-1200.avif 1200w, /assets/products/andtradition-betty-tk1/r/2-1600.avif 1600w, /assets/products/andtradition-betty-tk1/r/2-2000.avif 2000w",
+  "webp": "/assets/products/andtradition-betty-tk1/r/2-400.webp 400w, /assets/products/andtradition-betty-tk1/r/2-800.webp 800w, /assets/products/andtradition-betty-tk1/r/2-1200.webp 1200w, /assets/products/andtradition-betty-tk1/r/2-1600.webp 1600w, /assets/products/andtradition-betty-tk1/r/2-2000.webp 2000w",
+  "jpg": "/assets/products/andtradition-betty-tk1/r/2-400.jpg 400w, /assets/products/andtradition-betty-tk1/r/2-800.jpg 800w, /assets/products/andtradition-betty-tk1/r/2-1200.jpg 1200w, /assets/products/andtradition-betty-tk1/r/2-1600.jpg 1600w, /assets/products/andtradition-betty-tk1/2.jpg 2000w"
+ },
+ "/assets/products/andtradition-in-between-sk1/1.jpg": {
+  "w": 1500,
+  "h": 2000,
+  "avif": "/assets/products/andtradition-in-between-sk1/r/1-400.avif 400w, /assets/products/andtradition-in-between-sk1/r/1-800.avif 800w, /assets/products/andtradition-in-between-sk1/r/1-1200.avif 1200w, /assets/products/andtradition-in-between-sk1/r/1-1500.avif 1500w",
+  "webp": "/assets/products/andtradition-in-between-sk1/r/1-400.webp 400w, /assets/products/andtradition-in-between-sk1/r/1-800.webp 800w, /assets/products/andtradition-in-between-sk1/r/1-1200.webp 1200w, /assets/products/andtradition-in-between-sk1/r/1-1500.webp 1500w",
+  "jpg": "/assets/products/andtradition-in-between-sk1/r/1-400.jpg 400w, /assets/products/andtradition-in-between-sk1/r/1-800.jpg 800w, /assets/products/andtradition-in-between-sk1/r/1-1200.jpg 1200w, /assets/products/andtradition-in-between-sk1/1.jpg 1500w"
+ },
+ "/assets/products/andtradition-in-between-sk1/2.jpg": {
+  "w": 3000,
+  "h": 2563,
+  "avif": "/assets/products/andtradition-in-between-sk1/r/2-400.avif 400w, /assets/products/andtradition-in-between-sk1/r/2-800.avif 800w, /assets/products/andtradition-in-between-sk1/r/2-1200.avif 1200w, /assets/products/andtradition-in-between-sk1/r/2-1600.avif 1600w, /assets/products/andtradition-in-between-sk1/r/2-3000.avif 3000w",
+  "webp": "/assets/products/andtradition-in-between-sk1/r/2-400.webp 400w, /assets/products/andtradition-in-between-sk1/r/2-800.webp 800w, /assets/products/andtradition-in-between-sk1/r/2-1200.webp 1200w, /assets/products/andtradition-in-between-sk1/r/2-1600.webp 1600w, /assets/products/andtradition-in-between-sk1/r/2-3000.webp 3000w",
+  "jpg": "/assets/products/andtradition-in-between-sk1/r/2-400.jpg 400w, /assets/products/andtradition-in-between-sk1/r/2-800.jpg 800w, /assets/products/andtradition-in-between-sk1/r/2-1200.jpg 1200w, /assets/products/andtradition-in-between-sk1/r/2-1600.jpg 1600w, /assets/products/andtradition-in-between-sk1/2.jpg 3000w"
+ },
+ "/assets/products/andtradition-in-between-sk1/t/1.jpg": {
+  "w": 160,
+  "h": 213,
+  "avif": "/assets/products/andtradition-in-between-sk1/t/r/1-160.avif 160w",
+  "webp": "/assets/products/andtradition-in-between-sk1/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/andtradition-in-between-sk1/t/1.jpg 160w"
+ },
+ "/assets/products/andtradition-in-between-sk1/t/2.jpg": {
+  "w": 160,
+  "h": 137,
+  "avif": "/assets/products/andtradition-in-between-sk1/t/r/2-160.avif 160w",
+  "webp": "/assets/products/andtradition-in-between-sk1/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/andtradition-in-between-sk1/t/2.jpg 160w"
+ },
+ "/assets/products/andtradition-in-between-sk1/t/3.jpg": {
+  "w": 160,
+  "h": 242,
+  "avif": "/assets/products/andtradition-in-between-sk1/t/r/3-160.avif 160w",
+  "webp": "/assets/products/andtradition-in-between-sk1/t/r/3-160.webp 160w",
+  "jpg": "/assets/products/andtradition-in-between-sk1/t/3.jpg 160w"
+ },
+ "/assets/products/andtradition-betty-tk1/1.jpg": {
+  "w": 2000,
+  "h": 2000,
+  "avif": "/assets/products/andtradition-betty-tk1/r/1-400.avif 400w, /assets/products/andtradition-betty-tk1/r/1-800.avif 800w, /assets/products/andtradition-betty-tk1/r/1-1200.avif 1200w, /assets/products/andtradition-betty-tk1/r/1-1600.avif 1600w, /assets/products/andtradition-betty-tk1/r/1-2000.avif 2000w",
+  "webp": "/assets/products/andtradition-betty-tk1/r/1-400.webp 400w, /assets/products/andtradition-betty-tk1/r/1-800.webp 800w, /assets/products/andtradition-betty-tk1/r/1-1200.webp 1200w, /assets/products/andtradition-betty-tk1/r/1-1600.webp 1600w, /assets/products/andtradition-betty-tk1/r/1-2000.webp 2000w",
+  "jpg": "/assets/products/andtradition-betty-tk1/r/1-400.jpg 400w, /assets/products/andtradition-betty-tk1/r/1-800.jpg 800w, /assets/products/andtradition-betty-tk1/r/1-1200.jpg 1200w, /assets/products/andtradition-betty-tk1/r/1-1600.jpg 1600w, /assets/products/andtradition-betty-tk1/1.jpg 2000w"
+ },
+ "/assets/products/andtradition-betty-tk1/3.jpg": {
+  "w": 2000,
+  "h": 2000,
+  "avif": "/assets/products/andtradition-betty-tk1/r/3-400.avif 400w, /assets/products/andtradition-betty-tk1/r/3-800.avif 800w, /assets/products/andtradition-betty-tk1/r/3-1200.avif 1200w, /assets/products/andtradition-betty-tk1/r/3-1600.avif 1600w, /assets/products/andtradition-betty-tk1/r/3-2000.avif 2000w",
+  "webp": "/assets/products/andtradition-betty-tk1/r/3-400.webp 400w, /assets/products/andtradition-betty-tk1/r/3-800.webp 800w, /assets/products/andtradition-betty-tk1/r/3-1200.webp 1200w, /assets/products/andtradition-betty-tk1/r/3-1600.webp 1600w, /assets/products/andtradition-betty-tk1/r/3-2000.webp 2000w",
+  "jpg": "/assets/products/andtradition-betty-tk1/r/3-400.jpg 400w, /assets/products/andtradition-betty-tk1/r/3-800.jpg 800w, /assets/products/andtradition-betty-tk1/r/3-1200.jpg 1200w, /assets/products/andtradition-betty-tk1/r/3-1600.jpg 1600w, /assets/products/andtradition-betty-tk1/3.jpg 2000w"
+ },
+ "/assets/products/hay-manolito-stool/t/1.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/hay-manolito-stool/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-manolito-stool/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-manolito-stool/t/1.jpg 160w"
+ },
+ "/assets/products/hay-manolito-stool/t/2.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/hay-manolito-stool/t/r/2-160.avif 160w",
+  "webp": "/assets/products/hay-manolito-stool/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/hay-manolito-stool/t/2.jpg 160w"
+ },
+ "/assets/products/hay-manolito-stool/2.jpg": {
+  "w": 1220,
+  "h": 1220,
+  "avif": "/assets/products/hay-manolito-stool/r/2-400.avif 400w, /assets/products/hay-manolito-stool/r/2-800.avif 800w, /assets/products/hay-manolito-stool/r/2-1200.avif 1200w, /assets/products/hay-manolito-stool/r/2-1220.avif 1220w",
+  "webp": "/assets/products/hay-manolito-stool/r/2-400.webp 400w, /assets/products/hay-manolito-stool/r/2-800.webp 800w, /assets/products/hay-manolito-stool/r/2-1200.webp 1200w, /assets/products/hay-manolito-stool/r/2-1220.webp 1220w",
+  "jpg": "/assets/products/hay-manolito-stool/r/2-400.jpg 400w, /assets/products/hay-manolito-stool/r/2-800.jpg 800w, /assets/products/hay-manolito-stool/r/2-1200.jpg 1200w, /assets/products/hay-manolito-stool/2.jpg 1220w"
+ },
+ "/assets/products/hay-manolito-stool/1.jpg": {
+  "w": 1200,
+  "h": 1200,
+  "avif": "/assets/products/hay-manolito-stool/r/1-400.avif 400w, /assets/products/hay-manolito-stool/r/1-800.avif 800w, /assets/products/hay-manolito-stool/r/1-1200.avif 1200w",
+  "webp": "/assets/products/hay-manolito-stool/r/1-400.webp 400w, /assets/products/hay-manolito-stool/r/1-800.webp 800w, /assets/products/hay-manolito-stool/r/1-1200.webp 1200w",
+  "jpg": "/assets/products/hay-manolito-stool/r/1-400.jpg 400w, /assets/products/hay-manolito-stool/r/1-800.jpg 800w, /assets/products/hay-manolito-stool/1.jpg 1200w"
+ },
+ "/assets/products/andtradition-in-between-sk1/3.jpg": {
+  "w": 1320,
+  "h": 2000,
+  "avif": "/assets/products/andtradition-in-between-sk1/r/3-400.avif 400w, /assets/products/andtradition-in-between-sk1/r/3-800.avif 800w, /assets/products/andtradition-in-between-sk1/r/3-1200.avif 1200w, /assets/products/andtradition-in-between-sk1/r/3-1320.avif 1320w",
+  "webp": "/assets/products/andtradition-in-between-sk1/r/3-400.webp 400w, /assets/products/andtradition-in-between-sk1/r/3-800.webp 800w, /assets/products/andtradition-in-between-sk1/r/3-1200.webp 1200w, /assets/products/andtradition-in-between-sk1/r/3-1320.webp 1320w",
+  "jpg": "/assets/products/andtradition-in-between-sk1/r/3-400.jpg 400w, /assets/products/andtradition-in-between-sk1/r/3-800.jpg 800w, /assets/products/andtradition-in-between-sk1/r/3-1200.jpg 1200w, /assets/products/andtradition-in-between-sk1/3.jpg 1320w"
  }
 }

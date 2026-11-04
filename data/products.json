@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-11-04",
  "homepageDrop": [
   "yoshitomo-nara-green-eyes",
   "yoshitomo-nara-eye-patch"
@@ -2733,11 +2733,11 @@
     "zh": "Beton Grey"
    },
    "description": {
-    "en": "",
-    "zh": ""
+    "en": "Ceiling cup, fabric cord and lamp holder in Beton Grey. Brand new. More colourways are available for pre-order.",
+    "zh": "Common 吊燈電線組，Beton Grey，包括天花蓋、布線及燈頭。全新。更多顏色可預訂。"
    },
    "category": "lighting",
-   "status": "sold",
+   "status": "available",
    "fulfilment": "both",
    "photos": [
     "/assets/products/hay-common-pendant-cord-set-beton-grey/1.jpg"
@@ -2753,7 +2753,27 @@
     "zh": [
      "HAY Common 吊燈電線組（Beton Grey）：天花蓋、布線及燈頭"
     ]
-   }
+   },
+   "sku": "TT-HAY-0034",
+   "details": {
+    "en": [
+     "Ceiling cup, fabric cord and lamp holder",
+     "More colourways are available for pre-order."
+    ],
+    "zh": [
+     "包括天花蓋、布線及燈頭",
+     "更多顏色可預訂。"
+    ]
+   },
+   "sizeGuide": false,
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 448
   },
   {
    "slug": "hay-rice-paper-shade",
@@ -2761,20 +2781,20 @@
    "featured": false,
    "brand": "HAY",
    "name": {
-    "en": "Rice Paper Shade",
-    "zh": "Rice Paper 紙燈罩"
+    "en": "Rice Paper Shade Ø50",
+    "zh": "Rice Paper 紙燈罩 Ø50"
    },
    "model": "Rice Paper Shade",
    "colour": {
-    "en": "",
-    "zh": ""
+    "en": "White",
+    "zh": "白色"
    },
    "description": {
-    "en": "",
-    "zh": ""
+    "en": "A round white rice-paper pendant, Ø50. Shade only. Brand new. Other sizes are available for pre-order.",
+    "zh": "圓形白色紙燈罩，Ø50。只售燈罩。全新。其他尺寸可預訂。"
    },
    "category": "lighting",
-   "status": "sold",
+   "status": "available",
    "fulfilment": "both",
    "photos": [
     "/assets/products/hay-rice-paper-shade/1.jpg"
@@ -2790,7 +2810,32 @@
     "zh": [
      "HAY Rice Paper 圓形白色紙燈罩，掛在書架前的餐桌上"
     ]
-   }
+   },
+   "sku": "TT-HAY-0033",
+   "details": {
+    "en": [
+     "Shade only",
+     "Other sizes are available for pre-order."
+    ],
+    "zh": [
+     "只售燈罩",
+     "其他尺寸可預訂。"
+    ]
+   },
+   "dimensions": {
+    "dia": 50,
+    "h": 47,
+    "unit": "cm"
+   },
+   "sizeGuide": false,
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 298
   },
   {
    "slug": "dulton-double-face-clock-green-sold",
@@ -2837,6 +2882,217 @@
     ],
     "zh": [
      "DULTON 深綠色雙面掛鐘從牆面伸出，掛在通往飯廳的門口上方"
+    ]
+   }
+  },
+  {
+   "featured": false,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "slug": "andtradition-betty-tk1",
+   "zhType": "餐椅",
+   "sku": "TT-ANT-0010",
+   "brand": "&Tradition",
+   "designer": "Thau & Kallio",
+   "name": {
+    "en": "&Tradition Betty TK1 · Black",
+    "zh": "&Tradition Betty TK1 · 黑色"
+   },
+   "model": "Betty TK1",
+   "colour": {
+    "en": "Black / natural linen",
+    "zh": "黑色／原色亞麻"
+   },
+   "material": {
+    "en": "Black frame, natural linen seat",
+    "zh": "黑色框架、原色亞麻坐墊"
+   },
+   "description": {
+    "en": "&Tradition Betty TK1 chair in black with a natural linen seat, designed by Thau & Kallio. Never used at home, shown in a showroom or shop.",
+    "zh": "&Tradition Betty TK1 餐椅，黑色配原色亞麻坐墊，由 Thau & Kallio 設計。未曾家用，曾於陳列室或店舖展示。"
+   },
+   "details": {
+    "en": [
+     "Black frame with a natural linen seat",
+     "Never used at home, shown in a showroom or shop.",
+     "Manufacturer size: W 51 × D 48 × H 77 cm, seat height 47 cm"
+    ],
+    "zh": [
+     "黑色框架配原色亞麻坐墊",
+     "未曾家用，曾於陳列室或店舖展示。",
+     "廠方尺寸：闊 51 × 深 48 × 高 77 cm，座高 47 cm"
+    ]
+   },
+   "category": "seating",
+   "dimensions": {
+    "w": 51,
+    "d": 48,
+    "h": 77,
+    "unit": "cm",
+    "weightKg": 4
+   },
+   "condition": {
+    "grade": "display",
+    "notes": {
+     "en": "Never used at home, shown in a showroom or shop.",
+     "zh": "未曾家用，曾於陳列室或店舖展示。"
+    }
+   },
+   "price": 3480,
+   "photos": [
+    "/assets/products/andtradition-betty-tk1/1.jpg",
+    "/assets/products/andtradition-betty-tk1/2.jpg",
+    "/assets/products/andtradition-betty-tk1/3.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Betty TK1 chair in black with a natural linen seat, beside a wooden staircase",
+    "zh": "&Tradition Betty TK1 餐椅，黑色配原色亞麻坐墊，放在木樓梯旁"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Betty TK1 chair in black with a natural linen seat, beside a wooden staircase",
+     "&Tradition Betty TK1 in black with a natural linen seat, on a white background",
+     "&Tradition Betty TK1 chair in black with a natural linen seat, at a wooden desk"
+    ],
+    "zh": [
+     "&Tradition Betty TK1 餐椅，黑色配原色亞麻坐墊，放在木樓梯旁",
+     "&Tradition Betty TK1 黑色配原色亞麻坐墊，白色背景產品照",
+     "&Tradition Betty TK1 餐椅，黑色配原色亞麻坐墊，放在木書桌前"
+    ]
+   }
+  },
+  {
+   "featured": false,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "slug": "andtradition-in-between-sk1",
+   "zhType": "餐椅",
+   "sku": "TT-ANT-0009",
+   "brand": "&Tradition",
+   "designer": "Sami Kallio",
+   "name": {
+    "en": "&Tradition In Between SK1 · Oiled oak",
+    "zh": "&Tradition In Between SK1 · 油裝橡木"
+   },
+   "model": "In Between SK1",
+   "colour": {
+    "en": "Oiled oak",
+    "zh": "油裝橡木"
+   },
+   "material": {
+    "en": "Oiled oak",
+    "zh": "油裝橡木"
+   },
+   "description": {
+    "en": "&Tradition In Between SK1 chair in oiled oak, designed by Sami Kallio. Never used at home, shown in a showroom or shop.",
+    "zh": "&Tradition In Between SK1 餐椅，油裝橡木，由 Sami Kallio 設計。未曾家用，曾於陳列室或店舖展示。"
+   },
+   "details": {
+    "en": [
+     "Oiled oak",
+     "Never used at home, shown in a showroom or shop."
+    ],
+    "zh": [
+     "油裝橡木",
+     "未曾家用，曾於陳列室或店舖展示。"
+    ]
+   },
+   "category": "seating",
+   "condition": {
+    "grade": "display",
+    "notes": {
+     "en": "Never used at home, shown in a showroom or shop.",
+     "zh": "未曾家用，曾於陳列室或店舖展示。"
+    }
+   },
+   "price": 3280,
+   "photos": [
+    "/assets/products/andtradition-in-between-sk1/1.jpg",
+    "/assets/products/andtradition-in-between-sk1/2.jpg",
+    "/assets/products/andtradition-in-between-sk1/3.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition In Between SK1 chairs in oiled oak around a table in a bay window",
+    "zh": "&Tradition In Between SK1 餐椅，油裝橡木，圍著圓桌放在弧形窗前"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition In Between SK1 chairs in oiled oak around a table in a bay window",
+     "&Tradition In Between SK1 in oiled oak, on a white background",
+     "&Tradition In Between SK1 chairs in oiled oak around a table beside a rubber plant"
+    ],
+    "zh": [
+     "&Tradition In Between SK1 餐椅，油裝橡木，圍著圓桌放在弧形窗前",
+     "&Tradition In Between SK1 油裝橡木，白色背景產品照",
+     "&Tradition In Between SK1 餐椅，油裝橡木，圍著圓桌放在大葉植物旁"
+    ]
+   }
+  },
+  {
+   "featured": false,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "slug": "hay-manolito-stool",
+   "zhType": "凳",
+   "sku": "TT-HAY-0040",
+   "brand": "HAY",
+   "name": {
+    "en": "HAY Manolito Stool · Natural Short",
+    "zh": "HAY Manolito 凳 · Natural Short"
+   },
+   "model": "Manolito",
+   "colour": {
+    "en": "Natural Short",
+    "zh": "Natural Short"
+   },
+   "description": {
+    "en": "HAY Manolito stool in Natural Short. Brand new.",
+    "zh": "HAY Manolito 凳，Natural Short。全新。"
+   },
+   "details": {
+    "en": [
+     "Natural, short",
+     "W 20 × D 30 × H 25 cm"
+    ],
+    "zh": [
+     "原色短款",
+     "闊 20 × 深 30 × 高 25 cm"
+    ]
+   },
+   "category": "seating",
+   "dimensions": {
+    "w": 20,
+    "d": 30,
+    "h": 25,
+    "unit": "cm"
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 980,
+   "photos": [
+    "/assets/products/hay-manolito-stool/1.jpg",
+    "/assets/products/hay-manolito-stool/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Manolito stool in Natural Short beside a grey sofa",
+    "zh": "HAY Manolito 凳，Natural Short，放在灰色沙發旁"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Manolito stool in Natural Short beside a grey sofa",
+     "HAY Manolito stool in Natural Short, on a pale grey background"
+    ],
+    "zh": [
+     "HAY Manolito 凳，Natural Short，放在灰色沙發旁",
+     "HAY Manolito 凳 Natural Short，淺灰背景產品照"
     ]
    }
   }
