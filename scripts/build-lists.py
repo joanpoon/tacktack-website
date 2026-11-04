@@ -381,7 +381,7 @@ def og_image(d):
     for p in pieces:
         if st(p) != "sold":
             return photo(p)
-    return pieces[0] and photo(pieces[0]) if pieces else "/assets/brand/og-default.png"
+    return pieces[0] and photo(pieces[0]) if pieces else "/assets/brand/og-default.jpg"
 
 
 # ---------- designer links on item + brand pages ----------
