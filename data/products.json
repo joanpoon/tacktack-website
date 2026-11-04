@@ -2755,6 +2755,7 @@
     ]
    },
    "sku": "TT-HAY-0034",
+   "hidePublicSku": true,
    "details": {
     "en": [
      "Ceiling cup, fabric cord and lamp holder",
@@ -2812,6 +2813,7 @@
     ]
    },
    "sku": "TT-HAY-0033",
+   "hidePublicSku": true,
    "details": {
     "en": [
      "Shade only",
@@ -2893,6 +2895,7 @@
    "slug": "andtradition-betty-tk1",
    "zhType": "餐椅",
    "sku": "TT-ANT-0010",
+   "hidePublicSku": true,
    "brand": "&Tradition",
    "designer": "Thau & Kallio",
    "name": {
@@ -2970,6 +2973,7 @@
    "slug": "andtradition-in-between-sk1",
    "zhType": "餐椅",
    "sku": "TT-ANT-0009",
+   "hidePublicSku": true,
    "brand": "&Tradition",
    "designer": "Sami Kallio",
    "name": {
@@ -3038,6 +3042,7 @@
    "slug": "hay-manolito-stool",
    "zhType": "凳",
    "sku": "TT-HAY-0040",
+   "hidePublicSku": true,
    "brand": "HAY",
    "name": {
     "en": "HAY Manolito Stool · Natural Short",

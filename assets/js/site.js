@@ -50,8 +50,9 @@
   }
   function pageUrl(p) { return C.SITE_URL + lp("/item/" + p.slug + "/"); }
   function preorderOpen(p) { return state(p).st === "on-hold" && !!p.preorderOpen; }   // HK piece is on hold; more can still be pre-ordered
+  function waSku(p) { return p && p.hidePublicSku ? "" : ((p && p.sku) || ""); }
   function waFor(p) {
-    var st = state(p).st, w = T().wa, name = L(p.name), sku = p.sku || "";
+    var st = state(p).st, w = T().wa, name = L(p.name), sku = waSku(p);
     if (st === "sold") return { href: wa(w.msgSold(name, pageUrl(p), sku)), label: w.askSold };
     if (preorderOpen(p) || st === "pre-order") return { href: wa(w.msgPreorder(name, pageUrl(p), sku)), label: w.askPreorder };
     if (st === "on-hold") return { href: wa(w.msgHold(name, pageUrl(p), sku)), label: w.askHold };
@@ -392,10 +393,9 @@
   function policyText(p) {
     var t = T().policy, price = +p.price || 0;
     if (state(p).st === "sold") return t.sold;
-    if ((state(p).st === "pre-order" || preorderOpen(p)) && price < 1500) return (p.stockNote && t.preorderFullNoted ? t.preorderFullNoted(money(price)) : t.preorderFull(money(price)));
-    if (price < 1500) return t.full(money(price));
-    if (price < 10000) return t.dep30(money(Math.ceil(price * 0.3)), money(price));
-    return t.dep20(money(Math.max(3000, Math.ceil(price * 0.2))), money(price));
+    var dep = money(Math.ceil(price * 0.3));
+    if (state(p).st === "pre-order" || preorderOpen(p)) return p.stockNote ? t.preorderDepNoted(dep) : t.preorderDep(dep);
+    return t.dep(dep);
   }
   function addonItems(p) {
     return (p.addons || []).map(function (slug) {
@@ -427,7 +427,7 @@
       [t.labels.designer, p.designer], [t.labels.brand, p.brand, p.brand && DATA.brands && DATA.brands[p.brand] ? brandUrl(p.brand) : ""], [t.labels.model, p.model], [t.labels.year, L(p.year)],
       [t.labels.colour, L(p.colour)], [t.labels.material, L(p.material)], [t.labels.origin, L(p.origin)], [t.labels.dims, dims(p)],
       [t.labels.weight, p.dimensions && p.dimensions.weightKg ? "≈ " + p.dimensions.weightKg + " kg" : ""],
-      [t.labels.sku, p.sku]
+      [t.labels.sku, waSku(p)]
     ].filter(function (r) { return r[1]; });
     var photos = (p.photos && p.photos.length ? p.photos : [photo(p)]);
     var story = DATA.stories && DATA.stories[p.storyKey || ""];
