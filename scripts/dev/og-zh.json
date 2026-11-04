@@ -1,5 +1,5 @@
 {
-  "_readme": "Traditional Chinese share cards (og:image + twitter:image, 1200x630) for the /zh/ pages. Rendered by scripts/dev/render-og-zh.js into assets/og/zh/<file>; build-pages.py wires them into the zh pages (EN pages keep assets/brand/og-default.png). Rules: lifestyle photos only (never a white-background AKARI shot), no prices, no SKUs, no stock counts. Brand look from logo/final/README.md: Paytone One wordmark 'Tack, tack!', Walnut #4B2E21, Pale Blue #ADDCFB, Cream #F5EFE4, Signal Orange #E4572E accent.",
+  "_readme": "Traditional Chinese share cards (og:image + twitter:image, 1200x630) for the /zh/ pages. Rendered by scripts/dev/render-og-zh.js into assets/og/zh/<file>; build-pages.py wires them into the zh pages (EN pages keep assets/brand/og-default.jpg). Rules: lifestyle photos only (never a white-background AKARI shot), no prices, no SKUs, no stock counts. Brand look from logo/final/README.md: Paytone One wordmark 'Tack, tack!', Walnut #4B2E21, Pale Blue #ADDCFB, Cream #F5EFE4, Signal Orange #E4572E accent.",
   "cards": [
     {
       "path": "/",
