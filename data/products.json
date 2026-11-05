@@ -1,8 +1,14 @@
 {
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "homepageDrop": [
-  "yoshitomo-nara-green-eyes",
-  "yoshitomo-nara-eye-patch"
+  "ring-a-date-calendar-cafe-mousse",
+  "ring-a-date-calendar-white",
+  "ring-a-date-calendar-green",
+  "ring-a-date-calendar-orange",
+  "ring-a-date-rings-broom-yellow",
+  "ring-a-date-rings-neon-green",
+  "ring-a-date-rings-warm-red",
+  "ring-a-date-rings-pumpkin-orange"
  ],
  "stories": {
   "isamu-noguchi": {
@@ -78,6 +84,9 @@
   },
   "Yoshitomo Nara": {
    "slug": "yoshitomo-nara"
+  },
+  "Ring-a-Date": {
+   "slug": "ring-a-date"
   }
  },
  "products": [
@@ -3100,6 +3109,486 @@
      "HAY Manolito 凳 Natural Short，淺灰背景產品照"
     ]
    }
+  },
+  {
+   "slug": "ring-a-date-calendar-cafe-mousse",
+   "zhType": "萬年曆",
+   "sku": "TT-RAD-0004",
+   "featured": true,
+   "dropDate": "2026-11-05",
+   "brand": "Ring-a-Date",
+   "name": {
+    "en": "Ring-a-Date calendar · Cafè Mousse · Limited Edition",
+    "zh": "Ring-a-Date 萬年曆 · Cafè Mousse · 特別版"
+   },
+   "colour": {
+    "en": "Cafè Mousse",
+    "zh": "Cafè Mousse"
+   },
+   "description": {
+    "en": "The Limited Edition perpetual wall calendar in Cafè Mousse. Comes with a special metal plaque for this collection. Only 999 pieces in this Special Collection. Each piece is unique and numbered, with an anti-counterfeiting hologram. Brand new, with box.",
+    "zh": "Cafè Mousse 特別版掛牆萬年曆。附此系列專屬金屬銘牌。特別版限量999件，每件獨一無二，附獨立編號及防偽全息標籤。全新，連盒。"
+   },
+   "details": {
+    "en": [
+     "Limited Edition, 999 pieces",
+     "Special metal plaque",
+     "Numbered, with an anti-counterfeiting hologram",
+     "Brand new, with box"
+    ],
+    "zh": [
+     "特別版，限量999件",
+     "系列專屬金屬銘牌",
+     "獨立編號，附防偽全息標籤",
+     "全新，連盒"
+    ]
+   },
+   "category": "decor",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new, with box.",
+     "zh": "全新，連盒。"
+    }
+   },
+   "price": 1580,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/ring-a-date-calendar-cafe-mousse/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "The Cafè Mousse Ring-a-Date calendar on a white wall above a moka pot, cups and a small jug",
+    "zh": "Cafè Mousse 色 Ring-a-Date 萬年曆掛在白牆上，下方是摩卡壺、杯子和小奶壺"
+   },
+   "photoAlts": {
+    "en": [
+     "The Cafè Mousse Ring-a-Date calendar on a white wall above a moka pot, cups and a small jug"
+    ],
+    "zh": [
+     "Cafè Mousse 色 Ring-a-Date 萬年曆掛在白牆上，下方是摩卡壺、杯子和小奶壺"
+    ]
+   },
+   "dropAt": "2026-11-05T20:00:00+08:00"
+  },
+  {
+   "slug": "ring-a-date-calendar-white",
+   "zhType": "萬年曆",
+   "sku": "TT-RAD-0001",
+   "featured": false,
+   "dropDate": "2026-11-05",
+   "brand": "Ring-a-Date",
+   "name": {
+    "en": "Ring-a-Date calendar · White",
+    "zh": "Ring-a-Date 萬年曆 · 白色"
+   },
+   "colour": {
+    "en": "White",
+    "zh": "白色"
+   },
+   "description": {
+    "en": "A perpetual wall calendar from Ring-a-Date. Each morning we move the ring to mark the day, and the calendar keeps going year after year. Brand new, with box.",
+    "zh": "Ring-a-Date 的掛牆萬年曆。每天早上移動日期環標記當天，一年又一年都可繼續使用。全新，連盒。"
+   },
+   "details": {
+    "en": [
+     "Perpetual wall calendar",
+     "Brand new, with box"
+    ],
+    "zh": [
+     "掛牆萬年曆",
+     "全新，連盒"
+    ]
+   },
+   "category": "decor",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new, with box.",
+     "zh": "全新，連盒。"
+    }
+   },
+   "price": 1380,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/ring-a-date-calendar-white/1.jpg",
+    "/assets/products/ring-a-date-calendar-white/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "The White Ring-a-Date calendar on a bookshelf above a wooden desk",
+    "zh": "白色 Ring-a-Date 萬年曆放在書架上，下方是木書桌"
+   },
+   "photoAlts": {
+    "en": [
+     "The White Ring-a-Date calendar on a bookshelf above a wooden desk",
+     "The White Ring-a-Date calendar on a wooden desk beside a yellow lamp"
+    ],
+    "zh": [
+     "白色 Ring-a-Date 萬年曆放在書架上，下方是木書桌",
+     "白色 Ring-a-Date 萬年曆放在木書桌上，旁邊是一盞黃色檯燈"
+    ]
+   },
+   "dropAt": "2026-11-05T20:00:00+08:00"
+  },
+  {
+   "slug": "ring-a-date-calendar-green",
+   "zhType": "萬年曆",
+   "sku": "TT-RAD-0002",
+   "featured": false,
+   "dropDate": "2026-11-05",
+   "brand": "Ring-a-Date",
+   "name": {
+    "en": "Ring-a-Date calendar · Green",
+    "zh": "Ring-a-Date 萬年曆 · 綠色"
+   },
+   "colour": {
+    "en": "Green",
+    "zh": "綠色"
+   },
+   "description": {
+    "en": "A perpetual wall calendar from Ring-a-Date. Each morning we move the ring to mark the day, and the calendar keeps going year after year. Brand new, with box.",
+    "zh": "Ring-a-Date 的掛牆萬年曆。每天早上移動日期環標記當天，一年又一年都可繼續使用。全新，連盒。"
+   },
+   "details": {
+    "en": [
+     "Perpetual wall calendar",
+     "Brand new, with box"
+    ],
+    "zh": [
+     "掛牆萬年曆",
+     "全新，連盒"
+    ]
+   },
+   "category": "decor",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new, with box.",
+     "zh": "全新，連盒。"
+    }
+   },
+   "price": 1380,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/ring-a-date-calendar-green/1.jpg",
+    "/assets/products/ring-a-date-calendar-green/2.jpg",
+    "/assets/products/ring-a-date-calendar-green/3.jpg"
+   ],
+   "photoAlt": {
+    "en": "The Green Ring-a-Date calendar on a white wall above a wooden sideboard and a kettle",
+    "zh": "綠色 Ring-a-Date 萬年曆掛在白牆上，下方是木櫃和水壺"
+   },
+   "photoAlts": {
+    "en": [
+     "The Green Ring-a-Date calendar on a white wall above a wooden sideboard and a kettle",
+     "The Green Ring-a-Date calendar on a sunlit wall above a wooden cabinet",
+     "The Green Ring-a-Date calendar leaning on a dark wood cabinet beside stacks of books"
+    ],
+    "zh": [
+     "綠色 Ring-a-Date 萬年曆掛在白牆上，下方是木櫃和水壺",
+     "綠色 Ring-a-Date 萬年曆掛在陽光下的牆上，下方是木櫃",
+     "綠色 Ring-a-Date 萬年曆靠在深色木櫃上，旁邊是一疊疊書"
+    ]
+   },
+   "dropAt": "2026-11-05T20:00:00+08:00"
+  },
+  {
+   "slug": "ring-a-date-calendar-orange",
+   "zhType": "萬年曆",
+   "sku": "TT-RAD-0003",
+   "featured": false,
+   "dropDate": "2026-11-05",
+   "brand": "Ring-a-Date",
+   "name": {
+    "en": "Ring-a-Date calendar · Orange",
+    "zh": "Ring-a-Date 萬年曆 · 橙色"
+   },
+   "colour": {
+    "en": "Orange",
+    "zh": "橙色"
+   },
+   "description": {
+    "en": "A perpetual wall calendar from Ring-a-Date. Each morning we move the ring to mark the day, and the calendar keeps going year after year. Brand new, with box.",
+    "zh": "Ring-a-Date 的掛牆萬年曆。每天早上移動日期環標記當天，一年又一年都可繼續使用。全新，連盒。"
+   },
+   "details": {
+    "en": [
+     "Perpetual wall calendar",
+     "Brand new, with box"
+    ],
+    "zh": [
+     "掛牆萬年曆",
+     "全新，連盒"
+    ]
+   },
+   "category": "decor",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new, with box.",
+     "zh": "全新，連盒。"
+    }
+   },
+   "price": 1380,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/ring-a-date-calendar-orange/1.jpg",
+    "/assets/products/ring-a-date-calendar-orange/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "The Orange Ring-a-Date calendar on a blue wall beside a bass guitar",
+    "zh": "橙色 Ring-a-Date 萬年曆掛在藍色牆上，旁邊是一支低音結他"
+   },
+   "photoAlts": {
+    "en": [
+     "The Orange Ring-a-Date calendar on a blue wall beside a bass guitar",
+     "The Orange Ring-a-Date calendar on a pale grey wall"
+    ],
+    "zh": [
+     "橙色 Ring-a-Date 萬年曆掛在藍色牆上，旁邊是一支低音結他",
+     "橙色 Ring-a-Date 萬年曆掛在淺灰色牆上"
+    ]
+   },
+   "dropAt": "2026-11-05T20:00:00+08:00"
+  },
+  {
+   "slug": "ring-a-date-rings-broom-yellow",
+   "zhType": "日期環",
+   "sku": "TT-RAD-0005",
+   "featured": false,
+   "dropDate": "2026-11-05",
+   "brand": "Ring-a-Date",
+   "name": {
+    "en": "Ring-a-Date rings, set of 3 · Broom Yellow",
+    "zh": "Ring-a-Date 日期環，三個一套 · Broom Yellow"
+   },
+   "colour": {
+    "en": "Broom Yellow",
+    "zh": "Broom Yellow"
+   },
+   "description": {
+    "en": "A set of 3 coloured rings in Broom Yellow for the Ring-a-Date calendar. We like one colour for a birthday, a trip or the first day of a month. Brand new.",
+    "zh": "Ring-a-Date 萬年曆專用彩色日期環，Broom Yellow，三個一套。可用一種顏色標記生日、旅程或每月第一天。全新。"
+   },
+   "details": {
+    "en": [
+     "Set of 3 coloured rings",
+     "For the Ring-a-Date calendar",
+     "Brand new"
+    ],
+    "zh": [
+     "彩色日期環，三個一套",
+     "適用於 Ring-a-Date 萬年曆",
+     "全新"
+    ]
+   },
+   "category": "decor",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 128,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/ring-a-date-rings-broom-yellow/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "A Broom Yellow ring on the 28th of a white Ring-a-Date calendar",
+    "zh": "白色 Ring-a-Date 萬年曆上，28 日套上 Broom Yellow 日期環"
+   },
+   "photoAlts": {
+    "en": [
+     "A Broom Yellow ring on the 28th of a white Ring-a-Date calendar"
+    ],
+    "zh": [
+     "白色 Ring-a-Date 萬年曆上，28 日套上 Broom Yellow 日期環"
+    ]
+   },
+   "dropAt": "2026-11-05T20:00:00+08:00"
+  },
+  {
+   "slug": "ring-a-date-rings-neon-green",
+   "zhType": "日期環",
+   "sku": "TT-RAD-0006",
+   "featured": false,
+   "dropDate": "2026-11-05",
+   "brand": "Ring-a-Date",
+   "name": {
+    "en": "Ring-a-Date rings, set of 3 · Neon Green",
+    "zh": "Ring-a-Date 日期環，三個一套 · Neon Green"
+   },
+   "colour": {
+    "en": "Neon Green",
+    "zh": "Neon Green"
+   },
+   "description": {
+    "en": "A set of 3 coloured rings in Neon Green for the Ring-a-Date calendar. We like one colour for a birthday, a trip or the first day of a month. Brand new.",
+    "zh": "Ring-a-Date 萬年曆專用彩色日期環，Neon Green，三個一套。可用一種顏色標記生日、旅程或每月第一天。全新。"
+   },
+   "details": {
+    "en": [
+     "Set of 3 coloured rings",
+     "For the Ring-a-Date calendar",
+     "Brand new"
+    ],
+    "zh": [
+     "彩色日期環，三個一套",
+     "適用於 Ring-a-Date 萬年曆",
+     "全新"
+    ]
+   },
+   "category": "decor",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 128,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/ring-a-date-rings-neon-green/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "A Neon Green ring on the 14th of a white Ring-a-Date calendar",
+    "zh": "白色 Ring-a-Date 萬年曆上，14 日套上 Neon Green 日期環"
+   },
+   "photoAlts": {
+    "en": [
+     "A Neon Green ring on the 14th of a white Ring-a-Date calendar"
+    ],
+    "zh": [
+     "白色 Ring-a-Date 萬年曆上，14 日套上 Neon Green 日期環"
+    ]
+   },
+   "dropAt": "2026-11-05T20:00:00+08:00"
+  },
+  {
+   "slug": "ring-a-date-rings-warm-red",
+   "zhType": "日期環",
+   "sku": "TT-RAD-0007",
+   "featured": false,
+   "dropDate": "2026-11-05",
+   "brand": "Ring-a-Date",
+   "name": {
+    "en": "Ring-a-Date rings, set of 3 · Warm Red",
+    "zh": "Ring-a-Date 日期環，三個一套 · Warm Red"
+   },
+   "colour": {
+    "en": "Warm Red",
+    "zh": "Warm Red"
+   },
+   "description": {
+    "en": "A set of 3 coloured rings in Warm Red for the Ring-a-Date calendar. We like one colour for a birthday, a trip or the first day of a month. Brand new.",
+    "zh": "Ring-a-Date 萬年曆專用彩色日期環，Warm Red，三個一套。可用一種顏色標記生日、旅程或每月第一天。全新。"
+   },
+   "details": {
+    "en": [
+     "Set of 3 coloured rings",
+     "For the Ring-a-Date calendar",
+     "Brand new"
+    ],
+    "zh": [
+     "彩色日期環，三個一套",
+     "適用於 Ring-a-Date 萬年曆",
+     "全新"
+    ]
+   },
+   "category": "decor",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 128,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/ring-a-date-rings-warm-red/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "A Warm Red ring on February of a white Ring-a-Date calendar",
+    "zh": "白色 Ring-a-Date 萬年曆上，二月套上 Warm Red 日期環"
+   },
+   "photoAlts": {
+    "en": [
+     "A Warm Red ring on February of a white Ring-a-Date calendar"
+    ],
+    "zh": [
+     "白色 Ring-a-Date 萬年曆上，二月套上 Warm Red 日期環"
+    ]
+   },
+   "dropAt": "2026-11-05T20:00:00+08:00"
+  },
+  {
+   "slug": "ring-a-date-rings-pumpkin-orange",
+   "zhType": "日期環",
+   "sku": "TT-RAD-0008",
+   "featured": false,
+   "dropDate": "2026-11-05",
+   "brand": "Ring-a-Date",
+   "name": {
+    "en": "Ring-a-Date rings, set of 3 · Pumpkin Orange",
+    "zh": "Ring-a-Date 日期環，三個一套 · Pumpkin Orange"
+   },
+   "colour": {
+    "en": "Pumpkin Orange",
+    "zh": "Pumpkin Orange"
+   },
+   "description": {
+    "en": "A set of 3 coloured rings in Pumpkin Orange for the Ring-a-Date calendar. We like one colour for a birthday, a trip or the first day of a month. Brand new.",
+    "zh": "Ring-a-Date 萬年曆專用彩色日期環，Pumpkin Orange，三個一套。可用一種顏色標記生日、旅程或每月第一天。全新。"
+   },
+   "details": {
+    "en": [
+     "Set of 3 coloured rings",
+     "For the Ring-a-Date calendar",
+     "Brand new"
+    ],
+    "zh": [
+     "彩色日期環，三個一套",
+     "適用於 Ring-a-Date 萬年曆",
+     "全新"
+    ]
+   },
+   "category": "decor",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 128,
+   "status": "available",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/ring-a-date-rings-pumpkin-orange/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "A Pumpkin Orange ring on the 2nd of a white Ring-a-Date calendar",
+    "zh": "白色 Ring-a-Date 萬年曆上，2 日套上 Pumpkin Orange 日期環"
+   },
+   "photoAlts": {
+    "en": [
+     "A Pumpkin Orange ring on the 2nd of a white Ring-a-Date calendar"
+    ],
+    "zh": [
+     "白色 Ring-a-Date 萬年曆上，2 日套上 Pumpkin Orange 日期環"
+    ]
+   },
+   "dropAt": "2026-11-05T20:00:00+08:00"
   }
  ]
 }
