@@ -18,12 +18,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SUFFIX = " | Tack, tack!"
 DATE = "2026-10-17"
+# Homepage copy moved with Drop 06. Other pages keep DATE.
+HOME_DATE = "2026-11-05"
 
 # title, and description only when it should change. None keeps the description.
 PAGES = {
     "index.html": (
-        None,
-        "Hong Kong design shop. This week's drop is Yoshitomo Nara prints: Green Eyes and Eye Patch, brand new and in stock in Hong Kong. Enquire on WhatsApp.",
+        "Tack, tack! · This week's drop: Ring-a-Date",
+        "Hong Kong design shop. This week's drop is Ring-a-Date: perpetual wall calendars and coloured ring sets, brand new and in stock in Hong Kong. Enquire on WhatsApp.",
     ),
     "shop/index.html": (
         None,
@@ -79,16 +81,9 @@ PAGES = {
     ),
 }
 
-LEDE = {
-    "index.html": (
-        "Curated designer lighting, furniture and objects, new and pre-loved, in stock in Hong Kong: from Isamu Noguchi's paper AKARI to Heller's wave-shaped Swell. The grey DULTON Double Face clock is in stock in Hong Kong. Green is on hold here, and more are available to pre-order (Japan air freight).",
-        "Curated designer lighting, furniture and objects, new and pre-loved, in stock in Hong Kong: from Isamu Noguchi's paper AKARI to Heller's wave-shaped Swell. This week's drop is Yoshitomo Nara prints: Green Eyes and Eye Patch, brand new and in stock in Hong Kong. &amp;Tradition lighting and the DULTON clocks are in the shop too. Enquire on WhatsApp, pay by FPS, PayMe, cash or PayPal (for overseas buyers), then pick up from the showroom by appointment or have it delivered in Hong Kong.",
-    ),
-    "zh/index.html": (
-        "精選全新及二手設計師燈飾、家具及家品，香港現貨：由野口勇的 AKARI 和紙燈，到 Heller 的波浪 Swell。灰色 DULTON 雙面鐘是香港現貨。綠色已留貨，仍可預購更多（日本空運）。",
-        "精選全新及二手設計師燈飾、家具及家品，香港現貨：由野口勇的 AKARI 和紙燈，到 Heller 的波浪 Swell。本週新貨是奈良美智海報：Green Eyes 及 Eye Patch，全新，香港現貨。店內亦有 &amp;Tradition 燈飾及 DULTON 雙面鐘。WhatsApp 查詢，FPS、PayMe、現金或 PayPal（海外買家）付款，Showroom 預約自取或全港送貨。",
-    ),
-}
+# Weekly homepage titles live in PAGES (English) and data/zh-seo.json (繁中).
+# The intro under the slogan is not the week's drop line, so this script does not rewrite it.
+LEDE = {}
 
 TINT = {
     "item/hay-tint-wineglass-clear/index.html": {
@@ -130,7 +125,7 @@ def short_title(title: str) -> str:
     return title[: -len(SUFFIX)] if title.endswith(SUFFIX) else title
 
 
-def update_ld(html: str, title: str | None, description: str | None) -> str:
+def update_ld(html: str, title: str | None, description: str | None, date: str = DATE) -> str:
     short = short_title(title) if title else None
 
     def repl(match: re.Match) -> str:
@@ -146,14 +141,14 @@ def update_ld(html: str, title: str | None, description: str | None) -> str:
                 if description:
                     node["description"] = description
                 if "dateModified" in node:
-                    node["dateModified"] = DATE
+                    node["dateModified"] = date
         raw = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
         return '<script type="application/ld+json">' + raw + "</script>"
 
     return re.sub(r'<script type="application/ld\+json">(.*?)</script>', repl, html, count=1, flags=re.S)
 
 
-def apply_meta(path: Path, title: str | None, description: str | None) -> None:
+def apply_meta(path: Path, title: str | None, description: str | None, date: str = DATE) -> None:
     html = path.read_text(encoding="utf-8")
     if title:
         html = re.sub(
@@ -171,7 +166,7 @@ def apply_meta(path: Path, title: str | None, description: str | None) -> None:
         html = set_attr(html, r'(<meta property="og:description" content=")[^"]*(")', description)
         if 'name="twitter:description"' in html:
             html = set_attr(html, r'(<meta name="twitter:description" content=")[^"]*(")', description)
-    html = update_ld(html, title, description)
+    html = update_ld(html, title, description, date)
     path.write_text(html, encoding="utf-8")
 
 
@@ -236,7 +231,7 @@ def ensure_tint_product(path: Path, spec: dict) -> None:
 
 def main() -> None:
     for rel, (title, description) in PAGES.items():
-        apply_meta(ROOT / rel, title, description)
+        apply_meta(ROOT / rel, title, description, HOME_DATE if rel == "index.html" else DATE)
         print("meta", rel)
     for rel, (old, new) in LEDE.items():
         path = ROOT / rel

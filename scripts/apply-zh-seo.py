@@ -168,7 +168,7 @@ def ensure_twitter(html: str, title: str, description: str) -> str:
     return html.replace(anchor, block + anchor, 1)
 
 
-def update_ld(html: str, short: str, description: str, old_description: str) -> str:
+def update_ld(html: str, short: str, description: str, old_description: str, date: str = "2026-10-17") -> str:
     def repl(match: re.Match) -> str:
         data = json.loads(match.group(1))
         nodes = data.get("@graph", [data])
@@ -180,7 +180,7 @@ def update_ld(html: str, short: str, description: str, old_description: str) -> 
                 node["name"] = short
                 node["description"] = description
                 if "dateModified" in node:
-                    node["dateModified"] = "2026-10-17"
+                    node["dateModified"] = date
             if "Product" in types and node.get("description") == old_description:
                 node["description"] = description
         raw = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
@@ -202,7 +202,7 @@ def current_meta(html: str) -> tuple[str, str]:
     return html_unescape(title.group(1).strip()), html_unescape(desc.group(1))
 
 
-def apply_page(path: Path, title: str, description: str) -> tuple[str, str]:
+def apply_page(path: Path, title: str, description: str, date: str = "2026-10-17") -> tuple[str, str]:
     html = path.read_text(encoding="utf-8")
     old_title, old_description = current_meta(html)
     html = re.sub(
@@ -216,7 +216,7 @@ def apply_page(path: Path, title: str, description: str) -> tuple[str, str]:
     html = set_attr(html, r'(<meta property="og:title" content=")[^"]*(")', title)
     html = set_attr(html, r'(<meta property="og:description" content=")[^"]*(")', description)
     html = ensure_twitter(html, title, description)
-    html = update_ld(html, short_title(title), description, old_description)
+    html = update_ld(html, short_title(title), description, old_description, date)
     if html != path.read_text(encoding="utf-8"):
         path.write_text(html, encoding="utf-8")
     return old_title, old_description
@@ -278,7 +278,9 @@ def main() -> None:
     for rel, entry in seo["pages"].items():
         check_copy(rel, entry["title"], entry["description"])
         path = ROOT / rel
-        old_title, old_description = apply_page(path, entry["title"], entry["description"])
+        # Drop 06 homepage copy. Other reviewed pages keep the October stamp.
+        page_date = "2026-11-05" if rel == "zh/index.html" else "2026-10-17"
+        old_title, old_description = apply_page(path, entry["title"], entry["description"], page_date)
         if old_title != entry["title"] or old_description != entry["description"]:
             changes.append((rel, old_title, entry["title"], old_description, entry["description"]))
 

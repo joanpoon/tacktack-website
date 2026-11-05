@@ -9,6 +9,7 @@ data-sig fingerprint lets it skip a redraw when nothing has changed.
     python3 scripts/build-lists.py --check  # fail if anything is stale or a public piece is unlinked
 
 What it writes:
+  * the homepage #drop-grid (EN + /zh/) from homepageDrop, in that order
   * shop, sold, category and brand grids (EN + /zh/) and their ItemList JSON-LD
   * designer hub pages /designer/<slug>/ and /zh/designer/<slug>/ from data/designers.json
   * item and designer entries in sitemap.xml (other URLs are kept as they are)
@@ -263,11 +264,51 @@ def set_itemlist(text, lst, lang):
     return re.sub(r'<script type="application/ld\+json">(.*?)</script>', repl, text, flags=re.S)
 
 
+# Soft Drop 07 stays off the homepage rail until Thu 12 Nov 2026, 20:00 HKT.
+SOFT_DROP_UNTIL = dt.datetime.fromisoformat("2026-11-12T20:00:00+08:00")
+SOFT_DROP_SLUGS = frozenset({
+    "andtradition-betty-tk1",
+    "andtradition-in-between-sk1",
+    "hay-manolito-stool",
+    "hay-rice-paper-shade",
+    "hay-common-pendant-cord-set-beton-grey",
+})
+
+
+def homepage_drop():
+    """Pinned New this week rail. Order is data/products.json homepageDrop.
+
+    Same rule as renderHome() in assets/js/site.js: a non-empty homepageDrop
+    wins, including order, and only live unsold pieces are shown. When the pin
+    is empty, the rail falls back to whatever is still New this week.
+    """
+    slugs = list(CATALOG.get("homepageDrop") or [])
+    early = SOFT_DROP_SLUGS.intersection(slugs)
+    if early and NOW < SOFT_DROP_UNTIL:
+        raise SystemExit(
+            "Soft Drop 07 stays off homepageDrop until 2026-11-12 20:00 HKT: " + ", ".join(sorted(early))
+        )
+    by_slug = {p["slug"]: p for p in PUBLIC if st(p) != "sold"}
+    pinned = [by_slug[s] for s in slugs if s in by_slug]
+    if pinned:
+        return pinned[:8]
+    active = list(by_slug.values())
+
+    def _cmp_drop(a, b):
+        featured = (1 if b.get("featured") else 0) - (1 if a.get("featured") else 0)
+        return featured or _cmp_newest(a, b)
+
+    neu = sorted((p for p in active if is_new(p)), key=functools.cmp_to_key(_cmp_drop))
+    return (neu or newest(active))[:8]
+
+
 def lists():
-    """(path, grid id, products, eager, itemlist?) for every pre-rendered list."""
+    """(path, grid id, products, eager, lang) for every pre-rendered list."""
     out = []
     active = [p for p in PUBLIC if st(p) != "sold"]
+    drop = homepage_drop()
     for lang, pre in (("en", ""), ("zh", "zh/")):
+        out.append((ROOT / pre / "index.html", "drop-grid", drop, True, lang))
         out.append((ROOT / pre / "shop/index.html", "shop-grid", sold_last(active), True, lang))
         out.append((ROOT / pre / "sold/index.html", "sold-grid", newest([p for p in PUBLIC if st(p) == "sold"]), False, lang))
         for path in sorted((ROOT / pre / "category").glob("*/index.html")):
