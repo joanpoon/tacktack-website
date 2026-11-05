@@ -1097,5 +1097,173 @@
   "avif": "/assets/products/andtradition-in-between-sk1/r/3-400.avif 400w, /assets/products/andtradition-in-between-sk1/r/3-800.avif 800w, /assets/products/andtradition-in-between-sk1/r/3-1200.avif 1200w, /assets/products/andtradition-in-between-sk1/r/3-1320.avif 1320w",
   "webp": "/assets/products/andtradition-in-between-sk1/r/3-400.webp 400w, /assets/products/andtradition-in-between-sk1/r/3-800.webp 800w, /assets/products/andtradition-in-between-sk1/r/3-1200.webp 1200w, /assets/products/andtradition-in-between-sk1/r/3-1320.webp 1320w",
   "jpg": "/assets/products/andtradition-in-between-sk1/r/3-400.jpg 400w, /assets/products/andtradition-in-between-sk1/r/3-800.jpg 800w, /assets/products/andtradition-in-between-sk1/r/3-1200.jpg 1200w, /assets/products/andtradition-in-between-sk1/3.jpg 1320w"
+ },
+ "/assets/products/ring-a-date-calendar-cafe-mousse/1.jpg": {
+  "w": 1200,
+  "h": 1500,
+  "avif": "/assets/products/ring-a-date-calendar-cafe-mousse/r/1-400.avif 400w, /assets/products/ring-a-date-calendar-cafe-mousse/r/1-800.avif 800w, /assets/products/ring-a-date-calendar-cafe-mousse/r/1-1200.avif 1200w",
+  "webp": "/assets/products/ring-a-date-calendar-cafe-mousse/r/1-400.webp 400w, /assets/products/ring-a-date-calendar-cafe-mousse/r/1-800.webp 800w, /assets/products/ring-a-date-calendar-cafe-mousse/r/1-1200.webp 1200w",
+  "jpg": "/assets/products/ring-a-date-calendar-cafe-mousse/r/1-400.jpg 400w, /assets/products/ring-a-date-calendar-cafe-mousse/r/1-800.jpg 800w, /assets/products/ring-a-date-calendar-cafe-mousse/1.jpg 1200w"
+ },
+ "/assets/products/ring-a-date-calendar-cafe-mousse/t/1.jpg": {
+  "w": 160,
+  "h": 200,
+  "avif": "/assets/products/ring-a-date-calendar-cafe-mousse/t/r/1-160.avif 160w",
+  "webp": "/assets/products/ring-a-date-calendar-cafe-mousse/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/ring-a-date-calendar-cafe-mousse/t/1.jpg 160w"
+ },
+ "/assets/products/ring-a-date-calendar-green/1.jpg": {
+  "w": 960,
+  "h": 1200,
+  "avif": "/assets/products/ring-a-date-calendar-green/r/1-400.avif 400w, /assets/products/ring-a-date-calendar-green/r/1-800.avif 800w, /assets/products/ring-a-date-calendar-green/r/1-960.avif 960w",
+  "webp": "/assets/products/ring-a-date-calendar-green/r/1-400.webp 400w, /assets/products/ring-a-date-calendar-green/r/1-800.webp 800w, /assets/products/ring-a-date-calendar-green/r/1-960.webp 960w",
+  "jpg": "/assets/products/ring-a-date-calendar-green/r/1-400.jpg 400w, /assets/products/ring-a-date-calendar-green/r/1-800.jpg 800w, /assets/products/ring-a-date-calendar-green/1.jpg 960w"
+ },
+ "/assets/products/ring-a-date-calendar-green/2.jpg": {
+  "w": 1200,
+  "h": 1500,
+  "avif": "/assets/products/ring-a-date-calendar-green/r/2-400.avif 400w, /assets/products/ring-a-date-calendar-green/r/2-800.avif 800w, /assets/products/ring-a-date-calendar-green/r/2-1200.avif 1200w",
+  "webp": "/assets/products/ring-a-date-calendar-green/r/2-400.webp 400w, /assets/products/ring-a-date-calendar-green/r/2-800.webp 800w, /assets/products/ring-a-date-calendar-green/r/2-1200.webp 1200w",
+  "jpg": "/assets/products/ring-a-date-calendar-green/r/2-400.jpg 400w, /assets/products/ring-a-date-calendar-green/r/2-800.jpg 800w, /assets/products/ring-a-date-calendar-green/2.jpg 1200w"
+ },
+ "/assets/products/ring-a-date-calendar-green/3.jpg": {
+  "w": 640,
+  "h": 800,
+  "avif": "/assets/products/ring-a-date-calendar-green/r/3-400.avif 400w, /assets/products/ring-a-date-calendar-green/r/3-640.avif 640w",
+  "webp": "/assets/products/ring-a-date-calendar-green/r/3-400.webp 400w, /assets/products/ring-a-date-calendar-green/r/3-640.webp 640w",
+  "jpg": "/assets/products/ring-a-date-calendar-green/r/3-400.jpg 400w, /assets/products/ring-a-date-calendar-green/3.jpg 640w"
+ },
+ "/assets/products/ring-a-date-calendar-green/t/1.jpg": {
+  "w": 160,
+  "h": 200,
+  "avif": "/assets/products/ring-a-date-calendar-green/t/r/1-160.avif 160w",
+  "webp": "/assets/products/ring-a-date-calendar-green/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/ring-a-date-calendar-green/t/1.jpg 160w"
+ },
+ "/assets/products/ring-a-date-calendar-green/t/2.jpg": {
+  "w": 160,
+  "h": 200,
+  "avif": "/assets/products/ring-a-date-calendar-green/t/r/2-160.avif 160w",
+  "webp": "/assets/products/ring-a-date-calendar-green/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/ring-a-date-calendar-green/t/2.jpg 160w"
+ },
+ "/assets/products/ring-a-date-calendar-green/t/3.jpg": {
+  "w": 160,
+  "h": 200,
+  "avif": "/assets/products/ring-a-date-calendar-green/t/r/3-160.avif 160w",
+  "webp": "/assets/products/ring-a-date-calendar-green/t/r/3-160.webp 160w",
+  "jpg": "/assets/products/ring-a-date-calendar-green/t/3.jpg 160w"
+ },
+ "/assets/products/ring-a-date-calendar-orange/1.jpg": {
+  "w": 640,
+  "h": 800,
+  "avif": "/assets/products/ring-a-date-calendar-orange/r/1-400.avif 400w, /assets/products/ring-a-date-calendar-orange/r/1-640.avif 640w",
+  "webp": "/assets/products/ring-a-date-calendar-orange/r/1-400.webp 400w, /assets/products/ring-a-date-calendar-orange/r/1-640.webp 640w",
+  "jpg": "/assets/products/ring-a-date-calendar-orange/r/1-400.jpg 400w, /assets/products/ring-a-date-calendar-orange/1.jpg 640w"
+ },
+ "/assets/products/ring-a-date-calendar-orange/2.jpg": {
+  "w": 1200,
+  "h": 1500,
+  "avif": "/assets/products/ring-a-date-calendar-orange/r/2-400.avif 400w, /assets/products/ring-a-date-calendar-orange/r/2-800.avif 800w, /assets/products/ring-a-date-calendar-orange/r/2-1200.avif 1200w",
+  "webp": "/assets/products/ring-a-date-calendar-orange/r/2-400.webp 400w, /assets/products/ring-a-date-calendar-orange/r/2-800.webp 800w, /assets/products/ring-a-date-calendar-orange/r/2-1200.webp 1200w",
+  "jpg": "/assets/products/ring-a-date-calendar-orange/r/2-400.jpg 400w, /assets/products/ring-a-date-calendar-orange/r/2-800.jpg 800w, /assets/products/ring-a-date-calendar-orange/2.jpg 1200w"
+ },
+ "/assets/products/ring-a-date-calendar-orange/t/1.jpg": {
+  "w": 160,
+  "h": 200,
+  "avif": "/assets/products/ring-a-date-calendar-orange/t/r/1-160.avif 160w",
+  "webp": "/assets/products/ring-a-date-calendar-orange/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/ring-a-date-calendar-orange/t/1.jpg 160w"
+ },
+ "/assets/products/ring-a-date-calendar-orange/t/2.jpg": {
+  "w": 160,
+  "h": 200,
+  "avif": "/assets/products/ring-a-date-calendar-orange/t/r/2-160.avif 160w",
+  "webp": "/assets/products/ring-a-date-calendar-orange/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/ring-a-date-calendar-orange/t/2.jpg 160w"
+ },
+ "/assets/products/ring-a-date-calendar-white/1.jpg": {
+  "w": 1200,
+  "h": 1500,
+  "avif": "/assets/products/ring-a-date-calendar-white/r/1-400.avif 400w, /assets/products/ring-a-date-calendar-white/r/1-800.avif 800w, /assets/products/ring-a-date-calendar-white/r/1-1200.avif 1200w",
+  "webp": "/assets/products/ring-a-date-calendar-white/r/1-400.webp 400w, /assets/products/ring-a-date-calendar-white/r/1-800.webp 800w, /assets/products/ring-a-date-calendar-white/r/1-1200.webp 1200w",
+  "jpg": "/assets/products/ring-a-date-calendar-white/r/1-400.jpg 400w, /assets/products/ring-a-date-calendar-white/r/1-800.jpg 800w, /assets/products/ring-a-date-calendar-white/1.jpg 1200w"
+ },
+ "/assets/products/ring-a-date-calendar-white/2.jpg": {
+  "w": 1200,
+  "h": 1500,
+  "avif": "/assets/products/ring-a-date-calendar-white/r/2-400.avif 400w, /assets/products/ring-a-date-calendar-white/r/2-800.avif 800w, /assets/products/ring-a-date-calendar-white/r/2-1200.avif 1200w",
+  "webp": "/assets/products/ring-a-date-calendar-white/r/2-400.webp 400w, /assets/products/ring-a-date-calendar-white/r/2-800.webp 800w, /assets/products/ring-a-date-calendar-white/r/2-1200.webp 1200w",
+  "jpg": "/assets/products/ring-a-date-calendar-white/r/2-400.jpg 400w, /assets/products/ring-a-date-calendar-white/r/2-800.jpg 800w, /assets/products/ring-a-date-calendar-white/2.jpg 1200w"
+ },
+ "/assets/products/ring-a-date-calendar-white/t/1.jpg": {
+  "w": 160,
+  "h": 200,
+  "avif": "/assets/products/ring-a-date-calendar-white/t/r/1-160.avif 160w",
+  "webp": "/assets/products/ring-a-date-calendar-white/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/ring-a-date-calendar-white/t/1.jpg 160w"
+ },
+ "/assets/products/ring-a-date-calendar-white/t/2.jpg": {
+  "w": 160,
+  "h": 200,
+  "avif": "/assets/products/ring-a-date-calendar-white/t/r/2-160.avif 160w",
+  "webp": "/assets/products/ring-a-date-calendar-white/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/ring-a-date-calendar-white/t/2.jpg 160w"
+ },
+ "/assets/products/ring-a-date-rings-broom-yellow/1.jpg": {
+  "w": 400,
+  "h": 500,
+  "avif": "/assets/products/ring-a-date-rings-broom-yellow/r/1-400.avif 400w",
+  "webp": "/assets/products/ring-a-date-rings-broom-yellow/r/1-400.webp 400w",
+  "jpg": "/assets/products/ring-a-date-rings-broom-yellow/1.jpg 400w"
+ },
+ "/assets/products/ring-a-date-rings-broom-yellow/t/1.jpg": {
+  "w": 160,
+  "h": 200,
+  "avif": "/assets/products/ring-a-date-rings-broom-yellow/t/r/1-160.avif 160w",
+  "webp": "/assets/products/ring-a-date-rings-broom-yellow/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/ring-a-date-rings-broom-yellow/t/1.jpg 160w"
+ },
+ "/assets/products/ring-a-date-rings-neon-green/1.jpg": {
+  "w": 400,
+  "h": 500,
+  "avif": "/assets/products/ring-a-date-rings-neon-green/r/1-400.avif 400w",
+  "webp": "/assets/products/ring-a-date-rings-neon-green/r/1-400.webp 400w",
+  "jpg": "/assets/products/ring-a-date-rings-neon-green/1.jpg 400w"
+ },
+ "/assets/products/ring-a-date-rings-neon-green/t/1.jpg": {
+  "w": 160,
+  "h": 200,
+  "avif": "/assets/products/ring-a-date-rings-neon-green/t/r/1-160.avif 160w",
+  "webp": "/assets/products/ring-a-date-rings-neon-green/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/ring-a-date-rings-neon-green/t/1.jpg 160w"
+ },
+ "/assets/products/ring-a-date-rings-pumpkin-orange/1.jpg": {
+  "w": 400,
+  "h": 500,
+  "avif": "/assets/products/ring-a-date-rings-pumpkin-orange/r/1-400.avif 400w",
+  "webp": "/assets/products/ring-a-date-rings-pumpkin-orange/r/1-400.webp 400w",
+  "jpg": "/assets/products/ring-a-date-rings-pumpkin-orange/1.jpg 400w"
+ },
+ "/assets/products/ring-a-date-rings-pumpkin-orange/t/1.jpg": {
+  "w": 160,
+  "h": 200,
+  "avif": "/assets/products/ring-a-date-rings-pumpkin-orange/t/r/1-160.avif 160w",
+  "webp": "/assets/products/ring-a-date-rings-pumpkin-orange/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/ring-a-date-rings-pumpkin-orange/t/1.jpg 160w"
+ },
+ "/assets/products/ring-a-date-rings-warm-red/1.jpg": {
+  "w": 400,
+  "h": 500,
+  "avif": "/assets/products/ring-a-date-rings-warm-red/r/1-400.avif 400w",
+  "webp": "/assets/products/ring-a-date-rings-warm-red/r/1-400.webp 400w",
+  "jpg": "/assets/products/ring-a-date-rings-warm-red/1.jpg 400w"
+ },
+ "/assets/products/ring-a-date-rings-warm-red/t/1.jpg": {
+  "w": 160,
+  "h": 200,
+  "avif": "/assets/products/ring-a-date-rings-warm-red/t/r/1-160.avif 160w",
+  "webp": "/assets/products/ring-a-date-rings-warm-red/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/ring-a-date-rings-warm-red/t/1.jpg 160w"
  }
 }
