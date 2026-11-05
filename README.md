@@ -20,6 +20,24 @@ The feed includes pieces that can be bought: Available (`in_stock`) and Pre-orde
 
 Phrases that must stay out of the feeds, beyond the generic checks, can be listed in the `TT_PRIVATE_PATTERNS` environment variable (comma-separated) or in `scripts/merchant-private-patterns.local` (one literal phrase per line). That file is gitignored.
 
+## Public copy (run this before you show Joan)
+
+Banned shop phrases and Joan’s SKU exceptions live in [docs/public-copy-rules.md](docs/public-copy-rules.md). GitHub Actions runs the same check on every pull request.
+
+From the repo root, before you open a PR:
+
+```bash
+python3 scripts/check-public-copy.py --all
+```
+
+To scan only files you changed against `origin/main`:
+
+```bash
+python3 scripts/check-public-copy.py
+```
+
+The check fails on unit-comparison lines, site-mechanics hedges, “previously on display”, “no original box”, `花盆燈`, the Japanese middle-dot `・`, raw SKU / 貨號 in body copy, exclusive-dealer claims, and private cost / source / qty / showroom-address lines.
+
 The same script aligns each product page's schema.org Product and Offer JSON-LD (name, description, sku, brand, image, and the offer's price, currency, availability, condition, and url) with the catalog and the copy already on the page. It does not change visible copy. Sold pages use `https://schema.org/SoldOut`.
 
 The feeds are not listed in `sitemap.xml`. They are product data, not web pages, and adding them as sitemap URLs would make Google fetch a non-sitemap file. `robots.txt` leaves `/feeds/` crawlable and notes the feed URLs for Merchant Center.
