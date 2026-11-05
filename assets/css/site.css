@@ -535,5 +535,14 @@ body[data-page="home"] .site-footer { border-top: 3px solid var(--blue); margin-
 .story.story-warm .eyebrow::before { content: ""; display: block; width: 32px; height: 3px; background: #ADDCFB; border-radius: 2px; margin-bottom: 12px; }
 .story.story-warm h2 { font-family: var(--display); }
 
-/* Drop 06 hero: keep the title on the plain wall, clear of the calendar */
+/* Photo 30 hero: the lifestyle crop is busy behind the left-hand title.
+   A cream plate keeps the walnut type readable without covering the calendar. */
+.w-hero--rad .w-hero-text {
+  margin: -12px 0 0 -16px;
+  padding: 12px 16px 14px;
+  max-width: calc(100% - 20px);
+  background: rgba(251, 247, 240, .92);
+  pointer-events: none;
+}
+.w-hero--rad .w-hero-sub a { pointer-events: auto; }
 @media (min-width: 601px) { .w-hero--rad .w-hero-title { font-size: clamp(2.6rem, 4.2vw, 4rem); } .w-hero--rad .w-hero-text { left: clamp(20px, 3.5vw, 56px); } }
