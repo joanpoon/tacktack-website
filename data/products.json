@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05",
+ "updated": "2026-11-07",
  "homepageDrop": [
   "ring-a-date-calendar-cafe-mousse",
   "ring-a-date-calendar-white",
@@ -780,7 +780,7 @@
     }
    },
    "price": 1580,
-   "status": "available",
+   "status": "sold",
    "fulfilment": "both",
    "sizeGuide": false,
    "storyKey": "andtradition",

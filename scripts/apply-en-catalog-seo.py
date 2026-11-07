@@ -48,8 +48,8 @@ PAGES = {
         None,
     ),
     "item/andtradition-flowerpot-vp9-matt-black/index.html": (
-        "&Tradition Flowerpot VP9 Matt Black, Hong Kong | Tack, tack!",
-        None,
+        "Sold: &Tradition Flowerpot VP9, Matt Black | Tack, tack!",
+        "&Tradition Flowerpot VP9 portable lamp in Matt Black has found a new home. WhatsApp us for something similar.",
     ),
     "item/andtradition-flowerpot-vp9-mustard/index.html": (
         "&Tradition Flowerpot VP9 Mustard, Hong Kong | Tack, tack!",
