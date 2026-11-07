@@ -197,6 +197,7 @@
       ["Isamu Noguchi AKARI", "isamu-noguchi-akari", "野口勇 AKARI"],
       ["DULTON", "dulton", "DULTON"],
       ["Heller", "heller", "Heller"],
+      ["Herman Miller", "herman-miller", "Herman Miller"],
       ["HAY", "hay", "HAY"],
       ["Yoshitomo Nara", "yoshitomo-nara", "奈良美智"]
     ];

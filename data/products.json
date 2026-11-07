@@ -60,6 +60,16 @@
     "en": "Yoshitomo Nara (b. 1959) is a Japanese artist whose wide-eyed children sit somewhere between cute and slightly dangerous. These two prints are Green Eyes (2002) and Untitled (Eye Patch) (2012). Brand new, unframed, and small enough to courier across Hong Kong. A white solid wood picture frame for these prints is listed as an add-on.",
     "zh": "奈良美智（Yoshitomo Nara，生於 1959 年）是日本藝術家，畫中那些大眼睛小孩既可愛，又帶點不好惹。這兩張海報是 Green Eyes（2002）及 Untitled (Eye Patch)（2012）。全新、不連相框，小件可用速遞送往全港。另有白色實木掛牆相框可加購。"
    }
+  },
+  "afteroom": {
+   "title": {
+    "en": "Afteroom for Herman Miller",
+    "zh": "Afteroom × Herman Miller"
+   },
+   "body": {
+    "en": "Afteroom is the studio of Chen-Yen Wei and Hung-Ming Chen. Story, from 2017, is one column and nine shelves, with a footprint small enough for a Hong Kong corner. Sky is a quiet blue. Books lie on their sides, and each shelf turns to face the room or the side.",
+    "zh": "Afteroom 是 Chen-Yen Wei 與 Hung-Ming Chen 的工作室。Story 於 2017 年發表：一根柱、九層層板，落地大約 40 × 40 cm，香港的角落也放得下。天空藍是一種安靜的藍。書本橫放，層板可轉向前或向側。"
+   }
   }
  },
  "brands": {
@@ -87,6 +97,9 @@
   },
   "Ring-a-Date": {
    "slug": "ring-a-date"
+  },
+  "Herman Miller": {
+   "slug": "herman-miller"
   }
  },
  "products": [
@@ -3888,6 +3901,95 @@
     ]
    },
    "dropAt": "2026-11-05T20:00:00+08:00"
+  },
+  {
+   "slug": "herman-miller-story-bookcase-sky",
+   "zhType": "書架",
+   "sku": "TT-HMI-0001",
+   "featured": false,
+   "dropDate": "2026-11-07",
+   "brand": "Herman Miller",
+   "designer": "Afteroom",
+   "name": {
+    "en": "Story Bookcase · Sky",
+    "zh": "Story 書架 · 天空藍"
+   },
+   "model": "Story Bookcase",
+   "year": {
+    "en": "2017 design",
+    "zh": "2017 年設計"
+   },
+   "colour": {
+    "en": "Sky",
+    "zh": "天空藍"
+   },
+   "material": {
+    "en": "Powder-coated steel shelves and base; galvanized steel column with powder-coated aluminum sleeves",
+    "zh": "粉末塗層鋼層板及底座；鍍鋅鋼中柱配粉末塗層鋁套"
+   },
+   "description": {
+    "en": "One Sky pole, nine floating shelves, and a floor of about 40 × 40 cm. Books stack on their sides, and each shelf turns to face the room or the wall. It is a corner library that also sits like a quiet sculpture. Afteroom (Chen-Yen Wei and Hung-Ming Chen) designed Story in 2017.",
+    "zh": "一根天空藍的柱，九層浮動層板，落地大約 40 × 40 cm。書本橫放，層板可轉向前或向側。放在角落就是一座小圖書館，也像一件安靜的雕塑。Afteroom（Chen-Yen Wei 與 Hung-Ming Chen）於 2017 年為 Herman Miller 設計。"
+   },
+   "details": {
+    "en": [
+     "Standard size, nine shelves",
+     "Each shelf holds up to 3.2 kg (about 7 lb)",
+     "Wall anchor and safety strap included",
+     "Footprint about 40 × 40 cm, height 159 cm",
+     "Shelves turn to the front or the side; books stack on their sides"
+    ],
+    "zh": [
+     "Standard 尺寸，九層層板",
+     "每層承重上限 3.2 kg（約 7 lb）",
+     "附牆身固定件及安全帶",
+     "落地約 40 × 40 cm，高 159 cm",
+     "層板可轉向前或向側，書本橫放"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "h": 159,
+    "w": 40,
+    "d": 40,
+    "unit": "cm"
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 3880,
+   "status": "pre-order",
+   "stockNote": {
+    "en": "Next batch arriving soon. Pre-order available.",
+    "zh": "下一批即將到貨。仍可預購。"
+   },
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/herman-miller-story-bookcase-sky/1.jpg",
+    "/assets/products/herman-miller-story-bookcase-sky/2.jpg",
+    "/assets/products/herman-miller-story-bookcase-sky/3.jpg"
+   ],
+   "photoAlt": {
+    "en": "The Sky Herman Miller Story bookcase beside a white wire chair with a yellow checked cushion",
+    "zh": "天空藍 Herman Miller Story 書架，旁邊是白色鐵絲椅，椅上放着黃格靠墊"
+   },
+   "photoAlts": {
+    "en": [
+     "The Sky Herman Miller Story bookcase beside a white wire chair with a yellow checked cushion",
+     "The Sky Story bookcase filled with books beside a window, with a speckled blue jar on the floor",
+     "The Sky Story bookcase in a living room, beside a glass coffee table and a deep green sofa"
+    ],
+    "zh": [
+     "天空藍 Herman Miller Story 書架，旁邊是白色鐵絲椅，椅上放着黃格靠墊",
+     "天空藍 Story 書架靠窗擺滿書，地上有一隻斑點藍陶罐",
+     "客廳裡的天空藍 Story 書架，旁邊是玻璃茶几及深綠色沙發"
+    ]
+   },
+   "storyKey": "afteroom"
   }
  ]
 }

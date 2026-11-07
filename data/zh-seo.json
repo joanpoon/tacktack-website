@@ -195,6 +195,11 @@
       "zhType": "便攜燈",
       "title": "已售出：&Tradition Flowerpot 燈 VP9 · Vermilion Red | Tack, tack!",
       "description": "&Tradition Flowerpot 燈 VP9 · Vermilion Red 已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。"
+    },
+    "herman-miller-story-bookcase-sky": {
+      "zhType": "書架",
+      "title": "Herman Miller Story 書架 天空藍（全新）｜香港 | Tack, tack!",
+      "description": "全新 Herman Miller Story 書架，天空藍。Afteroom 設計，九層浮動層板，落地約 40 × 40 cm。HK$3,880。下一批即將到貨。仍可預購。WhatsApp 查詢。"
     }
   },
   "pages": {
@@ -241,6 +246,10 @@
     "zh/brand/yoshitomo-nara/index.html": {
       "title": "奈良美智海報｜香港 Green Eyes、Eye Patch | Tack, tack!",
       "description": "香港奈良美智海報，全新、不連相框：Green Eyes（綠眼）HK$298、Eye Patch（眼罩）HK$328。28 × 36 cm。WhatsApp 查詢，小件可速遞。"
+    },
+    "zh/brand/herman-miller/index.html": {
+      "title": "Herman Miller Story 書架 天空藍｜香港 | Tack, tack!",
+      "description": "香港預購 Herman Miller Story 書架，天空藍，Afteroom 設計。九層浮動層板，落地約 40 × 40 cm，全新。HK$3,880。WhatsApp 查詢。"
     }
   }
 }
