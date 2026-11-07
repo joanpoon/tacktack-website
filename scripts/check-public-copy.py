@@ -64,6 +64,27 @@ def compile_one(pattern: str) -> re.Pattern[str]:
     return re.compile(pattern, re.I | re.S)
 
 
+def name_to_pattern(name: str) -> str:
+    """Match a supplier name with optional spaces or hyphens.
+
+    ASCII names keep word boundaries. A name with any non-ASCII character is a
+    substring, because word boundaries do not fall between Chinese characters.
+    """
+    parts = [re.escape(part) for part in re.split(r"[\s-]+", name.strip()) if part]
+    if not parts:
+        raise SystemExit(f"Empty supplier name in {RULES_PATH}")
+    body = r"[\s-]*".join(parts)
+    if all(ord(char) < 128 for char in name):
+        return rf"\b{body}\b"
+    return body
+
+
+def ban_patterns(ban: dict) -> list[str]:
+    patterns = list(ban.get("patterns") or [])
+    patterns.extend(name_to_pattern(name) for name in ban.get("names") or [])
+    return patterns
+
+
 def rel(path: Path) -> str:
     return path.resolve().relative_to(ROOT).as_posix()
 
@@ -178,7 +199,7 @@ def scan_text(
     for ban in rules["bans"]:
         if ban.get("scope") == "pdp" and not pdp:
             continue
-        for pattern in ban["patterns"]:
+        for pattern in ban_patterns(ban):
             regex = compile_one(pattern)
             for match in regex.finditer(prepared):
                 key = (ban["id"], match.group(0), match.start())
@@ -359,6 +380,114 @@ def self_test() -> None:
     assert not scan_text("We quote the cost on WhatsApp before you pay.", rules, "delivery/index.html", "t")
     assert not scan_text("In stock in Hong Kong.", rules, "item/x/index.html", "t", slug="x")
     assert not scan_text("Official Heller dealer.", rules, "data/products.json", "t", brand_key="Heller")
+
+    # 8 Nov 2026 privacy widening. Customer delivery, Made in, and Heller × MoMA stay.
+    assert rules["updated"] == "2026-11-08"
+    named = next(ban for ban in rules["bans"] if ban["id"] == "privacy-named-supplier")
+    assert "Lamp Twist" in named.get("names", [])
+
+    def banned(text: str, rule_id: str, rel_path: str = "item/x/index.html", ruleset: dict | None = None, **kwargs):
+        found = scan_text(text, ruleset or rules, rel_path, "t", **kwargs)
+        ids = {hit[2] for hit in found}
+        assert rule_id in ids, (rule_id, text, found)
+
+    def allowed(text: str, rel_path: str = "item/x/index.html", **kwargs):
+        found = scan_text(text, rules, rel_path, "t", **kwargs)
+        assert not found, (text, found)
+
+    banned("Ask the vendor before you list it.", "privacy-vendor")
+    banned("Two vendors quoted this lamp.", "privacy-vendor")
+    banned("向廠商取貨。", "privacy-vendor")
+    banned("賣家供應這盞燈。", "privacy-vendor")
+
+    banned("Our freight forwarder has the carton.", "privacy-forwarder")
+    banned("The forwarder is late.", "privacy-forwarder")
+    banned("Email the freight agent.", "privacy-forwarder")
+    banned("貨代已寄出。", "privacy-forwarder")
+    banned("經貨運代理付運。", "privacy-forwarder")
+    banned("貨運公司取件。", "privacy-forwarder")
+
+    banned("Supplier shipping is extra.", "privacy-supplier-ship")
+    banned("Shipped from supplier last week.", "privacy-supplier-ship")
+    banned("Shipped from the supplier.", "privacy-supplier-ship")
+    banned("Freight from the supplier.", "privacy-supplier-ship")
+    banned("供應商出貨日期未定。", "privacy-supplier-ship")
+    banned("由供應商運送。", "privacy-supplier-ship")
+
+    for city in ("Osaka", "Copenhagen", "Tokyo", "London", "New York", "Rome", "Paris", "Berlin", "Milan"):
+        for verb in ("bought", "purchased", "sourced"):
+            banned(f"{verb.capitalize()} in {city}.", "privacy-purchase-place")
+    banned("Purchase date: 2024-03-01.", "privacy-purchase-place")
+    banned("Bought on 2024-11-08.", "privacy-purchase-place")
+    banned("Purchased on 3 March 2024.", "privacy-purchase-place")
+    banned("Purchased on March 3, 2024.", "privacy-purchase-place")
+    banned("Bought on 8 Nov 2026.", "privacy-purchase-place")
+    banned("在大阪購入。", "privacy-purchase-place")
+    banned("購於東京。", "privacy-purchase-place")
+    banned("入貨日期：2024-11-08。", "privacy-purchase-place")
+    banned("2024年入貨。", "privacy-purchase-place")
+
+    banned("Wholesale from a showroom.", "privacy-wholesale")
+    banned("We took it at wholesale.", "privacy-wholesale")
+    banned("批發自大阪。", "privacy-wholesale")
+    banned("批發價入的貨。", "privacy-wholesale")
+
+    banned("From Lamp Twist.", "privacy-named-supplier")
+    banned("LampTwist invoice.", "privacy-named-supplier")
+    banned("lamp twist stock.", "privacy-named-supplier")
+    banned("LAMP-TWIST carton.", "privacy-named-supplier")
+    extra = json.loads(json.dumps(rules))
+    extra_named = next(ban for ban in extra["bans"] if ban["id"] == "privacy-named-supplier")
+    extra_named["names"].append("Secret Mill")
+    extra_named["names"].append("秘密工房")
+    banned("Carton from Secret Mill.", "privacy-named-supplier", ruleset=extra)
+    banned("來自秘密工房。", "privacy-named-supplier", ruleset=extra)
+    allowed("Carton from Secret Mill.")
+    allowed("來自秘密工房。")
+
+    banned("Bought from MoMA.", "privacy-source")
+    banned("Purchased from MoMA.", "privacy-source")
+    banned("From MoMA Design Store.", "privacy-source")
+
+    allowed("Local delivery across Hong Kong.")
+    allowed("Small pieces can go by courier.")
+    allowed("Delivery to your door.")
+    allowed("送貨。")
+    allowed("本地送貨。")
+    allowed("Shipping fee to customer, quoted before you pay.")
+    allowed("We quote the cost on WhatsApp before you pay.", "delivery/index.html")
+    allowed("Small pieces (lamps, clocks, objects) can go by courier or local delivery. We quote the cost on WhatsApp before you pay.", "delivery/index.html")
+    allowed("On hold in Hong Kong. More are available to pre-order: Japan air freight, and we ship it when it lands.", "assets/js/strings.js")
+    allowed("Japan air freight. Once it lands in Hong Kong, pick up from the showroom by appointment or we deliver across Hong Kong, quoted on WhatsApp.", "assets/js/strings.js")
+    allowed("日本空運。到港後可於 Showroom 預約自取，或全港送貨（運費經 WhatsApp 報價）。", "assets/js/strings.js")
+    allowed("小件貨品（燈、掛鍾、擺設等）可安排速遞或本地送貨，運費會在付款前經 WhatsApp 報價。", "zh/delivery/index.html")
+    allowed("Made in Japan.")
+    allowed("Made in USA.")
+    allowed("Made in China.")
+    allowed("日本製造。")
+    allowed("日本直送。")
+    allowed("Official Heller dealer.", f"item/{slug_swell}/index.html", slug=slug_swell)
+    allowed("Heller 官方授權經銷商。", f"item/{slug_swell}/index.html", slug=slug_swell)
+    allowed("What does it cost?")
+    allowed("本店售 HK$148。")
+    allowed("In stock in Hong Kong.")
+    allowed("香港現貨。")
+    allowed("Wholesale lighting for the dining room.")
+    allowed("Look at wholesale lighting.")
+    allowed("Large furniture goes by movers.")
+    allowed("大型家具由搬運公司運送。")
+    allowed("New York is a long way from this shade.")
+    allowed("MoMA.")
+    allowed(
+        "Anna Dawson is a RISD-trained designer and California surfer. Heller spotted her Swell prototype at WantedDesign during NYCxDesign in 2022, and a year later launched it at ICFF, in collaboration with MoMA. Its wave-shaped curves have since picked up a Domino decor award (2023) and an Apartment Therapy Small/Cool award (2024). Swell Mini followed in 2025.",
+        "data/products.json",
+    )
+    allowed(
+        "Anna Dawson 畢業於 RISD（羅德島設計學院），也是一位加州衝浪愛好者。2022 年 NYCxDesign 期間，Heller 在 WantedDesign 展覽看中她的 Swell 原型，翌年在 ICFF 正式推出，並與 MoMA 合作發佈。這個波浪造型其後獲得 Domino 2023 家居擺設獎及 Apartment Therapy 2024 Small/Cool 獎；2025 年再推出 Swell Mini。",
+        "data/products.json",
+    )
+    allowed("2022 design, launched by Heller 2023.")
+    allowed("Bought the lamp for the living room.")
 
 
 def main() -> int:

@@ -8,6 +8,8 @@ Joan locked these on **21 Oct 2026** after rejects on [PR #57](https://github.co
 
 **5 Nov 2026.** Joan locked three more fails. Holds never have an end date. Every public order is a flat 30% deposit. A SKU / 貨號 in a sentence fails; a labeled field does not.
 
+**8 Nov 2026.** Joan widened the privacy bans. Vendor, freight forwarder, supplier shipping, a purchase city or date, wholesale source, and named suppliers such as Lamp Twist stay off public pages. Customer delivery, “Made in …”, the selling price, and Heller’s “in collaboration with MoMA” stay.
+
 Live catalog copy lives in:
 
 - `data/products.json` (names, descriptions, details, condition notes)
@@ -57,6 +59,15 @@ Heller Swell pages may say we are an official dealer. Not exclusive. Not sole.
 Allowed sentence (EN): `Official Heller dealer` (the brand page short form `Official dealer` is the same lock)
 Allowed sentence (ZH): `Heller 官方授權經銷商`
 
+### Heller × MoMA — design history
+
+The collaboration line stays. Do not add bare `MoMA` to `privacy-named-supplier`.
+
+Allowed (EN): `in collaboration with MoMA`
+Allowed (ZH): `並與 MoMA 合作發佈`
+
+`bought from MoMA`, `purchased from MoMA`, and `from MoMA Design Store` stay banned under `privacy-source`.
+
 ## Banned phrases
 
 Clear bans. The checker fails closed on these.
@@ -74,16 +85,22 @@ Clear bans. The checker fails closed on these.
 | `deposit-tier` | Under HK$1,500 full pay, HK$10,000+ at 20%, or any public deposit other than a flat 30% | “A 30% deposit reserves every order” / 「每張訂單付 30% 訂金即可留貨」 stays. “Refund you in full” / 「全數退款」 stays. Price filters such as “HK$1,500–5,000” stay. |
 | `exclusive-dealer` | exclusive / sole dealer, 獨家, 唯一授權 | Heller is official, not exclusive. |
 | `privacy-cost` | unit cost, our cost, purchase cost, 成本, 進貨價 | Public retail “what does it cost?” is fine. |
-| `privacy-source` | bought from, sourced from, supplier, 供應商, 入貨自 | Origin like “Made in Japan” / 「日本直送」 is fine. |
+| `privacy-source` | bought from, sourced from, supplier, 供應商, 入貨自, MoMA Design Store | Origin like “Made in Japan” / 「日本直送」 is fine. Bare MoMA stays, including Heller “in collaboration with MoMA”. |
 | `privacy-qty` | `qty`, stock quantity, `庫存 3` | “In stock in Hong Kong” / 現貨 is fine. |
 | `privacy-address` | showroom address, street-level address | “We share the address when you book” is fine. |
+| `privacy-vendor` | `vendor`, `vendors`, 廠商, 賣家供應 | Supplier-side vendor wording. |
+| `privacy-forwarder` | freight forwarder, `forwarder`, freight agent, 貨代, 貨運代理, 貨運公司 | Purchase logistics. Local delivery, courier, “to your door”, and “Japan air freight” to the customer stay. |
+| `privacy-supplier-ship` | supplier shipping, shipped from supplier, freight from supplier, 供應商出貨 | Inbound freight from a supplier. Not a customer shipping fee. |
+| `privacy-purchase-place` | bought / purchased / sourced in a city, purchase date, bought on YYYY, 在大阪購入, 入貨日期 | Where or when we bought it. “Made in Japan” / 日本製造 stays. |
+| `privacy-wholesale` | wholesale from, at wholesale, 批發自, 批發價入 | Purchase source. “Wholesale lighting” as a design category stays. |
+| `privacy-named-supplier` | Lamp Twist, LampTwist, lamp twist. Add the next internal name to `names`. | Never public. The checker matches spaces and hyphens loosely. Do not add bare MoMA. |
 
 <!-- check-public-copy:rules -->
 ```json
 {
   "locked": "2026-10-21",
-  "updated": "2026-11-05",
-  "source": "Joan locks from 21 Oct 2026 rejects on PR #57 and follow-ups. 23 Oct 2026 lifted brand-new-boxed. 5 Nov 2026 added hold-end, deposit-tier, and a tighter raw-sku body ban.",
+  "updated": "2026-11-08",
+  "source": "Joan locks from 21 Oct 2026 rejects on PR #57 and follow-ups. 23 Oct 2026 lifted brand-new-boxed. 5 Nov 2026 added hold-end, deposit-tier, and a tighter raw-sku body ban. 8 Nov 2026 widened privacy bans: vendor, forwarder, supplier shipping, purchase city and date, wholesale source, and named suppliers.",
   "scan": {
     "globs": [
       "data/products.json",
@@ -318,7 +335,8 @@ Clear bans. The checker fails closed on these.
         "供貨商",
         "入貨自",
         "購自",
-        "買自"
+        "買自",
+        "\\bMoMA\\s+Design\\s+Store\\b"
       ]
     },
     {
@@ -342,6 +360,78 @@ Clear bans. The checker fails closed on these.
         "陳列室地址",
         "showroom.{0,24}(?:street|road|avenue|lane|floor)",
         "\\b\\d{1,4}\\s+[A-Za-z][\\w'.-]*(?:\\s+[A-Za-z][\\w'.-]*){0,4}\\s+(?:Street|St\\.|Road|Rd\\.|Avenue|Ave\\.|Lane|Drive|Floor)\\b"
+      ]
+    },
+    {
+      "id": "privacy-vendor",
+      "scope": "all",
+      "reason": "Supplier-side vendor wording stays private.",
+      "patterns": [
+        "\\bvendors?\\b",
+        "廠商",
+        "賣家供應"
+      ]
+    },
+    {
+      "id": "privacy-forwarder",
+      "scope": "all",
+      "reason": "Purchase freight forwarders stay private. Customer delivery and Japan air freight stay.",
+      "patterns": [
+        "freight\\s+forwarders?",
+        "\\bforwarders?\\b",
+        "freight\\s+agents?",
+        "貨代",
+        "貨運代理",
+        "貨運公司"
+      ]
+    },
+    {
+      "id": "privacy-supplier-ship",
+      "scope": "all",
+      "reason": "Inbound supplier shipping stays private.",
+      "patterns": [
+        "supplier\\s+shipping",
+        "shipped\\s+from\\s+(?:the\\s+|our\\s+)?suppliers?",
+        "shipping\\s+from\\s+(?:the\\s+|our\\s+)?suppliers?",
+        "freight\\s+from\\s+(?:the\\s+|our\\s+)?suppliers?",
+        "供應商出貨",
+        "供應商付運",
+        "由供應商(?:出貨|付運|運送)"
+      ]
+    },
+    {
+      "id": "privacy-purchase-place",
+      "scope": "all",
+      "reason": "Where and when we bought a piece stays private. Made in / 日本製造 stays.",
+      "patterns": [
+        "\\b(?:bought|purchased|sourced)\\s+in\\s+[A-Za-z]+(?:\\s+[A-Za-z]+)?\\b",
+        "\\bpurchase\\s+dates?\\b",
+        "\\b(?:bought|purchased)\\s+on\\b(?:\\W+\\w+){0,8}\\W+(?:19|20)\\d{2}\\b",
+        "(?:購|買|入貨|採購)於\\s*[\\u4e00-\\u9fff]{2,8}",
+        "在[\\u4e00-\\u9fff]{2,8}(?:購入|買入)",
+        "入貨日期",
+        "進貨日期",
+        "採購日期",
+        "(?:19|20)\\d{2}\\s*年\\s*(?:入貨|進貨|採購)"
+      ]
+    },
+    {
+      "id": "privacy-wholesale",
+      "scope": "all",
+      "reason": "Wholesale as a purchase source stays private. A design-category phrase such as wholesale lighting stays.",
+      "patterns": [
+        "\\bwholesale\\s+from\\b",
+        "\\bat\\s+wholesale\\b(?!\\s+lighting\\b)",
+        "批發自",
+        "批發價入"
+      ]
+    },
+    {
+      "id": "privacy-named-supplier",
+      "scope": "all",
+      "reason": "Named internal suppliers stay off public pages. Add another name to names. Do not add bare MoMA.",
+      "names": [
+        "Lamp Twist"
       ]
     }
   ]
