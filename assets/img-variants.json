@@ -1265,5 +1265,12 @@
   "avif": "/assets/products/ring-a-date-rings-warm-red/t/r/1-160.avif 160w",
   "webp": "/assets/products/ring-a-date-rings-warm-red/t/r/1-160.webp 160w",
   "jpg": "/assets/products/ring-a-date-rings-warm-red/t/1.jpg 160w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-vermilion-red/1.jpg": {
+  "w": 1199,
+  "h": 1599,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-vermilion-red/r/1-400.avif 400w, /assets/products/andtradition-flowerpot-vp9-vermilion-red/r/1-800.avif 800w, /assets/products/andtradition-flowerpot-vp9-vermilion-red/r/1-1199.avif 1199w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-vermilion-red/r/1-400.webp 400w, /assets/products/andtradition-flowerpot-vp9-vermilion-red/r/1-800.webp 800w, /assets/products/andtradition-flowerpot-vp9-vermilion-red/r/1-1199.webp 1199w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-vermilion-red/r/1-400.jpg 400w, /assets/products/andtradition-flowerpot-vp9-vermilion-red/r/1-800.jpg 800w, /assets/products/andtradition-flowerpot-vp9-vermilion-red/1.jpg 1199w"
  }
 }

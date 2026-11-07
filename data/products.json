@@ -2746,7 +2746,7 @@
     "zh": "Common 吊燈電線組，Beton Grey，包括天花蓋、布線及燈頭。全新。更多顏色可預訂。"
    },
    "category": "lighting",
-   "status": "available",
+   "status": "sold",
    "fulfilment": "both",
    "photos": [
     "/assets/products/hay-common-pendant-cord-set-beton-grey/1.jpg"
@@ -2804,7 +2804,7 @@
     "zh": "圓形白色紙燈罩，Ø50。只售燈罩。全新。其他尺寸可預訂。"
    },
    "category": "lighting",
-   "status": "available",
+   "status": "sold",
    "fulfilment": "both",
    "photos": [
     "/assets/products/hay-rice-paper-shade/1.jpg"
@@ -2895,6 +2895,305 @@
      "DULTON 深綠色雙面掛鐘從牆面伸出，掛在通往飯廳的門口上方"
     ]
    }
+  },
+  {
+   "slug": "heller-swell-red-orange-sold",
+   "zhType": "波浪掛牆收納",
+   "featured": false,
+   "brand": "Heller",
+   "name": {
+    "en": "Swell Wall Catchall · Red Orange",
+    "zh": "Swell 波浪掛牆收納 · 橙紅色"
+   },
+   "model": "Swell",
+   "colour": {
+    "en": "Red Orange",
+    "zh": "橙紅色"
+   },
+   "description": {
+    "en": "Anna Dawson shaped Swell after the rhythm of ocean waves. This Red Orange one has found a new home. WhatsApp us for something similar. Red Orange is still open to pre-order.",
+    "zh": "Anna Dawson 以海浪的起伏設計 Swell。這件橙紅色已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。橙紅色仍可預購。"
+   },
+   "category": "decor",
+   "status": "sold",
+   "fulfilment": "both",
+   "price": 980,
+   "photos": [
+    "/assets/products/heller-swell-red-orange/1.jpg",
+    "/assets/products/heller-swell-red-orange/2.jpg",
+    "/assets/products/heller-swell-red-orange/3.jpg"
+   ],
+   "photoAlt": {
+    "en": "The Red Orange Heller Swell holding a brown handbag and small items on a white wall",
+    "zh": "橙紅色 Heller Swell 掛在白牆上，掛着啡色手袋及小物"
+   },
+   "photoAlts": {
+    "en": [
+     "The Red Orange Heller Swell holding a brown handbag and small items on a white wall",
+     "A living room wall with the Red Orange Heller Swell holding a cap and a canvas tote, with the matching Swell Mini beside it",
+     "Heller Swell wall catchall in Red Orange by Anna Dawson: wave-shaped wall hook and tray"
+    ],
+    "zh": [
+     "橙紅色 Heller Swell 掛在白牆上，掛着啡色手袋及小物",
+     "客廳牆上的橙紅色 Heller Swell 掛着帽及帆布袋，旁邊是同色 Swell Mini",
+     "Heller Swell 波浪掛牆收納（橙紅色），Anna Dawson 設計：波浪形掛鈎連收納槽"
+    ]
+   },
+   "sku": "TT-SWE-0005",
+   "designer": "Anna Dawson",
+   "material": {
+    "en": "Recycled ABS plastic",
+    "zh": "再生 ABS 塑膠"
+   },
+   "origin": {
+    "en": "Made in USA",
+    "zh": "美國製造"
+   },
+   "year": {
+    "en": "2022 design, launched by Heller 2023",
+    "zh": "2022 年設計，Heller 於 2023 年推出"
+   },
+   "dimensions": {
+    "w": 73,
+    "d": 7.6,
+    "h": 35.6,
+    "unit": "cm",
+    "weightKg": 2.3
+   }
+  },
+  {
+   "slug": "heller-swell-blue-sold",
+   "zhType": "波浪掛牆收納",
+   "featured": false,
+   "brand": "Heller",
+   "name": {
+    "en": "Swell Wall Catchall · Blue",
+    "zh": "Swell 波浪掛牆收納 · 藍色"
+   },
+   "model": "Swell",
+   "colour": {
+    "en": "Blue",
+    "zh": "藍色"
+   },
+   "description": {
+    "en": "Anna Dawson shaped Swell after the rhythm of ocean waves. This Blue one has found a new home. WhatsApp us for something similar. Blue is still open to pre-order.",
+    "zh": "Anna Dawson 以海浪的起伏設計 Swell。這件藍色已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。藍色仍可預購。"
+   },
+   "category": "decor",
+   "status": "sold",
+   "fulfilment": "both",
+   "price": 980,
+   "photos": [
+    "/assets/products/heller-swell-blue/1.jpg",
+    "/assets/products/heller-swell-blue/2.jpg",
+    "/assets/products/heller-swell-blue/3.jpg"
+   ],
+   "photoAlt": {
+    "en": "The Blue Heller Swell on a white plank wall holding a yellow cap, a pink tote, a beaded lanyard and a passport",
+    "zh": "藍色 Heller Swell 掛在白色木板牆上，掛着黃色帽、粉紅布袋、珠串掛繩及護照"
+   },
+   "photoAlts": {
+    "en": [
+     "The Blue Heller Swell on a white plank wall holding a yellow cap, a pink tote, a beaded lanyard and a passport",
+     "The Blue Heller Swell on a white wall with a black shoulder bag and small items tucked into its trays",
+     "Heller Swell wall catchall in Blue by Anna Dawson: wave-shaped wall hook and tray"
+    ],
+    "zh": [
+     "藍色 Heller Swell 掛在白色木板牆上，掛着黃色帽、粉紅布袋、珠串掛繩及護照",
+     "藍色 Heller Swell 掛在白牆上，掛着黑色肩袋，收納槽放着小物",
+     "Heller Swell 波浪掛牆收納（藍色），Anna Dawson 設計：波浪形掛鈎連收納槽"
+    ]
+   },
+   "sku": "TT-SWE-0006",
+   "designer": "Anna Dawson",
+   "material": {
+    "en": "Recycled ABS plastic",
+    "zh": "再生 ABS 塑膠"
+   },
+   "origin": {
+    "en": "Made in USA",
+    "zh": "美國製造"
+   },
+   "year": {
+    "en": "2022 design, launched by Heller 2023",
+    "zh": "2022 年設計，Heller 於 2023 年推出"
+   },
+   "dimensions": {
+    "w": 73,
+    "d": 7.6,
+    "h": 35.6,
+    "unit": "cm",
+    "weightKg": 2.3
+   }
+  },
+  {
+   "slug": "dulton-double-face-clock-grey-sold",
+   "zhType": "雙面鐘",
+   "featured": false,
+   "brand": "DULTON",
+   "name": {
+    "en": "Double Face Clock, Rectangle · Grey",
+    "zh": "雙面掛鐘（長方形）· 灰色"
+   },
+   "model": "Double Face Clock Rectangle",
+   "colour": {
+    "en": "Grey",
+    "zh": "灰色"
+   },
+   "description": {
+    "en": "A station-style two-sided clock in grey, redrawn by DULTON as a long, low rectangle for the home. This one has found a new home. WhatsApp us for something similar. The grey clock is still available.",
+    "zh": "DULTON 雙面掛鐘（長方形）· 灰色，車站風格、矮身長方形，適合家居。這隻已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。灰色那隻仍有現貨。"
+   },
+   "category": "decor",
+   "status": "sold",
+   "fulfilment": "both",
+   "price": 1328,
+   "photos": [
+    "/assets/products/dulton-double-face-clock-grey/1.jpg",
+    "/assets/products/dulton-double-face-clock-grey/2.jpg",
+    "/assets/products/dulton-double-face-clock-grey/3.jpg"
+   ],
+   "photoAlt": {
+    "en": "The grey DULTON Double Face Clock mounted on a wall bracket, seen side-on in a shop doorway",
+    "zh": "DULTON 灰色雙面掛鐘裝在牆面支架上，於店舖門口側面所見"
+   },
+   "photoAlts": {
+    "en": [
+     "The grey DULTON Double Face Clock mounted on a wall bracket, seen side-on in a shop doorway",
+     "DULTON Double Face Clock Rectangle in grey: two-sided, station-style wall clock with a white dial",
+     "Close-up of the grey DULTON Double Face Clock: bold black numerals and the embossed DULTON logo on the side case"
+    ],
+    "zh": [
+     "DULTON 灰色雙面掛鐘裝在牆面支架上，於店舖門口側面所見",
+     "DULTON 雙面掛鐘（長方形）灰色：車站風格雙面鐘，白色鐘面",
+     "DULTON 灰色雙面掛鐘近照：粗黑數字，側盒印有 DULTON 浮雕標誌"
+    ]
+   },
+   "material": {
+    "en": "ABS resin body and frame, glass cover",
+    "zh": "ABS 樹脂機身及外框、玻璃面"
+   },
+   "dimensions": {
+    "w": 44.2,
+    "d": 9.8,
+    "h": 18.7,
+    "unit": "cm",
+    "weightKg": 2
+   }
+  },
+  {
+   "slug": "akari-55d-sold",
+   "zhType": "和紙吊燈",
+   "featured": false,
+   "brand": "AKARI",
+   "name": {
+    "en": "AKARI 55D Pendant",
+    "zh": "AKARI 55D 吊燈"
+   },
+   "model": "55D",
+   "colour": {
+    "en": "Natural white washi",
+    "zh": "原色白和紙"
+   },
+   "description": {
+    "en": "A round washi shade on bamboo ribbing, handmade in Gifu. This AKARI 55D has found a new home. WhatsApp us for something similar. The 55D is still available.",
+    "zh": "和紙配竹骨的圓形燈罩，日本岐阜人手製作。這盞 AKARI 55D 已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。55D 仍有現貨。"
+   },
+   "category": "lighting",
+   "status": "sold",
+   "fulfilment": "both",
+   "price": 2080,
+   "photos": [
+    "/assets/products/akari-55d/1.jpg",
+    "/assets/products/akari-55d/2.jpg",
+    "/assets/products/akari-55d/3.jpg"
+   ],
+   "photoAlt": {
+    "en": "Isamu Noguchi AKARI 55D pendant lamp, lit, hanging over a room lined with wooden shelves: round natural white washi shade on bamboo ribbing, 55 cm across",
+    "zh": "野口勇 AKARI 55D 和紙吊燈亮燈，掛在木書架環繞的房間：原色白和紙配竹骨圓形燈罩，直徑 55 cm"
+   },
+   "photoAlts": {
+    "en": [
+     "Isamu Noguchi AKARI 55D pendant lamp, lit, hanging over a room lined with wooden shelves: round natural white washi shade on bamboo ribbing, 55 cm across",
+     "The AKARI 55D glowing in a warm living room with an armchair and bookshelves",
+     "The AKARI 55D pendant lit against a dark background, glowing warm through the washi paper"
+    ],
+    "zh": [
+     "野口勇 AKARI 55D 和紙吊燈亮燈，掛在木書架環繞的房間：原色白和紙配竹骨圓形燈罩，直徑 55 cm",
+     "AKARI 55D 在溫暖的客廳亮燈，旁邊有扶手椅及書架",
+     "AKARI 55D 吊燈亮燈，暖光透過和紙，深色背景"
+    ]
+   },
+   "designer": "Isamu Noguchi",
+   "material": {
+    "en": "Washi paper, bamboo ribbing, steel wire",
+    "zh": "和紙、竹骨、鋼線"
+   },
+   "year": {
+    "en": "1951 (AKARI series)",
+    "zh": "1951 年（AKARI 系列）"
+   },
+   "dimensions": {
+    "w": 55,
+    "d": 55,
+    "h": 53,
+    "unit": "cm"
+   }
+  },
+  {
+   "slug": "andtradition-flowerpot-vp9-vermilion-red",
+   "zhType": "便攜燈",
+   "featured": false,
+   "brand": "&Tradition",
+   "name": {
+    "en": "Flowerpot VP9 · Vermilion Red",
+    "zh": "Flowerpot 燈 VP9 · Vermilion Red"
+   },
+   "model": "Flowerpot VP9",
+   "colour": {
+    "en": "Vermilion Red",
+    "zh": "Vermilion Red"
+   },
+   "description": {
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable lamp, with a lacquered shade and base, a built-in LED and a touch dimmer. This Vermilion Red one has found a new home. WhatsApp us for something similar.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜燈：漆面燈罩及底座，內置 LED，觸控調光。這盞 Vermilion Red Flowerpot 燈已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。"
+   },
+   "category": "lighting",
+   "status": "sold",
+   "fulfilment": "both",
+   "price": 1080,
+   "photos": [
+    "/assets/products/andtradition-flowerpot-vp9-vermilion-red/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Flowerpot VP9 in Vermilion Red, lit, on a metal surface against a white panel wall",
+    "zh": "&Tradition Flowerpot 燈 VP9（Vermilion Red）亮燈，放在金屬面上，背景是白色板牆"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Flowerpot VP9 in Vermilion Red, lit, on a metal surface against a white panel wall"
+    ],
+    "zh": [
+     "&Tradition Flowerpot 燈 VP9（Vermilion Red）亮燈，放在金屬面上，背景是白色板牆"
+    ]
+   },
+   "sku": "TT-ANT-0014",
+   "designer": "Verner Panton",
+   "material": {
+    "en": "Lacquered polycarbonate and steel",
+    "zh": "漆面聚碳酸酯及鋼"
+   },
+   "year": {
+    "en": "1968",
+    "zh": "1968 年"
+   },
+   "dimensions": {
+    "dia": 16,
+    "h": 29.5,
+    "unit": "cm",
+    "weightKg": 0.8
+   },
+   "sizeGuide": false
   },
   {
    "featured": false,
