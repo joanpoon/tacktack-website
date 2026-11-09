@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-09",
  "homepageDrop": [
   "ring-a-date-calendar-cafe-mousse",
   "ring-a-date-calendar-white",
@@ -166,7 +166,6 @@
    },
    "addons": [
     "dulton-double-face-clock-grey",
-    "dulton-double-face-clock-green",
     "heller-swell-white",
     "heller-swell-mini-red-orange",
     "heller-swell-red-orange",
@@ -1361,6 +1360,9 @@
    "slug": "dulton-double-face-clock-green",
    "zhType": "雙面鐘",
    "sku": "TT-DUL-0003",
+   "oldSlugs": [
+    "dulton-double-face-clock-green-sold"
+   ],
    "featured": false,
    "dropDate": "2026-09-17",
    "newFrom": "2026-10-08",
@@ -1388,7 +1390,6 @@
      "Sweep movement, so no ticking",
      "Dial held by magnets for easy time-setting and battery changes",
      "Runs on 2 × AA batteries",
-     "In stock in Hong Kong",
      "Rental-friendly: stand it on a shelf, or mount on the wall.",
      "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
     ],
@@ -1397,7 +1398,6 @@
      "掃秒機芯，沒有滴答聲",
      "鐘面以磁石固定，調時間及換電池都方便",
      "使用 2 粒 AA 電池",
-     "香港現貨",
      "租屋友善：可放在層架上，或裝在牆上。",
      "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
     ]
@@ -1426,11 +1426,7 @@
     }
    },
    "price": 1328,
-   "status": "available",
-   "stockNote": {
-    "en": "In stock in Hong Kong",
-    "zh": "香港現貨"
-   },
+   "status": "sold",
    "fulfilment": "both",
    "photos": [
     "/assets/products/dulton-double-face-clock-green/1.jpg",
@@ -2860,54 +2856,6 @@
     }
    },
    "price": 298
-  },
-  {
-   "slug": "dulton-double-face-clock-green-sold",
-   "zhType": "雙面鐘",
-   "featured": false,
-   "brand": "DULTON",
-   "name": {
-    "en": "Double Face Clock, Rectangle · Green",
-    "zh": "雙面掛鐘（長方形）· 綠色"
-   },
-   "model": "Double Face Clock Rectangle",
-   "colour": {
-    "en": "Green",
-    "zh": "綠色"
-   },
-   "material": {
-    "en": "ABS resin body and frame, glass cover",
-    "zh": "ABS 樹脂機身及外框、玻璃面"
-   },
-   "description": {
-    "en": "A station-style two-sided clock in green, redrawn by DULTON as a long, low rectangle for the home. This one has found a new home. WhatsApp us for something similar. The green clock is still available.",
-    "zh": "DULTON 雙面掛鐘（長方形）· 綠色，車站風格、矮身長方形，適合家居。這隻已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。綠色那隻仍有現貨。"
-   },
-   "category": "decor",
-   "dimensions": {
-    "w": 44.2,
-    "d": 9.8,
-    "h": 18.7,
-    "unit": "cm",
-    "weightKg": 2
-   },
-   "status": "sold",
-   "fulfilment": "both",
-   "photos": [
-    "/assets/products/dulton-double-face-clock-green/1.jpg"
-   ],
-   "photoAlt": {
-    "en": "The dark green DULTON Double Face Clock projecting from a wall above a doorway into a dining room",
-    "zh": "DULTON 深綠色雙面掛鐘從牆面伸出，掛在通往飯廳的門口上方"
-   },
-   "photoAlts": {
-    "en": [
-     "The dark green DULTON Double Face Clock projecting from a wall above a doorway into a dining room"
-    ],
-    "zh": [
-     "DULTON 深綠色雙面掛鐘從牆面伸出，掛在通往飯廳的門口上方"
-    ]
-   }
   },
   {
    "slug": "heller-swell-red-orange-sold",
