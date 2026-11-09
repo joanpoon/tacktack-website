@@ -167,6 +167,7 @@
    "addons": [
     "dulton-double-face-clock-grey",
     "dulton-double-face-clock-green-preorder",
+    "dulton-double-face-clock-black-preorder",
     "heller-swell-white",
     "heller-swell-mini-red-orange",
     "heller-swell-red-orange",
@@ -1551,6 +1552,101 @@
      "DULTON 深綠色雙面掛鐘裝在牆面支架上，於店舖門口側面所見",
      "DULTON 雙面掛鐘（長方形）深綠色：車站風格雙面鐘，白色鐘面",
      "DULTON 深綠色雙面掛鐘近照：粗黑數字，側盒印有 DULTON 浮雕標誌"
+    ]
+   },
+   "storyKey": "dulton",
+   "stockNote": {
+    "en": "Next batch arriving soon. Pre-order available.",
+    "zh": "下一批即將到貨。仍可預購。"
+   },
+   "variantGroup": "dulton-double-face"
+  },
+  {
+   "slug": "dulton-double-face-clock-black-preorder",
+   "zhType": "雙面鐘",
+   "sku": "TT-DUL-0005",
+   "featured": false,
+   "brand": "DULTON",
+   "name": {
+    "en": "Double Face Clock, Rectangle · Black",
+    "zh": "雙面掛鐘（長方形）· 黑色"
+   },
+   "model": "Double Face Clock Rectangle",
+   "colour": {
+    "en": "Black",
+    "zh": "黑色"
+   },
+   "material": {
+    "en": "ABS resin body and frame, glass cover",
+    "zh": "ABS 樹脂機身及外框、玻璃面"
+   },
+   "description": {
+    "en": "The kind of two-sided clock you'd check on a station platform, reworked for home. DULTON drew it as a long, low rectangle so it sits comfortably under HK ceiling heights, with embossed resin details and a glass cover. In black it feels sharper, and looks good against pale walls, timber or a shelf.",
+    "zh": "靈感來自火車站月台那種雙面鐘，DULTON 把它改成適合家居的長方形，矮身設計，香港樓底也能輕鬆懸掛。樹脂機身帶浮雕細節，配玻璃面。黑色更乾淨利落，配淺色牆、木色或層架都很好看。"
+   },
+   "details": {
+    "en": [
+     "Two dials, readable from both sides",
+     "Sweep movement, so no ticking",
+     "Dial held by magnets for easy time-setting and battery changes",
+     "Runs on 2 × AA batteries",
+     "Rental-friendly: stand it on a shelf, or mount on the wall.",
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
+    ],
+    "zh": [
+     "雙面鐘面，兩邊都能看到時間",
+     "掃秒機芯，沒有滴答聲",
+     "鐘面以磁石固定，調時間及換電池都方便",
+     "使用 2 粒 AA 電池",
+     "租屋友善：可放在層架上，或裝在牆上。",
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 44.2,
+    "d": 9.8,
+    "h": 18.7,
+    "unit": "cm",
+    "weightKg": 2
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    },
+    "electrics": {
+     "en": "No plug or cord: it runs on 2 × AA batteries.",
+     "zh": "無插頭及電線：使用 2 粒 AA 電池。"
+    },
+    "mark": {
+     "en": "DULTON logo embossed on the side of the case.",
+     "zh": "鐘身側面有 DULTON 浮雕標誌。"
+    }
+   },
+   "price": 1328,
+   "status": "pre-order",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/dulton-double-face-clock-black-preorder/1.png",
+    "/assets/products/dulton-double-face-clock-black-preorder/2.png",
+    "/assets/products/dulton-double-face-clock-black-preorder/3.png"
+   ],
+   "photoAlt": {
+    "en": "The black DULTON Double Face Clock on a white background, seen at an angle, with a cream dial and the side case",
+    "zh": "DULTON 黑色雙面掛鐘置於白底，側面可見米白鐘面及側盒"
+   },
+   "photoAlts": {
+    "en": [
+     "The black DULTON Double Face Clock on a white background, seen at an angle, with a cream dial and the side case",
+     "The black DULTON Double Face Clock mounted beside a wood panel on a patterned plaster wall",
+     "The black DULTON Double Face Clock on a pale wall above pink shelves, with a framed print to the right"
+    ],
+    "zh": [
+     "DULTON 黑色雙面掛鐘置於白底，側面可見米白鐘面及側盒",
+     "DULTON 黑色雙面掛鐘裝在圖案灰泥牆旁，右邊是木飾面",
+     "DULTON 黑色雙面掛鐘掛在淺色牆上，下方是粉紅色層架，旁邊有一幅框畫"
     ]
    },
    "storyKey": "dulton",
