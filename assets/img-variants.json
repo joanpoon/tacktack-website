@@ -1314,5 +1314,47 @@
   "avif": "/assets/products/herman-miller-story-bookcase-sky/t/r/3-160.avif 160w",
   "webp": "/assets/products/herman-miller-story-bookcase-sky/t/r/3-160.webp 160w",
   "jpg": "/assets/products/herman-miller-story-bookcase-sky/t/3.jpg 160w"
+ },
+ "/assets/products/dulton-double-face-clock-black-preorder/1.png": {
+  "w": 800,
+  "h": 900,
+  "avif": "/assets/products/dulton-double-face-clock-black-preorder/r/1-400.avif 400w, /assets/products/dulton-double-face-clock-black-preorder/r/1-800.avif 800w",
+  "webp": "/assets/products/dulton-double-face-clock-black-preorder/r/1-400.webp 400w, /assets/products/dulton-double-face-clock-black-preorder/r/1-800.webp 800w",
+  "jpg": "/assets/products/dulton-double-face-clock-black-preorder/r/1-400.jpg 400w, /assets/products/dulton-double-face-clock-black-preorder/1.png 800w"
+ },
+ "/assets/products/dulton-double-face-clock-black-preorder/2.png": {
+  "w": 735,
+  "h": 587,
+  "avif": "/assets/products/dulton-double-face-clock-black-preorder/r/2-400.avif 400w, /assets/products/dulton-double-face-clock-black-preorder/r/2-735.avif 735w",
+  "webp": "/assets/products/dulton-double-face-clock-black-preorder/r/2-400.webp 400w, /assets/products/dulton-double-face-clock-black-preorder/r/2-735.webp 735w",
+  "jpg": "/assets/products/dulton-double-face-clock-black-preorder/r/2-400.jpg 400w, /assets/products/dulton-double-face-clock-black-preorder/2.png 735w"
+ },
+ "/assets/products/dulton-double-face-clock-black-preorder/3.png": {
+  "w": 1179,
+  "h": 1361,
+  "avif": "/assets/products/dulton-double-face-clock-black-preorder/r/3-400.avif 400w, /assets/products/dulton-double-face-clock-black-preorder/r/3-800.avif 800w, /assets/products/dulton-double-face-clock-black-preorder/r/3-1179.avif 1179w",
+  "webp": "/assets/products/dulton-double-face-clock-black-preorder/r/3-400.webp 400w, /assets/products/dulton-double-face-clock-black-preorder/r/3-800.webp 800w, /assets/products/dulton-double-face-clock-black-preorder/r/3-1179.webp 1179w",
+  "jpg": "/assets/products/dulton-double-face-clock-black-preorder/r/3-400.jpg 400w, /assets/products/dulton-double-face-clock-black-preorder/r/3-800.jpg 800w, /assets/products/dulton-double-face-clock-black-preorder/3.png 1179w"
+ },
+ "/assets/products/dulton-double-face-clock-black-preorder/t/1.jpg": {
+  "w": 160,
+  "h": 180,
+  "avif": "/assets/products/dulton-double-face-clock-black-preorder/t/r/1-160.avif 160w",
+  "webp": "/assets/products/dulton-double-face-clock-black-preorder/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/dulton-double-face-clock-black-preorder/t/1.jpg 160w"
+ },
+ "/assets/products/dulton-double-face-clock-black-preorder/t/2.jpg": {
+  "w": 160,
+  "h": 128,
+  "avif": "/assets/products/dulton-double-face-clock-black-preorder/t/r/2-160.avif 160w",
+  "webp": "/assets/products/dulton-double-face-clock-black-preorder/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/dulton-double-face-clock-black-preorder/t/2.jpg 160w"
+ },
+ "/assets/products/dulton-double-face-clock-black-preorder/t/3.jpg": {
+  "w": 160,
+  "h": 185,
+  "avif": "/assets/products/dulton-double-face-clock-black-preorder/t/r/3-160.avif 160w",
+  "webp": "/assets/products/dulton-double-face-clock-black-preorder/t/r/3-160.webp 160w",
+  "jpg": "/assets/products/dulton-double-face-clock-black-preorder/t/3.jpg 160w"
  }
 }
