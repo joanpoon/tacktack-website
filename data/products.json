@@ -166,6 +166,7 @@
    },
    "addons": [
     "dulton-double-face-clock-grey",
+    "dulton-double-face-clock-green-preorder",
     "heller-swell-white",
     "heller-swell-mini-red-orange",
     "heller-swell-red-orange",
@@ -554,7 +555,8 @@
     "en": "1968",
     "zh": "1968 年"
    },
-   "retailPrice": 1740
+   "retailPrice": 1740,
+   "variantGroup": "flowerpot-vp9"
   },
   {
    "slug": "andtradition-flowerpot-vp9-swim-blue-excellent",
@@ -643,7 +645,8 @@
     "en": "1968",
     "zh": "1968 年"
    },
-   "retailPrice": 1740
+   "retailPrice": 1740,
+   "variantGroup": "flowerpot-vp9"
   },
   {
    "slug": "andtradition-flowerpot-vp9-mustard",
@@ -729,7 +732,8 @@
     "en": "1968",
     "zh": "1968 年"
    },
-   "retailPrice": 1740
+   "retailPrice": 1740,
+   "variantGroup": "flowerpot-vp9"
   },
   {
    "slug": "andtradition-flowerpot-vp9-matt-black",
@@ -815,7 +819,8 @@
     "en": "1968",
     "zh": "1968 年"
    },
-   "retailPrice": 1740
+   "retailPrice": 1740,
+   "variantGroup": "flowerpot-vp9"
   },
   {
    "slug": "andtradition-flowerpot-vp9-dark-green",
@@ -904,7 +909,8 @@
     "en": "1968",
     "zh": "1968 年"
    },
-   "retailPrice": 1740
+   "retailPrice": 1740,
+   "variantGroup": "flowerpot-vp9"
   },
   {
    "slug": "andtradition-mist-pendant-ap15",
@@ -1354,7 +1360,8 @@
      "DULTON 灰色雙面掛鐘近照：粗黑數字，側盒印有 DULTON 浮雕標誌"
     ]
    },
-   "storyKey": "dulton"
+   "storyKey": "dulton",
+   "variantGroup": "dulton-double-face"
   },
   {
    "slug": "dulton-double-face-clock-green",
@@ -1452,7 +1459,106 @@
      "DULTON 深綠色雙面掛鐘近照：粗黑數字，側盒印有 DULTON 浮雕標誌"
     ]
    },
-   "storyKey": "dulton"
+   "storyKey": "dulton",
+   "variantGroup": "dulton-double-face"
+  },
+  {
+   "slug": "dulton-double-face-clock-green-preorder",
+   "zhType": "雙面鐘",
+   "sku": "TT-DUL-0004",
+   "featured": false,
+   "brand": "DULTON",
+   "name": {
+    "en": "Double Face Clock, Rectangle · Green",
+    "zh": "雙面掛鐘（長方形）· 綠色"
+   },
+   "model": "Double Face Clock Rectangle",
+   "colour": {
+    "en": "Green",
+    "zh": "綠色"
+   },
+   "material": {
+    "en": "ABS resin body and frame, glass cover",
+    "zh": "ABS 樹脂機身及外框、玻璃面"
+   },
+   "description": {
+    "en": "The kind of two-sided clock you'd check on a station platform, reworked for home. DULTON drew it as a long, low rectangle so it sits comfortably under HK ceiling heights, with embossed resin details and a glass cover. In green it feels more vintage and playful, and looks good against wood, rattan or cream walls.",
+    "zh": "靈感來自火車站月台那種雙面鐘，DULTON 把它改成適合家居的長方形，矮身設計，香港樓底也能輕鬆懸掛。樹脂機身帶浮雕細節，配玻璃面。綠色多一份復古玩味，配木色、藤編家具或米白色牆面都很好看。"
+   },
+   "details": {
+    "en": [
+     "Two dials, readable from both sides",
+     "Sweep movement, so no ticking",
+     "Dial held by magnets for easy time-setting and battery changes",
+     "Runs on 2 × AA batteries",
+     "Rental-friendly: stand it on a shelf, or mount on the wall.",
+     "Optional add-on: Rental-friendly wall hook, made in Japan, for DULTON clocks & pictures, set of 2, holds up to 7 kg each, HK$45."
+    ],
+    "zh": [
+     "雙面鐘面，兩邊都能看到時間",
+     "掃秒機芯，沒有滴答聲",
+     "鐘面以磁石固定，調時間及換電池都方便",
+     "使用 2 粒 AA 電池",
+     "租屋友善：可放在層架上，或裝在牆上。",
+     "可加購：租屋友善掛鈎，日本製，適合 DULTON 時鐘與掛畫，兩件裝，單個最多承重 7 kg，HK$45。"
+    ]
+   },
+   "category": "decor",
+   "dimensions": {
+    "w": 44.2,
+    "d": 9.8,
+    "h": 18.7,
+    "unit": "cm",
+    "weightKg": 2
+   },
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    },
+    "electrics": {
+     "en": "No plug or cord: it runs on 2 × AA batteries.",
+     "zh": "無插頭及電線：使用 2 粒 AA 電池。"
+    },
+    "mark": {
+     "en": "DULTON logo embossed on the side of the case.",
+     "zh": "鐘身側面有 DULTON 浮雕標誌。"
+    }
+   },
+   "price": 1328,
+   "status": "pre-order",
+   "fulfilment": "both",
+   "photos": [
+    "/assets/products/dulton-double-face-clock-green/1.jpg",
+    "/assets/products/dulton-double-face-clock-green/2.jpg",
+    "/assets/products/dulton-double-face-clock-green/3.jpg",
+    "/assets/products/dulton-double-face-clock-green/4.jpg"
+   ],
+   "photoAlt": {
+    "en": "The dark green DULTON Double Face Clock projecting from a wall above a doorway into a dining room",
+    "zh": "DULTON 深綠色雙面掛鐘從牆面伸出，掛在通往飯廳的門口上方"
+   },
+   "photoAlts": {
+    "en": [
+     "The dark green DULTON Double Face Clock projecting from a wall above a doorway into a dining room",
+     "The dark green DULTON Double Face Clock mounted on a wall bracket, seen side-on in a shop doorway",
+     "DULTON Double Face Clock Rectangle in dark green: two-sided, station-style wall clock with a white dial",
+     "Close-up of the dark green DULTON Double Face Clock: bold black numerals and the embossed DULTON logo on the side case"
+    ],
+    "zh": [
+     "DULTON 深綠色雙面掛鐘從牆面伸出，掛在通往飯廳的門口上方",
+     "DULTON 深綠色雙面掛鐘裝在牆面支架上，於店舖門口側面所見",
+     "DULTON 雙面掛鐘（長方形）深綠色：車站風格雙面鐘，白色鐘面",
+     "DULTON 深綠色雙面掛鐘近照：粗黑數字，側盒印有 DULTON 浮雕標誌"
+    ]
+   },
+   "storyKey": "dulton",
+   "stockNote": {
+    "en": "Next batch arriving soon. Pre-order available.",
+    "zh": "下一批即將到貨。仍可預購。"
+   },
+   "variantGroup": "dulton-double-face"
   },
   {
    "slug": "akari-55d",
@@ -1822,7 +1928,8 @@
      "Heller Swell 波浪掛牆收納（白色），Anna Dawson 設計：波浪形掛鈎連收納槽"
     ]
    },
-   "storyKey": "anna-dawson"
+   "storyKey": "anna-dawson",
+   "variantGroup": "heller-swell"
   },
   {
    "slug": "heller-swell-mini-red-orange",
@@ -1913,7 +2020,8 @@
      "橙紅色 Swell Mini 掛着相機，收納碗放着太陽眼鏡、鉛筆及電線"
     ]
    },
-   "storyKey": "anna-dawson"
+   "storyKey": "anna-dawson",
+   "variantGroup": "heller-swell-mini"
   },
   {
    "slug": "heller-swell-mini-cream",
@@ -2004,7 +2112,8 @@
      "Heller Swell Mini 波浪掛牆掛鈎收納（奶油色），Anna Dawson 設計：單個波浪形掛鈎連收納碗"
     ]
    },
-   "storyKey": "anna-dawson"
+   "storyKey": "anna-dawson",
+   "variantGroup": "heller-swell-mini"
   },
   {
    "slug": "heller-swell-mini-blue",
@@ -2092,7 +2201,8 @@
      "Heller Swell Mini 波浪掛牆掛鈎收納（藍色），Anna Dawson 設計：單個波浪形掛鈎連收納碗"
     ]
    },
-   "storyKey": "anna-dawson"
+   "storyKey": "anna-dawson",
+   "variantGroup": "heller-swell-mini"
   },
   {
    "slug": "heller-swell-red-orange",
@@ -2187,7 +2297,8 @@
      "Heller Swell 波浪掛牆收納（橙紅色），Anna Dawson 設計：波浪形掛鈎連收納槽"
     ]
    },
-   "storyKey": "anna-dawson"
+   "storyKey": "anna-dawson",
+   "variantGroup": "heller-swell"
   },
   {
    "slug": "heller-swell-yellow",
@@ -2275,7 +2386,8 @@
      "黃色 Heller Swell 掛在白牆上，掛着綠色布袋及黑色小袋"
     ]
    },
-   "storyKey": "anna-dawson"
+   "storyKey": "anna-dawson",
+   "variantGroup": "heller-swell"
   },
   {
    "slug": "heller-swell-black",
@@ -2363,7 +2475,8 @@
      "黑色 Heller Swell 波浪掛牆收納，Anna Dawson 設計，白色背景"
     ]
    },
-   "storyKey": "anna-dawson"
+   "storyKey": "anna-dawson",
+   "variantGroup": "heller-swell"
   },
   {
    "slug": "heller-swell-blue",
@@ -2458,7 +2571,8 @@
      "Heller Swell 波浪掛牆收納（藍色），Anna Dawson 設計：波浪形掛鈎連收納槽"
     ]
    },
-   "storyKey": "anna-dawson"
+   "storyKey": "anna-dawson",
+   "variantGroup": "heller-swell"
   },
   {
    "slug": "hay-tint-wineglass-pink-yellow",
@@ -2502,7 +2616,8 @@
     "zh": [
      "HAY Tint 酒杯兩隻裝，粉紅色杯身配黃色杯柄及杯腳，放在白色桌面上"
     ]
-   }
+   },
+   "variantGroup": "hay-tint-wineglass"
   },
   {
    "slug": "hay-tint-wineglass-clear",
@@ -2546,7 +2661,8 @@
     "zh": [
      "HAY Tint 透明酒杯兩隻裝，放在白色桌面上"
     ]
-   }
+   },
+   "variantGroup": "hay-tint-wineglass"
   },
   {
    "slug": "ferm-living-pond-mirror",
@@ -2659,7 +2775,8 @@
     "zh": [
      "&Tradition Flowerpot VP9 便攜燈（Swim Blue）放在一疊書上"
     ]
-   }
+   },
+   "variantGroup": "flowerpot-vp9"
   },
   {
    "slug": "hay-ice-cube-tray-light-blue",
@@ -2920,7 +3037,8 @@
     "h": 35.6,
     "unit": "cm",
     "weightKg": 2.3
-   }
+   },
+   "variantGroup": "heller-swell"
   },
   {
    "slug": "heller-swell-blue-sold",
@@ -2985,7 +3103,8 @@
     "h": 35.6,
     "unit": "cm",
     "weightKg": 2.3
-   }
+   },
+   "variantGroup": "heller-swell"
   },
   {
    "slug": "dulton-double-face-clock-grey-sold",
@@ -3154,7 +3273,8 @@
     "unit": "cm",
     "weightKg": 0.8
    },
-   "sizeGuide": false
+   "sizeGuide": false,
+   "variantGroup": "flowerpot-vp9"
   },
   {
    "featured": false,
@@ -3429,7 +3549,8 @@
      "Cafè Mousse 色 Ring-a-Date 萬年曆掛在白牆上，下方是摩卡壺、杯子和小奶壺"
     ]
    },
-   "dropAt": "2026-11-05T20:00:00+08:00"
+   "dropAt": "2026-11-05T20:00:00+08:00",
+   "variantGroup": "ring-a-date-calendar"
   },
   {
    "slug": "ring-a-date-calendar-white",
@@ -3489,7 +3610,8 @@
      "白色 Ring-a-Date 萬年曆放在木書桌上，旁邊是一盞黃色檯燈"
     ]
    },
-   "dropAt": "2026-11-05T20:00:00+08:00"
+   "dropAt": "2026-11-05T20:00:00+08:00",
+   "variantGroup": "ring-a-date-calendar"
   },
   {
    "slug": "ring-a-date-calendar-green",
@@ -3552,7 +3674,8 @@
      "綠色 Ring-a-Date 萬年曆靠在深色木櫃上，旁邊是一疊疊書"
     ]
    },
-   "dropAt": "2026-11-05T20:00:00+08:00"
+   "dropAt": "2026-11-05T20:00:00+08:00",
+   "variantGroup": "ring-a-date-calendar"
   },
   {
    "slug": "ring-a-date-calendar-orange",
@@ -3612,7 +3735,8 @@
      "橙色 Ring-a-Date 萬年曆掛在淺灰色牆上"
     ]
    },
-   "dropAt": "2026-11-05T20:00:00+08:00"
+   "dropAt": "2026-11-05T20:00:00+08:00",
+   "variantGroup": "ring-a-date-calendar"
   },
   {
    "slug": "ring-a-date-rings-broom-yellow",
@@ -3671,7 +3795,8 @@
      "白色 Ring-a-Date 萬年曆上，28 日套上 Broom Yellow 日期環"
     ]
    },
-   "dropAt": "2026-11-05T20:00:00+08:00"
+   "dropAt": "2026-11-05T20:00:00+08:00",
+   "variantGroup": "ring-a-date-rings"
   },
   {
    "slug": "ring-a-date-rings-neon-green",
@@ -3730,7 +3855,8 @@
      "白色 Ring-a-Date 萬年曆上，14 日套上 Neon Green 日期環"
     ]
    },
-   "dropAt": "2026-11-05T20:00:00+08:00"
+   "dropAt": "2026-11-05T20:00:00+08:00",
+   "variantGroup": "ring-a-date-rings"
   },
   {
    "slug": "ring-a-date-rings-warm-red",
@@ -3789,7 +3915,8 @@
      "白色 Ring-a-Date 萬年曆上，二月套上 Warm Red 日期環"
     ]
    },
-   "dropAt": "2026-11-05T20:00:00+08:00"
+   "dropAt": "2026-11-05T20:00:00+08:00",
+   "variantGroup": "ring-a-date-rings"
   },
   {
    "slug": "ring-a-date-rings-pumpkin-orange",
@@ -3848,7 +3975,8 @@
      "白色 Ring-a-Date 萬年曆上，2 日套上 Pumpkin Orange 日期環"
     ]
    },
-   "dropAt": "2026-11-05T20:00:00+08:00"
+   "dropAt": "2026-11-05T20:00:00+08:00",
+   "variantGroup": "ring-a-date-rings"
   },
   {
    "slug": "herman-miller-story-bookcase-sky",

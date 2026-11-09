@@ -68,6 +68,40 @@
     if (s === "sold" || s === "on-hold" || s === "pre-order") return { st: s };
     return { st: "available" };
   }
+  function colourWord(p) { return L(p.colour) || L(p.name); }
+  function gradeKey(p) {
+    var g = (p.condition || {}).grade;
+    return g === "open-box" ? "brand-new" : (g || "");
+  }
+  function statusWord(st) {
+    if (st === "available") return lang === "zh" ? "現貨" : "Available";
+    if (st === "pre-order") return T().badge.preorder;
+    if (st === "sold") return T().badge.sold;
+    if (st === "on-hold") return T().badge.hold;
+    return st;
+  }
+  function gradeWord(g) {
+    var row = T().grades[g];
+    return row ? row[0] : "";
+  }
+  // Same labels as the static colour row on each PDP. Only products that share variantGroup.
+  function colourLabel(x, mates) {
+    var colour = colourWord(x);
+    var same = mates.filter(function (y) { return colourWord(y) === colour; });
+    var st = state(x).st;
+    if (same.length < 2 || same.filter(function (y) { return state(y).st === st; }).length === 1) return colour + " · " + statusWord(st);
+    var g = gradeKey(x);
+    if (g && same.filter(function (y) { return gradeKey(y) === g; }).length === 1) return colour + " · " + gradeWord(g);
+    return colour + " · " + statusWord(st);
+  }
+  function colourNav(p) {
+    if (!p.variantGroup) return "";
+    var mates = PRODUCTS.filter(function (x) { return x.variantGroup === p.variantGroup; });
+    if (mates.length < 2) return "";
+    return '<nav class="pay-chips" data-colour-nav aria-label="' + esc(T().labels.colour) + '">' + mates.map(function (x) {
+      return '<a class="chip" href="' + url(x) + '"' + (x.slug === p.slug ? ' aria-current="page"' : "") + ">" + esc(colourLabel(x, mates)) + "</a>";
+    }).join("") + "</nav>";
+  }
   // New from the drop (dropDate at DROP_HOUR HKT) until the next weekly drop; no date, no badge. Same as is_new() in build-pages.py.
   function dropStart(p) {
     var day = p.newFrom || p.dropDate;   // newFrom: already live, but the NEW tag waits for a later drop
@@ -445,6 +479,7 @@
         '<div class="pdp-info">' +
           (kicker(p) ? '<p class="eyebrow">' + esc(kicker(p)) + "</p>" : "") + dealerNote(p) + badges(p) +
           "<h1>" + esc(name) + "</h1>" +
+          colourNav(p) +
           '<div class="pdp-price">' + priceHtml(p) + gradeChip(p) + "</div>" +
           '<p class="pdp-stock">' + esc(stockLine) + "</p>" +
           '<p class="pdp-lede">' + esc(L(p.description)) + "</p>" +
