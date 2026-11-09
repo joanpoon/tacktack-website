@@ -41,6 +41,7 @@ SKIP_JSON_KEYS = {
     "preorderDate",
     "preorderAvailableOn",
     "addons",
+    "variantGroup",
     "homepageDrop",
     "featured",
     "sizeGuide",

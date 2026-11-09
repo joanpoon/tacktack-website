@@ -241,6 +241,8 @@ html[data-lang="zh"] .badge { letter-spacing: .06em; font-size: .72rem; }
 .step p { margin: 0; color: var(--muted); font-size: .95rem; }
 .pay-chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
 .chip { display: inline-flex; align-items: center; height: 28px; padding: 0 12px; border-radius: 99px; background: var(--paper); border: 1px solid var(--line); font-size: .78rem; font-weight: 500; }
+a.chip { text-decoration: none; }
+a.chip[aria-current="page"] { background: var(--walnut); color: var(--cream); border-color: var(--walnut); }
 
 /* ---------- condition scale ---------- */
 .scale { display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; margin: 10px 0 6px; list-style: none; padding: 0; }

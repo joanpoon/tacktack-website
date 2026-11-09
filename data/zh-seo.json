@@ -195,6 +195,11 @@
       "zhType": "書架",
       "title": "Herman Miller Story 書架 天空藍（全新）｜香港 | Tack, tack!",
       "description": "全新 Herman Miller Story 書架，天空藍。Afteroom 設計，九層浮動層板，落地約 40 × 40 cm。HK$3,880。下一批即將到貨。仍可預購。WhatsApp 查詢。"
+    },
+    "dulton-double-face-clock-green-preorder": {
+      "zhType": "雙面鐘",
+      "title": "DULTON 雙面鐘 綠色（全新）｜香港 | Tack, tack!",
+      "description": "全新 DULTON 雙面鐘（長方形掛牆鐘），綠色。雙面鐘面、無聲掃秒機芯，闊 44 cm。HK$1,328。下一批即將到貨。仍可預購。WhatsApp 查詢。"
     }
   },
   "pages": {
@@ -204,7 +209,7 @@
     },
     "zh/shop/index.html": {
       "title": "選購設計師燈飾及家品｜香港 | Tack, tack!",
-      "description": "香港選購設計燈飾及家品：野口勇 AKARI 和紙燈、&Tradition Flowerpot 便攜燈、DULTON 雙面鐘（灰色香港現貨，綠色已售出）、Heller Swell、HAY 矽膠製冰盒及奈良美智海報。"
+      "description": "香港選購設計燈飾及家品：野口勇 AKARI 和紙燈、&Tradition Flowerpot 便攜燈、DULTON 雙面鐘（灰色香港現貨，綠色可預購）、Heller Swell、HAY 矽膠製冰盒及奈良美智海報。"
     },
     "zh/sold/index.html": {
       "title": "已售出｜香港設計師燈飾及家品 | Tack, tack!",
@@ -224,7 +229,7 @@
     },
     "zh/brand/dulton/index.html": {
       "title": "DULTON 雙面鐘｜香港 | Tack, tack!",
-      "description": "DULTON 雙面鐘（長方形掛牆鐘）：灰色是香港現貨，綠色已經找到新家。WhatsApp 查詢，Showroom 預約自取或全港送貨。"
+      "description": "DULTON 雙面鐘（長方形掛牆鐘）：灰色是香港現貨，已售出的綠色已經找到新家。綠色可以預購，全新。WhatsApp 查詢，Showroom 預約自取或全港送貨。"
     },
     "zh/brand/hay/index.html": {
       "title": "HAY 矽膠製冰盒｜香港 | Tack, tack!",
