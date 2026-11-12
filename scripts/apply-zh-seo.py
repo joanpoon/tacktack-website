@@ -278,8 +278,8 @@ def main() -> None:
     for rel, entry in seo["pages"].items():
         check_copy(rel, entry["title"], entry["description"])
         path = ROOT / rel
-        # Drop 06 homepage copy. Other reviewed pages keep the October stamp.
-        page_date = "2026-11-05" if rel == "zh/index.html" else "2026-10-17"
+        # Drop 07 homepage copy. Other reviewed pages keep the October stamp.
+        page_date = "2026-11-12" if rel == "zh/index.html" else "2026-10-17"
         old_title, old_description = apply_page(path, entry["title"], entry["description"], page_date)
         if old_title != entry["title"] or old_description != entry["description"]:
             changes.append((rel, old_title, entry["title"], old_description, entry["description"]))

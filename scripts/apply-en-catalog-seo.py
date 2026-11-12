@@ -18,14 +18,14 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SUFFIX = " | Tack, tack!"
 DATE = "2026-10-17"
-# Homepage copy moved with Drop 06. Other pages keep DATE.
-HOME_DATE = "2026-11-05"
+# Homepage copy moved with Drop 07. Other pages keep DATE.
+HOME_DATE = "2026-11-12"
 
 # title, and description only when it should change. None keeps the description.
 PAGES = {
     "index.html": (
-        "Tack, tack! · This week's drop: Ring-a-Date",
-        "Hong Kong design shop. This week's drop is Ring-a-Date: perpetual wall calendars and coloured ring sets, brand new and in stock in Hong Kong. Enquire on WhatsApp.",
+        "Tack, tack! · This week's drop: Betty, In Between and Manolito",
+        "Hong Kong design shop. This week's drop is Betty, In Between and Manolito: &Tradition chairs and a HAY Manolito stool, in stock in Hong Kong. Enquire on WhatsApp.",
     ),
     "shop/index.html": (
         None,
