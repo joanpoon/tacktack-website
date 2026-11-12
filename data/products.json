@@ -1,14 +1,9 @@
 {
- "updated": "2026-11-09",
+ "updated": "2026-11-12",
  "homepageDrop": [
-  "ring-a-date-calendar-cafe-mousse",
-  "ring-a-date-calendar-white",
-  "ring-a-date-calendar-green",
-  "ring-a-date-calendar-orange",
-  "ring-a-date-rings-broom-yellow",
-  "ring-a-date-rings-neon-green",
-  "ring-a-date-rings-warm-red",
-  "ring-a-date-rings-pumpkin-orange"
+  "andtradition-betty-tk1",
+  "andtradition-in-between-sk1",
+  "hay-manolito-stool"
  ],
  "stories": {
   "isamu-noguchi": {
@@ -3374,6 +3369,7 @@
   },
   {
    "featured": false,
+   "dropDate": "2026-11-12",
    "status": "available",
    "fulfilment": "both",
    "sizeGuide": false,
@@ -3452,6 +3448,7 @@
   },
   {
    "featured": false,
+   "dropDate": "2026-11-12",
    "status": "available",
    "fulfilment": "both",
    "sizeGuide": false,
@@ -3521,6 +3518,7 @@
   },
   {
    "featured": false,
+   "dropDate": "2026-11-12",
    "status": "available",
    "fulfilment": "both",
    "sizeGuide": false,
