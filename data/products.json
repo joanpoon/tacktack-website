@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-16",
  "homepageDrop": [
   "andtradition-betty-tk1",
   "andtradition-in-between-sk1",
@@ -1655,7 +1655,7 @@
    "slug": "akari-55d",
    "zhType": "和紙吊燈",
    "sku": "TT-NOG-0001",
-   "featured": true,
+   "featured": false,
    "dropDate": "2026-09-24",
    "newFrom": "2026-10-08",
    "brand": "AKARI",
@@ -1712,7 +1712,7 @@
     }
    },
    "price": 2080,
-   "status": "available",
+   "status": "sold",
    "fulfilment": "both",
    "notices": [
     "cordNotIncluded"
@@ -3267,8 +3267,8 @@
     "zh": "原色白和紙"
    },
    "description": {
-    "en": "A round washi shade on bamboo ribbing, handmade in Gifu. This AKARI 55D has found a new home. WhatsApp us for something similar. The 55D is still available.",
-    "zh": "和紙配竹骨的圓形燈罩，日本岐阜人手製作。這盞 AKARI 55D 已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。55D 仍有現貨。"
+    "en": "A round washi shade on bamboo ribbing, handmade in Gifu. This AKARI 55D has found a new home. WhatsApp us for something similar.",
+    "zh": "和紙配竹骨的圓形燈罩，日本岐阜人手製作。這盞 AKARI 55D 已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。"
    },
    "category": "lighting",
    "status": "sold",
