@@ -75,7 +75,7 @@
    "slug": "heller",
    "officialDealer": {
     "en": "Official Heller dealer.",
-    "zh": "Heller 官方授權經銷商。"
+    "zh": "Heller 官方授權零售商。"
    }
   },
   "DULTON": {
@@ -3081,7 +3081,7 @@
    },
    "description": {
     "en": "Anna Dawson shaped Swell after the rhythm of ocean waves. This Red Orange one has found a new home. WhatsApp us for something similar. Red Orange is still open to pre-order.",
-    "zh": "Anna Dawson 以海浪的起伏設計 Swell。這件橙紅色已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。橙紅色仍可預購。"
+    "zh": "Anna Dawson 以海浪的起伏設計 Swell。這件橙紅色已經找到新家。想找相近的一件，歡迎用 WhatsApp 聯絡我們。橙紅色仍可預購。"
    },
    "category": "decor",
    "status": "sold",
@@ -3147,7 +3147,7 @@
    },
    "description": {
     "en": "Anna Dawson shaped Swell after the rhythm of ocean waves. This Blue one has found a new home. WhatsApp us for something similar. Blue is still open to pre-order.",
-    "zh": "Anna Dawson 以海浪的起伏設計 Swell。這件藍色已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。藍色仍可預購。"
+    "zh": "Anna Dawson 以海浪的起伏設計 Swell。這件藍色已經找到新家。想找相近的一件，歡迎用 WhatsApp 聯絡我們。藍色仍可預購。"
    },
    "category": "decor",
    "status": "sold",
@@ -3213,7 +3213,7 @@
    },
    "description": {
     "en": "A station-style two-sided clock in grey, redrawn by DULTON as a long, low rectangle for the home. This one has found a new home. WhatsApp us for something similar. The grey clock is still available.",
-    "zh": "DULTON 雙面掛鐘（長方形）· 灰色，車站風格、矮身長方形，適合家居。這隻已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。灰色那隻仍有現貨。"
+    "zh": "DULTON 雙面掛鐘（長方形）· 灰色，車站風格、矮身長方形，適合家居。這隻已經找到新家。想找相近的一件，歡迎用 WhatsApp 聯絡我們。灰色那隻仍有現貨。"
    },
    "category": "decor",
    "status": "sold",
@@ -3268,7 +3268,7 @@
    },
    "description": {
     "en": "A round washi shade on bamboo ribbing, handmade in Gifu. This AKARI 55D has found a new home. WhatsApp us for something similar.",
-    "zh": "和紙配竹骨的圓形燈罩，日本岐阜人手製作。這盞 AKARI 55D 已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。"
+    "zh": "和紙配竹骨的圓形燈罩，日本岐阜人手製作。這盞 AKARI 55D 已經找到新家。想找相近的一件，歡迎用 WhatsApp 聯絡我們。"
    },
    "category": "lighting",
    "status": "sold",
@@ -3327,7 +3327,7 @@
    },
    "description": {
     "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable lamp, with a lacquered shade and base, a built-in LED and a touch dimmer. This Vermilion Red one has found a new home. WhatsApp us for something similar.",
-    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜燈：漆面燈罩及底座，內置 LED，觸控調光。這盞 Vermilion Red Flowerpot 燈已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。"
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜燈：漆面燈罩及底座，內置 LED，觸控調光。這盞 Vermilion Red Flowerpot 燈已經找到新家。想找相近的一件，歡迎用 WhatsApp 聯絡我們。"
    },
    "category": "lighting",
    "status": "sold",
@@ -3529,16 +3529,16 @@
    "brand": "HAY",
    "name": {
     "en": "HAY Manolito Stool · Natural Short",
-    "zh": "HAY Manolito 凳 · Natural Short"
+    "zh": "HAY Manolito 凳 · 原色矮款"
    },
    "model": "Manolito",
    "colour": {
     "en": "Natural Short",
-    "zh": "Natural Short"
+    "zh": "原色矮款"
    },
    "description": {
     "en": "HAY Manolito stool in Natural Short. Brand new.",
-    "zh": "HAY Manolito 凳，Natural Short。全新。"
+    "zh": "HAY Manolito 凳，原色矮款。全新。"
    },
    "details": {
     "en": [
@@ -3571,7 +3571,7 @@
    ],
    "photoAlt": {
     "en": "HAY Manolito stool in Natural Short beside a grey sofa",
-    "zh": "HAY Manolito 凳，Natural Short，放在灰色沙發旁"
+    "zh": "HAY Manolito 凳，原色矮款，放在灰色沙發旁"
    },
    "photoAlts": {
     "en": [
@@ -3579,8 +3579,8 @@
      "HAY Manolito stool in Natural Short, on a pale grey background"
     ],
     "zh": [
-     "HAY Manolito 凳，Natural Short，放在灰色沙發旁",
-     "HAY Manolito 凳 Natural Short，淺灰背景產品照"
+"HAY Manolito 凳，原色矮款，放在灰色沙發旁",
+      "HAY Manolito 凳 原色矮款，淺灰背景產品照"
     ]
    }
   },
@@ -3592,16 +3592,16 @@
    "dropDate": "2026-11-05",
    "brand": "Ring-a-Date",
    "name": {
-    "en": "Ring-a-Date calendar · Cafè Mousse · Limited Edition",
-    "zh": "Ring-a-Date 萬年曆 · Cafè Mousse · 特別版"
+    "en": "Ring-a-Date calendar · Café Mousse · Limited Edition",
+    "zh": "Ring-a-Date 萬年曆 · Café Mousse · 特別版"
    },
    "colour": {
-    "en": "Cafè Mousse",
-    "zh": "Cafè Mousse"
+    "en": "Café Mousse",
+    "zh": "Café Mousse"
    },
    "description": {
-    "en": "The Limited Edition perpetual wall calendar in Cafè Mousse. Comes with a special metal plaque for this collection. Only 999 pieces in this Special Collection. Each piece is unique and numbered, with an anti-counterfeiting hologram. Brand new, with box.",
-    "zh": "Cafè Mousse 特別版掛牆萬年曆。附此系列專屬金屬銘牌。特別版限量999件，每件獨一無二，附獨立編號及防偽全息標籤。全新，連盒。"
+    "en": "The Limited Edition perpetual wall calendar in Café Mousse. Comes with a special metal plaque for this collection. Only 999 pieces in this Special Collection. Each piece is unique and numbered, with an anti-counterfeiting hologram. Brand new, with box.",
+    "zh": "Café Mousse 特別版掛牆萬年曆。附此系列專屬金屬銘牌。特別版限量999件，每件獨一無二，附獨立編號及防偽全息標籤。全新，連盒。"
    },
    "details": {
     "en": [
@@ -3632,15 +3632,15 @@
     "/assets/products/ring-a-date-calendar-cafe-mousse/1.jpg"
    ],
    "photoAlt": {
-    "en": "The Cafè Mousse Ring-a-Date calendar on a white wall above a moka pot, cups and a small jug",
-    "zh": "Cafè Mousse 色 Ring-a-Date 萬年曆掛在白牆上，下方是摩卡壺、杯子和小奶壺"
+    "en": "The Café Mousse Ring-a-Date calendar on a white wall above a moka pot, cups and a small jug",
+    "zh": "Café Mousse 色 Ring-a-Date 萬年曆掛在白牆上，下方是摩卡壺、杯子和小奶壺"
    },
    "photoAlts": {
     "en": [
-     "The Cafè Mousse Ring-a-Date calendar on a white wall above a moka pot, cups and a small jug"
+     "The Café Mousse Ring-a-Date calendar on a white wall above a moka pot, cups and a small jug"
     ],
     "zh": [
-     "Cafè Mousse 色 Ring-a-Date 萬年曆掛在白牆上，下方是摩卡壺、杯子和小奶壺"
+     "Café Mousse 色 Ring-a-Date 萬年曆掛在白牆上，下方是摩卡壺、杯子和小奶壺"
     ]
    },
    "dropAt": "2026-11-05T20:00:00+08:00",

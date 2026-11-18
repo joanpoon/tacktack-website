@@ -412,8 +412,9 @@ def designer_page(d, lang):
     )
     body = body[:main_start] + main + body[main_end:]
     out = head_html + body
-    # same wording as the site-wide 睇貨 fix (書面語)
-    out = out.replace("Showroom 睇貨須預約", "Showroom 看貨須預約").replace("聯絡及 Showroom 睇貨", "聯絡及 Showroom 預約看貨")
+    # same wording as the site-wide 取貨 fix (書面語). Joan's lock: 預約 Showroom appointment.
+    out = out.replace("Showroom 睇貨須預約", "Showroom 取貨須預約").replace("Showroom 看貨須預約", "Showroom 取貨須預約")
+    out = out.replace("聯絡及 Showroom 睇貨", "預約 Showroom appointment").replace("聯絡及 Showroom 預約看貨", "預約 Showroom appointment")
     return set_grid(out, "list-grid", pieces, lang, True)
 
 

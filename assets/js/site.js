@@ -304,7 +304,14 @@
 
     var brands = {};
     PRODUCTS.forEach(function (p) { if (state(p).st === "sold" || !p.brand) return; var k = p.brand; if (!brands[k]) brands[k] = { brand: k, designers: [], n: 0 }; brands[k].n++; if (p.designer && brands[k].designers.indexOf(p.designer) < 0) brands[k].designers.push(p.designer); });
-    setHTML($("#brand-row"), Object.keys(brands).sort().map(function (k) {
+    // Locked strip order. Counts still come from listed (not sold) pieces. Ring-a-Date sits next to Heller.
+    var BRAND_ORDER = ["&Tradition", "AKARI", "DULTON", "Heller", "Ring-a-Date", "Herman Miller", "HAY", "Yoshitomo Nara"];
+    setHTML($("#brand-row"), Object.keys(brands).sort(function (a, b) {
+      var ia = BRAND_ORDER.indexOf(a), ib = BRAND_ORDER.indexOf(b);
+      if (ia < 0) ia = BRAND_ORDER.length;
+      if (ib < 0) ib = BRAND_ORDER.length;
+      return ia - ib || a.localeCompare(b);
+    }).map(function (k) {
       var b = brands[k];
       return '<a class="brand-pill" href="' + brandUrl(k) + '"><strong>' + esc(k) + "</strong><span>" + esc(b.designers.join(", ") || T().pieces(b.n)) + "</span></a>";
     }).join(""));

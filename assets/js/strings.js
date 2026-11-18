@@ -108,7 +108,7 @@ window.TT_STRINGS = {
       preorderNoted: "到港後可於 Showroom 預約自取，或全港送貨（運費經 WhatsApp 報價）。"
     },
     policy: {
-      sold: "這件已經找到新家。想找相近的一件，歡迎 WhatsApp 我們。",
+      sold: "這件已經找到新家。想找相近的一件，歡迎用 WhatsApp 聯絡我們。",
       dep: d => "付 30% 訂金（" + d + "）即可留貨。餘款須於自取或送貨前付清。",
       preorderDep: d => "預購付 30% 訂金（" + d + "）。這件尚未到港：日本空運，到港後才安排自取或送貨。餘款須於自取或送貨前付清。",
       preorderDepNoted: d => "預購付 30% 訂金（" + d + "）。這件尚未到港，到港後才安排自取或送貨。餘款須於自取或送貨前付清。",
@@ -147,7 +147,7 @@ window.TT_STRINGS = {
     noResults: "暫時未有符合篩選條件的貨品。",
     noResultsCta: "想找特定款式？在 WhatsApp 告訴我們，我們會幫你留意。",
     soldEmpty: "已售出區暫時未有貨品，每件都還在等待新主人。",
-    photoNote: "此為示意插圖，實物相片即將上載；WhatsApp 我們即可索取相片。",
+    photoNote: "此為示意插圖，實物相片即將上載；用 WhatsApp 聯絡我們即可索取相片。",
     notFound: "找不到這件貨品，可能已改名或下架。",
     by: "設計：", for_: "品牌："
   }
