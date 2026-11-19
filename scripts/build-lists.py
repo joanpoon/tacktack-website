@@ -291,7 +291,7 @@ def homepage_drop():
     by_slug = {p["slug"]: p for p in PUBLIC if st(p) != "sold"}
     pinned = [by_slug[s] for s in slugs if s in by_slug]
     if pinned:
-        return pinned[:8]
+        return pinned[:24]
     active = list(by_slug.values())
 
     def _cmp_drop(a, b):
@@ -299,7 +299,7 @@ def homepage_drop():
         return featured or _cmp_newest(a, b)
 
     neu = sorted((p for p in active if is_new(p)), key=functools.cmp_to_key(_cmp_drop))
-    return (neu or newest(active))[:8]
+    return (neu or newest(active))[:24]
 
 
 def lists():

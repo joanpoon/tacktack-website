@@ -286,14 +286,15 @@
     var drop = pinned.length ? pinned : active.filter(function (p) { return isNew(p); }).sort(function (a, b) { return (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || byNewest(a, b); });
     var dh = $("#drop-h"), dtx = T().dropH[drop.length ? "neu" : "latest"]; if (dh && dh.textContent !== dtx) dh.textContent = dtx;
     if (!drop.length) drop = active.slice().sort(byNewest);
-    grid($("#drop-grid"), drop.slice(0, 8), true);
+    grid($("#drop-grid"), drop.slice(0, 24), true);
     // #drop-date is fixed text ("New pieces every Thursday"), pre-rendered per language: nothing to update here
 
     $$("[data-cat-count]").forEach(function (el) {
       var k = el.getAttribute("data-cat-count"), n = active.filter(function (p) { return p.category === k; }).length;
       var txt = T().pieces(n);
       if (el.textContent !== txt) el.textContent = txt;
-      var tile = el.closest(".cat"), on = n >= MIN_CAT; if (tile && tile.hidden === on) tile.hidden = !on;   // empty categories stay hidden until they fill up
+      // Storage shows from the first listed piece. Other categories wait for MIN_CATEGORY_PIECES. Sofas at 0 stay hidden.
+      var tile = el.closest(".cat"), on = n >= (k === "storage" ? 1 : MIN_CAT); if (tile && tile.hidden === on) tile.hidden = !on;
     });
     var cs = $("#cat-section"); if (cs) { var anyCat = $$("[data-cat-count]").some(function (el) { return !el.closest(".cat").hidden; }); if (cs.hidden === anyCat) cs.hidden = !anyCat; }
     var sg = $("#size-section"), sp = active.filter(function (p) { return sizeRow(p); })[0];   // AKARI size guide: shows by itself once the lamps are live
