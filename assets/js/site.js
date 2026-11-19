@@ -286,7 +286,7 @@
     var drop = pinned.length ? pinned : active.filter(function (p) { return isNew(p); }).sort(function (a, b) { return (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || byNewest(a, b); });
     var dh = $("#drop-h"), dtx = T().dropH[drop.length ? "neu" : "latest"]; if (dh && dh.textContent !== dtx) dh.textContent = dtx;
     if (!drop.length) drop = active.slice().sort(byNewest);
-    grid($("#drop-grid"), drop.slice(0, 8), true);
+    grid($("#drop-grid"), drop.slice(0, 24), true);
     // #drop-date is fixed text ("New pieces every Thursday"), pre-rendered per language: nothing to update here
 
     $$("[data-cat-count]").forEach(function (el) {
