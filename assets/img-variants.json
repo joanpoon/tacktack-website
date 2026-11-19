@@ -1637,40 +1637,12 @@
   "webp": "/assets/products/hay-facet-cabinet-grey/r/4-400.webp 400w, /assets/products/hay-facet-cabinet-grey/r/4-800.webp 800w, /assets/products/hay-facet-cabinet-grey/r/4-1200.webp 1200w, /assets/products/hay-facet-cabinet-grey/r/4-1600.webp 1600w, /assets/products/hay-facet-cabinet-grey/r/4-3024.webp 3024w",
   "jpg": "/assets/products/hay-facet-cabinet-grey/r/4-400.jpg 400w, /assets/products/hay-facet-cabinet-grey/r/4-800.jpg 800w, /assets/products/hay-facet-cabinet-grey/r/4-1200.jpg 1200w, /assets/products/hay-facet-cabinet-grey/r/4-1600.jpg 1600w, /assets/products/hay-facet-cabinet-grey/4.jpg 3024w"
  },
- "/assets/products/hay-la-pittura-bowl-12-moon/2.jpg": {
-  "w": 1200,
-  "h": 1200,
-  "avif": "/assets/products/hay-la-pittura-bowl-12-moon/r/2-400.avif 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/2-800.avif 800w, /assets/products/hay-la-pittura-bowl-12-moon/r/2-1200.avif 1200w",
-  "webp": "/assets/products/hay-la-pittura-bowl-12-moon/r/2-400.webp 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/2-800.webp 800w, /assets/products/hay-la-pittura-bowl-12-moon/r/2-1200.webp 1200w",
-  "jpg": "/assets/products/hay-la-pittura-bowl-12-moon/r/2-400.jpg 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/2-800.jpg 800w, /assets/products/hay-la-pittura-bowl-12-moon/2.jpg 1200w"
- },
- "/assets/products/hay-la-pittura-bowl-12-moon/1.jpg": {
-  "w": 2944,
-  "h": 3680,
-  "avif": "/assets/products/hay-la-pittura-bowl-12-moon/r/1-400.avif 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-800.avif 800w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-1200.avif 1200w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-1600.avif 1600w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-2944.avif 2944w",
-  "webp": "/assets/products/hay-la-pittura-bowl-12-moon/r/1-400.webp 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-800.webp 800w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-1200.webp 1200w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-1600.webp 1600w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-2944.webp 2944w",
-  "jpg": "/assets/products/hay-la-pittura-bowl-12-moon/r/1-400.jpg 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-800.jpg 800w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-1200.jpg 1200w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-1600.jpg 1600w, /assets/products/hay-la-pittura-bowl-12-moon/1.jpg 2944w"
- },
- "/assets/products/hay-la-pittura-bowl-12-pomelo/1.jpg": {
-  "w": 1200,
-  "h": 1200,
-  "avif": "/assets/products/hay-la-pittura-bowl-12-pomelo/r/1-400.avif 400w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/1-800.avif 800w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/1-1200.avif 1200w",
-  "webp": "/assets/products/hay-la-pittura-bowl-12-pomelo/r/1-400.webp 400w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/1-800.webp 800w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/1-1200.webp 1200w",
-  "jpg": "/assets/products/hay-la-pittura-bowl-12-pomelo/r/1-400.jpg 400w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/1-800.jpg 800w, /assets/products/hay-la-pittura-bowl-12-pomelo/1.jpg 1200w"
- },
  "/assets/products/hay-facet-cabinet-grey/5.jpg": {
   "w": 3024,
   "h": 4032,
   "avif": "/assets/products/hay-facet-cabinet-grey/r/5-400.avif 400w, /assets/products/hay-facet-cabinet-grey/r/5-800.avif 800w, /assets/products/hay-facet-cabinet-grey/r/5-1200.avif 1200w, /assets/products/hay-facet-cabinet-grey/r/5-1600.avif 1600w, /assets/products/hay-facet-cabinet-grey/r/5-3024.avif 3024w",
   "webp": "/assets/products/hay-facet-cabinet-grey/r/5-400.webp 400w, /assets/products/hay-facet-cabinet-grey/r/5-800.webp 800w, /assets/products/hay-facet-cabinet-grey/r/5-1200.webp 1200w, /assets/products/hay-facet-cabinet-grey/r/5-1600.webp 1600w, /assets/products/hay-facet-cabinet-grey/r/5-3024.webp 3024w",
   "jpg": "/assets/products/hay-facet-cabinet-grey/r/5-400.jpg 400w, /assets/products/hay-facet-cabinet-grey/r/5-800.jpg 800w, /assets/products/hay-facet-cabinet-grey/r/5-1200.jpg 1200w, /assets/products/hay-facet-cabinet-grey/r/5-1600.jpg 1600w, /assets/products/hay-facet-cabinet-grey/5.jpg 3024w"
- },
- "/assets/products/hay-la-pittura-bowl-12-moon/3.jpg": {
-  "w": 2824,
-  "h": 3530,
-  "avif": "/assets/products/hay-la-pittura-bowl-12-moon/r/3-400.avif 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/3-800.avif 800w, /assets/products/hay-la-pittura-bowl-12-moon/r/3-1200.avif 1200w, /assets/products/hay-la-pittura-bowl-12-moon/r/3-1600.avif 1600w, /assets/products/hay-la-pittura-bowl-12-moon/r/3-2824.avif 2824w",
-  "webp": "/assets/products/hay-la-pittura-bowl-12-moon/r/3-400.webp 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/3-800.webp 800w, /assets/products/hay-la-pittura-bowl-12-moon/r/3-1200.webp 1200w, /assets/products/hay-la-pittura-bowl-12-moon/r/3-1600.webp 1600w, /assets/products/hay-la-pittura-bowl-12-moon/r/3-2824.webp 2824w",
-  "jpg": "/assets/products/hay-la-pittura-bowl-12-moon/r/3-400.jpg 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/3-800.jpg 800w, /assets/products/hay-la-pittura-bowl-12-moon/r/3-1200.jpg 1200w, /assets/products/hay-la-pittura-bowl-12-moon/r/3-1600.jpg 1600w, /assets/products/hay-la-pittura-bowl-12-moon/3.jpg 2824w"
  },
  "/assets/products/hay-la-pittura-bowl-18-moon/1.jpg": {
   "w": 1068,
@@ -1699,48 +1671,6 @@
   "avif": "/assets/products/hay-la-pittura-bowl-18-moon/r/4-400.avif 400w, /assets/products/hay-la-pittura-bowl-18-moon/r/4-800.avif 800w, /assets/products/hay-la-pittura-bowl-18-moon/r/4-1200.avif 1200w",
   "webp": "/assets/products/hay-la-pittura-bowl-18-moon/r/4-400.webp 400w, /assets/products/hay-la-pittura-bowl-18-moon/r/4-800.webp 800w, /assets/products/hay-la-pittura-bowl-18-moon/r/4-1200.webp 1200w",
   "jpg": "/assets/products/hay-la-pittura-bowl-18-moon/r/4-400.jpg 400w, /assets/products/hay-la-pittura-bowl-18-moon/r/4-800.jpg 800w, /assets/products/hay-la-pittura-bowl-18-moon/4.jpg 1200w"
- },
- "/assets/products/hay-la-pittura-bowl-12-pomelo/3.jpg": {
-  "w": 2824,
-  "h": 3530,
-  "avif": "/assets/products/hay-la-pittura-bowl-12-pomelo/r/3-400.avif 400w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/3-800.avif 800w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/3-1200.avif 1200w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/3-1600.avif 1600w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/3-2824.avif 2824w",
-  "webp": "/assets/products/hay-la-pittura-bowl-12-pomelo/r/3-400.webp 400w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/3-800.webp 800w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/3-1200.webp 1200w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/3-1600.webp 1600w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/3-2824.webp 2824w",
-  "jpg": "/assets/products/hay-la-pittura-bowl-12-pomelo/r/3-400.jpg 400w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/3-800.jpg 800w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/3-1200.jpg 1200w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/3-1600.jpg 1600w, /assets/products/hay-la-pittura-bowl-12-pomelo/3.jpg 2824w"
- },
- "/assets/products/hay-la-pittura-bowl-12-pomelo/2.jpg": {
-  "w": 2864,
-  "h": 3580,
-  "avif": "/assets/products/hay-la-pittura-bowl-12-pomelo/r/2-400.avif 400w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-800.avif 800w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-1200.avif 1200w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-1600.avif 1600w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-2864.avif 2864w",
-  "webp": "/assets/products/hay-la-pittura-bowl-12-pomelo/r/2-400.webp 400w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-800.webp 800w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-1200.webp 1200w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-1600.webp 1600w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-2864.webp 2864w",
-  "jpg": "/assets/products/hay-la-pittura-bowl-12-pomelo/r/2-400.jpg 400w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-800.jpg 800w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-1200.jpg 1200w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-1600.jpg 1600w, /assets/products/hay-la-pittura-bowl-12-pomelo/2.jpg 2864w"
- },
- "/assets/products/hay-la-pittura-plate-24-blush/3.jpg": {
-  "w": 1068,
-  "h": 1600,
-  "avif": "/assets/products/hay-la-pittura-plate-24-blush/r/3-400.avif 400w, /assets/products/hay-la-pittura-plate-24-blush/r/3-800.avif 800w, /assets/products/hay-la-pittura-plate-24-blush/r/3-1068.avif 1068w",
-  "webp": "/assets/products/hay-la-pittura-plate-24-blush/r/3-400.webp 400w, /assets/products/hay-la-pittura-plate-24-blush/r/3-800.webp 800w, /assets/products/hay-la-pittura-plate-24-blush/r/3-1068.webp 1068w",
-  "jpg": "/assets/products/hay-la-pittura-plate-24-blush/r/3-400.jpg 400w, /assets/products/hay-la-pittura-plate-24-blush/r/3-800.jpg 800w, /assets/products/hay-la-pittura-plate-24-blush/3.jpg 1068w"
- },
- "/assets/products/hay-la-pittura-plate-24-blush/1.jpg": {
-  "w": 2944,
-  "h": 3680,
-  "avif": "/assets/products/hay-la-pittura-plate-24-blush/r/1-400.avif 400w, /assets/products/hay-la-pittura-plate-24-blush/r/1-800.avif 800w, /assets/products/hay-la-pittura-plate-24-blush/r/1-1200.avif 1200w, /assets/products/hay-la-pittura-plate-24-blush/r/1-1600.avif 1600w, /assets/products/hay-la-pittura-plate-24-blush/r/1-2944.avif 2944w",
-  "webp": "/assets/products/hay-la-pittura-plate-24-blush/r/1-400.webp 400w, /assets/products/hay-la-pittura-plate-24-blush/r/1-800.webp 800w, /assets/products/hay-la-pittura-plate-24-blush/r/1-1200.webp 1200w, /assets/products/hay-la-pittura-plate-24-blush/r/1-1600.webp 1600w, /assets/products/hay-la-pittura-plate-24-blush/r/1-2944.webp 2944w",
-  "jpg": "/assets/products/hay-la-pittura-plate-24-blush/r/1-400.jpg 400w, /assets/products/hay-la-pittura-plate-24-blush/r/1-800.jpg 800w, /assets/products/hay-la-pittura-plate-24-blush/r/1-1200.jpg 1200w, /assets/products/hay-la-pittura-plate-24-blush/r/1-1600.jpg 1600w, /assets/products/hay-la-pittura-plate-24-blush/1.jpg 2944w"
- },
- "/assets/products/hay-la-pittura-plate-24-blush/2.jpg": {
-  "w": 2864,
-  "h": 3580,
-  "avif": "/assets/products/hay-la-pittura-plate-24-blush/r/2-400.avif 400w, /assets/products/hay-la-pittura-plate-24-blush/r/2-800.avif 800w, /assets/products/hay-la-pittura-plate-24-blush/r/2-1200.avif 1200w, /assets/products/hay-la-pittura-plate-24-blush/r/2-1600.avif 1600w, /assets/products/hay-la-pittura-plate-24-blush/r/2-2864.avif 2864w",
-  "webp": "/assets/products/hay-la-pittura-plate-24-blush/r/2-400.webp 400w, /assets/products/hay-la-pittura-plate-24-blush/r/2-800.webp 800w, /assets/products/hay-la-pittura-plate-24-blush/r/2-1200.webp 1200w, /assets/products/hay-la-pittura-plate-24-blush/r/2-1600.webp 1600w, /assets/products/hay-la-pittura-plate-24-blush/r/2-2864.webp 2864w",
-  "jpg": "/assets/products/hay-la-pittura-plate-24-blush/r/2-400.jpg 400w, /assets/products/hay-la-pittura-plate-24-blush/r/2-800.jpg 800w, /assets/products/hay-la-pittura-plate-24-blush/r/2-1200.jpg 1200w, /assets/products/hay-la-pittura-plate-24-blush/r/2-1600.jpg 1600w, /assets/products/hay-la-pittura-plate-24-blush/2.jpg 2864w"
- },
- "/assets/products/hay-la-pittura-plate-24-golden-leaf/1.jpg": {
-  "w": 2824,
-  "h": 3530,
-  "avif": "/assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-400.avif 400w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-800.avif 800w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-1200.avif 1200w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-1600.avif 1600w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-2824.avif 2824w",
-  "webp": "/assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-400.webp 400w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-800.webp 800w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-1200.webp 1200w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-1600.webp 1600w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-2824.webp 2824w",
-  "jpg": "/assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-400.jpg 400w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-800.jpg 800w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-1200.jpg 1200w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-1600.jpg 1600w, /assets/products/hay-la-pittura-plate-24-golden-leaf/1.jpg 2824w"
  },
  "/assets/products/hay-la-pittura-platter-josephine/1.jpg": {
   "w": 910,
@@ -1777,25 +1707,137 @@
   "webp": "/assets/products/hay-la-pittura-platter-josephine/r/5-400.webp 400w, /assets/products/hay-la-pittura-platter-josephine/r/5-700.webp 700w",
   "jpg": "/assets/products/hay-la-pittura-platter-josephine/r/5-400.jpg 400w, /assets/products/hay-la-pittura-platter-josephine/5.jpg 700w"
  },
- "/assets/products/hay-la-pittura-plate-24-golden-leaf/2.jpg": {
-  "w": 2864,
-  "h": 3580,
-  "avif": "/assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-400.avif 400w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-800.avif 800w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-1200.avif 1200w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-1600.avif 1600w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-2864.avif 2864w",
-  "webp": "/assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-400.webp 400w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-800.webp 800w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-1200.webp 1200w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-1600.webp 1600w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-2864.webp 2864w",
-  "jpg": "/assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-400.jpg 400w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-800.jpg 800w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-1200.jpg 1200w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-1600.jpg 1600w, /assets/products/hay-la-pittura-plate-24-golden-leaf/2.jpg 2864w"
- },
- "/assets/products/hay-la-pittura-plate-24-golden-leaf/3.jpg": {
-  "w": 2944,
-  "h": 3680,
-  "avif": "/assets/products/hay-la-pittura-plate-24-golden-leaf/r/3-400.avif 400w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/3-800.avif 800w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/3-1200.avif 1200w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/3-1600.avif 1600w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/3-2944.avif 2944w",
-  "webp": "/assets/products/hay-la-pittura-plate-24-golden-leaf/r/3-400.webp 400w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/3-800.webp 800w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/3-1200.webp 1200w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/3-1600.webp 1600w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/3-2944.webp 2944w",
-  "jpg": "/assets/products/hay-la-pittura-plate-24-golden-leaf/r/3-400.jpg 400w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/3-800.jpg 800w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/3-1200.jpg 1200w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/3-1600.jpg 1600w, /assets/products/hay-la-pittura-plate-24-golden-leaf/3.jpg 2944w"
- },
  "/assets/products/andtradition-rotate-sc73-ivory/1.jpg": {
   "w": 3024,
   "h": 4032,
   "avif": "/assets/products/andtradition-rotate-sc73-ivory/r/1-400.avif 400w, /assets/products/andtradition-rotate-sc73-ivory/r/1-800.avif 800w, /assets/products/andtradition-rotate-sc73-ivory/r/1-1200.avif 1200w, /assets/products/andtradition-rotate-sc73-ivory/r/1-1600.avif 1600w, /assets/products/andtradition-rotate-sc73-ivory/r/1-3024.avif 3024w",
   "webp": "/assets/products/andtradition-rotate-sc73-ivory/r/1-400.webp 400w, /assets/products/andtradition-rotate-sc73-ivory/r/1-800.webp 800w, /assets/products/andtradition-rotate-sc73-ivory/r/1-1200.webp 1200w, /assets/products/andtradition-rotate-sc73-ivory/r/1-1600.webp 1600w, /assets/products/andtradition-rotate-sc73-ivory/r/1-3024.webp 3024w",
   "jpg": "/assets/products/andtradition-rotate-sc73-ivory/r/1-400.jpg 400w, /assets/products/andtradition-rotate-sc73-ivory/r/1-800.jpg 800w, /assets/products/andtradition-rotate-sc73-ivory/r/1-1200.jpg 1200w, /assets/products/andtradition-rotate-sc73-ivory/r/1-1600.jpg 1600w, /assets/products/andtradition-rotate-sc73-ivory/1.jpg 3024w"
+ },
+ "/assets/products/hay-la-pittura-bowl-12-pomelo/t/1.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/hay-la-pittura-bowl-12-pomelo/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-la-pittura-bowl-12-pomelo/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-la-pittura-bowl-12-pomelo/t/1.jpg 160w"
+ },
+ "/assets/products/hay-la-pittura-bowl-12-pomelo/t/2.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/hay-la-pittura-bowl-12-pomelo/t/r/2-160.avif 160w",
+  "webp": "/assets/products/hay-la-pittura-bowl-12-pomelo/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/hay-la-pittura-bowl-12-pomelo/t/2.jpg 160w"
+ },
+ "/assets/products/hay-la-pittura-bowl-12-pomelo/1.jpg": {
+  "w": 1600,
+  "h": 1600,
+  "avif": "/assets/products/hay-la-pittura-bowl-12-pomelo/r/1-400.avif 400w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/1-800.avif 800w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/1-1200.avif 1200w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/1-1600.avif 1600w",
+  "webp": "/assets/products/hay-la-pittura-bowl-12-pomelo/r/1-400.webp 400w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/1-800.webp 800w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/1-1200.webp 1200w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/1-1600.webp 1600w",
+  "jpg": "/assets/products/hay-la-pittura-bowl-12-pomelo/r/1-400.jpg 400w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/1-800.jpg 800w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/1-1200.jpg 1200w, /assets/products/hay-la-pittura-bowl-12-pomelo/1.jpg 1600w"
+ },
+ "/assets/products/hay-la-pittura-bowl-12-moon/t/1.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/hay-la-pittura-bowl-12-moon/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-la-pittura-bowl-12-moon/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-la-pittura-bowl-12-moon/t/1.jpg 160w"
+ },
+ "/assets/products/hay-la-pittura-bowl-12-moon/1.jpg": {
+  "w": 1600,
+  "h": 1600,
+  "avif": "/assets/products/hay-la-pittura-bowl-12-moon/r/1-400.avif 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-800.avif 800w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-1200.avif 1200w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-1600.avif 1600w",
+  "webp": "/assets/products/hay-la-pittura-bowl-12-moon/r/1-400.webp 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-800.webp 800w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-1200.webp 1200w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-1600.webp 1600w",
+  "jpg": "/assets/products/hay-la-pittura-bowl-12-moon/r/1-400.jpg 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-800.jpg 800w, /assets/products/hay-la-pittura-bowl-12-moon/r/1-1200.jpg 1200w, /assets/products/hay-la-pittura-bowl-12-moon/1.jpg 1600w"
+ },
+ "/assets/products/hay-la-pittura-bowl-12-moon/t/2.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/hay-la-pittura-bowl-12-moon/t/r/2-160.avif 160w",
+  "webp": "/assets/products/hay-la-pittura-bowl-12-moon/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/hay-la-pittura-bowl-12-moon/t/2.jpg 160w"
+ },
+ "/assets/products/hay-la-pittura-bowl-12-pomelo/2.jpg": {
+  "w": 1200,
+  "h": 1200,
+  "avif": "/assets/products/hay-la-pittura-bowl-12-pomelo/r/2-400.avif 400w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-800.avif 800w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-1200.avif 1200w",
+  "webp": "/assets/products/hay-la-pittura-bowl-12-pomelo/r/2-400.webp 400w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-800.webp 800w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-1200.webp 1200w",
+  "jpg": "/assets/products/hay-la-pittura-bowl-12-pomelo/r/2-400.jpg 400w, /assets/products/hay-la-pittura-bowl-12-pomelo/r/2-800.jpg 800w, /assets/products/hay-la-pittura-bowl-12-pomelo/2.jpg 1200w"
+ },
+ "/assets/products/hay-la-pittura-bowl-12-moon/t/3.jpg": {
+  "w": 160,
+  "h": 213,
+  "avif": "/assets/products/hay-la-pittura-bowl-12-moon/t/r/3-160.avif 160w",
+  "webp": "/assets/products/hay-la-pittura-bowl-12-moon/t/r/3-160.webp 160w",
+  "jpg": "/assets/products/hay-la-pittura-bowl-12-moon/t/3.jpg 160w"
+ },
+ "/assets/products/hay-la-pittura-bowl-12-moon/3.jpg": {
+  "w": 748,
+  "h": 997,
+  "avif": "/assets/products/hay-la-pittura-bowl-12-moon/r/3-400.avif 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/3-748.avif 748w",
+  "webp": "/assets/products/hay-la-pittura-bowl-12-moon/r/3-400.webp 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/3-748.webp 748w",
+  "jpg": "/assets/products/hay-la-pittura-bowl-12-moon/r/3-400.jpg 400w, /assets/products/hay-la-pittura-bowl-12-moon/3.jpg 748w"
+ },
+ "/assets/products/hay-la-pittura-plate-24-blush/t/1.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/hay-la-pittura-plate-24-blush/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-la-pittura-plate-24-blush/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-la-pittura-plate-24-blush/t/1.jpg 160w"
+ },
+ "/assets/products/hay-la-pittura-bowl-12-moon/2.jpg": {
+  "w": 1200,
+  "h": 1200,
+  "avif": "/assets/products/hay-la-pittura-bowl-12-moon/r/2-400.avif 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/2-800.avif 800w, /assets/products/hay-la-pittura-bowl-12-moon/r/2-1200.avif 1200w",
+  "webp": "/assets/products/hay-la-pittura-bowl-12-moon/r/2-400.webp 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/2-800.webp 800w, /assets/products/hay-la-pittura-bowl-12-moon/r/2-1200.webp 1200w",
+  "jpg": "/assets/products/hay-la-pittura-bowl-12-moon/r/2-400.jpg 400w, /assets/products/hay-la-pittura-bowl-12-moon/r/2-800.jpg 800w, /assets/products/hay-la-pittura-bowl-12-moon/2.jpg 1200w"
+ },
+ "/assets/products/hay-la-pittura-plate-24-blush/t/2.jpg": {
+  "w": 160,
+  "h": 107,
+  "avif": "/assets/products/hay-la-pittura-plate-24-blush/t/r/2-160.avif 160w",
+  "webp": "/assets/products/hay-la-pittura-plate-24-blush/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/hay-la-pittura-plate-24-blush/t/2.jpg 160w"
+ },
+ "/assets/products/hay-la-pittura-plate-24-blush/1.jpg": {
+  "w": 1600,
+  "h": 1600,
+  "avif": "/assets/products/hay-la-pittura-plate-24-blush/r/1-400.avif 400w, /assets/products/hay-la-pittura-plate-24-blush/r/1-800.avif 800w, /assets/products/hay-la-pittura-plate-24-blush/r/1-1200.avif 1200w, /assets/products/hay-la-pittura-plate-24-blush/r/1-1600.avif 1600w",
+  "webp": "/assets/products/hay-la-pittura-plate-24-blush/r/1-400.webp 400w, /assets/products/hay-la-pittura-plate-24-blush/r/1-800.webp 800w, /assets/products/hay-la-pittura-plate-24-blush/r/1-1200.webp 1200w, /assets/products/hay-la-pittura-plate-24-blush/r/1-1600.webp 1600w",
+  "jpg": "/assets/products/hay-la-pittura-plate-24-blush/r/1-400.jpg 400w, /assets/products/hay-la-pittura-plate-24-blush/r/1-800.jpg 800w, /assets/products/hay-la-pittura-plate-24-blush/r/1-1200.jpg 1200w, /assets/products/hay-la-pittura-plate-24-blush/1.jpg 1600w"
+ },
+ "/assets/products/hay-la-pittura-plate-24-blush/2.jpg": {
+  "w": 1600,
+  "h": 1066,
+  "avif": "/assets/products/hay-la-pittura-plate-24-blush/r/2-400.avif 400w, /assets/products/hay-la-pittura-plate-24-blush/r/2-800.avif 800w, /assets/products/hay-la-pittura-plate-24-blush/r/2-1200.avif 1200w, /assets/products/hay-la-pittura-plate-24-blush/r/2-1600.avif 1600w",
+  "webp": "/assets/products/hay-la-pittura-plate-24-blush/r/2-400.webp 400w, /assets/products/hay-la-pittura-plate-24-blush/r/2-800.webp 800w, /assets/products/hay-la-pittura-plate-24-blush/r/2-1200.webp 1200w, /assets/products/hay-la-pittura-plate-24-blush/r/2-1600.webp 1600w",
+  "jpg": "/assets/products/hay-la-pittura-plate-24-blush/r/2-400.jpg 400w, /assets/products/hay-la-pittura-plate-24-blush/r/2-800.jpg 800w, /assets/products/hay-la-pittura-plate-24-blush/r/2-1200.jpg 1200w, /assets/products/hay-la-pittura-plate-24-blush/2.jpg 1600w"
+ },
+ "/assets/products/hay-la-pittura-plate-24-golden-leaf/t/1.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/hay-la-pittura-plate-24-golden-leaf/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-la-pittura-plate-24-golden-leaf/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-la-pittura-plate-24-golden-leaf/t/1.jpg 160w"
+ },
+ "/assets/products/hay-la-pittura-plate-24-golden-leaf/t/2.jpg": {
+  "w": 160,
+  "h": 107,
+  "avif": "/assets/products/hay-la-pittura-plate-24-golden-leaf/t/r/2-160.avif 160w",
+  "webp": "/assets/products/hay-la-pittura-plate-24-golden-leaf/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/hay-la-pittura-plate-24-golden-leaf/t/2.jpg 160w"
+ },
+ "/assets/products/hay-la-pittura-plate-24-golden-leaf/2.jpg": {
+  "w": 1600,
+  "h": 1066,
+  "avif": "/assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-400.avif 400w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-800.avif 800w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-1200.avif 1200w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-1600.avif 1600w",
+  "webp": "/assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-400.webp 400w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-800.webp 800w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-1200.webp 1200w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-1600.webp 1600w",
+  "jpg": "/assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-400.jpg 400w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-800.jpg 800w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/2-1200.jpg 1200w, /assets/products/hay-la-pittura-plate-24-golden-leaf/2.jpg 1600w"
+ },
+ "/assets/products/hay-la-pittura-plate-24-golden-leaf/1.jpg": {
+  "w": 1600,
+  "h": 1600,
+  "avif": "/assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-400.avif 400w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-800.avif 800w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-1200.avif 1200w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-1600.avif 1600w",
+  "webp": "/assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-400.webp 400w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-800.webp 800w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-1200.webp 1200w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-1600.webp 1600w",
+  "jpg": "/assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-400.jpg 400w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-800.jpg 800w, /assets/products/hay-la-pittura-plate-24-golden-leaf/r/1-1200.jpg 1200w, /assets/products/hay-la-pittura-plate-24-golden-leaf/1.jpg 1600w"
  }
 }
