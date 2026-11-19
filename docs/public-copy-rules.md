@@ -10,6 +10,8 @@ Joan locked these on **21 Oct 2026** after rejects on [PR #57](https://github.co
 
 **8 Nov 2026.** Joan widened the privacy bans. Vendor, freight forwarder, supplier shipping, a purchase city or date, wholesale source, and named suppliers such as Lamp Twist stay off public pages. Customer delivery, “Made in …”, the selling price, and Heller’s “in collaboration with MoMA” stay.
 
+**18 Nov 2026.** Joan locked pickup wording. Public copy says 取貨, not 看貨 or 睇貨. The Showroom CTA is 預約 Showroom appointment. “Showroom 取貨須預約” stays. English “viewings” stays.
+
 Live catalog copy lives in:
 
 - `data/products.json` (names, descriptions, details, condition notes)
@@ -94,13 +96,14 @@ Clear bans. The checker fails closed on these.
 | `privacy-purchase-place` | bought / purchased / sourced in a city, purchase date, bought on YYYY, 在大阪購入, 入貨日期 | Where or when we bought it. “Made in Japan” / 日本製造 stays. |
 | `privacy-wholesale` | wholesale from, at wholesale, 批發自, 批發價入 | Purchase source. “Wholesale lighting” as a design category stays. |
 | `privacy-named-supplier` | Lamp Twist, LampTwist, lamp twist. Add the next internal name to `names`. | Never public. The checker matches spaces and hyphens loosely. Do not add bare MoMA. |
+| `pickup-wording` | `看貨`, `睇貨` | Use 取貨. The Showroom CTA is 預約 Showroom appointment. “Showroom 預約看貨” and “Showroom 看貨須預約” fail because they contain 看貨. “Showroom 取貨須預約” stays. English “viewings” stays. |
 
 <!-- check-public-copy:rules -->
 ```json
 {
   "locked": "2026-10-21",
-  "updated": "2026-11-08",
-  "source": "Joan locks from 21 Oct 2026 rejects on PR #57 and follow-ups. 23 Oct 2026 lifted brand-new-boxed. 5 Nov 2026 added hold-end, deposit-tier, and a tighter raw-sku body ban. 8 Nov 2026 widened privacy bans: vendor, forwarder, supplier shipping, purchase city and date, wholesale source, and named suppliers.",
+  "updated": "2026-11-18",
+  "source": "Joan locks from 21 Oct 2026 rejects on PR #57 and follow-ups. 23 Oct 2026 lifted brand-new-boxed. 5 Nov 2026 added hold-end, deposit-tier, and a tighter raw-sku body ban. 8 Nov 2026 widened privacy bans: vendor, forwarder, supplier shipping, purchase city and date, wholesale source, and named suppliers. 18 Nov 2026 locked 取貨 in place of 看貨 and 睇貨, and the Showroom CTA 預約 Showroom appointment.",
   "scan": {
     "globs": [
       "data/products.json",
@@ -432,6 +435,15 @@ Clear bans. The checker fails closed on these.
       "reason": "Named internal suppliers stay off public pages. Add another name to names. Do not add bare MoMA.",
       "names": [
         "Lamp Twist"
+      ]
+    },
+    {
+      "id": "pickup-wording",
+      "scope": "all",
+      "reason": "Use 取貨. Do not write 看貨 or 睇貨. The Showroom CTA is 預約 Showroom appointment. English viewings stay.",
+      "patterns": [
+        "看貨",
+        "睇貨"
       ]
     }
   ]

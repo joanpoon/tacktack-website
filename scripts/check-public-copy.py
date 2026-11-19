@@ -383,7 +383,7 @@ def self_test() -> None:
     assert not scan_text("Official Heller dealer.", rules, "data/products.json", "t", brand_key="Heller")
 
     # 8 Nov 2026 privacy widening. Customer delivery, Made in, and Heller × MoMA stay.
-    assert rules["updated"] == "2026-11-08"
+    assert rules["updated"] == "2026-11-18"
     named = next(ban for ban in rules["bans"] if ban["id"] == "privacy-named-supplier")
     assert "Lamp Twist" in named.get("names", [])
 
@@ -490,6 +490,22 @@ def self_test() -> None:
     allowed("2022 design, launched by Heller 2023.")
     allowed("Bought the lamp for the living room.")
 
+    # 18 Nov 2026 pickup wording. Patterns live in the rules JSON.
+    # Copy that says 看貨 or 睇貨 fails. 取貨, the locked CTA, and English viewings stay.
+    banned("歡迎看貨。", "pickup-wording", "zh/contact/index.html")
+    banned("歡迎睇貨。", "pickup-wording", "zh/contact/index.html")
+    banned("Showroom 預約看貨", "pickup-wording", "zh/contact/index.html")
+    banned("Showroom 看貨須預約", "pickup-wording", "zh/contact/index.html")
+    banned("Showroom 睇貨須預約", "pickup-wording", "zh/contact/index.html")
+    banned("聯絡及 Showroom 預約看貨", "pickup-wording", "zh/contact/index.html")
+    banned("聯絡及 Showroom 睇貨", "pickup-wording", "zh/contact/index.html")
+    allowed("預約 Showroom appointment", "zh/contact/index.html")
+    allowed("Showroom 取貨須預約", "zh/contact/index.html")
+    allowed("Fresh Thursday：每週四上新 · Showroom 取貨須預約", "zh/contact/index.html")
+    allowed("Showroom 取貨免費，須預約，約 30 分鐘。", "zh/contact/index.html")
+    allowed("Showroom viewings by appointment only", "contact/index.html")
+    allowed("Contact & showroom viewings", "contact/index.html")
+    allowed("Yes. Viewings are free and by appointment (about 30 minutes).", "faq/index.html")
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Scan public copy for Joan-banned phrases.")
