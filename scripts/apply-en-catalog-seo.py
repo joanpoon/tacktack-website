@@ -40,8 +40,8 @@ PAGES = {
         "Showroom pickup by appointment or delivery across Hong Kong, quoted on WhatsApp before you pay. Small pieces by courier, large furniture by movers.",
     ),
     "item/akari-30a/index.html": (
-        "Isamu Noguchi AKARI 30A Pendant, Hong Kong | Tack, tack!",
-        None,
+        "Sold: Isamu Noguchi AKARI 30A Pendant | Tack, tack!",
+        "Isamu Noguchi AKARI 30A pendant, a 30 cm washi shade on bamboo ribbing, has found a new home. WhatsApp us for something similar.",
     ),
     "item/andtradition-flowerpot-vp9-dark-green/index.html": (
         "&Tradition Flowerpot VP9 Dark Green, Hong Kong | Tack, tack!",
