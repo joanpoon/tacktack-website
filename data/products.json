@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "homepageDrop": [
  "andtradition-lato-ln8-verde-grigio",
  "andtradition-rotate-sc73-ivory",
@@ -1816,7 +1816,7 @@
     }
    },
    "price": 1680,
-   "status": "available",
+   "status": "sold",
    "fulfilment": "both",
    "notices": [
     "cordNotIncluded"
