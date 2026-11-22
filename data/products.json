@@ -4223,14 +4223,20 @@
     "/assets/products/andtradition-lato-ln8-verde-grigio/2.jpg",
     "/assets/products/andtradition-lato-ln8-verde-grigio/3.jpg",
     "/assets/products/andtradition-lato-ln8-verde-grigio/4.jpg",
-    "/assets/products/andtradition-lato-ln8-verde-grigio/5.jpg"
+    "/assets/products/andtradition-lato-ln8-verde-grigio/5.jpg",
+    "/assets/products/andtradition-lato-ln8-verde-grigio/6.jpg",
+    "/assets/products/andtradition-lato-ln8-verde-grigio/7.jpg",
+    "/assets/products/andtradition-lato-ln8-verde-grigio/8.jpg"
    ],
    "photoAlt": {
-    "en": "&Tradition Lato LN8 side table in Verde Grigio, green marble base, with a lamp and a tray set on top",
-    "zh": "&Tradition Lato LN8 邊桌，Verde Grigio，綠色大理石底座，桌面放着燈及托盤"
+    "en": "&Tradition Lato LN8 side table in Verde Grigio, with books on the tray, standing on a rust-coloured rug",
+    "zh": "&Tradition Lato LN8 邊桌，Verde Grigio，托盤上放着書，置於赤褐色地毯上"
    },
    "photoAlts": {
     "en": [
+     "&Tradition Lato LN8 side table in Verde Grigio, with books on the tray, standing on a rust-coloured rug",
+     "A pair of Lato LN8 side tables in Verde Grigio beside a sofa, one with a teapot and cup, the other with a notebook",
+     "A Lato LN8 side table in Verde Grigio beside a rust-coloured armchair, with a lamp on the tray",
      "&Tradition Lato LN8 side table in Verde Grigio, green marble base, with a lamp and a tray set on top",
      "Close view of the Verde Grigio marble on the Lato LN8 side table",
      "The marble base and steel stem of the Lato LN8 side table",
@@ -4238,6 +4244,9 @@
      "Top-down view of the round Lato LN8 side table in Verde Grigio"
     ],
     "zh": [
+     "&Tradition Lato LN8 邊桌，Verde Grigio，托盤上放着書，置於赤褐色地毯上",
+     "一對 Verde Grigio Lato LN8 邊桌置於沙發旁，一張放着茶壺與杯，另一張放着筆記簿",
+     "Verde Grigio Lato LN8 邊桌置於赤褐色扶手椅旁，托盤上放着燈",
      "&Tradition Lato LN8 邊桌，Verde Grigio，綠色大理石底座，桌面放着燈及托盤",
      "Lato LN8 邊桌 Verde Grigio 大理石近照",
      "Lato LN8 邊桌的大理石底座及鋼柱",
@@ -4301,17 +4310,23 @@
    },
    "price": 1980,
    "photos": [
-    "/assets/products/andtradition-rotate-sc73-ivory/1.jpg"
+    "/assets/products/andtradition-rotate-sc73-ivory/1.jpg",
+    "/assets/products/andtradition-rotate-sc73-ivory/2.jpg",
+    "/assets/products/andtradition-rotate-sc73-ivory/3.jpg"
    ],
    "photoAlt": {
-    "en": "&Tradition Rotate SC73 in Ivory, a powder-coated steel trolley on the floor",
-    "zh": "&Tradition Rotate SC73，Ivory，粉末噴塗鋼製活動邊几"
+    "en": "&Tradition Rotate SC73 in Ivory, styled with a chrome lamp and folded towels",
+    "zh": "&Tradition Rotate SC73 Ivory，配以鍍鉻檯燈及摺好的毛巾"
    },
    "photoAlts": {
     "en": [
+     "&Tradition Rotate SC73 in Ivory, styled with a chrome lamp and folded towels",
+     "&Tradition Rotate SC73 in Ivory, styled with books and a lamp",
      "&Tradition Rotate SC73 in Ivory, a powder-coated steel trolley on the floor"
     ],
     "zh": [
+     "&Tradition Rotate SC73 Ivory，配以鍍鉻檯燈及摺好的毛巾",
+     "&Tradition Rotate SC73 Ivory，配以書籍及檯燈",
      "&Tradition Rotate SC73，Ivory，粉末噴塗鋼製活動邊几"
     ]
    },
@@ -4386,19 +4401,19 @@
     "/assets/products/andtradition-rotate-sc73-terracotta/3.jpg"
    ],
    "photoAlt": {
-    "en": "&Tradition Rotate SC73 in Terracotta, official product photo on a white background, with castors",
-    "zh": "&Tradition Rotate SC73 陶土色官方產品照，白色背景，可見腳輪"
+    "en": "&Tradition Rotate SC73 in Terracotta, styled with a lamp, books and a chair",
+    "zh": "&Tradition Rotate SC73 陶土色，配以檯燈、書籍及椅子"
    },
    "photoAlts": {
     "en": [
+     "&Tradition Rotate SC73 in Terracotta, styled with a lamp, books and a chair",
      "&Tradition Rotate SC73 in Terracotta, official product photo on a white background, with castors",
-     "Rotate SC73 colourways together, including Terracotta",
-     "&Tradition Rotate SC73 in Terracotta in a room"
+     "Rotate SC73 colourways together, including Terracotta"
     ],
     "zh": [
+     "&Tradition Rotate SC73 陶土色，配以檯燈、書籍及椅子",
      "&Tradition Rotate SC73 陶土色官方產品照，白色背景，可見腳輪",
-     "Rotate SC73 多個顏色並列，包括陶土色",
-     "&Tradition Rotate SC73 陶土色放在室內"
+     "Rotate SC73 多個顏色並列，包括陶土色"
     ]
    },
    "designer": "Space Copenhagen",
@@ -4421,8 +4436,7 @@
     "unit": "cm"
    },
    "retailPrice": 3595,
-   "variantGroup": "rotate-sc73",
-   "photoFit": "contain"
+   "variantGroup": "rotate-sc73"
   },
   {
    "featured": false,
@@ -4475,14 +4489,16 @@
     "/assets/products/hay-bowler/3.jpg",
     "/assets/products/hay-bowler/4.jpg",
     "/assets/products/hay-bowler/5.jpg",
-    "/assets/products/hay-bowler/6.jpg"
+    "/assets/products/hay-bowler/6.jpg",
+    "/assets/products/hay-bowler/7.jpg"
    ],
    "photoAlt": {
-    "en": "HAY Bowler side table in full, with an arched handle and a speckled granite base",
-    "zh": "HAY Bowler 邊桌全貌，拱形把手及斑點花崗岩底座"
+    "en": "Official HAY lifestyle photo of a dark green Bowler side table, with a glass on the tray and books on the floor beside it",
+    "zh": "HAY Bowler 邊桌官方生活照，深綠色，托盤上放着玻璃杯，旁邊地上放着書"
    },
    "photoAlts": {
     "en": [
+     "Official HAY lifestyle photo of a dark green Bowler side table, with a glass on the tray and books on the floor beside it",
      "HAY Bowler side table in full, with an arched handle and a speckled granite base",
      "The speckled granite base of the HAY Bowler side table",
      "HAY labels on the Bowler side table",
@@ -4491,6 +4507,7 @@
      "The handle joints on the HAY Bowler side table"
     ],
     "zh": [
+     "HAY Bowler 邊桌官方生活照，深綠色，托盤上放着玻璃杯，旁邊地上放着書",
      "HAY Bowler 邊桌全貌，拱形把手及斑點花崗岩底座",
      "HAY Bowler 邊桌的斑點花崗岩底座",
      "HAY Bowler 邊桌上的品牌標籤",
@@ -4557,14 +4574,16 @@
     "/assets/products/hay-facet-cabinet-grey/2.jpg",
     "/assets/products/hay-facet-cabinet-grey/3.jpg",
     "/assets/products/hay-facet-cabinet-grey/4.jpg",
-    "/assets/products/hay-facet-cabinet-grey/5.jpg"
+    "/assets/products/hay-facet-cabinet-grey/5.jpg",
+    "/assets/products/hay-facet-cabinet-grey/6.jpg"
    ],
    "photoAlt": {
-    "en": "HAY Facet cabinet in grey, door open, seen from the front",
-    "zh": "HAY Facet 灰色櫃，櫃門打開，正面"
+    "en": "Official HAY lifestyle photo of Facet cabinets in several colours, including grey",
+    "zh": "HAY Facet 櫃官方生活照，多色並列（包括灰色）"
    },
    "photoAlts": {
     "en": [
+     "Official HAY lifestyle photo of Facet cabinets in several colours, including grey",
      "HAY Facet cabinet in grey, door open, seen from the front",
      "HAY Facet cabinet in grey in a room",
      "Top detail of the grey HAY Facet cabinet",
@@ -4572,6 +4591,7 @@
      "HAY Facet cabinet in grey, open, from an angle"
     ],
     "zh": [
+     "HAY Facet 櫃官方生活照，多色並列（包括灰色）",
      "HAY Facet 灰色櫃，櫃門打開，正面",
      "HAY Facet 灰色櫃放在室內",
      "HAY Facet 灰色櫃頂部近照",
