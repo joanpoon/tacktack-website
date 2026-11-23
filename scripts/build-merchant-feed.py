@@ -76,6 +76,8 @@ CATEGORY_BY_TYPE = {
     "書架": "465",
     "邊桌": "1549",
     "收納櫃": "5938",
+    "收納箱": "5631",
+    "鐵罐": "667",
     "碗": "3498",
     "餐碟": "3553",
     "橢圓餐盤": "3802",
@@ -135,6 +137,7 @@ STATUS_REASON = {
     "on-hold": "On hold",
     "ordered": "Ordered",
     "draft": "Draft",
+    "inquire": "Inquire",
 }
 
 
@@ -152,6 +155,8 @@ def normalize_status(status: str | None) -> str:
         return "ordered"
     if text == "draft":
         return "draft"
+    if text == "inquire":
+        return "inquire"
     return "other"
 
 
@@ -511,6 +516,12 @@ def sync_product_node(node: dict, product: dict, lang: str, page_name: str, page
     changed |= set_if(node, "url", url)
 
     status = normalize_status(product.get("status"))
+    if status == "inquire":
+        # No buy Offer, and never a price of 0. The page CTA is Inquire now.
+        if "offers" in node:
+            node.pop("offers", None)
+            changed = True
+        return changed
     availability = SCHEMA_AVAILABILITY.get(status)
     condition = schema_condition((product.get("condition") or {}).get("grade"))
     price = product.get("price")
@@ -666,6 +677,8 @@ def self_test() -> None:
     assert normalize_status("Ordered") == "ordered"
     assert normalize_status("draft") == "draft"
     assert normalize_status("mystery") == "other"
+    assert normalize_status("inquire") == "inquire"
+    assert normalize_status("Inquire") == "inquire"
     assert google_condition("brand-new") == "new"
     assert google_condition("Brand new") == "new"
     assert google_condition("open-box") == "new"
@@ -720,6 +733,11 @@ def self_test() -> None:
     assert held is None and "On hold" in held_reason
     no_sku, no_sku_reason, _note = feed_record({**sample, "sku": ""}, "en")
     assert no_sku is None and "no SKU" in no_sku_reason
+    inquire, inquire_reason, _note = feed_record({**sample, "status": "inquire", "price": None, "sku": "TT-TEST-0003"}, "en")
+    assert inquire is None and inquire_reason.endswith("Inquire")
+    node = {"@type": "Product", "offers": {"@type": "Offer", "price": 0, "priceCurrency": "HKD"}}
+    sync_product_node(node, {**sample, "status": "inquire", "price": None}, "en", "Sample", "A public sentence.")
+    assert "offers" not in node
 
 
 def main() -> None:

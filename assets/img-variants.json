@@ -1888,5 +1888,376 @@
   "avif": "/assets/products/hay-bowler/r/1-400.avif 400w, /assets/products/hay-bowler/r/1-800.avif 800w, /assets/products/hay-bowler/r/1-886.avif 886w",
   "webp": "/assets/products/hay-bowler/r/1-400.webp 400w, /assets/products/hay-bowler/r/1-800.webp 800w, /assets/products/hay-bowler/r/1-886.webp 886w",
   "jpg": "/assets/products/hay-bowler/r/1-400.jpg 400w, /assets/products/hay-bowler/r/1-800.jpg 800w, /assets/products/hay-bowler/1.jpg 886w"
+ },
+ "/assets/products/hay-colour-crate-s-navy/t/1.jpg": {
+  "w": 160,
+  "h": 117,
+  "avif": "/assets/products/hay-colour-crate-s-navy/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-colour-crate-s-navy/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-colour-crate-s-navy/t/1.jpg 160w"
+ },
+ "/assets/products/hay-colour-crate-s-navy/t/2.jpg": {
+  "w": 160,
+  "h": 240,
+  "avif": "/assets/products/hay-colour-crate-s-navy/t/r/2-160.avif 160w",
+  "webp": "/assets/products/hay-colour-crate-s-navy/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/hay-colour-crate-s-navy/t/2.jpg 160w"
+ },
+ "/assets/products/hay-colour-crate-s-soft-blue/1.jpg": {
+  "w": 1200,
+  "h": 1599,
+  "avif": "/assets/products/hay-colour-crate-s-soft-blue/r/1-400.avif 400w, /assets/products/hay-colour-crate-s-soft-blue/r/1-800.avif 800w, /assets/products/hay-colour-crate-s-soft-blue/r/1-1200.avif 1200w",
+  "webp": "/assets/products/hay-colour-crate-s-soft-blue/r/1-400.webp 400w, /assets/products/hay-colour-crate-s-soft-blue/r/1-800.webp 800w, /assets/products/hay-colour-crate-s-soft-blue/r/1-1200.webp 1200w",
+  "jpg": "/assets/products/hay-colour-crate-s-soft-blue/r/1-400.jpg 400w, /assets/products/hay-colour-crate-s-soft-blue/r/1-800.jpg 800w, /assets/products/hay-colour-crate-s-soft-blue/1.jpg 1200w"
+ },
+ "/assets/products/hay-colour-crate-s-navy/2.jpg": {
+  "w": 736,
+  "h": 1103,
+  "avif": "/assets/products/hay-colour-crate-s-navy/r/2-400.avif 400w, /assets/products/hay-colour-crate-s-navy/r/2-736.avif 736w",
+  "webp": "/assets/products/hay-colour-crate-s-navy/r/2-400.webp 400w, /assets/products/hay-colour-crate-s-navy/r/2-736.webp 736w",
+  "jpg": "/assets/products/hay-colour-crate-s-navy/r/2-400.jpg 400w, /assets/products/hay-colour-crate-s-navy/2.jpg 736w"
+ },
+ "/assets/products/hay-colour-crate-s-soft-blue/t/1.jpg": {
+  "w": 160,
+  "h": 213,
+  "avif": "/assets/products/hay-colour-crate-s-soft-blue/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-colour-crate-s-soft-blue/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-colour-crate-s-soft-blue/t/1.jpg 160w"
+ },
+ "/assets/products/hay-colour-crate-s-soft-blue/2.jpg": {
+  "w": 736,
+  "h": 1103,
+  "avif": "/assets/products/hay-colour-crate-s-soft-blue/r/2-400.avif 400w, /assets/products/hay-colour-crate-s-soft-blue/r/2-736.avif 736w",
+  "webp": "/assets/products/hay-colour-crate-s-soft-blue/r/2-400.webp 400w, /assets/products/hay-colour-crate-s-soft-blue/r/2-736.webp 736w",
+  "jpg": "/assets/products/hay-colour-crate-s-soft-blue/r/2-400.jpg 400w, /assets/products/hay-colour-crate-s-soft-blue/2.jpg 736w"
+ },
+ "/assets/products/hay-colour-crate-s-soft-blue/t/2.jpg": {
+  "w": 160,
+  "h": 240,
+  "avif": "/assets/products/hay-colour-crate-s-soft-blue/t/r/2-160.avif 160w",
+  "webp": "/assets/products/hay-colour-crate-s-soft-blue/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/hay-colour-crate-s-soft-blue/t/2.jpg 160w"
+ },
+ "/assets/products/hay-colour-crate-s-salmon/t/1.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/hay-colour-crate-s-salmon/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-colour-crate-s-salmon/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-colour-crate-s-salmon/t/1.jpg 160w"
+ },
+ "/assets/products/hay-colour-crate-s-salmon/1.jpg": {
+  "w": 500,
+  "h": 500,
+  "avif": "/assets/products/hay-colour-crate-s-salmon/r/1-400.avif 400w, /assets/products/hay-colour-crate-s-salmon/r/1-500.avif 500w",
+  "webp": "/assets/products/hay-colour-crate-s-salmon/r/1-400.webp 400w, /assets/products/hay-colour-crate-s-salmon/r/1-500.webp 500w",
+  "jpg": "/assets/products/hay-colour-crate-s-salmon/r/1-400.jpg 400w, /assets/products/hay-colour-crate-s-salmon/1.jpg 500w"
+ },
+ "/assets/products/hay-colour-crate-s-navy/1.jpg": {
+  "w": 2000,
+  "h": 1460,
+  "avif": "/assets/products/hay-colour-crate-s-navy/r/1-400.avif 400w, /assets/products/hay-colour-crate-s-navy/r/1-800.avif 800w, /assets/products/hay-colour-crate-s-navy/r/1-1200.avif 1200w, /assets/products/hay-colour-crate-s-navy/r/1-1600.avif 1600w, /assets/products/hay-colour-crate-s-navy/r/1-2000.avif 2000w",
+  "webp": "/assets/products/hay-colour-crate-s-navy/r/1-400.webp 400w, /assets/products/hay-colour-crate-s-navy/r/1-800.webp 800w, /assets/products/hay-colour-crate-s-navy/r/1-1200.webp 1200w, /assets/products/hay-colour-crate-s-navy/r/1-1600.webp 1600w, /assets/products/hay-colour-crate-s-navy/r/1-2000.webp 2000w",
+  "jpg": "/assets/products/hay-colour-crate-s-navy/r/1-400.jpg 400w, /assets/products/hay-colour-crate-s-navy/r/1-800.jpg 800w, /assets/products/hay-colour-crate-s-navy/r/1-1200.jpg 1200w, /assets/products/hay-colour-crate-s-navy/r/1-1600.jpg 1600w, /assets/products/hay-colour-crate-s-navy/1.jpg 2000w"
+ },
+ "/assets/products/hay-colour-crate-s-lavender/t/1.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/hay-colour-crate-s-lavender/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-colour-crate-s-lavender/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-colour-crate-s-lavender/t/1.jpg 160w"
+ },
+ "/assets/products/hay-colour-crate-s-lavender/t/2.jpg": {
+  "w": 160,
+  "h": 213,
+  "avif": "/assets/products/hay-colour-crate-s-lavender/t/r/2-160.avif 160w",
+  "webp": "/assets/products/hay-colour-crate-s-lavender/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/hay-colour-crate-s-lavender/t/2.jpg 160w"
+ },
+ "/assets/products/hay-colour-crate-s-lavender/2.jpg": {
+  "w": 1199,
+  "h": 1599,
+  "avif": "/assets/products/hay-colour-crate-s-lavender/r/2-400.avif 400w, /assets/products/hay-colour-crate-s-lavender/r/2-800.avif 800w, /assets/products/hay-colour-crate-s-lavender/r/2-1199.avif 1199w",
+  "webp": "/assets/products/hay-colour-crate-s-lavender/r/2-400.webp 400w, /assets/products/hay-colour-crate-s-lavender/r/2-800.webp 800w, /assets/products/hay-colour-crate-s-lavender/r/2-1199.webp 1199w",
+  "jpg": "/assets/products/hay-colour-crate-s-lavender/r/2-400.jpg 400w, /assets/products/hay-colour-crate-s-lavender/r/2-800.jpg 800w, /assets/products/hay-colour-crate-s-lavender/2.jpg 1199w"
+ },
+ "/assets/products/hay-colour-crate-s-lavender/t/3.jpg": {
+  "w": 160,
+  "h": 200,
+  "avif": "/assets/products/hay-colour-crate-s-lavender/t/r/3-160.avif 160w",
+  "webp": "/assets/products/hay-colour-crate-s-lavender/t/r/3-160.webp 160w",
+  "jpg": "/assets/products/hay-colour-crate-s-lavender/t/3.jpg 160w"
+ },
+ "/assets/products/hay-colour-crate-s-lavender/1.jpg": {
+  "w": 1220,
+  "h": 1220,
+  "avif": "/assets/products/hay-colour-crate-s-lavender/r/1-400.avif 400w, /assets/products/hay-colour-crate-s-lavender/r/1-800.avif 800w, /assets/products/hay-colour-crate-s-lavender/r/1-1200.avif 1200w, /assets/products/hay-colour-crate-s-lavender/r/1-1220.avif 1220w",
+  "webp": "/assets/products/hay-colour-crate-s-lavender/r/1-400.webp 400w, /assets/products/hay-colour-crate-s-lavender/r/1-800.webp 800w, /assets/products/hay-colour-crate-s-lavender/r/1-1200.webp 1200w, /assets/products/hay-colour-crate-s-lavender/r/1-1220.webp 1220w",
+  "jpg": "/assets/products/hay-colour-crate-s-lavender/r/1-400.jpg 400w, /assets/products/hay-colour-crate-s-lavender/r/1-800.jpg 800w, /assets/products/hay-colour-crate-s-lavender/r/1-1200.jpg 1200w, /assets/products/hay-colour-crate-s-lavender/1.jpg 1220w"
+ },
+ "/assets/products/hay-colour-crate-m-teal/t/1.jpg": {
+  "w": 160,
+  "h": 135,
+  "avif": "/assets/products/hay-colour-crate-m-teal/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-colour-crate-m-teal/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-colour-crate-m-teal/t/1.jpg 160w"
+ },
+ "/assets/products/hay-colour-crate-m-navy/t/1.jpg": {
+  "w": 160,
+  "h": 213,
+  "avif": "/assets/products/hay-colour-crate-m-navy/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-colour-crate-m-navy/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-colour-crate-m-navy/t/1.jpg 160w"
+ },
+ "/assets/products/hay-colour-crate-m-navy/1.jpg": {
+  "w": 462,
+  "h": 616,
+  "avif": "/assets/products/hay-colour-crate-m-navy/r/1-400.avif 400w, /assets/products/hay-colour-crate-m-navy/r/1-462.avif 462w",
+  "webp": "/assets/products/hay-colour-crate-m-navy/r/1-400.webp 400w, /assets/products/hay-colour-crate-m-navy/r/1-462.webp 462w",
+  "jpg": "/assets/products/hay-colour-crate-m-navy/r/1-400.jpg 400w, /assets/products/hay-colour-crate-m-navy/1.jpg 462w"
+ },
+ "/assets/products/hay-colour-crate-m-electric-blue/t/1.jpg": {
+  "w": 160,
+  "h": 120,
+  "avif": "/assets/products/hay-colour-crate-m-electric-blue/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-colour-crate-m-electric-blue/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-colour-crate-m-electric-blue/t/1.jpg 160w"
+ },
+ "/assets/products/hay-colour-crate-m-teal/1.jpg": {
+  "w": 1050,
+  "h": 886,
+  "avif": "/assets/products/hay-colour-crate-m-teal/r/1-400.avif 400w, /assets/products/hay-colour-crate-m-teal/r/1-800.avif 800w, /assets/products/hay-colour-crate-m-teal/r/1-1050.avif 1050w",
+  "webp": "/assets/products/hay-colour-crate-m-teal/r/1-400.webp 400w, /assets/products/hay-colour-crate-m-teal/r/1-800.webp 800w, /assets/products/hay-colour-crate-m-teal/r/1-1050.webp 1050w",
+  "jpg": "/assets/products/hay-colour-crate-m-teal/r/1-400.jpg 400w, /assets/products/hay-colour-crate-m-teal/r/1-800.jpg 800w, /assets/products/hay-colour-crate-m-teal/1.jpg 1050w"
+ },
+ "/assets/products/hay-colour-crate-m-grey/t/1.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/hay-colour-crate-m-grey/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-colour-crate-m-grey/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-colour-crate-m-grey/t/1.jpg 160w"
+ },
+ "/assets/products/hay-colour-crate-xl-off-white/1.jpg": {
+  "w": 800,
+  "h": 800,
+  "avif": "/assets/products/hay-colour-crate-xl-off-white/r/1-400.avif 400w, /assets/products/hay-colour-crate-xl-off-white/r/1-800.avif 800w",
+  "webp": "/assets/products/hay-colour-crate-xl-off-white/r/1-400.webp 400w, /assets/products/hay-colour-crate-xl-off-white/r/1-800.webp 800w",
+  "jpg": "/assets/products/hay-colour-crate-xl-off-white/r/1-400.jpg 400w, /assets/products/hay-colour-crate-xl-off-white/1.jpg 800w"
+ },
+ "/assets/products/hay-colour-crate-xl-off-white/2.jpg": {
+  "w": 480,
+  "h": 600,
+  "avif": "/assets/products/hay-colour-crate-xl-off-white/r/2-400.avif 400w, /assets/products/hay-colour-crate-xl-off-white/r/2-480.avif 480w",
+  "webp": "/assets/products/hay-colour-crate-xl-off-white/r/2-400.webp 400w, /assets/products/hay-colour-crate-xl-off-white/r/2-480.webp 480w",
+  "jpg": "/assets/products/hay-colour-crate-xl-off-white/r/2-400.jpg 400w, /assets/products/hay-colour-crate-xl-off-white/2.jpg 480w"
+ },
+ "/assets/products/hay-colour-crate-m-grey/1.jpg": {
+  "w": 1220,
+  "h": 1220,
+  "avif": "/assets/products/hay-colour-crate-m-grey/r/1-400.avif 400w, /assets/products/hay-colour-crate-m-grey/r/1-800.avif 800w, /assets/products/hay-colour-crate-m-grey/r/1-1200.avif 1200w, /assets/products/hay-colour-crate-m-grey/r/1-1220.avif 1220w",
+  "webp": "/assets/products/hay-colour-crate-m-grey/r/1-400.webp 400w, /assets/products/hay-colour-crate-m-grey/r/1-800.webp 800w, /assets/products/hay-colour-crate-m-grey/r/1-1200.webp 1200w, /assets/products/hay-colour-crate-m-grey/r/1-1220.webp 1220w",
+  "jpg": "/assets/products/hay-colour-crate-m-grey/r/1-400.jpg 400w, /assets/products/hay-colour-crate-m-grey/r/1-800.jpg 800w, /assets/products/hay-colour-crate-m-grey/r/1-1200.jpg 1200w, /assets/products/hay-colour-crate-m-grey/1.jpg 1220w"
+ },
+ "/assets/products/hay-colour-crate-xl-off-white/t/1.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/hay-colour-crate-xl-off-white/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-colour-crate-xl-off-white/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-colour-crate-xl-off-white/t/1.jpg 160w"
+ },
+ "/assets/products/hay-colour-crate-xl-off-white/t/2.jpg": {
+  "w": 160,
+  "h": 200,
+  "avif": "/assets/products/hay-colour-crate-xl-off-white/t/r/2-160.avif 160w",
+  "webp": "/assets/products/hay-colour-crate-xl-off-white/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/hay-colour-crate-xl-off-white/t/2.jpg 160w"
+ },
+ "/assets/products/hay-colour-crate-s-lavender/3.jpg": {
+  "w": 1177,
+  "h": 1472,
+  "avif": "/assets/products/hay-colour-crate-s-lavender/r/3-400.avif 400w, /assets/products/hay-colour-crate-s-lavender/r/3-800.avif 800w, /assets/products/hay-colour-crate-s-lavender/r/3-1177.avif 1177w",
+  "webp": "/assets/products/hay-colour-crate-s-lavender/r/3-400.webp 400w, /assets/products/hay-colour-crate-s-lavender/r/3-800.webp 800w, /assets/products/hay-colour-crate-s-lavender/r/3-1177.webp 1177w",
+  "jpg": "/assets/products/hay-colour-crate-s-lavender/r/3-400.jpg 400w, /assets/products/hay-colour-crate-s-lavender/r/3-800.jpg 800w, /assets/products/hay-colour-crate-s-lavender/3.jpg 1177w"
+ },
+ "/assets/products/hay-tin-container-large-blue-white-check/t/1.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/hay-tin-container-large-blue-white-check/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-tin-container-large-blue-white-check/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-tin-container-large-blue-white-check/t/1.jpg 160w"
+ },
+ "/assets/products/hay-tin-container-large-blue-white-check/t/2.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/hay-tin-container-large-blue-white-check/t/r/2-160.avif 160w",
+  "webp": "/assets/products/hay-tin-container-large-blue-white-check/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/hay-tin-container-large-blue-white-check/t/2.jpg 160w"
+ },
+ "/assets/products/hay-tin-container-xl-off-white-burgundy-green/1.jpg": {
+  "w": 1200,
+  "h": 1599,
+  "avif": "/assets/products/hay-tin-container-xl-off-white-burgundy-green/r/1-400.avif 400w, /assets/products/hay-tin-container-xl-off-white-burgundy-green/r/1-800.avif 800w, /assets/products/hay-tin-container-xl-off-white-burgundy-green/r/1-1200.avif 1200w",
+  "webp": "/assets/products/hay-tin-container-xl-off-white-burgundy-green/r/1-400.webp 400w, /assets/products/hay-tin-container-xl-off-white-burgundy-green/r/1-800.webp 800w, /assets/products/hay-tin-container-xl-off-white-burgundy-green/r/1-1200.webp 1200w",
+  "jpg": "/assets/products/hay-tin-container-xl-off-white-burgundy-green/r/1-400.jpg 400w, /assets/products/hay-tin-container-xl-off-white-burgundy-green/r/1-800.jpg 800w, /assets/products/hay-tin-container-xl-off-white-burgundy-green/1.jpg 1200w"
+ },
+ "/assets/products/hay-tin-container-xl-off-white-burgundy-green/t/1.jpg": {
+  "w": 160,
+  "h": 213,
+  "avif": "/assets/products/hay-tin-container-xl-off-white-burgundy-green/t/r/1-160.avif 160w",
+  "webp": "/assets/products/hay-tin-container-xl-off-white-burgundy-green/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/hay-tin-container-xl-off-white-burgundy-green/t/1.jpg 160w"
+ },
+ "/assets/products/hay-colour-crate-m-electric-blue/1.jpg": {
+  "w": 3200,
+  "h": 2400,
+  "avif": "/assets/products/hay-colour-crate-m-electric-blue/r/1-400.avif 400w, /assets/products/hay-colour-crate-m-electric-blue/r/1-800.avif 800w, /assets/products/hay-colour-crate-m-electric-blue/r/1-1200.avif 1200w, /assets/products/hay-colour-crate-m-electric-blue/r/1-1600.avif 1600w, /assets/products/hay-colour-crate-m-electric-blue/r/1-3200.avif 3200w",
+  "webp": "/assets/products/hay-colour-crate-m-electric-blue/r/1-400.webp 400w, /assets/products/hay-colour-crate-m-electric-blue/r/1-800.webp 800w, /assets/products/hay-colour-crate-m-electric-blue/r/1-1200.webp 1200w, /assets/products/hay-colour-crate-m-electric-blue/r/1-1600.webp 1600w, /assets/products/hay-colour-crate-m-electric-blue/r/1-3200.webp 3200w",
+  "jpg": "/assets/products/hay-colour-crate-m-electric-blue/r/1-400.jpg 400w, /assets/products/hay-colour-crate-m-electric-blue/r/1-800.jpg 800w, /assets/products/hay-colour-crate-m-electric-blue/r/1-1200.jpg 1200w, /assets/products/hay-colour-crate-m-electric-blue/r/1-1600.jpg 1600w, /assets/products/hay-colour-crate-m-electric-blue/1.jpg 3200w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-chrome-plated/t/1.jpg": {
+  "w": 160,
+  "h": 213,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-chrome-plated/t/r/1-160.avif 160w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-chrome-plated/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-chrome-plated/t/1.jpg 160w"
+ },
+ "/assets/products/hay-tin-container-large-blue-white-check/1.jpg": {
+  "w": 1220,
+  "h": 1220,
+  "avif": "/assets/products/hay-tin-container-large-blue-white-check/r/1-400.avif 400w, /assets/products/hay-tin-container-large-blue-white-check/r/1-800.avif 800w, /assets/products/hay-tin-container-large-blue-white-check/r/1-1200.avif 1200w, /assets/products/hay-tin-container-large-blue-white-check/r/1-1220.avif 1220w",
+  "webp": "/assets/products/hay-tin-container-large-blue-white-check/r/1-400.webp 400w, /assets/products/hay-tin-container-large-blue-white-check/r/1-800.webp 800w, /assets/products/hay-tin-container-large-blue-white-check/r/1-1200.webp 1200w, /assets/products/hay-tin-container-large-blue-white-check/r/1-1220.webp 1220w",
+  "jpg": "/assets/products/hay-tin-container-large-blue-white-check/r/1-400.jpg 400w, /assets/products/hay-tin-container-large-blue-white-check/r/1-800.jpg 800w, /assets/products/hay-tin-container-large-blue-white-check/r/1-1200.jpg 1200w, /assets/products/hay-tin-container-large-blue-white-check/1.jpg 1220w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-brass-plated/t/1.jpg": {
+  "w": 160,
+  "h": 213,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-brass-plated/t/r/1-160.avif 160w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-brass-plated/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-brass-plated/t/1.jpg 160w"
+ },
+ "/assets/products/hay-tin-container-large-blue-white-check/2.jpg": {
+  "w": 1200,
+  "h": 1200,
+  "avif": "/assets/products/hay-tin-container-large-blue-white-check/r/2-400.avif 400w, /assets/products/hay-tin-container-large-blue-white-check/r/2-800.avif 800w, /assets/products/hay-tin-container-large-blue-white-check/r/2-1200.avif 1200w",
+  "webp": "/assets/products/hay-tin-container-large-blue-white-check/r/2-400.webp 400w, /assets/products/hay-tin-container-large-blue-white-check/r/2-800.webp 800w, /assets/products/hay-tin-container-large-blue-white-check/r/2-1200.webp 1200w",
+  "jpg": "/assets/products/hay-tin-container-large-blue-white-check/r/2-400.jpg 400w, /assets/products/hay-tin-container-large-blue-white-check/r/2-800.jpg 800w, /assets/products/hay-tin-container-large-blue-white-check/2.jpg 1200w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-chrome-plated/1.jpg": {
+  "w": 1500,
+  "h": 2000,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-chrome-plated/r/1-400.avif 400w, /assets/products/andtradition-flowerpot-vp9-chrome-plated/r/1-800.avif 800w, /assets/products/andtradition-flowerpot-vp9-chrome-plated/r/1-1200.avif 1200w, /assets/products/andtradition-flowerpot-vp9-chrome-plated/r/1-1500.avif 1500w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-chrome-plated/r/1-400.webp 400w, /assets/products/andtradition-flowerpot-vp9-chrome-plated/r/1-800.webp 800w, /assets/products/andtradition-flowerpot-vp9-chrome-plated/r/1-1200.webp 1200w, /assets/products/andtradition-flowerpot-vp9-chrome-plated/r/1-1500.webp 1500w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-chrome-plated/r/1-400.jpg 400w, /assets/products/andtradition-flowerpot-vp9-chrome-plated/r/1-800.jpg 800w, /assets/products/andtradition-flowerpot-vp9-chrome-plated/r/1-1200.jpg 1200w, /assets/products/andtradition-flowerpot-vp9-chrome-plated/1.jpg 1500w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-matt-white/t/1.jpg": {
+  "w": 160,
+  "h": 213,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-matt-white/t/r/1-160.avif 160w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-matt-white/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-matt-white/t/1.jpg 160w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-matt-black-inquire/t/1.jpg": {
+  "w": 160,
+  "h": 213,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-matt-black-inquire/t/r/1-160.avif 160w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-matt-black-inquire/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-matt-black-inquire/t/1.jpg 160w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-brass-plated/1.jpg": {
+  "w": 1500,
+  "h": 2000,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-brass-plated/r/1-400.avif 400w, /assets/products/andtradition-flowerpot-vp9-brass-plated/r/1-800.avif 800w, /assets/products/andtradition-flowerpot-vp9-brass-plated/r/1-1200.avif 1200w, /assets/products/andtradition-flowerpot-vp9-brass-plated/r/1-1500.avif 1500w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-brass-plated/r/1-400.webp 400w, /assets/products/andtradition-flowerpot-vp9-brass-plated/r/1-800.webp 800w, /assets/products/andtradition-flowerpot-vp9-brass-plated/r/1-1200.webp 1200w, /assets/products/andtradition-flowerpot-vp9-brass-plated/r/1-1500.webp 1500w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-brass-plated/r/1-400.jpg 400w, /assets/products/andtradition-flowerpot-vp9-brass-plated/r/1-800.jpg 800w, /assets/products/andtradition-flowerpot-vp9-brass-plated/r/1-1200.jpg 1200w, /assets/products/andtradition-flowerpot-vp9-brass-plated/1.jpg 1500w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-tangy-pink/t/1.jpg": {
+  "w": 160,
+  "h": 213,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-tangy-pink/t/r/1-160.avif 160w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-tangy-pink/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-tangy-pink/t/1.jpg 160w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-matt-white/1.jpg": {
+  "w": 1500,
+  "h": 2000,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-matt-white/r/1-400.avif 400w, /assets/products/andtradition-flowerpot-vp9-matt-white/r/1-800.avif 800w, /assets/products/andtradition-flowerpot-vp9-matt-white/r/1-1200.avif 1200w, /assets/products/andtradition-flowerpot-vp9-matt-white/r/1-1500.avif 1500w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-matt-white/r/1-400.webp 400w, /assets/products/andtradition-flowerpot-vp9-matt-white/r/1-800.webp 800w, /assets/products/andtradition-flowerpot-vp9-matt-white/r/1-1200.webp 1200w, /assets/products/andtradition-flowerpot-vp9-matt-white/r/1-1500.webp 1500w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-matt-white/r/1-400.jpg 400w, /assets/products/andtradition-flowerpot-vp9-matt-white/r/1-800.jpg 800w, /assets/products/andtradition-flowerpot-vp9-matt-white/r/1-1200.jpg 1200w, /assets/products/andtradition-flowerpot-vp9-matt-white/1.jpg 1500w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-matt-light-grey/t/1.jpg": {
+  "w": 160,
+  "h": 213,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-matt-light-grey/t/r/1-160.avif 160w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-matt-light-grey/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-matt-light-grey/t/1.jpg 160w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-matt-black-inquire/1.jpg": {
+  "w": 1500,
+  "h": 2000,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-matt-black-inquire/r/1-400.avif 400w, /assets/products/andtradition-flowerpot-vp9-matt-black-inquire/r/1-800.avif 800w, /assets/products/andtradition-flowerpot-vp9-matt-black-inquire/r/1-1200.avif 1200w, /assets/products/andtradition-flowerpot-vp9-matt-black-inquire/r/1-1500.avif 1500w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-matt-black-inquire/r/1-400.webp 400w, /assets/products/andtradition-flowerpot-vp9-matt-black-inquire/r/1-800.webp 800w, /assets/products/andtradition-flowerpot-vp9-matt-black-inquire/r/1-1200.webp 1200w, /assets/products/andtradition-flowerpot-vp9-matt-black-inquire/r/1-1500.webp 1500w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-matt-black-inquire/r/1-400.jpg 400w, /assets/products/andtradition-flowerpot-vp9-matt-black-inquire/r/1-800.jpg 800w, /assets/products/andtradition-flowerpot-vp9-matt-black-inquire/r/1-1200.jpg 1200w, /assets/products/andtradition-flowerpot-vp9-matt-black-inquire/1.jpg 1500w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-cobalt-blue/t/1.jpg": {
+  "w": 160,
+  "h": 213,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-cobalt-blue/t/r/1-160.avif 160w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-cobalt-blue/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-cobalt-blue/t/1.jpg 160w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-tangy-pink/1.jpg": {
+  "w": 1500,
+  "h": 2000,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-tangy-pink/r/1-400.avif 400w, /assets/products/andtradition-flowerpot-vp9-tangy-pink/r/1-800.avif 800w, /assets/products/andtradition-flowerpot-vp9-tangy-pink/r/1-1200.avif 1200w, /assets/products/andtradition-flowerpot-vp9-tangy-pink/r/1-1500.avif 1500w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-tangy-pink/r/1-400.webp 400w, /assets/products/andtradition-flowerpot-vp9-tangy-pink/r/1-800.webp 800w, /assets/products/andtradition-flowerpot-vp9-tangy-pink/r/1-1200.webp 1200w, /assets/products/andtradition-flowerpot-vp9-tangy-pink/r/1-1500.webp 1500w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-tangy-pink/r/1-400.jpg 400w, /assets/products/andtradition-flowerpot-vp9-tangy-pink/r/1-800.jpg 800w, /assets/products/andtradition-flowerpot-vp9-tangy-pink/r/1-1200.jpg 1200w, /assets/products/andtradition-flowerpot-vp9-tangy-pink/1.jpg 1500w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-matt-light-grey/1.jpg": {
+  "w": 1500,
+  "h": 2000,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-matt-light-grey/r/1-400.avif 400w, /assets/products/andtradition-flowerpot-vp9-matt-light-grey/r/1-800.avif 800w, /assets/products/andtradition-flowerpot-vp9-matt-light-grey/r/1-1200.avif 1200w, /assets/products/andtradition-flowerpot-vp9-matt-light-grey/r/1-1500.avif 1500w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-matt-light-grey/r/1-400.webp 400w, /assets/products/andtradition-flowerpot-vp9-matt-light-grey/r/1-800.webp 800w, /assets/products/andtradition-flowerpot-vp9-matt-light-grey/r/1-1200.webp 1200w, /assets/products/andtradition-flowerpot-vp9-matt-light-grey/r/1-1500.webp 1500w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-matt-light-grey/r/1-400.jpg 400w, /assets/products/andtradition-flowerpot-vp9-matt-light-grey/r/1-800.jpg 800w, /assets/products/andtradition-flowerpot-vp9-matt-light-grey/r/1-1200.jpg 1200w, /assets/products/andtradition-flowerpot-vp9-matt-light-grey/1.jpg 1500w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-stone-blue/t/1.jpg": {
+  "w": 160,
+  "h": 213,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-stone-blue/t/r/1-160.avif 160w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-stone-blue/t/r/1-160.webp 160w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-stone-blue/t/1.jpg 160w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-stone-blue/t/2.jpg": {
+  "w": 160,
+  "h": 160,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-stone-blue/t/r/2-160.avif 160w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-stone-blue/t/r/2-160.webp 160w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-stone-blue/t/2.jpg 160w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-cobalt-blue/1.jpg": {
+  "w": 1500,
+  "h": 2000,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-cobalt-blue/r/1-400.avif 400w, /assets/products/andtradition-flowerpot-vp9-cobalt-blue/r/1-800.avif 800w, /assets/products/andtradition-flowerpot-vp9-cobalt-blue/r/1-1200.avif 1200w, /assets/products/andtradition-flowerpot-vp9-cobalt-blue/r/1-1500.avif 1500w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-cobalt-blue/r/1-400.webp 400w, /assets/products/andtradition-flowerpot-vp9-cobalt-blue/r/1-800.webp 800w, /assets/products/andtradition-flowerpot-vp9-cobalt-blue/r/1-1200.webp 1200w, /assets/products/andtradition-flowerpot-vp9-cobalt-blue/r/1-1500.webp 1500w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-cobalt-blue/r/1-400.jpg 400w, /assets/products/andtradition-flowerpot-vp9-cobalt-blue/r/1-800.jpg 800w, /assets/products/andtradition-flowerpot-vp9-cobalt-blue/r/1-1200.jpg 1200w, /assets/products/andtradition-flowerpot-vp9-cobalt-blue/1.jpg 1500w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-stone-blue/1.jpg": {
+  "w": 1500,
+  "h": 2000,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-stone-blue/r/1-400.avif 400w, /assets/products/andtradition-flowerpot-vp9-stone-blue/r/1-800.avif 800w, /assets/products/andtradition-flowerpot-vp9-stone-blue/r/1-1200.avif 1200w, /assets/products/andtradition-flowerpot-vp9-stone-blue/r/1-1500.avif 1500w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-stone-blue/r/1-400.webp 400w, /assets/products/andtradition-flowerpot-vp9-stone-blue/r/1-800.webp 800w, /assets/products/andtradition-flowerpot-vp9-stone-blue/r/1-1200.webp 1200w, /assets/products/andtradition-flowerpot-vp9-stone-blue/r/1-1500.webp 1500w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-stone-blue/r/1-400.jpg 400w, /assets/products/andtradition-flowerpot-vp9-stone-blue/r/1-800.jpg 800w, /assets/products/andtradition-flowerpot-vp9-stone-blue/r/1-1200.jpg 1200w, /assets/products/andtradition-flowerpot-vp9-stone-blue/1.jpg 1500w"
+ },
+ "/assets/home/drop-09-hero.jpg": {
+  "w": 736,
+  "h": 1103,
+  "avif": "/assets/home/r/drop-09-hero-400.avif 400w, /assets/home/r/drop-09-hero-736.avif 736w",
+  "webp": "/assets/home/r/drop-09-hero-400.webp 400w, /assets/home/r/drop-09-hero-736.webp 736w",
+  "jpg": "/assets/home/r/drop-09-hero-400.jpg 400w, /assets/home/drop-09-hero.jpg 736w"
+ },
+ "/assets/products/andtradition-flowerpot-vp9-stone-blue/2.jpg": {
+  "w": 1140,
+  "h": 1140,
+  "avif": "/assets/products/andtradition-flowerpot-vp9-stone-blue/r/2-400.avif 400w, /assets/products/andtradition-flowerpot-vp9-stone-blue/r/2-800.avif 800w, /assets/products/andtradition-flowerpot-vp9-stone-blue/r/2-1140.avif 1140w",
+  "webp": "/assets/products/andtradition-flowerpot-vp9-stone-blue/r/2-400.webp 400w, /assets/products/andtradition-flowerpot-vp9-stone-blue/r/2-800.webp 800w, /assets/products/andtradition-flowerpot-vp9-stone-blue/r/2-1140.webp 1140w",
+  "jpg": "/assets/products/andtradition-flowerpot-vp9-stone-blue/r/2-400.jpg 400w, /assets/products/andtradition-flowerpot-vp9-stone-blue/r/2-800.jpg 800w, /assets/products/andtradition-flowerpot-vp9-stone-blue/2.jpg 1140w"
  }
 }

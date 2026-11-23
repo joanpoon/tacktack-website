@@ -54,6 +54,7 @@
   function waFor(p) {
     var st = state(p).st, w = T().wa, name = L(p.name), sku = waSku(p);
     if (st === "sold") return { href: wa(w.msgSold(name, pageUrl(p), sku)), label: w.askSold };
+    if (st === "inquire") return { href: wa(w.msgInquire(name, pageUrl(p), sku)), label: w.askInquire };
     if (preorderOpen(p) || st === "pre-order") return { href: wa(w.msgPreorder(name, pageUrl(p), sku)), label: w.askPreorder };
     if (st === "on-hold") return { href: wa(w.msgHold(name, pageUrl(p), sku)), label: w.askHold };
     return { href: wa(w.msg(name, pageUrl(p), sku)), label: w.ask };
@@ -63,11 +64,13 @@
 
   /* ---------------- product helpers (same markup as scripts/build-pages.py) ---------------- */
   function state(p) {
-    // Public availability only: available, pre-order, on-hold or sold. No counts.
+    // Public availability only: available, pre-order, on-hold, inquire or sold. No counts.
     var s = p.status;
-    if (s === "sold" || s === "on-hold" || s === "pre-order") return { st: s };
+    if (s === "sold" || s === "on-hold" || s === "pre-order" || s === "inquire") return { st: s };
     return { st: "available" };
   }
+  // Piece counts are in-stock inventory: available, pre-order and on hold. Inquire is listed, not counted as stock.
+  function stocked(p) { var s = state(p).st; return s !== "sold" && s !== "inquire"; }
   function colourWord(p) { return L(p.colour) || L(p.name); }
   function gradeKey(p) {
     var g = (p.condition || {}).grade;
@@ -76,6 +79,7 @@
   function statusWord(st) {
     if (st === "available") return lang === "zh" ? "現貨" : "Available";
     if (st === "pre-order") return T().badge.preorder;
+    if (st === "inquire") return T().badge.inquire;
     if (st === "sold") return T().badge.sold;
     if (st === "on-hold") return T().badge.hold;
     return st;
@@ -115,7 +119,7 @@
     return t >= t0 && t < t0 + (C.NEW_DAYS || 7) * 86400000;
   }
   var MIN_CAT = C.MIN_CATEGORY_PIECES || 2;
-  function catLive(c) { return PRODUCTS.filter(function (p) { return (p.category || "other") === c && state(p).st !== "sold"; }).length; }   // same as cat_live()
+  function catLive(c) { return PRODUCTS.filter(function (p) { return (p.category || "other") === c && stocked(p); }).length; }   // same as cat_live()
   function catShown(c) { return catLive(c) >= MIN_CAT; }
   function renderCatLinks() {   // footer category links: hidden until a category has MIN_CATEGORY_PIECES live pieces
     $$("[data-cat-link]").forEach(function (li) { var on = catShown(li.getAttribute("data-cat-link")); if (li.hidden === on) li.hidden = !on; });
@@ -123,6 +127,7 @@
   function badges(p) {
     var s = state(p), B = T().badge, out = [];
     if (s.st === "sold") out.push(["sold", B.sold]);
+    else if (s.st === "inquire") out.push(["inquire", B.inquire]);
     else if (s.st === "on-hold") { out.push(["hold", B.hold]); if (p.preorderOpen) out.push(["preorder", B.preorder]); }
     else if (s.st === "pre-order") out.push(["preorder", B.preorder]);
     else if (isNew(p)) out.push(["new", B.neu]);
@@ -208,7 +213,9 @@
      only re-drawn when products.json (or the date, for NEW THIS WEEK) has changed since the last build. */
   // a sold piece shows only "Sold", never its price (same as price_html() in build-pages.py)
   function priceHtml(p) {
-    if (state(p).st === "sold") return '<span class="sold-label">' + esc(T().badge.sold) + "</span>";
+    var s = state(p).st;
+    if (s === "sold") return '<span class="sold-label">' + esc(T().badge.sold) + "</span>";
+    if (s === "inquire") return p.retailPrice ? '<span class="retail">' + esc(T().retail(money(p.retailPrice))) + "</span>" : "";
     return "<span>" + money(p.price) + "</span>" + (p.retailPrice ? '<span class="retail">' + esc(T().retail(money(p.retailPrice))) + "</span>" : "");
   }
   // condition: grade chip, open-box note, condition notes, final-sale line (same as build-pages.py)
@@ -231,6 +238,7 @@
       ["Isamu Noguchi AKARI", "isamu-noguchi-akari", "野口勇 AKARI"],
       ["DULTON", "dulton", "DULTON"],
       ["Heller", "heller", "Heller"],
+      ["Ring-a-Date", "ring-a-date", "Ring-a-Date"],
       ["Herman Miller", "herman-miller", "Herman Miller"],
       ["HAY", "hay", "HAY"],
       ["Yoshitomo Nara", "yoshitomo-nara", "奈良美智"]
@@ -290,7 +298,7 @@
     // #drop-date is fixed text ("New pieces every Thursday"), pre-rendered per language: nothing to update here
 
     $$("[data-cat-count]").forEach(function (el) {
-      var k = el.getAttribute("data-cat-count"), n = active.filter(function (p) { return p.category === k; }).length;
+      var k = el.getAttribute("data-cat-count"), n = active.filter(function (p) { return p.category === k && stocked(p); }).length;
       var txt = T().pieces(n);
       if (el.textContent !== txt) el.textContent = txt;
       // Storage shows from the first listed piece. Other categories wait for MIN_CATEGORY_PIECES. Sofas at 0 stay hidden.
@@ -304,7 +312,7 @@
     }
 
     var brands = {};
-    PRODUCTS.forEach(function (p) { if (state(p).st === "sold" || !p.brand) return; var k = p.brand; if (!brands[k]) brands[k] = { brand: k, designers: [], n: 0 }; brands[k].n++; if (p.designer && brands[k].designers.indexOf(p.designer) < 0) brands[k].designers.push(p.designer); });
+    PRODUCTS.forEach(function (p) { if (!stocked(p) || !p.brand) return; var k = p.brand; if (!brands[k]) brands[k] = { brand: k, designers: [], n: 0 }; brands[k].n++; if (p.designer && brands[k].designers.indexOf(p.designer) < 0) brands[k].designers.push(p.designer); });
     // Locked strip order. Counts still come from listed (not sold) pieces. Ring-a-Date sits next to Heller.
     var BRAND_ORDER = ["&Tradition", "AKARI", "DULTON", "Heller", "Ring-a-Date", "Herman Miller", "HAY", "Yoshitomo Nara"];
     setHTML($("#brand-row"), Object.keys(brands).sort(function (a, b) {
@@ -355,13 +363,13 @@
       var st = state(p).st;
       if (f.category && p.category !== f.category) return false;
       if (f.brand && p.brand !== f.brand && p.designer !== f.brand) return false;
-      if (f.status === "active" && st === "sold") return false;
+      if (f.status === "active" && (st === "sold" || st === "inquire")) return false;
       if (f.status !== "active" && f.status !== "all" && st !== f.status && !(f.status === "pre-order" && preorderOpen(p))) return false;
-      if (PRICE[f.price] && (p.price < PRICE[f.price][0] || p.price > PRICE[f.price][1])) return false;
+      if (PRICE[f.price] && (st === "inquire" || p.price == null || p.price < PRICE[f.price][0] || p.price > PRICE[f.price][1])) return false;
       return true;
     }).sort(function (a, b) {
-      if (f.sort === "price-asc") return a.price - b.price;
-      if (f.sort === "price-desc") return b.price - a.price;
+      if (f.sort === "price-asc") return (a.price == null ? Infinity : a.price) - (b.price == null ? Infinity : b.price);
+      if (f.sort === "price-desc") return (b.price == null ? -Infinity : b.price) - (a.price == null ? -Infinity : a.price);
       if (f.sort === "brand") return ((a.brand || "") + L(a.name)).localeCompare((b.brand || "") + L(b.name));
       return soldLast(a, b);
     });
@@ -375,14 +383,14 @@
   function renderShop() {
     var f = readFilters(), t = T();
     var cats = ["lighting", "seating", "sofas", "storage", "tables", "decor"];
-    var counts = {}; PRODUCTS.forEach(function (p) { if (state(p).st !== "sold") counts[p.category] = (counts[p.category] || 0) + 1; });
+    var counts = {}; PRODUCTS.forEach(function (p) { if (stocked(p)) counts[p.category] = (counts[p.category] || 0) + 1; });
     setHTML($("#cat-chips"), [["", t.all]].concat(cats.filter(function (c) { return (counts[c] || 0) >= MIN_CAT || c === f.category; }).map(function (c) { return [c, t.cat[c]]; })).map(function (c) {
-      var n = c[0] ? counts[c[0]] || 0 : PRODUCTS.filter(function (p) { return state(p).st !== "sold"; }).length;
+      var n = c[0] ? counts[c[0]] || 0 : PRODUCTS.filter(stocked).length;
       return '<button type="button" class="chip-btn" data-cat="' + c[0] + '" aria-pressed="' + (f.category === c[0]) + '">' + esc(c[1]) + '<span class="n">' + n + "</span></button>";
     }).join(""));
     var names = {}; PRODUCTS.forEach(function (p) { if (p.brand) names[p.brand] = 1; if (p.designer) names[p.designer] = 1; });
     options($("#f-brand"), [["", t.all]].concat(Object.keys(names).sort().map(function (n) { return [n, n]; })), f.brand);
-    options($("#f-status"), ["active", "available", "pre-order", "on-hold", "sold", "all"].map(function (k) { return [k, t.status[k]]; }), f.status);
+    options($("#f-status"), ["active", "available", "pre-order", "on-hold", "inquire", "sold", "all"].map(function (k) { return [k, t.status[k]]; }), f.status);
     options($("#f-price"), ["any", "u500", "500-1500", "1500-5000", "o5000"].map(function (k) { return [k, t.price[k]]; }), f.price);
     options($("#f-sort"), ["newest", "price-asc", "price-desc", "brand"].map(function (k) { return [k, t.sort[k]]; }), f.sort);
     var list = applyFilters(PRODUCTS, f);
@@ -436,6 +444,7 @@
   function policyText(p) {
     var t = T().policy, price = +p.price || 0;
     if (state(p).st === "sold") return t.sold;
+    if (state(p).st === "inquire") return t.inquire;
     var dep = money(Math.ceil(price * 0.3));
     if (state(p).st === "pre-order" || preorderOpen(p)) return p.stockNote ? t.preorderDepNoted(dep) : t.preorderDep(dep);
     return t.dep(dep);
@@ -465,7 +474,7 @@
     var t = T(), s = state(p), cta = waFor(p), name = L(p.name);
     var grade = (p.condition || {}).grade; if (grade === "open-box") grade = "brand-new";   // old grade merged into Brand new
     var G = t.grades, gkeys = Object.keys(G), gi = gkeys.indexOf(grade);
-    var stockLine = L(p.stockNote) || t.stock[s.st === "sold" ? "sold" : preorderOpen(p) ? "onHoldPreorder" : s.st === "on-hold" ? "onHold" : s.st === "pre-order" ? "preorder" : "available"];
+    var stockLine = L(p.stockNote) || t.stock[s.st === "sold" ? "sold" : s.st === "inquire" ? "inquire" : preorderOpen(p) ? "onHoldPreorder" : s.st === "on-hold" ? "onHold" : s.st === "pre-order" ? "preorder" : "available"];
     var specs = [
       [t.labels.designer, p.designer], [t.labels.brand, p.brand, p.brand && DATA.brands && DATA.brands[p.brand] ? brandUrl(p.brand) : ""], [t.labels.model, p.model], [t.labels.year, L(p.year)],
       [t.labels.colour, L(p.colour)], [t.labels.material, L(p.material)], [t.labels.origin, L(p.origin)], [t.labels.dims, dims(p)],
@@ -495,7 +504,7 @@
           '<div class="cta-row" id="main-cta"><a class="btn" href="' + cta.href + '" target="_blank" rel="noopener">' + WA_ICON + esc(cta.label) + '</a><button type="button" class="btn btn-ghost share-btn" id="share" aria-label="' + esc(t.share) + '">' + SHARE_ICON + "</button></div>" +
           finalNote(p) + pdpTrust(p) +
           '<p class="fine">' + esc(t.policy.pay) + "</p>" +
-          (state(p).st === "sold" && gi < 0 ? "" :   // an ungraded sold piece has no condition block (same as build-pages.py)
+          ((s.st === "sold" || s.st === "inquire") && gi < 0 ? "" :   // ungraded sold or inquire pieces have no condition block (same as build-pages.py)
           '<section class="block"><h2>' + esc(t.labels.condition) + '</h2><div class="grade-row"><span>' + esc(gi >= 0 ? gradeLabel(p) : t.gradeTbc) + '</span><span class="tip"><button type="button" class="tip-btn" aria-expanded="false" aria-controls="grade-pop" aria-label="' + esc(t.gradeHelp) + '">?</button>' +
             '<span class="tip-pop" id="grade-pop" role="tooltip" hidden><strong>' + esc(t.scaleTitle) + "</strong><ol>" + gkeys.map(function (k, i) { return '<li class="' + (i === gi ? "on" : "") + '"><b>' + esc(G[k][0]) + "</b>: " + esc(G[k][1]) + "</li>"; }).join("") + "</ol></span></span></div>" +
             '<ol class="scale" aria-hidden="true">' + gkeys.map(function (k, i) { return '<li class="' + (i === gi ? "on" : "") + '"></li>'; }).join("") + '</ol><div class="scale-labels" aria-hidden="true"><span>' + esc(G[gkeys[0]][0]) + "</span><span>" + esc(G[gkeys[gkeys.length - 1]][0]) + "</span></div>" +
@@ -504,14 +513,14 @@
           (details.length ? '<section class="block"><h2>' + esc(t.labels.details) + '</h2><ul class="ticks">' + details.map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul></section>" : "") +
           addonBlock(p) +
           (sizeRow(p, p) && state(p).st !== "sold" ? '<section class="block size-block"><h2>' + esc(t.sizeTitle(p.brand || "")) + "</h2>" + sizeRow(p, p) + '<p class="fine">' + esc(t.sizeNote) + "</p></section>" : "") +
-          '<section class="block"><h2>' + esc(t.labels.fulfilment) + "</h2><p>" + esc(s.st === "pre-order" || preorderOpen(p) ? (p.stockNote && t.fulfil.preorderNoted ? t.fulfil.preorderNoted : t.fulfil.preorder) : (t.fulfil[p.fulfilment] || t.fulfil.both)) + ' <a href="' + lp("/delivery/") + '">' + esc(t.fulfilMore) + '</a></p><p class="install-note">' + esc(t.install) + "</p></section>" +
+          '<section class="block"><h2>' + esc(t.labels.fulfilment) + "</h2><p>" + esc(s.st === "inquire" ? t.fulfil.inquire : s.st === "pre-order" || preorderOpen(p) ? (p.stockNote && t.fulfil.preorderNoted ? t.fulfil.preorderNoted : t.fulfil.preorder) : (t.fulfil[p.fulfilment] || t.fulfil.both)) + ' <a href="' + lp("/delivery/") + '">' + esc(t.fulfilMore) + '</a></p><p class="install-note">' + esc(t.install) + "</p></section>" +
           '<section class="block"><h2>' + esc(t.labels.policy) + '</h2><p id="policy-text">' + esc(policyText(p)) + '</p><p><a class="text-link" href="' + lp("/how-to-buy/") + '">' + esc(t.policy.more) + " →</a></p></section>" +
         "</div>" +
       "</div>" +
       (story ? '<section class="section-tight"><div class="story"><div><p class="eyebrow">' + esc(t.labels.story) + "</p><h2>" + esc(L(story.title)) + "</h2></div><p>" + esc(L(story.body)) + "</p></div></section>" : "") +
       '<section class="section-tight" id="more"><div class="section-head"><h2>' + esc(rel.same.length >= 4 && p.brand ? t.more(p.brand) : t.alsoLike) + '</h2><span>' + (p.brand && DATA.brands && DATA.brands[p.brand] ? '<a class="text-link" href="' + brandUrl(p.brand) + '">' + esc(t.more(p.brand)) + " →</a> · " : "") + '<a class="text-link" href="' + lp("/shop/") + '">' + esc(t.shopAll) + " →</a></span></div><div class=\"grid grid-4\">" + rel.more.map(function (x) { return card(x); }).join("") + "</div></section>" +
       discoverLinks(p) +
-      '<div class="sticky-cta" id="sticky-cta"><div class="p">' + (s.st === "sold" ? esc(t.badge.sold) : money(p.price)) + "<small>" + esc(name) + '</small></div><a class="btn" href="' + cta.href + '" target="_blank" rel="noopener">' + WA_ICON + "WhatsApp</a></div>";
+      '<div class="sticky-cta" id="sticky-cta"><div class="p">' + (s.st === "sold" ? esc(t.badge.sold) : s.st === "inquire" ? esc(t.badge.inquire) : money(p.price)) + "<small>" + esc(name) + '</small></div><a class="btn" href="' + cta.href + '" target="_blank" rel="noopener">' + WA_ICON + "WhatsApp</a></div>";
   }
   var LIVE_PARTS = [".pdp-info > .badges", ".pdp-price", ".pdp-stock", "#main-cta", "#policy-text", "#more", "#sticky-cta"];
   function renderProduct() {
