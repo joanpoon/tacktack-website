@@ -16,7 +16,7 @@ python3 scripts/build-merchant-feed.py
 
 `scripts/apply-zh-seo.py`, `scripts/apply-en-catalog-seo.py`, and `scripts/apply-offer-shipping.py` call that generator after they refresh pages. `scripts/build-pages.py` is what the site script refers to for full page renders, and it is not in this repository, so the generator lives with the scripts that do rewrite pages.
 
-The feed includes pieces that can be bought: Available (`in_stock`) and Pre-order (`preorder`). Sold, on hold, held, ordered, draft, and any other status are left out. `g:id` is the SKU. A pre-order includes `g:availability_date` only when the catalog has a public date (`availabilityDate`, `availableOn`, `preorderDate`, or `preorderAvailableOn`). Titles and descriptions come from the public name and description only. A product with no manufacturer brand uses the shop name as `g:brand`.
+The feed includes pieces that can be bought: Available (`in_stock`) and Pre-order (`preorder`). Sold, on hold, held, ordered, draft, inquire, and any other status are left out. Inquire pages have no selling price, so they are not given a feed price. `g:id` is the SKU. A pre-order includes `g:availability_date` only when the catalog has a public date (`availabilityDate`, `availableOn`, `preorderDate`, or `preorderAvailableOn`). Titles and descriptions come from the public name and description only. A product with no manufacturer brand uses the shop name as `g:brand`.
 
 Phrases that must stay out of the feeds, beyond the generic checks, can be listed in the `TT_PRIVATE_PATTERNS` environment variable (comma-separated) or in `scripts/merchant-private-patterns.local` (one literal phrase per line). That file is gitignored.
 

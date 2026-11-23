@@ -47,9 +47,9 @@ NEW_DAYS, DROP_HOUR = _num("NEW_DAYS", 7), _num("DROP_HOUR", 20)
 
 # Same strings as assets/js/strings.js
 S = {
-    "en": {"badge": {"hold": "On hold", "sold": "Sold", "neu": "New this week", "preorder": "Pre-order"},
+    "en": {"badge": {"hold": "On hold", "sold": "Sold", "neu": "New this week", "preorder": "Pre-order", "inquire": "Inquire"},
            "retail": "New retail approx. {}", "illus": " (illustration)"},
-    "zh": {"badge": {"hold": "已留貨", "sold": "已售出", "neu": "本週新貨", "preorder": "預購"},
+    "zh": {"badge": {"hold": "已留貨", "sold": "已售出", "neu": "本週新貨", "preorder": "預購", "inquire": "查詢"},
            "retail": "全新參考價約 {}", "illus": "（示意插圖）"},
 }
 CARD_SIZES = "(min-width: 1100px) 300px, (min-width: 760px) 31vw, 48vw"
@@ -86,7 +86,12 @@ def esc(s) -> str:
 
 def st(p):
     s = p.get("status")
-    return s if s in ("sold", "on-hold", "pre-order") else "available"
+    return s if s in ("sold", "on-hold", "pre-order", "inquire") else "available"
+
+
+def stocked(p) -> bool:
+    """In-stock counts: available, pre-order and on hold. Inquire is listed, not counted."""
+    return st(p) not in ("sold", "inquire")
 
 
 def money(n) -> str:
@@ -147,6 +152,8 @@ def badges(p, lang):
     B, s, out = S[lang]["badge"], st(p), []
     if s == "sold":
         out.append(("sold", B["sold"]))
+    elif s == "inquire":
+        out.append(("inquire", B["inquire"]))
     elif s == "on-hold":
         out.append(("hold", B["hold"]))
         if p.get("preorderOpen"):
@@ -162,6 +169,8 @@ def price_html(p, lang):
     if st(p) == "sold":
         return f'<span class="sold-label">{esc(S[lang]["badge"]["sold"])}</span>'
     r = f'<span class="retail">{esc(S[lang]["retail"].format(money(p["retailPrice"])))}</span>' if p.get("retailPrice") else ""
+    if st(p) == "inquire":
+        return r
     return f"<span>{money(p.get('price'))}</span>{r}"
 
 
@@ -305,7 +314,7 @@ def homepage_drop():
 def lists():
     """(path, grid id, products, eager, lang) for every pre-rendered list."""
     out = []
-    active = [p for p in PUBLIC if st(p) != "sold"]
+    active = [p for p in PUBLIC if stocked(p)]
     drop = homepage_drop()
     for lang, pre in (("en", ""), ("zh", "zh/")):
         out.append((ROOT / pre / "index.html", "drop-grid", drop, True, lang))
@@ -626,7 +635,11 @@ def unlinked(files, feeds) -> list[str]:
         for lang, pre in (("en", ""), ("zh", "zh/")):
             href = f'href="{item_path(p, lang)}"'
             need = [ROOT / pre / "category" / (p.get("category") or "other") / "index.html"]
-            need.append(ROOT / pre / ("sold" if st(p) == "sold" else "shop") / "index.html")
+            # Inquire stays off the default shop grid (有貨及已留貨). It is on category, brand and All.
+            if st(p) == "sold":
+                need.append(ROOT / pre / "sold" / "index.html")
+            elif st(p) != "inquire":
+                need.append(ROOT / pre / "shop" / "index.html")
             if p.get("brand") in brand_pages:
                 need.append(ROOT / pre / "brand" / brand_pages[p["brand"]] / "index.html")
             d = next((x for x in DESIGNERS if x["name"] == p.get("designer")), None)

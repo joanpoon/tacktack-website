@@ -211,6 +211,7 @@ html[data-lang="zh"] .badge { letter-spacing: .06em; font-size: .72rem; }
 .badge-one { background: var(--walnut); color: var(--cream); }
 .badge-hold { background: #fff; border: 1px dashed var(--walnut); }
 .badge-preorder { background: var(--sand); color: var(--walnut); }
+.badge-inquire { background: #fff; color: var(--walnut); box-shadow: inset 0 0 0 1px var(--line); }
 .badge-sold { background: var(--orange); color: #fff; }
 .empty { border: 1.5px dashed var(--line); border-radius: var(--radius); padding: 48px 24px; text-align: center; color: var(--muted); grid-column: 1 / -1; }
 .empty h3 { color: var(--walnut); }
@@ -577,4 +578,26 @@ body[data-page="home"] .site-footer { border-top: 3px solid var(--blue); margin-
 @media (max-width: 600px) {
   .w-hero--drop8 img { object-position: 68% 55%; }
   .w-hero--drop8 .w-hero-text { top: 6%; }
+}
+
+/* Drop 09 hero, provisional: official navy and soft blue Colour Crate lifestyle.
+   Portrait frame, so a wide cover keeps the crate stacks in the middle. */
+.w-hero--drop9 .w-hero-text {
+  top: 12%;
+  margin: -12px 0 0 -16px;
+  padding: 12px 16px 14px;
+  max-width: min(22em, calc(100% - 48px));
+  background: rgba(251, 247, 240, .92);
+  pointer-events: none;
+}
+.w-hero--drop9 .w-hero-sub a { pointer-events: auto; }
+@media (min-width: 601px) {
+  .w-hero--drop9 img { object-position: 50% 46%; }
+  .w-hero--drop9 .w-hero-title { font-size: clamp(2.4rem, 4vw, 3.8rem); }
+  .w-hero--drop9 .w-hero-text { left: clamp(20px, 3.5vw, 56px); }
+}
+@media (max-width: 600px) {
+  .w-hero--drop9 img { object-position: 62% 42%; }
+  .w-hero--drop9 .w-hero-text { top: 5%; }
+  .w-hero--drop9 .w-hero-title { font-size: clamp(2.2rem, 10vw, 3rem); }
 }

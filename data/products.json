@@ -1,23 +1,27 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-23",
  "homepageDrop": [
- "andtradition-lato-ln8-verde-grigio",
- "andtradition-rotate-sc73-ivory",
- "andtradition-rotate-sc73-terracotta",
- "hay-bowler",
- "hay-facet-cabinet-grey",
- "hay-la-pittura-bowl-12-pomelo",
- "hay-la-pittura-bowl-12-moon",
- "hay-la-pittura-bowl-18-moon",
- "hay-la-pittura-plate-24-blush",
- "hay-la-pittura-plate-24-golden-leaf",
- "hay-la-pittura-platter-josephine",
- "hay-barro-plate-18-off-white",
- "hay-barro-plate-18-green",
- "hay-barro-bowl-light-blue",
- "hay-barro-bowl-natural",
- "hay-ellipse-tray-m-beige",
- "hay-bottoms-up-vase-l-navy"
+  "hay-colour-crate-s-navy",
+  "hay-colour-crate-s-soft-blue",
+  "hay-colour-crate-s-salmon",
+  "hay-colour-crate-s-lavender",
+  "hay-colour-crate-m-teal",
+  "hay-colour-crate-m-navy",
+  "hay-colour-crate-m-electric-blue",
+  "hay-colour-crate-m-grey",
+  "hay-colour-crate-xl-off-white",
+  "hay-ice-cube-tray-xxl-ice-blue",
+  "hay-ice-cube-tray-square-xl-peach",
+  "andtradition-flowerpot-vp9-chrome-plated",
+  "andtradition-flowerpot-vp9-brass-plated",
+  "andtradition-flowerpot-vp9-matt-white",
+  "andtradition-flowerpot-vp9-matt-black-inquire",
+  "andtradition-flowerpot-vp9-tangy-pink",
+  "andtradition-flowerpot-vp9-matt-light-grey",
+  "andtradition-flowerpot-vp9-cobalt-blue",
+  "andtradition-flowerpot-vp9-stone-blue",
+  "hay-tin-container-large-blue-white-check",
+  "hay-tin-container-xl-off-white-burgundy-green"
  ],
  "stories": {
   "isamu-noguchi": {
@@ -3593,8 +3597,8 @@
      "HAY Manolito stool in Natural Short, on a pale grey background"
     ],
     "zh": [
-"HAY Manolito 凳，原色矮款，放在灰色沙發旁",
-      "HAY Manolito 凳 原色矮款，淺灰背景產品照"
+     "HAY Manolito 凳，原色矮款，放在灰色沙發旁",
+     "HAY Manolito 凳 原色矮款，淺灰背景產品照"
     ]
    }
   },
@@ -5538,6 +5542,1413 @@
     "dia": 12,
     "h": 29.5,
     "unit": "cm"
+   }
+  },
+  {
+   "slug": "hay-colour-crate-s-navy",
+   "zhType": "收納箱",
+   "sku": "TT-HAY-0017",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "HAY",
+   "name": {
+    "en": "Colour Crate S · Navy",
+    "zh": "Colour Crate S · 海軍藍"
+   },
+   "model": "Colour Crate",
+   "colour": {
+    "en": "Navy",
+    "zh": "海軍藍"
+   },
+   "material": {
+    "en": "Recycled polypropylene",
+    "zh": "再生聚丙烯"
+   },
+   "description": {
+    "en": "A HAY Colour Crate in Navy. Recycled polypropylene, with a lid. Brand new, in stock in Hong Kong for HK$55.",
+    "zh": "HAY Colour Crate，海軍藍。再生聚丙烯，有蓋。全新，香港現貨，HK$55。"
+   },
+   "details": {
+    "en": [
+     "Colour Crate in Navy",
+     "Recycled polypropylene, with a lid",
+     "Brand new"
+    ],
+    "zh": [
+     "Colour Crate，海軍藍",
+     "再生聚丙烯，有蓋",
+     "全新"
+    ]
+   },
+   "category": "storage",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 55,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "photoFit": "contain",
+   "variantGroup": "colour-crate-s",
+   "photos": [
+    "/assets/products/hay-colour-crate-s-navy/1.jpg",
+    "/assets/products/hay-colour-crate-s-navy/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Colour Crate Small in Navy, official studio packshot.",
+    "zh": "HAY Colour Crate S 海軍藍，官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Colour Crate Small in Navy, official studio packshot.",
+     "HAY Colour Crates in Navy and Soft blue, official lifestyle."
+    ],
+    "zh": [
+     "HAY Colour Crate S 海軍藍，官方產品照。",
+     "HAY Colour Crate，海軍藍及淺藍色，官方生活照。"
+    ]
+   }
+  },
+  {
+   "slug": "hay-colour-crate-s-soft-blue",
+   "zhType": "收納箱",
+   "sku": "TT-HAY-0048",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "HAY",
+   "name": {
+    "en": "Colour Crate S · Soft blue",
+    "zh": "Colour Crate S · 淺藍色"
+   },
+   "model": "Colour Crate",
+   "colour": {
+    "en": "Soft blue",
+    "zh": "淺藍色"
+   },
+   "material": {
+    "en": "Recycled polypropylene",
+    "zh": "再生聚丙烯"
+   },
+   "description": {
+    "en": "A HAY Colour Crate in Soft blue. Recycled polypropylene, with a lid. Brand new, in stock in Hong Kong for HK$55.",
+    "zh": "HAY Colour Crate，淺藍色。再生聚丙烯，有蓋。全新，香港現貨，HK$55。"
+   },
+   "details": {
+    "en": [
+     "Colour Crate in Soft blue",
+     "Recycled polypropylene, with a lid",
+     "Brand new"
+    ],
+    "zh": [
+     "Colour Crate，淺藍色",
+     "再生聚丙烯，有蓋",
+     "全新"
+    ]
+   },
+   "category": "storage",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 55,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "photoFit": "contain",
+   "variantGroup": "colour-crate-s",
+   "photos": [
+    "/assets/products/hay-colour-crate-s-soft-blue/1.jpg",
+    "/assets/products/hay-colour-crate-s-soft-blue/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Colour Crate Small in Soft blue, official studio packshot.",
+    "zh": "HAY Colour Crate S 淺藍色，官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Colour Crate Small in Soft blue, official studio packshot.",
+     "HAY Colour Crates in Navy and Soft blue, official lifestyle."
+    ],
+    "zh": [
+     "HAY Colour Crate S 淺藍色，官方產品照。",
+     "HAY Colour Crate，海軍藍及淺藍色，官方生活照。"
+    ]
+   }
+  },
+  {
+   "slug": "hay-colour-crate-s-salmon",
+   "zhType": "收納箱",
+   "sku": "TT-HAY-0018",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "HAY",
+   "name": {
+    "en": "Colour Crate S · Salmon",
+    "zh": "Colour Crate S · 鮭肉色"
+   },
+   "model": "Colour Crate",
+   "colour": {
+    "en": "Salmon",
+    "zh": "鮭肉色"
+   },
+   "material": {
+    "en": "Recycled polypropylene",
+    "zh": "再生聚丙烯"
+   },
+   "description": {
+    "en": "A HAY Colour Crate in Salmon. Recycled polypropylene, with a lid. Brand new, in stock in Hong Kong for HK$55.",
+    "zh": "HAY Colour Crate，鮭肉色。再生聚丙烯，有蓋。全新，香港現貨，HK$55。"
+   },
+   "details": {
+    "en": [
+     "Colour Crate in Salmon",
+     "Recycled polypropylene, with a lid",
+     "Brand new"
+    ],
+    "zh": [
+     "Colour Crate，鮭肉色",
+     "再生聚丙烯，有蓋",
+     "全新"
+    ]
+   },
+   "category": "storage",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 55,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "photoFit": "contain",
+   "variantGroup": "colour-crate-s",
+   "photos": [
+    "/assets/products/hay-colour-crate-s-salmon/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Colour Crate Small in Salmon, official studio packshot.",
+    "zh": "HAY Colour Crate S 鮭肉色，官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Colour Crate Small in Salmon, official studio packshot."
+    ],
+    "zh": [
+     "HAY Colour Crate S 鮭肉色，官方產品照。"
+    ]
+   }
+  },
+  {
+   "slug": "hay-colour-crate-s-lavender",
+   "zhType": "收納箱",
+   "sku": "TT-HAY-0035",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "HAY",
+   "name": {
+    "en": "Colour Crate S · Lavender",
+    "zh": "Colour Crate S · 淺紫色"
+   },
+   "model": "Colour Crate",
+   "colour": {
+    "en": "Lavender",
+    "zh": "淺紫色"
+   },
+   "material": {
+    "en": "Recycled polypropylene",
+    "zh": "再生聚丙烯"
+   },
+   "description": {
+    "en": "A HAY Colour Crate in Lavender. Recycled polypropylene, with a lid. Brand new, in stock in Hong Kong for HK$55.",
+    "zh": "HAY Colour Crate，淺紫色。再生聚丙烯，有蓋。全新，香港現貨，HK$55。"
+   },
+   "details": {
+    "en": [
+     "Colour Crate in Lavender",
+     "Recycled polypropylene, with a lid",
+     "Brand new"
+    ],
+    "zh": [
+     "Colour Crate，淺紫色",
+     "再生聚丙烯，有蓋",
+     "全新"
+    ]
+   },
+   "category": "storage",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 55,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "photoFit": "contain",
+   "variantGroup": "colour-crate-s",
+   "photos": [
+    "/assets/products/hay-colour-crate-s-lavender/1.jpg",
+    "/assets/products/hay-colour-crate-s-lavender/2.jpg",
+    "/assets/products/hay-colour-crate-s-lavender/3.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Colour Crate Small in Lavender, official studio packshot.",
+    "zh": "HAY Colour Crate S 淺紫色，官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Colour Crate Small in Lavender, official studio packshot.",
+     "HAY Colour Crate Small in Lavender, official studio packshot, alternate angle.",
+     "HAY Colour Crate Small in Lavender, styled with cutlery and jars."
+    ],
+    "zh": [
+     "HAY Colour Crate S 淺紫色，官方產品照。",
+     "HAY Colour Crate S 淺紫色，官方產品照，另一角度。",
+     "HAY Colour Crate S 淺紫色，與餐具及罐子一同擺放。"
+    ]
+   }
+  },
+  {
+   "slug": "hay-colour-crate-m-teal",
+   "zhType": "收納箱",
+   "sku": "TT-HAY-0025",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "HAY",
+   "name": {
+    "en": "Colour Crate M · Teal",
+    "zh": "Colour Crate M · 藍綠色"
+   },
+   "model": "Colour Crate",
+   "colour": {
+    "en": "Teal",
+    "zh": "藍綠色"
+   },
+   "material": {
+    "en": "Recycled polypropylene",
+    "zh": "再生聚丙烯"
+   },
+   "description": {
+    "en": "A HAY Colour Crate in Teal. Recycled polypropylene, with a lid. L34.5 × W26.5 × H14 cm. Brand new, in stock in Hong Kong for HK$98.",
+    "zh": "HAY Colour Crate，藍綠色。再生聚丙烯，有蓋。L34.5 × W26.5 × H14 cm。全新，香港現貨，HK$98。"
+   },
+   "details": {
+    "en": [
+     "Colour Crate in Teal",
+     "Recycled polypropylene, with a lid",
+     "L34.5 × W26.5 × H14 cm",
+     "Brand new"
+    ],
+    "zh": [
+     "Colour Crate，藍綠色",
+     "再生聚丙烯，有蓋",
+     "L34.5 × W26.5 × H14 cm",
+     "全新"
+    ]
+   },
+   "category": "storage",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 98,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "photoFit": "contain",
+   "variantGroup": "colour-crate-m",
+   "photos": [
+    "/assets/products/hay-colour-crate-m-teal/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Colour Crate Medium in Teal, official studio packshot.",
+    "zh": "HAY Colour Crate M 藍綠色，官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Colour Crate Medium in Teal, official studio packshot."
+    ],
+    "zh": [
+     "HAY Colour Crate M 藍綠色，官方產品照。"
+    ]
+   }
+  },
+  {
+   "slug": "hay-colour-crate-m-navy",
+   "zhType": "收納箱",
+   "sku": "TT-HAY-0026",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "HAY",
+   "name": {
+    "en": "Colour Crate M · Navy",
+    "zh": "Colour Crate M · 海軍藍"
+   },
+   "model": "Colour Crate",
+   "colour": {
+    "en": "Navy",
+    "zh": "海軍藍"
+   },
+   "material": {
+    "en": "Recycled polypropylene",
+    "zh": "再生聚丙烯"
+   },
+   "description": {
+    "en": "A HAY Colour Crate in Navy. Recycled polypropylene, with a lid. L34.5 × W26.5 × H14 cm. Brand new, in stock in Hong Kong for HK$98.",
+    "zh": "HAY Colour Crate，海軍藍。再生聚丙烯，有蓋。L34.5 × W26.5 × H14 cm。全新，香港現貨，HK$98。"
+   },
+   "details": {
+    "en": [
+     "Colour Crate in Navy",
+     "Recycled polypropylene, with a lid",
+     "L34.5 × W26.5 × H14 cm",
+     "Brand new"
+    ],
+    "zh": [
+     "Colour Crate，海軍藍",
+     "再生聚丙烯，有蓋",
+     "L34.5 × W26.5 × H14 cm",
+     "全新"
+    ]
+   },
+   "category": "storage",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 98,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "photoFit": "contain",
+   "variantGroup": "colour-crate-m",
+   "photos": [
+    "/assets/products/hay-colour-crate-m-navy/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Colour Crate Medium in Navy, official studio packshot.",
+    "zh": "HAY Colour Crate M 海軍藍，官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Colour Crate Medium in Navy, official studio packshot."
+    ],
+    "zh": [
+     "HAY Colour Crate M 海軍藍，官方產品照。"
+    ]
+   }
+  },
+  {
+   "slug": "hay-colour-crate-m-electric-blue",
+   "zhType": "收納箱",
+   "sku": "TT-HAY-0049",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "HAY",
+   "name": {
+    "en": "Colour Crate M · Electric blue",
+    "zh": "Colour Crate M · 電光藍"
+   },
+   "model": "Colour Crate",
+   "colour": {
+    "en": "Electric blue",
+    "zh": "電光藍"
+   },
+   "material": {
+    "en": "Recycled polypropylene",
+    "zh": "再生聚丙烯"
+   },
+   "description": {
+    "en": "A HAY Colour Crate in Electric blue. Recycled polypropylene, with a lid. L34.5 × W26.5 × H14 cm. Brand new, in stock in Hong Kong for HK$98.",
+    "zh": "HAY Colour Crate，電光藍。再生聚丙烯，有蓋。L34.5 × W26.5 × H14 cm。全新，香港現貨，HK$98。"
+   },
+   "details": {
+    "en": [
+     "Colour Crate in Electric blue",
+     "Recycled polypropylene, with a lid",
+     "L34.5 × W26.5 × H14 cm",
+     "Brand new"
+    ],
+    "zh": [
+     "Colour Crate，電光藍",
+     "再生聚丙烯，有蓋",
+     "L34.5 × W26.5 × H14 cm",
+     "全新"
+    ]
+   },
+   "category": "storage",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 98,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "photoFit": "contain",
+   "variantGroup": "colour-crate-m",
+   "photos": [
+    "/assets/products/hay-colour-crate-m-electric-blue/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Colour Crate Medium in Electric blue, official studio packshot.",
+    "zh": "HAY Colour Crate M 電光藍，官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Colour Crate Medium in Electric blue, official studio packshot."
+    ],
+    "zh": [
+     "HAY Colour Crate M 電光藍，官方產品照。"
+    ]
+   }
+  },
+  {
+   "slug": "hay-colour-crate-m-grey",
+   "zhType": "收納箱",
+   "sku": "TT-HAY-0039",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "HAY",
+   "name": {
+    "en": "Colour Crate M · Grey",
+    "zh": "Colour Crate M · 灰色"
+   },
+   "model": "Colour Crate",
+   "colour": {
+    "en": "Grey",
+    "zh": "灰色"
+   },
+   "material": {
+    "en": "Recycled polypropylene",
+    "zh": "再生聚丙烯"
+   },
+   "description": {
+    "en": "A HAY Colour Crate in Grey. Recycled polypropylene, with a lid. L34.5 × W26.5 × H14 cm. Brand new, in stock in Hong Kong for HK$98.",
+    "zh": "HAY Colour Crate，灰色。再生聚丙烯，有蓋。L34.5 × W26.5 × H14 cm。全新，香港現貨，HK$98。"
+   },
+   "details": {
+    "en": [
+     "Colour Crate in Grey",
+     "Recycled polypropylene, with a lid",
+     "L34.5 × W26.5 × H14 cm",
+     "Brand new"
+    ],
+    "zh": [
+     "Colour Crate，灰色",
+     "再生聚丙烯，有蓋",
+     "L34.5 × W26.5 × H14 cm",
+     "全新"
+    ]
+   },
+   "category": "storage",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 98,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "photoFit": "contain",
+   "variantGroup": "colour-crate-m",
+   "photos": [
+    "/assets/products/hay-colour-crate-m-grey/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Colour Crate Medium in Grey, official studio packshot.",
+    "zh": "HAY Colour Crate M 灰色，官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Colour Crate Medium in Grey, official studio packshot."
+    ],
+    "zh": [
+     "HAY Colour Crate M 灰色，官方產品照。"
+    ]
+   }
+  },
+  {
+   "slug": "hay-colour-crate-xl-off-white",
+   "zhType": "收納箱",
+   "sku": "TT-HAY-0019",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "HAY",
+   "name": {
+    "en": "Colour Crate XL · Off-white",
+    "zh": "Colour Crate XL · 米白色"
+   },
+   "model": "Colour Crate",
+   "colour": {
+    "en": "Off-white",
+    "zh": "米白色"
+   },
+   "material": {
+    "en": "Recycled polypropylene",
+    "zh": "再生聚丙烯"
+   },
+   "description": {
+    "en": "A HAY Colour Crate in Off-white. Recycled polypropylene, with a lid. L68 × W42 × H24 cm. Brand new, in stock in Hong Kong for HK$348.",
+    "zh": "HAY Colour Crate，米白色。再生聚丙烯，有蓋。L68 × W42 × H24 cm。全新，香港現貨，HK$348。"
+   },
+   "details": {
+    "en": [
+     "Colour Crate in Off-white",
+     "Recycled polypropylene, with a lid",
+     "L68 × W42 × H24 cm",
+     "Brand new"
+    ],
+    "zh": [
+     "Colour Crate，米白色",
+     "再生聚丙烯，有蓋",
+     "L68 × W42 × H24 cm",
+     "全新"
+    ]
+   },
+   "category": "storage",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 348,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "photoFit": "contain",
+   "photos": [
+    "/assets/products/hay-colour-crate-xl-off-white/1.jpg",
+    "/assets/products/hay-colour-crate-xl-off-white/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Colour Crate XL in Off-white, official studio packshot.",
+    "zh": "HAY Colour Crate XL 米白色，官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Colour Crate XL in Off-white, official studio packshot.",
+     "HAY Colour Crates in Off-white, stacked, official lifestyle."
+    ],
+    "zh": [
+     "HAY Colour Crate XL 米白色，官方產品照。",
+     "米白色 HAY Colour Crate 疊放，官方生活照。"
+    ]
+   }
+  },
+  {
+   "slug": "hay-tin-container-large-blue-white-check",
+   "zhType": "鐵罐",
+   "sku": "TT-HAY-0041",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "HAY",
+   "name": {
+    "en": "Tin Container Large · Blue/white check",
+    "zh": "Tin Container 大號 · 藍白格"
+   },
+   "model": "Tin Container",
+   "colour": {
+    "en": "Blue/white check",
+    "zh": "藍白格"
+   },
+   "material": {
+    "en": "Powder-coated steel",
+    "zh": "粉末塗層鋼"
+   },
+   "description": {
+    "en": "A HAY Tin Container in Blue/white check. Powder-coated steel, with a lid. Brand new, in stock in Hong Kong for HK$168.",
+    "zh": "HAY Tin Container，藍白格。粉末塗層鋼，有蓋。全新，香港現貨，HK$168。"
+   },
+   "details": {
+    "en": [
+     "Tin Container in Blue/white check",
+     "Powder-coated steel, with a lid",
+     "Brand new"
+    ],
+    "zh": [
+     "Tin Container，藍白格",
+     "粉末塗層鋼，有蓋",
+     "全新"
+    ]
+   },
+   "category": "storage",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 168,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "photoFit": "contain",
+   "variantGroup": "hay-tin-container",
+   "photos": [
+    "/assets/products/hay-tin-container-large-blue-white-check/1.jpg",
+    "/assets/products/hay-tin-container-large-blue-white-check/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Tin Container Large in blue and off-white check, official studio packshot.",
+    "zh": "HAY Tin Container 大號藍白格，官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Tin Container Large in blue and off-white check, official studio packshot.",
+     "HAY Tin Container Large in blue and off-white check, lid off in a kitchen."
+    ],
+    "zh": [
+     "HAY Tin Container 大號藍白格，官方產品照。",
+     "HAY Tin Container 大號藍白格，蓋子打開，放在廚房。"
+    ]
+   }
+  },
+  {
+   "slug": "hay-tin-container-xl-off-white-burgundy-green",
+   "zhType": "鐵罐",
+   "sku": "TT-HAY-0042",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "HAY",
+   "name": {
+    "en": "Tin Container X-Large · Off-White, Burgundy and Green",
+    "zh": "Tin Container 特大號 · 米白、酒紅與綠色"
+   },
+   "model": "Tin Container",
+   "colour": {
+    "en": "Off-White, Burgundy and Green",
+    "zh": "米白、酒紅與綠色"
+   },
+   "material": {
+    "en": "Powder-coated steel",
+    "zh": "粉末塗層鋼"
+   },
+   "description": {
+    "en": "A HAY Tin Container in Off-White, Burgundy and Green. Powder-coated steel, with a lid. Brand new, in stock in Hong Kong for HK$168.",
+    "zh": "HAY Tin Container，米白、酒紅與綠色。粉末塗層鋼，有蓋。全新，香港現貨，HK$168。"
+   },
+   "details": {
+    "en": [
+     "Tin Container in Off-White, Burgundy and Green",
+     "Powder-coated steel, with a lid",
+     "Brand new"
+    ],
+    "zh": [
+     "Tin Container，米白、酒紅與綠色",
+     "粉末塗層鋼，有蓋",
+     "全新"
+    ]
+   },
+   "category": "storage",
+   "condition": {
+    "grade": "brand-new",
+    "notes": {
+     "en": "Brand new.",
+     "zh": "全新。"
+    }
+   },
+   "price": 168,
+   "status": "available",
+   "fulfilment": "both",
+   "sizeGuide": false,
+   "photoFit": "contain",
+   "variantGroup": "hay-tin-container",
+   "photos": [
+    "/assets/products/hay-tin-container-xl-off-white-burgundy-green/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "HAY Tin Container X-Large in off-white, burgundy and green, official studio packshot.",
+    "zh": "HAY Tin Container 特大號，米白、酒紅與綠色，官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "HAY Tin Container X-Large in off-white, burgundy and green, official studio packshot."
+    ],
+    "zh": [
+     "HAY Tin Container 特大號，米白、酒紅與綠色，官方產品照。"
+    ]
+   }
+  },
+  {
+   "slug": "andtradition-flowerpot-vp9-chrome-plated",
+   "zhType": "便攜燈",
+   "sku": "TT-ANT-0015",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "&Tradition",
+   "designer": "Verner Panton",
+   "name": {
+    "en": "Flowerpot VP9 · Chrome plated",
+    "zh": "Flowerpot VP9 · Chrome plated"
+   },
+   "model": "Flowerpot VP9",
+   "colour": {
+    "en": "Chrome plated",
+    "zh": "Chrome plated"
+   },
+   "material": {
+    "en": "Chrome-plated metal",
+    "zh": "鍍鉻金屬"
+   },
+   "description": {
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a chrome-plated shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. New retail is about HK$2,515. Message us on WhatsApp to confirm arrival and the selling price.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：鍍鉻燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。全新參考價約 HK$2,515。請用 WhatsApp 確認到貨時間及售價。"
+   },
+   "details": {
+    "en": [
+     "Portable lamp, Verner Panton, 1968",
+     "Chrome-plated shade and base",
+     "Ø16 × H 29.5 cm, about 0.8 kg",
+     "Built-in LED with a touch dimmer; charges by USB",
+     "Keep it indoors when you store it"
+    ],
+    "zh": [
+     "便攜燈，Verner Panton，1968 年",
+     "鍍鉻燈罩及底座",
+     "Ø16 × 高 29.5 cm，約 0.8 kg",
+     "內置 LED，觸控調光，以 USB 充電",
+     "存放時請放在室內"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "dia": 16,
+    "h": 29.5,
+    "unit": "cm",
+    "weightKg": 0.8
+   },
+   "retailPrice": 2515,
+   "status": "inquire",
+   "fulfilment": "inquire",
+   "sizeGuide": false,
+   "storyKey": "andtradition",
+   "photoFit": "contain",
+   "variantGroup": "flowerpot-vp9",
+   "year": {
+    "en": "1968",
+    "zh": "1968 年"
+   },
+   "stockNote": {
+    "en": "Inquire now — we will confirm arrival and the selling price on WhatsApp.",
+    "zh": "歡迎查詢。我們會在 WhatsApp 確認到貨時間及售價。"
+   },
+   "photos": [
+    "/assets/products/andtradition-flowerpot-vp9-chrome-plated/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Flowerpot VP9 portable lamp in Chrome plated, official studio packshot.",
+    "zh": "&Tradition Flowerpot VP9 便攜燈（Chrome plated），官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Flowerpot VP9 portable lamp in Chrome plated, official studio packshot."
+    ],
+    "zh": [
+     "&Tradition Flowerpot VP9 便攜燈（Chrome plated），官方產品照。"
+    ]
+   }
+  },
+  {
+   "slug": "andtradition-flowerpot-vp9-brass-plated",
+   "zhType": "便攜燈",
+   "sku": "TT-ANT-0017",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "&Tradition",
+   "designer": "Verner Panton",
+   "name": {
+    "en": "Flowerpot VP9 · Brass plated",
+    "zh": "Flowerpot VP9 · Brass plated"
+   },
+   "model": "Flowerpot VP9",
+   "colour": {
+    "en": "Brass plated",
+    "zh": "Brass plated"
+   },
+   "material": {
+    "en": "Brass-plated metal",
+    "zh": "鍍黃銅金屬"
+   },
+   "description": {
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a brass-plated shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. New retail is about HK$2,515. Message us on WhatsApp to confirm arrival and the selling price.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：鍍黃銅燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。全新參考價約 HK$2,515。請用 WhatsApp 確認到貨時間及售價。"
+   },
+   "details": {
+    "en": [
+     "Portable lamp, Verner Panton, 1968",
+     "Brass-plated shade and base",
+     "Ø16 × H 29.5 cm, about 0.8 kg",
+     "Built-in LED with a touch dimmer; charges by USB",
+     "Keep it indoors when you store it"
+    ],
+    "zh": [
+     "便攜燈，Verner Panton，1968 年",
+     "鍍黃銅燈罩及底座",
+     "Ø16 × 高 29.5 cm，約 0.8 kg",
+     "內置 LED，觸控調光，以 USB 充電",
+     "存放時請放在室內"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "dia": 16,
+    "h": 29.5,
+    "unit": "cm",
+    "weightKg": 0.8
+   },
+   "retailPrice": 2515,
+   "status": "inquire",
+   "fulfilment": "inquire",
+   "sizeGuide": false,
+   "storyKey": "andtradition",
+   "photoFit": "contain",
+   "variantGroup": "flowerpot-vp9",
+   "year": {
+    "en": "1968",
+    "zh": "1968 年"
+   },
+   "stockNote": {
+    "en": "Inquire now — we will confirm arrival and the selling price on WhatsApp.",
+    "zh": "歡迎查詢。我們會在 WhatsApp 確認到貨時間及售價。"
+   },
+   "photos": [
+    "/assets/products/andtradition-flowerpot-vp9-brass-plated/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Flowerpot VP9 portable lamp in Brass plated, official studio packshot.",
+    "zh": "&Tradition Flowerpot VP9 便攜燈（Brass plated），官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Flowerpot VP9 portable lamp in Brass plated, official studio packshot."
+    ],
+    "zh": [
+     "&Tradition Flowerpot VP9 便攜燈（Brass plated），官方產品照。"
+    ]
+   }
+  },
+  {
+   "slug": "andtradition-flowerpot-vp9-matt-white",
+   "zhType": "便攜燈",
+   "sku": "TT-ANT-0018",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "&Tradition",
+   "designer": "Verner Panton",
+   "name": {
+    "en": "Flowerpot VP9 · Matt white",
+    "zh": "Flowerpot VP9 · Matt white"
+   },
+   "model": "Flowerpot VP9",
+   "colour": {
+    "en": "Matt white",
+    "zh": "Matt white"
+   },
+   "material": {
+    "en": "Lacquered polycarbonate and steel",
+    "zh": "漆面聚碳酸酯及鋼"
+   },
+   "description": {
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This one is Matt white. New retail is about HK$1,740. Message us on WhatsApp to confirm arrival and the selling price.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞是 Matt white。全新參考價約 HK$1,740。請用 WhatsApp 確認到貨時間及售價。"
+   },
+   "details": {
+    "en": [
+     "Portable lamp, Verner Panton, 1968",
+     "Lacquered polycarbonate shade and base, steel dimmer",
+     "Ø16 × H 29.5 cm, about 0.8 kg",
+     "Built-in LED with a touch dimmer; charges by USB",
+     "Keep it indoors when you store it"
+    ],
+    "zh": [
+     "便攜燈，Verner Panton，1968 年",
+     "漆面聚碳酸酯燈罩及底座，鋼製調光按鈕",
+     "Ø16 × 高 29.5 cm，約 0.8 kg",
+     "內置 LED，觸控調光，以 USB 充電",
+     "存放時請放在室內"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "dia": 16,
+    "h": 29.5,
+    "unit": "cm",
+    "weightKg": 0.8
+   },
+   "retailPrice": 1740,
+   "status": "inquire",
+   "fulfilment": "inquire",
+   "sizeGuide": false,
+   "storyKey": "andtradition",
+   "photoFit": "contain",
+   "variantGroup": "flowerpot-vp9",
+   "year": {
+    "en": "1968",
+    "zh": "1968 年"
+   },
+   "stockNote": {
+    "en": "Inquire now — we will confirm arrival and the selling price on WhatsApp.",
+    "zh": "歡迎查詢。我們會在 WhatsApp 確認到貨時間及售價。"
+   },
+   "photos": [
+    "/assets/products/andtradition-flowerpot-vp9-matt-white/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Flowerpot VP9 portable lamp in Matt white, official studio packshot.",
+    "zh": "&Tradition Flowerpot VP9 便攜燈（Matt white），官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Flowerpot VP9 portable lamp in Matt white, official studio packshot."
+    ],
+    "zh": [
+     "&Tradition Flowerpot VP9 便攜燈（Matt white），官方產品照。"
+    ]
+   }
+  },
+  {
+   "slug": "andtradition-flowerpot-vp9-matt-black-inquire",
+   "zhType": "便攜燈",
+   "sku": "TT-ANT-0019",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "&Tradition",
+   "designer": "Verner Panton",
+   "name": {
+    "en": "Flowerpot VP9 · Matt black",
+    "zh": "Flowerpot VP9 · Matt black"
+   },
+   "model": "Flowerpot VP9",
+   "colour": {
+    "en": "Matt black",
+    "zh": "Matt black"
+   },
+   "material": {
+    "en": "Lacquered polycarbonate and steel",
+    "zh": "漆面聚碳酸酯及鋼"
+   },
+   "description": {
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This one is Matt black. New retail is about HK$1,740. Message us on WhatsApp to confirm arrival and the selling price.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞是 Matt black。全新參考價約 HK$1,740。請用 WhatsApp 確認到貨時間及售價。"
+   },
+   "details": {
+    "en": [
+     "Portable lamp, Verner Panton, 1968",
+     "Lacquered polycarbonate shade and base, steel dimmer",
+     "Ø16 × H 29.5 cm, about 0.8 kg",
+     "Built-in LED with a touch dimmer; charges by USB",
+     "Keep it indoors when you store it"
+    ],
+    "zh": [
+     "便攜燈，Verner Panton，1968 年",
+     "漆面聚碳酸酯燈罩及底座，鋼製調光按鈕",
+     "Ø16 × 高 29.5 cm，約 0.8 kg",
+     "內置 LED，觸控調光，以 USB 充電",
+     "存放時請放在室內"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "dia": 16,
+    "h": 29.5,
+    "unit": "cm",
+    "weightKg": 0.8
+   },
+   "retailPrice": 1740,
+   "status": "inquire",
+   "fulfilment": "inquire",
+   "sizeGuide": false,
+   "storyKey": "andtradition",
+   "photoFit": "contain",
+   "variantGroup": "flowerpot-vp9",
+   "year": {
+    "en": "1968",
+    "zh": "1968 年"
+   },
+   "stockNote": {
+    "en": "Inquire now — we will confirm arrival and the selling price on WhatsApp.",
+    "zh": "歡迎查詢。我們會在 WhatsApp 確認到貨時間及售價。"
+   },
+   "photos": [
+    "/assets/products/andtradition-flowerpot-vp9-matt-black-inquire/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Flowerpot VP9 portable lamp in Matt black, official studio packshot.",
+    "zh": "&Tradition Flowerpot VP9 便攜燈（Matt black），官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Flowerpot VP9 portable lamp in Matt black, official studio packshot."
+    ],
+    "zh": [
+     "&Tradition Flowerpot VP9 便攜燈（Matt black），官方產品照。"
+    ]
+   }
+  },
+  {
+   "slug": "andtradition-flowerpot-vp9-tangy-pink",
+   "zhType": "便攜燈",
+   "sku": "TT-ANT-0021",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "&Tradition",
+   "designer": "Verner Panton",
+   "name": {
+    "en": "Flowerpot VP9 · Tangy pink",
+    "zh": "Flowerpot VP9 · Tangy pink"
+   },
+   "model": "Flowerpot VP9",
+   "colour": {
+    "en": "Tangy pink",
+    "zh": "Tangy pink"
+   },
+   "material": {
+    "en": "Lacquered polycarbonate and steel",
+    "zh": "漆面聚碳酸酯及鋼"
+   },
+   "description": {
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This one is Tangy pink. New retail is about HK$1,740. Message us on WhatsApp to confirm arrival and the selling price.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞是 Tangy pink。全新參考價約 HK$1,740。請用 WhatsApp 確認到貨時間及售價。"
+   },
+   "details": {
+    "en": [
+     "Portable lamp, Verner Panton, 1968",
+     "Lacquered polycarbonate shade and base, steel dimmer",
+     "Ø16 × H 29.5 cm, about 0.8 kg",
+     "Built-in LED with a touch dimmer; charges by USB",
+     "Keep it indoors when you store it"
+    ],
+    "zh": [
+     "便攜燈，Verner Panton，1968 年",
+     "漆面聚碳酸酯燈罩及底座，鋼製調光按鈕",
+     "Ø16 × 高 29.5 cm，約 0.8 kg",
+     "內置 LED，觸控調光，以 USB 充電",
+     "存放時請放在室內"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "dia": 16,
+    "h": 29.5,
+    "unit": "cm",
+    "weightKg": 0.8
+   },
+   "retailPrice": 1740,
+   "status": "inquire",
+   "fulfilment": "inquire",
+   "sizeGuide": false,
+   "storyKey": "andtradition",
+   "photoFit": "contain",
+   "variantGroup": "flowerpot-vp9",
+   "year": {
+    "en": "1968",
+    "zh": "1968 年"
+   },
+   "stockNote": {
+    "en": "Inquire now — we will confirm arrival and the selling price on WhatsApp.",
+    "zh": "歡迎查詢。我們會在 WhatsApp 確認到貨時間及售價。"
+   },
+   "photos": [
+    "/assets/products/andtradition-flowerpot-vp9-tangy-pink/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Flowerpot VP9 portable lamp in Tangy pink, official studio packshot.",
+    "zh": "&Tradition Flowerpot VP9 便攜燈（Tangy pink），官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Flowerpot VP9 portable lamp in Tangy pink, official studio packshot."
+    ],
+    "zh": [
+     "&Tradition Flowerpot VP9 便攜燈（Tangy pink），官方產品照。"
+    ]
+   }
+  },
+  {
+   "slug": "andtradition-flowerpot-vp9-matt-light-grey",
+   "zhType": "便攜燈",
+   "sku": "TT-ANT-0022",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "&Tradition",
+   "designer": "Verner Panton",
+   "name": {
+    "en": "Flowerpot VP9 · Matt light grey",
+    "zh": "Flowerpot VP9 · Matt light grey"
+   },
+   "model": "Flowerpot VP9",
+   "colour": {
+    "en": "Matt light grey",
+    "zh": "Matt light grey"
+   },
+   "material": {
+    "en": "Lacquered polycarbonate and steel",
+    "zh": "漆面聚碳酸酯及鋼"
+   },
+   "description": {
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This one is Matt light grey. New retail is about HK$1,740. Message us on WhatsApp to confirm arrival and the selling price.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞是 Matt light grey。全新參考價約 HK$1,740。請用 WhatsApp 確認到貨時間及售價。"
+   },
+   "details": {
+    "en": [
+     "Portable lamp, Verner Panton, 1968",
+     "Lacquered polycarbonate shade and base, steel dimmer",
+     "Ø16 × H 29.5 cm, about 0.8 kg",
+     "Built-in LED with a touch dimmer; charges by USB",
+     "Keep it indoors when you store it"
+    ],
+    "zh": [
+     "便攜燈，Verner Panton，1968 年",
+     "漆面聚碳酸酯燈罩及底座，鋼製調光按鈕",
+     "Ø16 × 高 29.5 cm，約 0.8 kg",
+     "內置 LED，觸控調光，以 USB 充電",
+     "存放時請放在室內"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "dia": 16,
+    "h": 29.5,
+    "unit": "cm",
+    "weightKg": 0.8
+   },
+   "retailPrice": 1740,
+   "status": "inquire",
+   "fulfilment": "inquire",
+   "sizeGuide": false,
+   "storyKey": "andtradition",
+   "photoFit": "contain",
+   "variantGroup": "flowerpot-vp9",
+   "year": {
+    "en": "1968",
+    "zh": "1968 年"
+   },
+   "stockNote": {
+    "en": "Inquire now — we will confirm arrival and the selling price on WhatsApp.",
+    "zh": "歡迎查詢。我們會在 WhatsApp 確認到貨時間及售價。"
+   },
+   "photos": [
+    "/assets/products/andtradition-flowerpot-vp9-matt-light-grey/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Flowerpot VP9 portable lamp in Matt light grey, official studio packshot.",
+    "zh": "&Tradition Flowerpot VP9 便攜燈（Matt light grey），官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Flowerpot VP9 portable lamp in Matt light grey, official studio packshot."
+    ],
+    "zh": [
+     "&Tradition Flowerpot VP9 便攜燈（Matt light grey），官方產品照。"
+    ]
+   }
+  },
+  {
+   "slug": "andtradition-flowerpot-vp9-cobalt-blue",
+   "zhType": "便攜燈",
+   "sku": "TT-ANT-0023",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "&Tradition",
+   "designer": "Verner Panton",
+   "name": {
+    "en": "Flowerpot VP9 · Cobalt Blue",
+    "zh": "Flowerpot VP9 · Cobalt Blue"
+   },
+   "model": "Flowerpot VP9",
+   "colour": {
+    "en": "Cobalt Blue",
+    "zh": "Cobalt Blue"
+   },
+   "material": {
+    "en": "Lacquered polycarbonate and steel",
+    "zh": "漆面聚碳酸酯及鋼"
+   },
+   "description": {
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This one is Cobalt Blue. New retail is about HK$1,740. Message us on WhatsApp to confirm arrival and the selling price.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞是 Cobalt Blue。全新參考價約 HK$1,740。請用 WhatsApp 確認到貨時間及售價。"
+   },
+   "details": {
+    "en": [
+     "Portable lamp, Verner Panton, 1968",
+     "Lacquered polycarbonate shade and base, steel dimmer",
+     "Ø16 × H 29.5 cm, about 0.8 kg",
+     "Built-in LED with a touch dimmer; charges by USB",
+     "Keep it indoors when you store it"
+    ],
+    "zh": [
+     "便攜燈，Verner Panton，1968 年",
+     "漆面聚碳酸酯燈罩及底座，鋼製調光按鈕",
+     "Ø16 × 高 29.5 cm，約 0.8 kg",
+     "內置 LED，觸控調光，以 USB 充電",
+     "存放時請放在室內"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "dia": 16,
+    "h": 29.5,
+    "unit": "cm",
+    "weightKg": 0.8
+   },
+   "retailPrice": 1740,
+   "status": "inquire",
+   "fulfilment": "inquire",
+   "sizeGuide": false,
+   "storyKey": "andtradition",
+   "photoFit": "contain",
+   "variantGroup": "flowerpot-vp9",
+   "year": {
+    "en": "1968",
+    "zh": "1968 年"
+   },
+   "stockNote": {
+    "en": "Inquire now — we will confirm arrival and the selling price on WhatsApp.",
+    "zh": "歡迎查詢。我們會在 WhatsApp 確認到貨時間及售價。"
+   },
+   "photos": [
+    "/assets/products/andtradition-flowerpot-vp9-cobalt-blue/1.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Flowerpot VP9 portable lamp in Cobalt Blue, official studio packshot.",
+    "zh": "&Tradition Flowerpot VP9 便攜燈（Cobalt Blue），官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Flowerpot VP9 portable lamp in Cobalt Blue, official studio packshot."
+    ],
+    "zh": [
+     "&Tradition Flowerpot VP9 便攜燈（Cobalt Blue），官方產品照。"
+    ]
+   }
+  },
+  {
+   "slug": "andtradition-flowerpot-vp9-stone-blue",
+   "zhType": "便攜燈",
+   "sku": "TT-ANT-0025",
+   "featured": false,
+   "dropDate": "2026-11-23",
+   "newFrom": "2026-11-20",
+   "brand": "&Tradition",
+   "designer": "Verner Panton",
+   "name": {
+    "en": "Flowerpot VP9 · Stone blue",
+    "zh": "Flowerpot VP9 · Stone blue"
+   },
+   "model": "Flowerpot VP9",
+   "colour": {
+    "en": "Stone blue",
+    "zh": "Stone blue"
+   },
+   "material": {
+    "en": "Lacquered polycarbonate and steel",
+    "zh": "漆面聚碳酸酯及鋼"
+   },
+   "description": {
+    "en": "Verner Panton designed the Flowerpot in 1968. The VP9 is the portable one: a lacquered polycarbonate shade and base, Ø16 × H 29.5 cm, with a built-in LED and a touch dimmer. It charges by USB. This one is Stone blue. New retail is about HK$1,740. Message us on WhatsApp to confirm arrival and the selling price.",
+    "zh": "Verner Panton 於 1968 年設計 Flowerpot。VP9 是便攜版：漆面聚碳酸酯燈罩及底座，Ø16 × 高 29.5 cm，內置 LED，觸控調光，以 USB 充電。這盞是 Stone blue。全新參考價約 HK$1,740。請用 WhatsApp 確認到貨時間及售價。"
+   },
+   "details": {
+    "en": [
+     "Portable lamp, Verner Panton, 1968",
+     "Lacquered polycarbonate shade and base, steel dimmer",
+     "Ø16 × H 29.5 cm, about 0.8 kg",
+     "Built-in LED with a touch dimmer; charges by USB",
+     "Keep it indoors when you store it"
+    ],
+    "zh": [
+     "便攜燈，Verner Panton，1968 年",
+     "漆面聚碳酸酯燈罩及底座，鋼製調光按鈕",
+     "Ø16 × 高 29.5 cm，約 0.8 kg",
+     "內置 LED，觸控調光，以 USB 充電",
+     "存放時請放在室內"
+    ]
+   },
+   "category": "lighting",
+   "dimensions": {
+    "dia": 16,
+    "h": 29.5,
+    "unit": "cm",
+    "weightKg": 0.8
+   },
+   "retailPrice": 1740,
+   "status": "inquire",
+   "fulfilment": "inquire",
+   "sizeGuide": false,
+   "storyKey": "andtradition",
+   "photoFit": "contain",
+   "variantGroup": "flowerpot-vp9",
+   "year": {
+    "en": "1968",
+    "zh": "1968 年"
+   },
+   "stockNote": {
+    "en": "Inquire now — we will confirm arrival and the selling price on WhatsApp.",
+    "zh": "歡迎查詢。我們會在 WhatsApp 確認到貨時間及售價。"
+   },
+   "photos": [
+    "/assets/products/andtradition-flowerpot-vp9-stone-blue/1.jpg",
+    "/assets/products/andtradition-flowerpot-vp9-stone-blue/2.jpg"
+   ],
+   "photoAlt": {
+    "en": "&Tradition Flowerpot VP9 portable lamp in Stone blue, official studio packshot.",
+    "zh": "&Tradition Flowerpot VP9 便攜燈（Stone blue），官方產品照。"
+   },
+   "photoAlts": {
+    "en": [
+     "&Tradition Flowerpot VP9 portable lamp in Stone blue, official studio packshot.",
+     "&Tradition Flowerpot VP9 portable lamp in Stone blue, styled with books."
+    ],
+    "zh": [
+     "&Tradition Flowerpot VP9 便攜燈（Stone blue），官方產品照。",
+     "&Tradition Flowerpot VP9 便攜燈（Stone blue），與書本一同擺放。"
+    ]
    }
   }
  ]
